@@ -1,0 +1,162 @@
+// arrays (m x n) - P. Ahrenkiel
+
+#include <cstdlib>
+#include <math.h>
+#include <iostream>
+
+namespace arr {
+//
+template <class data_type>
+arr3<data_type>::arr3(const std::size_t n0,
+                      const std::size_t n1,
+                      const std::size_t n2,
+                      const data_type* a)
+    : m_n0(n0), m_n1(n1), m_n2(n2)
+{
+    m_a = new data_type[size()];
+    if ((m_a != nullptr) && (a != nullptr)) {
+        for (std::size_t i = 0; i < m_n0; ++i)
+            for (std::size_t j = 0; j < m_n1; ++j)
+                for (std::size_t k = 0; k < m_n2; ++k)
+                    m_a[i * m_n1 * m_n2 + j * m_n2 + k] = a[i * m_n1 * m_n2 + j * m_n2 + k];
+    }
+}
+
+// copy constructor
+template <class data_type>
+arr3<data_type>::arr3(const arr3<data_type>& A) : arr3(A.size(0), A.size(1), A.size(2))
+{
+    for (std::size_t i = 0; i < m_n0; ++i)
+        for (std::size_t j = 0; j < m_n1; ++j)
+            for (std::size_t k = 0; k < m_n2; ++k)
+                m_a[i * m_n1 * m_n2 + j * m_n2 + k] = A(i, j, k);
+}
+
+//
+template <class data_type>
+arr3<data_type>::~arr3()
+{
+    delete[] m_a;
+    m_a = nullptr;
+    m_n0 = m_n1 = m_n2 = 0;
+}
+
+//
+template <class data_type>
+arr3<data_type>& arr3<data_type>::operator=(const arr3<data_type>& A)
+{
+    if (this == &A)
+        return *this;
+    delete[] m_a;
+    m_n0 = A.m_n0;
+    m_n1 = A.m_n1;
+    m_n2 = A.m_n2;
+    m_a = new data_type[size()];
+    if (m_a != nullptr)
+        for (std::size_t i = 0; i < A.m_n0; ++i)
+            for (std::size_t j = 0; j < A.m_n1; ++j)
+                for (std::size_t k = 0; k < A.m_n2; ++k)
+                    at(i, j, k) = A(i, j, k);
+
+    return *this;
+}
+
+//
+template <class data_type>
+arr3<data_type>& arr3<data_type>::operator=(const data_type& x)
+{
+    for (std::size_t i = 0; i < m_n0; ++i)
+        for (std::size_t j = 0; j < m_n1; ++j)
+            for (std::size_t k = 0; k < m_n2; ++k)
+                at(i, j, k) = x;
+
+    return *this;
+}
+
+//
+template <class data_type>
+std::size_t arr3<data_type>::size(const std::size_t d) const
+{
+    switch (d) {
+    case 0:
+        return m_n0;
+    case 1:
+        return m_n1;
+    case 2:
+        return m_n2;
+    default:
+        return 0;
+    }
+}
+
+//
+template <class data_type>
+void arr3<data_type>::resize(const size_t n0, const size_t n1, const size_t n2)
+{
+    arr3<data_type> b(*this);
+    delete[] m_a;
+    m_a = new data_type[n0 * n1 * n2];
+    if (m_a != nullptr) {
+        m_n0 = n0;
+        m_n1 = n1;
+        m_n2 = n2;
+        for (std::size_t i = 0; i < b.m_n0; ++i)
+            for (std::size_t j = 0; j < b.m_n1; ++j)
+                for (std::size_t k = 0; k < b.m_n2; ++k)
+                    if ((i < m_n0) && (j < m_n1) && (k < m_n2))
+                        at(i, j, k) = b(i, j, k);
+    }
+}
+
+//
+template <class data_type>
+bool arr3<data_type>::operator==(const arr3<data_type>& A) const
+{
+    bool res = (m_n0 == A.m_n0) && (m_n1 == A.m_n1) && (m_n2 == A.m_n2);
+    if (res) {
+        for (std::size_t i = 0; i < m_n0; ++i)
+            for (std::size_t j = 0; j < m_n1; ++j)
+                for (std::size_t k = 0; k < m_n2; ++k)
+                    res = res & (at(i, j, k) == A(i, j, k));
+    }
+    return res;
+}
+
+//
+template <class data_type>
+bool arr3<data_type>::operator!=(const arr3<data_type>& A) const
+{
+    return !((*this) == A);
+}
+
+//
+template <class data_type>
+data_type& arr3<data_type>::at(const std::size_t i, const std::size_t j, const std::size_t k)
+{
+    if (!((i < m_n0) && (j < m_n1) && (k < m_n2)))
+        err = 1;
+    return m_a[i * m_n1 * m_n2 + j * m_n2 + k];
+}
+
+//
+template <class data_type>
+data_type const&
+arr3<data_type>::at(const std::size_t i, const std::size_t j, const std::size_t k) const
+{
+    if (!((i < m_n0) && (j < m_n1) && (k < m_n2)))
+        err = 1;
+    return m_a[i * m_n1 * m_n2 + j * m_n2 + k];
+}
+
+//
+template <class data_type>
+std::vector<data_type> arr3<data_type>::vect()
+{
+    std::vector<data_type> v(size());
+    for (std::size_t i = 0; i < m_n0; ++i)
+        for (std::size_t j = 0; j < m_n1; ++j)
+            for (std::size_t k = 0; k < m_n2; ++k)
+                v.at(i * m_n1 * m_n2 + j * m_n2 + k) = at(i, j, k);
+    return v;
+}
+} // namespace arr

@@ -1,0 +1,76 @@
+//array sub arrays (m x n) - P. Ahrenkiel
+
+#include <cstdlib>
+#include <math.h>
+#include <iostream>
+
+namespace arr {
+//
+    template<class data_type>
+    arr2sub<data_type>::arr2sub(arr2<data_type> *a, const std::size_t iRow, const std::size_t iCol,
+                                const std::size_t nRows, const std::size_t nCols):m_a(a) {
+        if (iRow < a->size(0)) m_iRow = iRow;
+        else m_iRow = size(0) - 1;
+        if (iCol < a->size(1))m_iCol = iCol;
+        else m_iCol = size(1) - 1;
+
+        if (iRow + nRows <= a->size(0)) m_nRows = nRows;
+        else m_nRows = size(0) - m_iRow - 1;
+        if (iCol + nCols <= a->size(1)) m_nCols = nCols;
+        else m_nCols = size(1) - m_iCol - 1;
+    }
+
+//
+    template<class data_type>
+    arr2sub<data_type>::arr2sub(const arr2sub<data_type> &A)
+            :arr2sub(A.source(), A.index(0), A.index(1), A.size(0), A.size(1)) {
+        //std::cout<<"here\n";
+        //arr2sub<data_type> T=arr2sub(A.source(),A.index(0),A.index(1),A.size(0),A.size(1));
+        //this=arr2sub(A.source(),A.index(0),A.index(1),A.size(0),A.size(1));
+    }
+
+//
+    template<class data_type>
+    arr2sub<data_type>::~arr2sub() {
+    }
+
+//
+    template<class data_type>
+    void arr2sub<data_type>::operator=(const arr2sub<data_type> &A) {
+        if (size(0) != A.size(0)) return;
+        if (size(1) != A.size(1)) return;
+        for (std::size_t i = 0; i < size(0); i++)
+            for (std::size_t j = 0; j < size(1); j++)
+                at(i, j) = A(i, j);
+    }
+
+//
+    template<class data_type>
+    void arr2sub<data_type>::operator=(const arr2<data_type> &A) {
+        if (size(0) != A.size(0)) return;
+        if (size(1) != A.size(1)) return;
+        for (std::size_t i = 0; i < size(0); i++)
+            for (std::size_t j = 0; j < size(1); j++)
+                at(i, j) = A(i, j);
+    }
+
+//
+    template<class data_type>
+    data_type arr2sub<data_type>::at(const std::size_t i, const std::size_t j) const {
+        return m_a->at(m_iRow + i, m_iCol + j);
+    }
+
+//
+    template<class data_type>
+    data_type &arr2sub<data_type>::at(const std::size_t i, const std::size_t j) {
+        return m_a->at(m_iRow + i, m_iCol + j);
+    }
+
+//
+    template<class data_type>
+    void arr2sub<data_type>::operator=(const data_type &x) {
+        for (std::size_t i = 0; i < size(0); i++)
+            for (std::size_t j = 0; j < size(1); j++)
+                at(i, j) = x;
+    }
+}

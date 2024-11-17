@@ -1,0 +1,1 @@
+//3-D scalings - P. Ahrenkiel#include <cstdlib>#include <math.h>#include "tlbx.hpp"#include "arr.hpp"#include "weiss3.hpp"//Scl3::Scl3(double x):Trf3(){	*this=x*Trf3::ident();}

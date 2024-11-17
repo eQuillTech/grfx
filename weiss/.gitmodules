@@ -1,0 +1,8 @@
+
+[submodule "tlbx"]
+	path = tlbx
+	url = https://github.com/SPAhrenTech/tlbx.git
+
+[submodule "arr"]
+	path = arr
+	url = https://github.com/SPAhrenTech/arr.git

@@ -1,0 +1,17 @@
+/Users/phil3/Documents/Development/grfx/build/CMakeFiles/grfx2.dir
+/Users/phil3/Documents/Development/grfx/build/CMakeFiles/grfx3.dir
+/Users/phil3/Documents/Development/grfx/build/CMakeFiles/grfx.dir
+/Users/phil3/Documents/Development/grfx/build/CMakeFiles/ALL_BUILD.dir
+/Users/phil3/Documents/Development/grfx/build/CMakeFiles/ZERO_CHECK.dir
+/Users/phil3/Documents/Development/grfx/build/tlbx/CMakeFiles/tlbx.dir
+/Users/phil3/Documents/Development/grfx/build/tlbx/CMakeFiles/ALL_BUILD.dir
+/Users/phil3/Documents/Development/grfx/build/tlbx/CMakeFiles/ZERO_CHECK.dir
+/Users/phil3/Documents/Development/grfx/build/arr/CMakeFiles/arr.dir
+/Users/phil3/Documents/Development/grfx/build/arr/CMakeFiles/ALL_BUILD.dir
+/Users/phil3/Documents/Development/grfx/build/arr/CMakeFiles/ZERO_CHECK.dir
+/Users/phil3/Documents/Development/grfx/build/arr/examples/CMakeFiles/examples.dir
+/Users/phil3/Documents/Development/grfx/build/weiss/CMakeFiles/weiss2.dir
+/Users/phil3/Documents/Development/grfx/build/weiss/CMakeFiles/weiss3.dir
+/Users/phil3/Documents/Development/grfx/build/weiss/CMakeFiles/weiss.dir
+/Users/phil3/Documents/Development/grfx/build/weiss/CMakeFiles/ALL_BUILD.dir
+/Users/phil3/Documents/Development/grfx/build/weiss/CMakeFiles/ZERO_CHECK.dir

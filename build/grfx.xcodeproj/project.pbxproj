@@ -1,0 +1,2990 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		3C78B583444B4EA3A80C4938 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 5801EC20D2144436BE06E719 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				2569E71633637433A76F2F19 /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		58E74CB9E0B1471A9B7E6543 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 298E3A4E78E841F18B10FC48 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				8D0C794DA68A6C72B8AD6AFD /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				AFD1D25946D9436CA4A00AC3 /* PBXTargetDependency */,
+				BFA297C44C4842D09A0892CA /* PBXTargetDependency */,
+				5699727F852844A1B2CE4CD1 /* PBXTargetDependency */,
+				FCD27E0367074C338AB6CD3A /* PBXTargetDependency */,
+				47290D7C111A43809DF80FCC /* PBXTargetDependency */,
+				30AC6E8DDD2F4205A50CE19C /* PBXTargetDependency */,
+				9EBF97B6B2B2451A835C0942 /* PBXTargetDependency */,
+				BDC2831BA656432992FA39A7 /* PBXTargetDependency */,
+				8DDDB99A67494CCAA0D44E68 /* PBXTargetDependency */,
+				2E7DC400FF474EF9BBE54B3A /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		00A5D6AC4593441F9EAE837C /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/weiss3.hpp */ = {isa = PBXBuildFile; fileRef = 7DC30D6E677B4D8CBAC42ECC /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/weiss3.hpp */; };
+		01407B83D1C24B098082AF4C /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/sources/vtr3.cpp */ = {isa = PBXBuildFile; fileRef = 6790DD0CA62E451FBAEA64B1 /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/sources/vtr3.cpp */; };
+		0179869932E440F28DCF46E9 /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/headers/scl2.hpp */ = {isa = PBXBuildFile; fileRef = 8E102781D05742578CB84112 /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/headers/scl2.hpp */; };
+		02F65FAABEA043F5840650E1 /* /Users/phil3/Documents/Development/grfx/arr/sources/darr1.cpp */ = {isa = PBXBuildFile; fileRef = B84FABA9B3684FB4966B00F3 /* /Users/phil3/Documents/Development/grfx/arr/sources/darr1.cpp */; };
+		03AD48DA0FDD4DCBA551E01F /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/sources/rtn3.cpp */ = {isa = PBXBuildFile; fileRef = C37C4571FC45409AB219DCFB /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/sources/rtn3.cpp */; };
+		06621493BD7142718055F501 /* /Users/phil3/Documents/Development/grfx/grfx2/sources/glne.cpp */ = {isa = PBXBuildFile; fileRef = C94140F2968049038AE64F7C /* /Users/phil3/Documents/Development/grfx/grfx2/sources/glne.cpp */; };
+		06F698F0B9EA4D05AEE4FD82 /* /Users/phil3/Documents/Development/grfx/grfx2/sources/glyr.cpp */ = {isa = PBXBuildFile; fileRef = 87A181CF7F824D3583A46BF3 /* /Users/phil3/Documents/Development/grfx/grfx2/sources/glyr.cpp */; };
+		079B8F1F28CE4520991A775E /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/headers/vtr3.hpp */ = {isa = PBXBuildFile; fileRef = A6BC9A9EE15E41E4AED11C01 /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/headers/vtr3.hpp */; };
+		08C88172077446BE82D085FA /* /Users/phil3/Documents/Development/grfx/grfx2/grfx2.hpp */ = {isa = PBXBuildFile; fileRef = BED39B9970654EC1BBF60365 /* /Users/phil3/Documents/Development/grfx/grfx2/grfx2.hpp */; };
+		0A45942DAB1C4DFD83A94183 /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gctx.cpp */ = {isa = PBXBuildFile; fileRef = 8BB464ACFC35410DB10CAB67 /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gctx.cpp */; };
+		0B10B479A7984F63A65B8583 /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/headers/rfn3.hpp */ = {isa = PBXBuildFile; fileRef = DF714BA08D5D4F78A44251C6 /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/headers/rfn3.hpp */; };
+		0B58ECDBC78441449D160F04 /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/sources/pnt3.cpp */ = {isa = PBXBuildFile; fileRef = 9F8E06ED3B564E8EB04F1729 /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/sources/pnt3.cpp */; };
+		0CC2B14F75C148F283D774EF /* /Users/phil3/Documents/Development/grfx/tlbx/tlbx.hpp */ = {isa = PBXBuildFile; fileRef = 6355845850AB4A749CCA4745 /* /Users/phil3/Documents/Development/grfx/tlbx/tlbx.hpp */; };
+		150D3BBF14384EF8893E0B17 /* /Users/phil3/Documents/Development/grfx/grfx3/grfx3.hpp */ = {isa = PBXBuildFile; fileRef = 332BC718A4C848F3B8015015 /* /Users/phil3/Documents/Development/grfx/grfx3/grfx3.hpp */; };
+		15D19AAA727347E6A183CC0D /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/sources/bas3.cpp */ = {isa = PBXBuildFile; fileRef = F478B7F898734B909B9156E2 /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/sources/bas3.cpp */; };
+		1FA730FA67FE4CA2912E7ADB /* /Users/phil3/Documents/Development/grfx/grfx2/headers/gbmp.hpp */ = {isa = PBXBuildFile; fileRef = EE975E298ED747989B311D52 /* /Users/phil3/Documents/Development/grfx/grfx2/headers/gbmp.hpp */; };
+		25CC2A4D7C2A44BFBA1D26AD /* /Users/phil3/Documents/Development/grfx/grfx2/headers/glne.hpp */ = {isa = PBXBuildFile; fileRef = 24E4DA8AF02247ABB58B0882 /* /Users/phil3/Documents/Development/grfx/grfx2/headers/glne.hpp */; };
+		26C2D1DC75574399A5ADC715 /* /Users/phil3/Documents/Development/grfx/grfx2/headers/gcrd.hpp */ = {isa = PBXBuildFile; fileRef = 460DC44499814553B12F32DE /* /Users/phil3/Documents/Development/grfx/grfx2/headers/gcrd.hpp */; };
+		292DF45348D94AC49B5DE871 /* /Users/phil3/Documents/Development/grfx/tlbx/sources/trg.cpp */ = {isa = PBXBuildFile; fileRef = B65E8106772544C8A72B725D /* /Users/phil3/Documents/Development/grfx/tlbx/sources/trg.cpp */; };
+		2A72FDA2E943471F920C5813 /* /Users/phil3/Documents/Development/grfx/arr/headers/darr1.hpp */ = {isa = PBXBuildFile; fileRef = A4336DC018C44E65B9E40874 /* /Users/phil3/Documents/Development/grfx/arr/headers/darr1.hpp */; };
+		2B38BC310E1446C79A1B23BB /* /Users/phil3/Documents/Development/grfx/arr/headers/arr2.hpp */ = {isa = PBXBuildFile; fileRef = 08EB05C341454517BB812B82 /* /Users/phil3/Documents/Development/grfx/arr/headers/arr2.hpp */; };
+		2B62EEE5B67A442DB7F2C87D /* /Users/phil3/Documents/Development/grfx/grfx2/headers/gfgr.hpp */ = {isa = PBXBuildFile; fileRef = DAA8FBCD47FC4CC281388863 /* /Users/phil3/Documents/Development/grfx/grfx2/headers/gfgr.hpp */; };
+		2CAD3FB491A7432A81AA4DC8 /* /Users/phil3/Documents/Development/grfx/grfx2/headers/gfrm.hpp */ = {isa = PBXBuildFile; fileRef = F08DE7EE9E384D4C9CABF8F5 /* /Users/phil3/Documents/Development/grfx/grfx2/headers/gfrm.hpp */; };
+		2CC9BE5C1F0D4DA482732F17 /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/weiss2.hpp */ = {isa = PBXBuildFile; fileRef = C0ED9E42406540D5981AE98A /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/weiss2.hpp */; };
+		2E139A0F6B5A43E798131AB4 /* /Users/phil3/Documents/Development/grfx/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = F2ECD73CEA264D518CC72050 /* /Users/phil3/Documents/Development/grfx/CMakeLists.txt */; };
+		2E53AEF7C7A040DD902E836E /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/sources/atr2.cpp */ = {isa = PBXBuildFile; fileRef = 005948AECAA34EEB9EB4651E /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/sources/atr2.cpp */; };
+		300E7D25086F4030AE416DA5 /* /Users/phil3/Documents/Development/grfx/weiss/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 20D7C5776366402A9F2D7796 /* /Users/phil3/Documents/Development/grfx/weiss/CMakeLists.txt */; };
+		30D6D0161D8542479D5CB623 /* /Users/phil3/Documents/Development/grfx/grfx3/sources/gfrm3.cpp */ = {isa = PBXBuildFile; fileRef = 2699E31925594B89A06EDFC2 /* /Users/phil3/Documents/Development/grfx/grfx3/sources/gfrm3.cpp */; };
+		332B0424247545D895EAE4BA /* /Users/phil3/Documents/Development/grfx/grfx2/headers/gcmr.hpp */ = {isa = PBXBuildFile; fileRef = 9B49FB7438EE4B10ABF8A535 /* /Users/phil3/Documents/Development/grfx/grfx2/headers/gcmr.hpp */; };
+		334E6ADE675B46E0807681EF /* /Users/phil3/Documents/Development/grfx/arr/headers/barr2slice.hpp */ = {isa = PBXBuildFile; fileRef = 4B44A2FBE4024DF79F86385D /* /Users/phil3/Documents/Development/grfx/arr/headers/barr2slice.hpp */; };
+		33E007ABDD974E659DE6BE8B /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/headers/atr3.hpp */ = {isa = PBXBuildFile; fileRef = 0F2D7A4B56894FEA8529C17C /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/headers/atr3.hpp */; };
+		39C7F77F8AD347808E5775A7 /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gcrd.cpp */ = {isa = PBXBuildFile; fileRef = A264A4D855514A6ABF8615AE /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gcrd.cpp */; };
+		3A0E3E679F71473B8651F3F8 /* /Users/phil3/Documents/Development/grfx/grfx2/headers/gstr.hpp */ = {isa = PBXBuildFile; fileRef = 95DE1734310541498A5F34A0 /* /Users/phil3/Documents/Development/grfx/grfx2/headers/gstr.hpp */; };
+		3B670ADC921049F88E299EB7 /* /Users/phil3/Documents/Development/grfx/tlbx/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = DAFA0777FCBF43ECB897FB91 /* /Users/phil3/Documents/Development/grfx/tlbx/CMakeLists.txt */; };
+		400EE7D4AC2A4518943E5C0A /* /Users/phil3/Documents/Development/grfx/arr/headers/darr2.hpp */ = {isa = PBXBuildFile; fileRef = 5713E558373E49E3904DA2DF /* /Users/phil3/Documents/Development/grfx/arr/headers/darr2.hpp */; };
+		424D58D617D14401B0EE1FD0 /* /Users/phil3/Documents/Development/grfx/arr/sources/barr2.cpp */ = {isa = PBXBuildFile; fileRef = 38D452DF115444B194440436 /* /Users/phil3/Documents/Development/grfx/arr/sources/barr2.cpp */; };
+		468FD9D602F34B1CB99F1BF6 /* /Users/phil3/Documents/Development/grfx/grfx3/headers/gfrm3.hpp */ = {isa = PBXBuildFile; fileRef = 8C8738D29E7A4570B5B15043 /* /Users/phil3/Documents/Development/grfx/grfx3/headers/gfrm3.hpp */; };
+		4732F58097484F349F86905D /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/headers/bas3.hpp */ = {isa = PBXBuildFile; fileRef = 022CD4D4BA7B44A0BB281D08 /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/headers/bas3.hpp */; };
+		489E1D66D38B4292A95DA829 /* /Users/phil3/Documents/Development/grfx/weiss/weiss.hpp */ = {isa = PBXBuildFile; fileRef = A3B4578A777645CFB08DA56D /* /Users/phil3/Documents/Development/grfx/weiss/weiss.hpp */; };
+		4CD6A82EE9D9405C9EC827FA /* /Users/phil3/Documents/Development/grfx/tlbx/headers/mth.hpp */ = {isa = PBXBuildFile; fileRef = 8028CC9E28994D16AD7D08BB /* /Users/phil3/Documents/Development/grfx/tlbx/headers/mth.hpp */; };
+		4CFCBEE7F51A4554816E2E38 /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/weiss3.hpp */ = {isa = PBXBuildFile; fileRef = B7CCC9420B9E4AA291C693E7 /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/weiss3.hpp */; };
+		4D1033FC088946069A630FC9 /* /Users/phil3/Documents/Development/grfx/arr/headers/arr1.hpp */ = {isa = PBXBuildFile; fileRef = 843BC4455BE0467DA2E7442C /* /Users/phil3/Documents/Development/grfx/arr/headers/arr1.hpp */; };
+		4D9459457A9B400BAA813B3D /* /Users/phil3/Documents/Development/grfx/arr/sources/barr3.cpp */ = {isa = PBXBuildFile; fileRef = FEF73ED8635B43EBA75E9C3E /* /Users/phil3/Documents/Development/grfx/arr/sources/barr3.cpp */; };
+		54A83F3ED50348E99C0E87ED /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/sources/vtr2.cpp */ = {isa = PBXBuildFile; fileRef = 7D509E58E1174A238A76BF62 /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/sources/vtr2.cpp */; };
+		573818863C26475A9C967BED /* /Users/phil3/Documents/Development/grfx/arr/headers/arr2slice.hpp */ = {isa = PBXBuildFile; fileRef = D89FAFAD294B4914BFBA95E7 /* /Users/phil3/Documents/Development/grfx/arr/headers/arr2slice.hpp */; };
+		591F24CC6E6E43369EF354E1 /* /Users/phil3/Documents/Development/grfx/tlbx/headers/trg.hpp */ = {isa = PBXBuildFile; fileRef = A1EC5018802942418603EA26 /* /Users/phil3/Documents/Development/grfx/tlbx/headers/trg.hpp */; };
+		5C795D7DC80F4726922C9412 /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gvtr.cpp */ = {isa = PBXBuildFile; fileRef = 81DD837340C64F37AF4F45FE /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gvtr.cpp */; };
+		62410F9F125045988102B805 /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/sources/trf3.cpp */ = {isa = PBXBuildFile; fileRef = AE6B8CF720BB453A918F423D /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/sources/trf3.cpp */; };
+		6313B2C991734197924F2B80 /* /Users/phil3/Documents/Development/grfx/arr/headers/arr3.hpp */ = {isa = PBXBuildFile; fileRef = 4859407BFBA748FA9EE2005D /* /Users/phil3/Documents/Development/grfx/arr/headers/arr3.hpp */; };
+		6334AACA347F41EEBD161057 /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/sources/atr3.cpp */ = {isa = PBXBuildFile; fileRef = 49C061DE07FB4FAFAC44D598 /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/sources/atr3.cpp */; };
+		6737F00503944E3E92EDBF3F /* /Users/phil3/Documents/Development/grfx/tlbx/sources/mth.cpp */ = {isa = PBXBuildFile; fileRef = DDC60BEF77414816853DCA79 /* /Users/phil3/Documents/Development/grfx/tlbx/sources/mth.cpp */; };
+		68CC5EA8FBF44D99953BBAF0 /* /Users/phil3/Documents/Development/grfx/arr/sources/darr2.cpp */ = {isa = PBXBuildFile; fileRef = FFAD8982AD084AD3BB8F331D /* /Users/phil3/Documents/Development/grfx/arr/sources/darr2.cpp */; };
+		6A029934BE6E4F15A0C81D4D /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/sources/ags3.cpp */ = {isa = PBXBuildFile; fileRef = 38F736F10D2644CDBBFA5BB8 /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/sources/ags3.cpp */; };
+		6BFFAE15B00440B6ADD14F06 /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/headers/vtr2.hpp */ = {isa = PBXBuildFile; fileRef = 93172C1031CF4296B28E00A7 /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/headers/vtr2.hpp */; };
+		709DE5E1D53E44C891AA0A77 /* /Users/phil3/Documents/Development/grfx/arr/headers/barr2.hpp */ = {isa = PBXBuildFile; fileRef = D9464B0949654C9E93482307 /* /Users/phil3/Documents/Development/grfx/arr/headers/barr2.hpp */; };
+		720195A2128D46BBB2EE7C9A /* /Users/phil3/Documents/Development/grfx/tlbx/headers/col.hpp */ = {isa = PBXBuildFile; fileRef = 6488D31DE96C474594A46474 /* /Users/phil3/Documents/Development/grfx/tlbx/headers/col.hpp */; };
+		72DBD9258E44462EB7F2634C /* /Users/phil3/Documents/Development/grfx/grfx2/headers/gctx.hpp */ = {isa = PBXBuildFile; fileRef = C6ECAAF0DF994A808661F3AB /* /Users/phil3/Documents/Development/grfx/grfx2/headers/gctx.hpp */; };
+		73B9964627CF4CF29F49021F /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/sources/scl3.cpp */ = {isa = PBXBuildFile; fileRef = DBCB00E11F994D968023EA66 /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/sources/scl3.cpp */; };
+		7DC4CDE010294DB9801B867A /* /Users/phil3/Documents/Development/grfx/grfx3/sources/glne3.cpp */ = {isa = PBXBuildFile; fileRef = 75EFE27AB8F04B828480156B /* /Users/phil3/Documents/Development/grfx/grfx3/sources/glne3.cpp */; };
+		814D930DE69B4CD1A797BA5B /* /Users/phil3/Documents/Development/grfx/grfx2/headers/gimg.hpp */ = {isa = PBXBuildFile; fileRef = 47C9829B690949B493CD664F /* /Users/phil3/Documents/Development/grfx/grfx2/headers/gimg.hpp */; };
+		828A188909E54ECFBA4B2A6F /* /Users/phil3/Documents/Development/grfx/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 55A8670F6B804C28B2DE8DD5 /* /Users/phil3/Documents/Development/grfx/CMakeLists.txt */; };
+		82EA4B7C4B284A2DB15ED9E7 /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gply.cpp */ = {isa = PBXBuildFile; fileRef = DDE9F90382DD4C019153B6F2 /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gply.cpp */; };
+		8325735A290F4EC686924873 /* /Users/phil3/Documents/Development/grfx/arr/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = A699FE8002AD400CAEBE90C6 /* /Users/phil3/Documents/Development/grfx/arr/CMakeLists.txt */; };
+		83D66E2987BC4BC681967E54 /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gstr.cpp */ = {isa = PBXBuildFile; fileRef = E97AE35F87364E818669268F /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gstr.cpp */; };
+		8446DCF296154DF89B4C44F5 /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/headers/atr2.hpp */ = {isa = PBXBuildFile; fileRef = 14B5E7E63DF94D16BDA7076D /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/headers/atr2.hpp */; };
+		8903661618144A18B7ADD437 /* /Users/phil3/Documents/Development/grfx/grfx3/headers/glne3.hpp */ = {isa = PBXBuildFile; fileRef = B5FD18985D1D4D35B1DE9653 /* /Users/phil3/Documents/Development/grfx/grfx3/headers/glne3.hpp */; };
+		89DACB34D05145139B38ABF6 /* /Users/phil3/Documents/Development/grfx/arr/headers/barr2sub.hpp */ = {isa = PBXBuildFile; fileRef = 7D6AFF547A364616BCF25C69 /* /Users/phil3/Documents/Development/grfx/arr/headers/barr2sub.hpp */; };
+		8A8284A666AF4C1FBBA962D4 /* /Users/phil3/Documents/Development/grfx/grfx3/headers/gpnt3.hpp */ = {isa = PBXBuildFile; fileRef = 54B24CD5DF404F3F8BBF7EF0 /* /Users/phil3/Documents/Development/grfx/grfx3/headers/gpnt3.hpp */; };
+		8D8FF4247CE546CFA8C01D79 /* /Users/phil3/Documents/Development/grfx/weiss/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 69EE0246F68543B096F3A801 /* /Users/phil3/Documents/Development/grfx/weiss/CMakeLists.txt */; };
+		8EFAC4331E434F98957AB741 /* /Users/phil3/Documents/Development/grfx/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = B792E86817CD403BB6A0F957 /* /Users/phil3/Documents/Development/grfx/CMakeLists.txt */; };
+		8FECEA8D2E6D4F4AA673A239 /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gfrm.cpp */ = {isa = PBXBuildFile; fileRef = ECF9B7C9D72B43B18E4301A9 /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gfrm.cpp */; };
+		956D6F01347142E3B92A0C89 /* /Users/phil3/Documents/Development/grfx/arr/sources/darr2slice.cpp */ = {isa = PBXBuildFile; fileRef = 62D270CB26E2410A8C610C45 /* /Users/phil3/Documents/Development/grfx/arr/sources/darr2slice.cpp */; };
+		972E79AB972F4775A8BBE439 /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/headers/crd3.hpp */ = {isa = PBXBuildFile; fileRef = 8374175949E14DBC9257264C /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/headers/crd3.hpp */; };
+		9854A7DACE2741339882B31A /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/headers/trf2.hpp */ = {isa = PBXBuildFile; fileRef = 5C8425DA3B4641D99B90F28C /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/headers/trf2.hpp */; };
+		9B555D0C40984EC49728820E /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gbdy.cpp */ = {isa = PBXBuildFile; fileRef = D990C933AC324040B4B97127 /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gbdy.cpp */; };
+		9CDCD2ECCC774155B1E60E30 /* /Users/phil3/Documents/Development/grfx/grfx2/headers/govl.hpp */ = {isa = PBXBuildFile; fileRef = 8C7E141F1A8240B497A0F52D /* /Users/phil3/Documents/Development/grfx/grfx2/headers/govl.hpp */; };
+		9D137376CE1F47DFB50D7941 /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/headers/scl3.hpp */ = {isa = PBXBuildFile; fileRef = 474F2AC791B84E87AC976FCC /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/headers/scl3.hpp */; };
+		9FC930F91A084CDD8E061661 /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/headers/rtn2.hpp */ = {isa = PBXBuildFile; fileRef = D8B00ABFD71B4AF180DEBE48 /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/headers/rtn2.hpp */; };
+		A31E451D592D4194B23B0C06 /* /Users/phil3/Documents/Development/grfx/arr/sources/barr2slice.cpp */ = {isa = PBXBuildFile; fileRef = CA003231101141D1A178E69E /* /Users/phil3/Documents/Development/grfx/arr/sources/barr2slice.cpp */; };
+		A37575BC0B434BEF9C9DE4F6 /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/headers/pnt2.hpp */ = {isa = PBXBuildFile; fileRef = 555FC5858A3A464DA857DB64 /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/headers/pnt2.hpp */; };
+		A51ADB3EB3484AE1A7E7A951 /* /Users/phil3/Documents/Development/grfx/arr/sources/darr2sub.cpp */ = {isa = PBXBuildFile; fileRef = 179645D4680047F2B7464C97 /* /Users/phil3/Documents/Development/grfx/arr/sources/darr2sub.cpp */; };
+		A56CEB69BC7C4D0A86864437 /* /Users/phil3/Documents/Development/grfx/arr/sources/mth.cpp */ = {isa = PBXBuildFile; fileRef = BB116E491AED476E862C341B /* /Users/phil3/Documents/Development/grfx/arr/sources/mth.cpp */; };
+		A64D9AB2EBDC4807A52EE342 /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/sources/crd2.cpp */ = {isa = PBXBuildFile; fileRef = 36B7AB083F3A457C9B5ACDCF /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/sources/crd2.cpp */; };
+		A712EC6DC9FB4B8CB417E6CA /* /Users/phil3/Documents/Development/grfx/grfx2/headers/glyr.hpp */ = {isa = PBXBuildFile; fileRef = 6A2233FCD4A349ED82ED8FBD /* /Users/phil3/Documents/Development/grfx/grfx2/headers/glyr.hpp */; };
+		A9D55CCFE06344E69BA15CEF /* /Users/phil3/Documents/Development/grfx/grfx3/sources/gpnt3.cpp */ = {isa = PBXBuildFile; fileRef = 59EA1340BE5642E0B4A2568C /* /Users/phil3/Documents/Development/grfx/grfx3/sources/gpnt3.cpp */; };
+		ACD22144824D4A40921A9BA3 /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/sources/pnt2.cpp */ = {isa = PBXBuildFile; fileRef = 9194409EDECE40CB8D0E8139 /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/sources/pnt2.cpp */; };
+		ADC8694ED9D24E0BBD968A43 /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/sources/scl2.cpp */ = {isa = PBXBuildFile; fileRef = 22233D669EFD4EBC818161C0 /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/sources/scl2.cpp */; };
+		AFE0AA293A6A4AF08AA1E22B /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gfgr.cpp */ = {isa = PBXBuildFile; fileRef = 3B55315AE5DD4AF58EA7A2A7 /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gfgr.cpp */; };
+		B089D53C99674E668E941F99 /* /Users/phil3/Documents/Development/grfx/grfx3/grfx3.hpp */ = {isa = PBXBuildFile; fileRef = 7901F17CF382492483508106 /* /Users/phil3/Documents/Development/grfx/grfx3/grfx3.hpp */; };
+		B1211278515E4B3393BF96C5 /* /Users/phil3/Documents/Development/grfx/arr/headers/darr2slice.hpp */ = {isa = PBXBuildFile; fileRef = 3F9121DF2D6F437FAAF0F159 /* /Users/phil3/Documents/Development/grfx/arr/headers/darr2slice.hpp */; };
+		B191A00EDAAB4EB2AB4075B3 /* /Users/phil3/Documents/Development/grfx/arr/headers/barr1.hpp */ = {isa = PBXBuildFile; fileRef = 515CB79FB1FD497F91E8E3EB /* /Users/phil3/Documents/Development/grfx/arr/headers/barr1.hpp */; };
+		B29F36E2CEFC48908E9F387F /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/weiss2.hpp */ = {isa = PBXBuildFile; fileRef = 02B6E5BCEDD541F8A4D1CAD6 /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/weiss2.hpp */; };
+		B5451749786C45D481C19785 /* /Users/phil3/Documents/Development/grfx/arr/sources/arr.cpp */ = {isa = PBXBuildFile; fileRef = 696AEA42118444FAAE8B3E6A /* /Users/phil3/Documents/Development/grfx/arr/sources/arr.cpp */; };
+		BA4E82F4439944B9AACD8D06 /* /Users/phil3/Documents/Development/grfx/tlbx/sources/str.cpp */ = {isa = PBXBuildFile; fileRef = 42F8F3A75323448CB151222A /* /Users/phil3/Documents/Development/grfx/tlbx/sources/str.cpp */; };
+		C035F141F08447A983437174 /* /Users/phil3/Documents/Development/grfx/weiss/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 2D1898F3529A49A19E6C6D7D /* /Users/phil3/Documents/Development/grfx/weiss/CMakeLists.txt */; };
+		C04D3A96BA034BECBF3FE4CD /* /Users/phil3/Documents/Development/grfx/grfx2/headers/grct.hpp */ = {isa = PBXBuildFile; fileRef = 1B5086A4403E49F6B5765D9B /* /Users/phil3/Documents/Development/grfx/grfx2/headers/grct.hpp */; };
+		C1CEDCA16D1A400CA9B2F637 /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/sources/rtn2.cpp */ = {isa = PBXBuildFile; fileRef = A2E93FE6C55547F4BCB13E3B /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/sources/rtn2.cpp */; };
+		C279C0FBA32245A7A532C12F /* /Users/phil3/Documents/Development/grfx/grfx.hpp */ = {isa = PBXBuildFile; fileRef = 0BB8AECBB9F047A6B7D4EEB4 /* /Users/phil3/Documents/Development/grfx/grfx.hpp */; };
+		C2A6629368994C54B3A4D00D /* /Users/phil3/Documents/Development/grfx/tlbx/sources/col.cpp */ = {isa = PBXBuildFile; fileRef = 4D35F07EE7E04C95AA5C888D /* /Users/phil3/Documents/Development/grfx/tlbx/sources/col.cpp */; };
+		C3C901E2DD014284B34DDDE4 /* /Users/phil3/Documents/Development/grfx/arr/arr.hpp */ = {isa = PBXBuildFile; fileRef = 5B35506563244003A27D990B /* /Users/phil3/Documents/Development/grfx/arr/arr.hpp */; };
+		C3CE07775F4D46238FBBCAD2 /* /Users/phil3/Documents/Development/grfx/arr/headers/barr3.hpp */ = {isa = PBXBuildFile; fileRef = 950A0C954E764C56AFC944F4 /* /Users/phil3/Documents/Development/grfx/arr/headers/barr3.hpp */; };
+		C809A894EBF541E3B812E519 /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/headers/trf3.hpp */ = {isa = PBXBuildFile; fileRef = 857021F9887E40249EAB9434 /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/headers/trf3.hpp */; };
+		C97C604FFBDA4F0DA2B86290 /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gbmp.cpp */ = {isa = PBXBuildFile; fileRef = 4CDF35E129014FA0A26291E8 /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gbmp.cpp */; };
+		CC975D8BC97347AEA83540EE /* /Users/phil3/Documents/Development/grfx/grfx2/headers/gbdy.hpp */ = {isa = PBXBuildFile; fileRef = E0CF49892E024075852D26C2 /* /Users/phil3/Documents/Development/grfx/grfx2/headers/gbdy.hpp */; };
+		CE99F9A9DB9A498C93883696 /* /Users/phil3/Documents/Development/grfx/arr/sources/barr1.cpp */ = {isa = PBXBuildFile; fileRef = 66402BBD9EEF46A18B224093 /* /Users/phil3/Documents/Development/grfx/arr/sources/barr1.cpp */; };
+		D0D18A172F4F455FB9047DF5 /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/sources/trf2.cpp */ = {isa = PBXBuildFile; fileRef = 41C3850FBA314192A1FB157D /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/sources/trf2.cpp */; };
+		D3998DFE43104911B8EE9A77 /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/headers/idx3.hpp */ = {isa = PBXBuildFile; fileRef = 0581C4674DFB43D2A1457C6B /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/headers/idx3.hpp */; };
+		D476D079886D401FBED3CA24 /* /Users/phil3/Documents/Development/grfx/grfx2/headers/gidx.hpp */ = {isa = PBXBuildFile; fileRef = 3517AA2FBD7D43D981968053 /* /Users/phil3/Documents/Development/grfx/grfx2/headers/gidx.hpp */; };
+		D491CE10E6B247BFBEB48C1F /* /Users/phil3/Documents/Development/grfx/grfx2/sources/grct.cpp */ = {isa = PBXBuildFile; fileRef = FADF4CC5DC044B738FE16BFD /* /Users/phil3/Documents/Development/grfx/grfx2/sources/grct.cpp */; };
+		D4AA710B529F40B4B688B068 /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/sources/idx3.cpp */ = {isa = PBXBuildFile; fileRef = FA24783A34354573AD15429E /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/sources/idx3.cpp */; };
+		D5AC443155A243CAB2872082 /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/headers/crd2.hpp */ = {isa = PBXBuildFile; fileRef = 0DC676507B5D42199C60EBB5 /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/headers/crd2.hpp */; };
+		D5ED18D571C14F679A4B6A14 /* /Users/phil3/Documents/Development/grfx/grfx2/headers/gpnt.hpp */ = {isa = PBXBuildFile; fileRef = 31E50853CDAE4E29935F0552 /* /Users/phil3/Documents/Development/grfx/grfx2/headers/gpnt.hpp */; };
+		D5F4104B2FCA4A4CACF991AD /* /Users/phil3/Documents/Development/grfx/arr/headers/darr2sub.hpp */ = {isa = PBXBuildFile; fileRef = 8D684626D31246C9869BF02D /* /Users/phil3/Documents/Development/grfx/arr/headers/darr2sub.hpp */; };
+		D740D7960D6A4AF9800E692A /* /Users/phil3/Documents/Development/grfx/grfx2/grfx2.hpp */ = {isa = PBXBuildFile; fileRef = D59754672C32424898644E93 /* /Users/phil3/Documents/Development/grfx/grfx2/grfx2.hpp */; };
+		DAB8299B65C54D0481F3FA4D /* /Users/phil3/Documents/Development/grfx/grfx2/sources/govl.cpp */ = {isa = PBXBuildFile; fileRef = 57289EA76D7B46B8BEF96946 /* /Users/phil3/Documents/Development/grfx/grfx2/sources/govl.cpp */; };
+		DD601D5918844CAEBB6FC7F6 /* /Users/phil3/Documents/Development/grfx/arr/headers/uiarr2.hpp */ = {isa = PBXBuildFile; fileRef = 2AF5AB27DACF4B0D954B5A12 /* /Users/phil3/Documents/Development/grfx/arr/headers/uiarr2.hpp */; };
+		DF0A7824568548A5AD590960 /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/sources/rfn3.cpp */ = {isa = PBXBuildFile; fileRef = FA56857B344A468EA2466A05 /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/sources/rfn3.cpp */; };
+		DF1F8D978C0D4759A35AAFDF /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gcmr.cpp */ = {isa = PBXBuildFile; fileRef = EDAD5FE62D1B401DA11A24B2 /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gcmr.cpp */; };
+		DFACB428F2E04C378F91C71D /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/headers/ags3.hpp */ = {isa = PBXBuildFile; fileRef = AA2481F97D6D4635A30053D0 /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/headers/ags3.hpp */; };
+		E14609445CB542FB88265707 /* /Users/phil3/Documents/Development/grfx/arr/sources/trg.cpp */ = {isa = PBXBuildFile; fileRef = 8D38CFF095DA4D12BC1BBDC9 /* /Users/phil3/Documents/Development/grfx/arr/sources/trg.cpp */; };
+		E17DB8304E9C4D6A930FAC24 /* /Users/phil3/Documents/Development/grfx/arr/examples/examples.cpp */ = {isa = PBXBuildFile; fileRef = 5DAE97A13FE94196A000E20D /* /Users/phil3/Documents/Development/grfx/arr/examples/examples.cpp */; };
+		E2247EF3AB8644EAA74C1FF2 /* /Users/phil3/Documents/Development/grfx/arr/sources/uiarr2.cpp */ = {isa = PBXBuildFile; fileRef = 976257FECF9940E697BF9D86 /* /Users/phil3/Documents/Development/grfx/arr/sources/uiarr2.cpp */; };
+		E49996D32520494BBD292C15 /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gimg.cpp */ = {isa = PBXBuildFile; fileRef = EBF5FEE68C2742F5A2001124 /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gimg.cpp */; };
+		E94D65829E784B51B22E4903 /* /Users/phil3/Documents/Development/grfx/arr/headers/uiarr1.hpp */ = {isa = PBXBuildFile; fileRef = 1555F4761E3A4AA59614D134 /* /Users/phil3/Documents/Development/grfx/arr/headers/uiarr1.hpp */; };
+		EB63B1C2A03E4C2680A5007B /* /Users/phil3/Documents/Development/grfx/grfx2/headers/gvtr.hpp */ = {isa = PBXBuildFile; fileRef = 4CC876598FD74290A9E79E74 /* /Users/phil3/Documents/Development/grfx/grfx2/headers/gvtr.hpp */; };
+		EBC0142FEF584B18988BB310 /* /Users/phil3/Documents/Development/grfx/grfx2/headers/gply.hpp */ = {isa = PBXBuildFile; fileRef = C3901E608C8840C195AE0033 /* /Users/phil3/Documents/Development/grfx/grfx2/headers/gply.hpp */; };
+		F0CA76468F784867A315E2CC /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gidx.cpp */ = {isa = PBXBuildFile; fileRef = C3C1D61DAFCC4C0982006AC5 /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gidx.cpp */; };
+		F4FD035E1DB64C79B91D0E98 /* /Users/phil3/Documents/Development/grfx/arr/sources/uiarr1.cpp */ = {isa = PBXBuildFile; fileRef = AB8BF94BD09248208C06FE1B /* /Users/phil3/Documents/Development/grfx/arr/sources/uiarr1.cpp */; };
+		F542A50ADD694FD4B225881F /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/headers/rtn3.hpp */ = {isa = PBXBuildFile; fileRef = 8C51A8BBC9074E4ABB7347FB /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/headers/rtn3.hpp */; };
+		F65D9EEF671B48E29F151F3E /* /Users/phil3/Documents/Development/grfx/arr/headers/arr2sub.hpp */ = {isa = PBXBuildFile; fileRef = 5A0F26CC25DD4717B3DECEC0 /* /Users/phil3/Documents/Development/grfx/arr/headers/arr2sub.hpp */; };
+		F981386EAD184794B0D1E8B1 /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gpnt.cpp */ = {isa = PBXBuildFile; fileRef = ED34C5772A1E450998174405 /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gpnt.cpp */; };
+		F995DBAA18814EF3A5070746 /* /Users/phil3/Documents/Development/grfx/tlbx/headers/str.hpp */ = {isa = PBXBuildFile; fileRef = 4CF3BFE2E49F4917917119CC /* /Users/phil3/Documents/Development/grfx/tlbx/headers/str.hpp */; };
+		FA20B83D380C44D9A1271CFB /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/sources/crd3.cpp */ = {isa = PBXBuildFile; fileRef = B8C4759850C1448683A42677 /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/sources/crd3.cpp */; };
+		FB7572291DED40AF85190298 /* /Users/phil3/Documents/Development/grfx/arr/sources/barr2sub.cpp */ = {isa = PBXBuildFile; fileRef = 1F3A274624E443B6A7E7380D /* /Users/phil3/Documents/Development/grfx/arr/sources/barr2sub.cpp */; };
+		FDAC85AA77FB4A76AB61D0CF /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/headers/pnt3.hpp */ = {isa = PBXBuildFile; fileRef = D4CC72F161BF442E91FF7F3C /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/headers/pnt3.hpp */; };
+		FDB609F97E8649CB90DCE6EA /* /Users/phil3/Documents/Development/grfx/arr/examples/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 05ED2C2F900647A58C588A62 /* /Users/phil3/Documents/Development/grfx/arr/examples/CMakeLists.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		81F09CD542AC4C02B47D377A /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		A59C371F08F84AEDA9132208 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		AE4B2CCD54F34BCEA8FE731C /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		CCA3E87392F1454E90E43613 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		014FD385D6814ACB9E5BD03C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7040A1951EA6441D9061FB24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C8D836B57B5425EA1FE3530;
+			remoteInfo = tlbx;
+		};
+		0826FC132CCB49A0AAD7070F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7040A1951EA6441D9061FB24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 138EB76C7C814DB3BA3F81FF;
+			remoteInfo = arr;
+		};
+		0D9F6EF48A28435DB90E7F2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7040A1951EA6441D9061FB24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C8D836B57B5425EA1FE3530;
+			remoteInfo = tlbx;
+		};
+		11BD0FEB7CE54CADA693E237 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7040A1951EA6441D9061FB24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB873B60AEEA4B30AEBFCBAB;
+			remoteInfo = examples;
+		};
+		16DE9B74004C488DB2E0B129 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7040A1951EA6441D9061FB24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C8D836B57B5425EA1FE3530;
+			remoteInfo = tlbx;
+		};
+		185B04AD9FB74EFBB2F9E199 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7040A1951EA6441D9061FB24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 138EB76C7C814DB3BA3F81FF;
+			remoteInfo = arr;
+		};
+		26BA6A1A745D416F9C7C69CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7040A1951EA6441D9061FB24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C78B583444B4EA3A80C4938;
+			remoteInfo = ZERO_CHECK;
+		};
+		29F29961A4714EE68B7A73E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7040A1951EA6441D9061FB24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 138EB76C7C814DB3BA3F81FF;
+			remoteInfo = arr;
+		};
+		2A3A7B2DE6FB4879BE163DBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7040A1951EA6441D9061FB24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 138EB76C7C814DB3BA3F81FF;
+			remoteInfo = arr;
+		};
+		4E65EE7C0247409194B28EC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7040A1951EA6441D9061FB24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA9788DA22924699B62E0917;
+			remoteInfo = weiss2;
+		};
+		50EDB727108E41AD8AAFB871 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7040A1951EA6441D9061FB24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 138EB76C7C814DB3BA3F81FF;
+			remoteInfo = arr;
+		};
+		5514A4D3AB4F4D2EAECA6573 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7040A1951EA6441D9061FB24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E7043ECA22D45D4BABA1DA2;
+			remoteInfo = weiss;
+		};
+		6039C4135A7340DE83057397 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7040A1951EA6441D9061FB24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C78B583444B4EA3A80C4938;
+			remoteInfo = ZERO_CHECK;
+		};
+		636CBBFBDC4043EDA0F274A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7040A1951EA6441D9061FB24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32D80BF4BB1D47468AEB845B;
+			remoteInfo = weiss3;
+		};
+		691B1A7BB29B41F5BE9A5F4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7040A1951EA6441D9061FB24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C8D836B57B5425EA1FE3530;
+			remoteInfo = tlbx;
+		};
+		6B5040F67ABC455AB1E873EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7040A1951EA6441D9061FB24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E7043ECA22D45D4BABA1DA2;
+			remoteInfo = weiss;
+		};
+		7CD120315D73475BA3ABFDF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7040A1951EA6441D9061FB24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C78B583444B4EA3A80C4938;
+			remoteInfo = ZERO_CHECK;
+		};
+		84921AEF72494EE88AEC5A0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7040A1951EA6441D9061FB24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E13B695D7B534B8BA7369EF0;
+			remoteInfo = grfx3;
+		};
+		9023BF6D3E864578AE52A468 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7040A1951EA6441D9061FB24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32D80BF4BB1D47468AEB845B;
+			remoteInfo = weiss3;
+		};
+		94DFB3F755B944568B6A20D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7040A1951EA6441D9061FB24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E7043ECA22D45D4BABA1DA2;
+			remoteInfo = weiss;
+		};
+		96C457B34B214B0F95046A47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7040A1951EA6441D9061FB24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C8D836B57B5425EA1FE3530;
+			remoteInfo = tlbx;
+		};
+		9829D25124CC484FA5957C1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7040A1951EA6441D9061FB24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E13B695D7B534B8BA7369EF0;
+			remoteInfo = grfx3;
+		};
+		98D1E0AB26F541D691073580 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7040A1951EA6441D9061FB24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 138EB76C7C814DB3BA3F81FF;
+			remoteInfo = arr;
+		};
+		A2236C80EB6D4BEC97272808 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7040A1951EA6441D9061FB24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C8D836B57B5425EA1FE3530;
+			remoteInfo = tlbx;
+		};
+		A899C751EDF6448F9D9E5CAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7040A1951EA6441D9061FB24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32D80BF4BB1D47468AEB845B;
+			remoteInfo = weiss3;
+		};
+		AEBA2060253D4F0DAF1BEF23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7040A1951EA6441D9061FB24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 861623BDFD374A959537B1AB;
+			remoteInfo = grfx;
+		};
+		B624227165AB4539B0593A55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7040A1951EA6441D9061FB24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2178968EE03D4015BD148EB0;
+			remoteInfo = grfx2;
+		};
+		B79E4255F6294F44877A04E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7040A1951EA6441D9061FB24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 138EB76C7C814DB3BA3F81FF;
+			remoteInfo = arr;
+		};
+		C398A99B7E80412282C1B210 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7040A1951EA6441D9061FB24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2178968EE03D4015BD148EB0;
+			remoteInfo = grfx2;
+		};
+		C8C351CF16744DFD8143C64A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7040A1951EA6441D9061FB24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C8D836B57B5425EA1FE3530;
+			remoteInfo = tlbx;
+		};
+		CAF90F3D1A9544CEA122FE23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7040A1951EA6441D9061FB24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA9788DA22924699B62E0917;
+			remoteInfo = weiss2;
+		};
+		CB00A496EC064B529C4101F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7040A1951EA6441D9061FB24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA9788DA22924699B62E0917;
+			remoteInfo = weiss2;
+		};
+		E25C9807865F4D6AAEDCA8DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7040A1951EA6441D9061FB24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 138EB76C7C814DB3BA3F81FF;
+			remoteInfo = arr;
+		};
+		E4300F7A25CA40BFAEF01D29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7040A1951EA6441D9061FB24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA9788DA22924699B62E0917;
+			remoteInfo = weiss2;
+		};
+		E45455A0FF434B3399CC7FF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7040A1951EA6441D9061FB24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C8D836B57B5425EA1FE3530;
+			remoteInfo = tlbx;
+		};
+		F135AC0A7AB8461EA9847456 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7040A1951EA6441D9061FB24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C78B583444B4EA3A80C4938;
+			remoteInfo = ZERO_CHECK;
+		};
+		F13C4C420BE24CEEA2B98297 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7040A1951EA6441D9061FB24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C8D836B57B5425EA1FE3530;
+			remoteInfo = tlbx;
+		};
+		F331C585392B4F29AA09E88D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7040A1951EA6441D9061FB24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32D80BF4BB1D47468AEB845B;
+			remoteInfo = weiss3;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		005948AECAA34EEB9EB4651E /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/sources/atr2.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = atr2.cpp; path = weiss/weiss2/sources/atr2.cpp; sourceTree = SOURCE_ROOT; };
+		00D8714E615F447EB1EF4B5D /* weiss */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libweiss.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		022CD4D4BA7B44A0BB281D08 /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/headers/bas3.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = bas3.hpp; path = weiss/weiss3/headers/bas3.hpp; sourceTree = SOURCE_ROOT; };
+		02B6E5BCEDD541F8A4D1CAD6 /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/weiss2.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = weiss2.hpp; path = weiss/weiss2/weiss2.hpp; sourceTree = SOURCE_ROOT; };
+		0581C4674DFB43D2A1457C6B /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/headers/idx3.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = idx3.hpp; path = weiss/weiss3/headers/idx3.hpp; sourceTree = SOURCE_ROOT; };
+		05ED2C2F900647A58C588A62 /* /Users/phil3/Documents/Development/grfx/arr/examples/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = arr/examples/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		08EB05C341454517BB812B82 /* /Users/phil3/Documents/Development/grfx/arr/headers/arr2.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = arr2.hpp; path = arr/headers/arr2.hpp; sourceTree = SOURCE_ROOT; };
+		0BB8AECBB9F047A6B7D4EEB4 /* /Users/phil3/Documents/Development/grfx/grfx.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = grfx.hpp; path = grfx.hpp; sourceTree = SOURCE_ROOT; };
+		0DC676507B5D42199C60EBB5 /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/headers/crd2.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = crd2.hpp; path = weiss/weiss2/headers/crd2.hpp; sourceTree = SOURCE_ROOT; };
+		0F2D7A4B56894FEA8529C17C /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/headers/atr3.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = atr3.hpp; path = weiss/weiss3/headers/atr3.hpp; sourceTree = SOURCE_ROOT; };
+		14B5E7E63DF94D16BDA7076D /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/headers/atr2.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = atr2.hpp; path = weiss/weiss2/headers/atr2.hpp; sourceTree = SOURCE_ROOT; };
+		14DC0A7CF64146EE9FA8E0CA /* grfx */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libgrfx.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1555F4761E3A4AA59614D134 /* /Users/phil3/Documents/Development/grfx/arr/headers/uiarr1.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = uiarr1.hpp; path = arr/headers/uiarr1.hpp; sourceTree = SOURCE_ROOT; };
+		16B31009DB4C48DCB37169B7 /* grfx3 */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libgrfx3.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		179645D4680047F2B7464C97 /* /Users/phil3/Documents/Development/grfx/arr/sources/darr2sub.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = darr2sub.cpp; path = arr/sources/darr2sub.cpp; sourceTree = SOURCE_ROOT; };
+		1B5086A4403E49F6B5765D9B /* /Users/phil3/Documents/Development/grfx/grfx2/headers/grct.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = grct.hpp; path = grfx2/headers/grct.hpp; sourceTree = SOURCE_ROOT; };
+		1F3A274624E443B6A7E7380D /* /Users/phil3/Documents/Development/grfx/arr/sources/barr2sub.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = barr2sub.cpp; path = arr/sources/barr2sub.cpp; sourceTree = SOURCE_ROOT; };
+		20D7C5776366402A9F2D7796 /* /Users/phil3/Documents/Development/grfx/weiss/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = weiss/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		22233D669EFD4EBC818161C0 /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/sources/scl2.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = scl2.cpp; path = weiss/weiss2/sources/scl2.cpp; sourceTree = SOURCE_ROOT; };
+		24E4DA8AF02247ABB58B0882 /* /Users/phil3/Documents/Development/grfx/grfx2/headers/glne.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = glne.hpp; path = grfx2/headers/glne.hpp; sourceTree = SOURCE_ROOT; };
+		25C66630F96B4CDAB5AF3949 /* weiss2 */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libweiss2.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2699E31925594B89A06EDFC2 /* /Users/phil3/Documents/Development/grfx/grfx3/sources/gfrm3.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = gfrm3.cpp; path = grfx3/sources/gfrm3.cpp; sourceTree = SOURCE_ROOT; };
+		2AF5AB27DACF4B0D954B5A12 /* /Users/phil3/Documents/Development/grfx/arr/headers/uiarr2.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = uiarr2.hpp; path = arr/headers/uiarr2.hpp; sourceTree = SOURCE_ROOT; };
+		2C171BF93E6E4A2E8B39DE30 /* grfx2 */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libgrfx2.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D1898F3529A49A19E6C6D7D /* /Users/phil3/Documents/Development/grfx/weiss/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = weiss/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		31E50853CDAE4E29935F0552 /* /Users/phil3/Documents/Development/grfx/grfx2/headers/gpnt.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = gpnt.hpp; path = grfx2/headers/gpnt.hpp; sourceTree = SOURCE_ROOT; };
+		332BC718A4C848F3B8015015 /* /Users/phil3/Documents/Development/grfx/grfx3/grfx3.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = grfx3.hpp; path = grfx3/grfx3.hpp; sourceTree = SOURCE_ROOT; };
+		3517AA2FBD7D43D981968053 /* /Users/phil3/Documents/Development/grfx/grfx2/headers/gidx.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = gidx.hpp; path = grfx2/headers/gidx.hpp; sourceTree = SOURCE_ROOT; };
+		36B7AB083F3A457C9B5ACDCF /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/sources/crd2.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = crd2.cpp; path = weiss/weiss2/sources/crd2.cpp; sourceTree = SOURCE_ROOT; };
+		38D452DF115444B194440436 /* /Users/phil3/Documents/Development/grfx/arr/sources/barr2.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = barr2.cpp; path = arr/sources/barr2.cpp; sourceTree = SOURCE_ROOT; };
+		38F736F10D2644CDBBFA5BB8 /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/sources/ags3.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ags3.cpp; path = weiss/weiss3/sources/ags3.cpp; sourceTree = SOURCE_ROOT; };
+		3B55315AE5DD4AF58EA7A2A7 /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gfgr.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = gfgr.cpp; path = grfx2/sources/gfgr.cpp; sourceTree = SOURCE_ROOT; };
+		3D9310E2559E47CE8345A03E /* weiss3 */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libweiss3.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F9121DF2D6F437FAAF0F159 /* /Users/phil3/Documents/Development/grfx/arr/headers/darr2slice.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = darr2slice.hpp; path = arr/headers/darr2slice.hpp; sourceTree = SOURCE_ROOT; };
+		41C3850FBA314192A1FB157D /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/sources/trf2.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = trf2.cpp; path = weiss/weiss2/sources/trf2.cpp; sourceTree = SOURCE_ROOT; };
+		42F8F3A75323448CB151222A /* /Users/phil3/Documents/Development/grfx/tlbx/sources/str.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = str.cpp; path = tlbx/sources/str.cpp; sourceTree = SOURCE_ROOT; };
+		460DC44499814553B12F32DE /* /Users/phil3/Documents/Development/grfx/grfx2/headers/gcrd.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = gcrd.hpp; path = grfx2/headers/gcrd.hpp; sourceTree = SOURCE_ROOT; };
+		474F2AC791B84E87AC976FCC /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/headers/scl3.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = scl3.hpp; path = weiss/weiss3/headers/scl3.hpp; sourceTree = SOURCE_ROOT; };
+		47C9829B690949B493CD664F /* /Users/phil3/Documents/Development/grfx/grfx2/headers/gimg.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = gimg.hpp; path = grfx2/headers/gimg.hpp; sourceTree = SOURCE_ROOT; };
+		4859407BFBA748FA9EE2005D /* /Users/phil3/Documents/Development/grfx/arr/headers/arr3.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = arr3.hpp; path = arr/headers/arr3.hpp; sourceTree = SOURCE_ROOT; };
+		49C061DE07FB4FAFAC44D598 /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/sources/atr3.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = atr3.cpp; path = weiss/weiss3/sources/atr3.cpp; sourceTree = SOURCE_ROOT; };
+		4B44A2FBE4024DF79F86385D /* /Users/phil3/Documents/Development/grfx/arr/headers/barr2slice.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = barr2slice.hpp; path = arr/headers/barr2slice.hpp; sourceTree = SOURCE_ROOT; };
+		4CC876598FD74290A9E79E74 /* /Users/phil3/Documents/Development/grfx/grfx2/headers/gvtr.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = gvtr.hpp; path = grfx2/headers/gvtr.hpp; sourceTree = SOURCE_ROOT; };
+		4CDF35E129014FA0A26291E8 /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gbmp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = gbmp.cpp; path = grfx2/sources/gbmp.cpp; sourceTree = SOURCE_ROOT; };
+		4CF3BFE2E49F4917917119CC /* /Users/phil3/Documents/Development/grfx/tlbx/headers/str.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = str.hpp; path = tlbx/headers/str.hpp; sourceTree = SOURCE_ROOT; };
+		4D35F07EE7E04C95AA5C888D /* /Users/phil3/Documents/Development/grfx/tlbx/sources/col.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = col.cpp; path = tlbx/sources/col.cpp; sourceTree = SOURCE_ROOT; };
+		515CB79FB1FD497F91E8E3EB /* /Users/phil3/Documents/Development/grfx/arr/headers/barr1.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = barr1.hpp; path = arr/headers/barr1.hpp; sourceTree = SOURCE_ROOT; };
+		54B24CD5DF404F3F8BBF7EF0 /* /Users/phil3/Documents/Development/grfx/grfx3/headers/gpnt3.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = gpnt3.hpp; path = grfx3/headers/gpnt3.hpp; sourceTree = SOURCE_ROOT; };
+		555FC5858A3A464DA857DB64 /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/headers/pnt2.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = pnt2.hpp; path = weiss/weiss2/headers/pnt2.hpp; sourceTree = SOURCE_ROOT; };
+		55A8670F6B804C28B2DE8DD5 /* /Users/phil3/Documents/Development/grfx/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		5713E558373E49E3904DA2DF /* /Users/phil3/Documents/Development/grfx/arr/headers/darr2.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = darr2.hpp; path = arr/headers/darr2.hpp; sourceTree = SOURCE_ROOT; };
+		57289EA76D7B46B8BEF96946 /* /Users/phil3/Documents/Development/grfx/grfx2/sources/govl.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = govl.cpp; path = grfx2/sources/govl.cpp; sourceTree = SOURCE_ROOT; };
+		57703624AD6E44EA81094FE4 /* examples */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = examples; sourceTree = BUILT_PRODUCTS_DIR; };
+		59EA1340BE5642E0B4A2568C /* /Users/phil3/Documents/Development/grfx/grfx3/sources/gpnt3.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = gpnt3.cpp; path = grfx3/sources/gpnt3.cpp; sourceTree = SOURCE_ROOT; };
+		5A0F26CC25DD4717B3DECEC0 /* /Users/phil3/Documents/Development/grfx/arr/headers/arr2sub.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = arr2sub.hpp; path = arr/headers/arr2sub.hpp; sourceTree = SOURCE_ROOT; };
+		5B35506563244003A27D990B /* /Users/phil3/Documents/Development/grfx/arr/arr.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = arr.hpp; path = arr/arr.hpp; sourceTree = SOURCE_ROOT; };
+		5C8425DA3B4641D99B90F28C /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/headers/trf2.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = trf2.hpp; path = weiss/weiss2/headers/trf2.hpp; sourceTree = SOURCE_ROOT; };
+		5DAE97A13FE94196A000E20D /* /Users/phil3/Documents/Development/grfx/arr/examples/examples.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = examples.cpp; path = arr/examples/examples.cpp; sourceTree = SOURCE_ROOT; };
+		62D270CB26E2410A8C610C45 /* /Users/phil3/Documents/Development/grfx/arr/sources/darr2slice.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = darr2slice.cpp; path = arr/sources/darr2slice.cpp; sourceTree = SOURCE_ROOT; };
+		6355845850AB4A749CCA4745 /* /Users/phil3/Documents/Development/grfx/tlbx/tlbx.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = tlbx.hpp; path = tlbx/tlbx.hpp; sourceTree = SOURCE_ROOT; };
+		6488D31DE96C474594A46474 /* /Users/phil3/Documents/Development/grfx/tlbx/headers/col.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = col.hpp; path = tlbx/headers/col.hpp; sourceTree = SOURCE_ROOT; };
+		66402BBD9EEF46A18B224093 /* /Users/phil3/Documents/Development/grfx/arr/sources/barr1.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = barr1.cpp; path = arr/sources/barr1.cpp; sourceTree = SOURCE_ROOT; };
+		6790DD0CA62E451FBAEA64B1 /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/sources/vtr3.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = vtr3.cpp; path = weiss/weiss3/sources/vtr3.cpp; sourceTree = SOURCE_ROOT; };
+		696AEA42118444FAAE8B3E6A /* /Users/phil3/Documents/Development/grfx/arr/sources/arr.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = arr.cpp; path = arr/sources/arr.cpp; sourceTree = SOURCE_ROOT; };
+		69EE0246F68543B096F3A801 /* /Users/phil3/Documents/Development/grfx/weiss/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = weiss/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		6A2233FCD4A349ED82ED8FBD /* /Users/phil3/Documents/Development/grfx/grfx2/headers/glyr.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = glyr.hpp; path = grfx2/headers/glyr.hpp; sourceTree = SOURCE_ROOT; };
+		75EFE27AB8F04B828480156B /* /Users/phil3/Documents/Development/grfx/grfx3/sources/glne3.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = glne3.cpp; path = grfx3/sources/glne3.cpp; sourceTree = SOURCE_ROOT; };
+		7901F17CF382492483508106 /* /Users/phil3/Documents/Development/grfx/grfx3/grfx3.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = grfx3.hpp; path = grfx3/grfx3.hpp; sourceTree = SOURCE_ROOT; };
+		7D509E58E1174A238A76BF62 /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/sources/vtr2.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = vtr2.cpp; path = weiss/weiss2/sources/vtr2.cpp; sourceTree = SOURCE_ROOT; };
+		7D6AFF547A364616BCF25C69 /* /Users/phil3/Documents/Development/grfx/arr/headers/barr2sub.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = barr2sub.hpp; path = arr/headers/barr2sub.hpp; sourceTree = SOURCE_ROOT; };
+		7DC30D6E677B4D8CBAC42ECC /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/weiss3.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = weiss3.hpp; path = weiss/weiss3/weiss3.hpp; sourceTree = SOURCE_ROOT; };
+		8028CC9E28994D16AD7D08BB /* /Users/phil3/Documents/Development/grfx/tlbx/headers/mth.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = mth.hpp; path = tlbx/headers/mth.hpp; sourceTree = SOURCE_ROOT; };
+		81DD837340C64F37AF4F45FE /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gvtr.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = gvtr.cpp; path = grfx2/sources/gvtr.cpp; sourceTree = SOURCE_ROOT; };
+		8374175949E14DBC9257264C /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/headers/crd3.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = crd3.hpp; path = weiss/weiss3/headers/crd3.hpp; sourceTree = SOURCE_ROOT; };
+		843BC4455BE0467DA2E7442C /* /Users/phil3/Documents/Development/grfx/arr/headers/arr1.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = arr1.hpp; path = arr/headers/arr1.hpp; sourceTree = SOURCE_ROOT; };
+		857021F9887E40249EAB9434 /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/headers/trf3.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = trf3.hpp; path = weiss/weiss3/headers/trf3.hpp; sourceTree = SOURCE_ROOT; };
+		87A181CF7F824D3583A46BF3 /* /Users/phil3/Documents/Development/grfx/grfx2/sources/glyr.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = glyr.cpp; path = grfx2/sources/glyr.cpp; sourceTree = SOURCE_ROOT; };
+		8BB464ACFC35410DB10CAB67 /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gctx.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = gctx.cpp; path = grfx2/sources/gctx.cpp; sourceTree = SOURCE_ROOT; };
+		8C51A8BBC9074E4ABB7347FB /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/headers/rtn3.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = rtn3.hpp; path = weiss/weiss3/headers/rtn3.hpp; sourceTree = SOURCE_ROOT; };
+		8C7E141F1A8240B497A0F52D /* /Users/phil3/Documents/Development/grfx/grfx2/headers/govl.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = govl.hpp; path = grfx2/headers/govl.hpp; sourceTree = SOURCE_ROOT; };
+		8C8738D29E7A4570B5B15043 /* /Users/phil3/Documents/Development/grfx/grfx3/headers/gfrm3.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = gfrm3.hpp; path = grfx3/headers/gfrm3.hpp; sourceTree = SOURCE_ROOT; };
+		8D38CFF095DA4D12BC1BBDC9 /* /Users/phil3/Documents/Development/grfx/arr/sources/trg.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = trg.cpp; path = arr/sources/trg.cpp; sourceTree = SOURCE_ROOT; };
+		8D684626D31246C9869BF02D /* /Users/phil3/Documents/Development/grfx/arr/headers/darr2sub.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = darr2sub.hpp; path = arr/headers/darr2sub.hpp; sourceTree = SOURCE_ROOT; };
+		8E102781D05742578CB84112 /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/headers/scl2.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = scl2.hpp; path = weiss/weiss2/headers/scl2.hpp; sourceTree = SOURCE_ROOT; };
+		9194409EDECE40CB8D0E8139 /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/sources/pnt2.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = pnt2.cpp; path = weiss/weiss2/sources/pnt2.cpp; sourceTree = SOURCE_ROOT; };
+		93172C1031CF4296B28E00A7 /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/headers/vtr2.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = vtr2.hpp; path = weiss/weiss2/headers/vtr2.hpp; sourceTree = SOURCE_ROOT; };
+		950A0C954E764C56AFC944F4 /* /Users/phil3/Documents/Development/grfx/arr/headers/barr3.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = barr3.hpp; path = arr/headers/barr3.hpp; sourceTree = SOURCE_ROOT; };
+		95DE1734310541498A5F34A0 /* /Users/phil3/Documents/Development/grfx/grfx2/headers/gstr.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = gstr.hpp; path = grfx2/headers/gstr.hpp; sourceTree = SOURCE_ROOT; };
+		976257FECF9940E697BF9D86 /* /Users/phil3/Documents/Development/grfx/arr/sources/uiarr2.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = uiarr2.cpp; path = arr/sources/uiarr2.cpp; sourceTree = SOURCE_ROOT; };
+		9B49FB7438EE4B10ABF8A535 /* /Users/phil3/Documents/Development/grfx/grfx2/headers/gcmr.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = gcmr.hpp; path = grfx2/headers/gcmr.hpp; sourceTree = SOURCE_ROOT; };
+		9F8E06ED3B564E8EB04F1729 /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/sources/pnt3.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = pnt3.cpp; path = weiss/weiss3/sources/pnt3.cpp; sourceTree = SOURCE_ROOT; };
+		A1EC5018802942418603EA26 /* /Users/phil3/Documents/Development/grfx/tlbx/headers/trg.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = trg.hpp; path = tlbx/headers/trg.hpp; sourceTree = SOURCE_ROOT; };
+		A264A4D855514A6ABF8615AE /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gcrd.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = gcrd.cpp; path = grfx2/sources/gcrd.cpp; sourceTree = SOURCE_ROOT; };
+		A2E93FE6C55547F4BCB13E3B /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/sources/rtn2.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = rtn2.cpp; path = weiss/weiss2/sources/rtn2.cpp; sourceTree = SOURCE_ROOT; };
+		A3B4578A777645CFB08DA56D /* /Users/phil3/Documents/Development/grfx/weiss/weiss.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = weiss.hpp; path = weiss/weiss.hpp; sourceTree = SOURCE_ROOT; };
+		A4336DC018C44E65B9E40874 /* /Users/phil3/Documents/Development/grfx/arr/headers/darr1.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = darr1.hpp; path = arr/headers/darr1.hpp; sourceTree = SOURCE_ROOT; };
+		A4341FB2346E4C70BEAB9818 /* /Users/phil3/Documents/Development/grfx/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		A699FE8002AD400CAEBE90C6 /* /Users/phil3/Documents/Development/grfx/arr/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = arr/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		A6BC9A9EE15E41E4AED11C01 /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/headers/vtr3.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = vtr3.hpp; path = weiss/weiss3/headers/vtr3.hpp; sourceTree = SOURCE_ROOT; };
+		AA2481F97D6D4635A30053D0 /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/headers/ags3.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = ags3.hpp; path = weiss/weiss3/headers/ags3.hpp; sourceTree = SOURCE_ROOT; };
+		AB8BF94BD09248208C06FE1B /* /Users/phil3/Documents/Development/grfx/arr/sources/uiarr1.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = uiarr1.cpp; path = arr/sources/uiarr1.cpp; sourceTree = SOURCE_ROOT; };
+		AE6B8CF720BB453A918F423D /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/sources/trf3.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = trf3.cpp; path = weiss/weiss3/sources/trf3.cpp; sourceTree = SOURCE_ROOT; };
+		B5FD18985D1D4D35B1DE9653 /* /Users/phil3/Documents/Development/grfx/grfx3/headers/glne3.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = glne3.hpp; path = grfx3/headers/glne3.hpp; sourceTree = SOURCE_ROOT; };
+		B65E8106772544C8A72B725D /* /Users/phil3/Documents/Development/grfx/tlbx/sources/trg.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = trg.cpp; path = tlbx/sources/trg.cpp; sourceTree = SOURCE_ROOT; };
+		B792E86817CD403BB6A0F957 /* /Users/phil3/Documents/Development/grfx/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		B7CCC9420B9E4AA291C693E7 /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/weiss3.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = weiss3.hpp; path = weiss/weiss3/weiss3.hpp; sourceTree = SOURCE_ROOT; };
+		B84FABA9B3684FB4966B00F3 /* /Users/phil3/Documents/Development/grfx/arr/sources/darr1.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = darr1.cpp; path = arr/sources/darr1.cpp; sourceTree = SOURCE_ROOT; };
+		B87B94406EB24565A83E88A0 /* tlbx */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libtlbx.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8C4759850C1448683A42677 /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/sources/crd3.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = crd3.cpp; path = weiss/weiss3/sources/crd3.cpp; sourceTree = SOURCE_ROOT; };
+		BB116E491AED476E862C341B /* /Users/phil3/Documents/Development/grfx/arr/sources/mth.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = mth.cpp; path = arr/sources/mth.cpp; sourceTree = SOURCE_ROOT; };
+		BED39B9970654EC1BBF60365 /* /Users/phil3/Documents/Development/grfx/grfx2/grfx2.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = grfx2.hpp; path = grfx2/grfx2.hpp; sourceTree = SOURCE_ROOT; };
+		C0ED9E42406540D5981AE98A /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/weiss2.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = weiss2.hpp; path = weiss/weiss2/weiss2.hpp; sourceTree = SOURCE_ROOT; };
+		C37C4571FC45409AB219DCFB /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/sources/rtn3.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = rtn3.cpp; path = weiss/weiss3/sources/rtn3.cpp; sourceTree = SOURCE_ROOT; };
+		C3901E608C8840C195AE0033 /* /Users/phil3/Documents/Development/grfx/grfx2/headers/gply.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = gply.hpp; path = grfx2/headers/gply.hpp; sourceTree = SOURCE_ROOT; };
+		C3C1D61DAFCC4C0982006AC5 /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gidx.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = gidx.cpp; path = grfx2/sources/gidx.cpp; sourceTree = SOURCE_ROOT; };
+		C6ECAAF0DF994A808661F3AB /* /Users/phil3/Documents/Development/grfx/grfx2/headers/gctx.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = gctx.hpp; path = grfx2/headers/gctx.hpp; sourceTree = SOURCE_ROOT; };
+		C94140F2968049038AE64F7C /* /Users/phil3/Documents/Development/grfx/grfx2/sources/glne.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = glne.cpp; path = grfx2/sources/glne.cpp; sourceTree = SOURCE_ROOT; };
+		CA003231101141D1A178E69E /* /Users/phil3/Documents/Development/grfx/arr/sources/barr2slice.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = barr2slice.cpp; path = arr/sources/barr2slice.cpp; sourceTree = SOURCE_ROOT; };
+		D4CC72F161BF442E91FF7F3C /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/headers/pnt3.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = pnt3.hpp; path = weiss/weiss3/headers/pnt3.hpp; sourceTree = SOURCE_ROOT; };
+		D59754672C32424898644E93 /* /Users/phil3/Documents/Development/grfx/grfx2/grfx2.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = grfx2.hpp; path = grfx2/grfx2.hpp; sourceTree = SOURCE_ROOT; };
+		D66ED534F4C845139CAB5646 /* arr */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libarr.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D89FAFAD294B4914BFBA95E7 /* /Users/phil3/Documents/Development/grfx/arr/headers/arr2slice.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = arr2slice.hpp; path = arr/headers/arr2slice.hpp; sourceTree = SOURCE_ROOT; };
+		D8B00ABFD71B4AF180DEBE48 /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/headers/rtn2.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = rtn2.hpp; path = weiss/weiss2/headers/rtn2.hpp; sourceTree = SOURCE_ROOT; };
+		D9464B0949654C9E93482307 /* /Users/phil3/Documents/Development/grfx/arr/headers/barr2.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = barr2.hpp; path = arr/headers/barr2.hpp; sourceTree = SOURCE_ROOT; };
+		D990C933AC324040B4B97127 /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gbdy.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = gbdy.cpp; path = grfx2/sources/gbdy.cpp; sourceTree = SOURCE_ROOT; };
+		DAA8FBCD47FC4CC281388863 /* /Users/phil3/Documents/Development/grfx/grfx2/headers/gfgr.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = gfgr.hpp; path = grfx2/headers/gfgr.hpp; sourceTree = SOURCE_ROOT; };
+		DAFA0777FCBF43ECB897FB91 /* /Users/phil3/Documents/Development/grfx/tlbx/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = tlbx/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		DBCB00E11F994D968023EA66 /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/sources/scl3.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = scl3.cpp; path = weiss/weiss3/sources/scl3.cpp; sourceTree = SOURCE_ROOT; };
+		DDC60BEF77414816853DCA79 /* /Users/phil3/Documents/Development/grfx/tlbx/sources/mth.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = mth.cpp; path = tlbx/sources/mth.cpp; sourceTree = SOURCE_ROOT; };
+		DDE9F90382DD4C019153B6F2 /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gply.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = gply.cpp; path = grfx2/sources/gply.cpp; sourceTree = SOURCE_ROOT; };
+		DF714BA08D5D4F78A44251C6 /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/headers/rfn3.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = rfn3.hpp; path = weiss/weiss3/headers/rfn3.hpp; sourceTree = SOURCE_ROOT; };
+		E0CF49892E024075852D26C2 /* /Users/phil3/Documents/Development/grfx/grfx2/headers/gbdy.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = gbdy.hpp; path = grfx2/headers/gbdy.hpp; sourceTree = SOURCE_ROOT; };
+		E97AE35F87364E818669268F /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gstr.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = gstr.cpp; path = grfx2/sources/gstr.cpp; sourceTree = SOURCE_ROOT; };
+		EBF5FEE68C2742F5A2001124 /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gimg.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = gimg.cpp; path = grfx2/sources/gimg.cpp; sourceTree = SOURCE_ROOT; };
+		ECF9B7C9D72B43B18E4301A9 /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gfrm.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = gfrm.cpp; path = grfx2/sources/gfrm.cpp; sourceTree = SOURCE_ROOT; };
+		ED34C5772A1E450998174405 /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gpnt.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = gpnt.cpp; path = grfx2/sources/gpnt.cpp; sourceTree = SOURCE_ROOT; };
+		EDAD5FE62D1B401DA11A24B2 /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gcmr.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = gcmr.cpp; path = grfx2/sources/gcmr.cpp; sourceTree = SOURCE_ROOT; };
+		EE975E298ED747989B311D52 /* /Users/phil3/Documents/Development/grfx/grfx2/headers/gbmp.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = gbmp.hpp; path = grfx2/headers/gbmp.hpp; sourceTree = SOURCE_ROOT; };
+		F08DE7EE9E384D4C9CABF8F5 /* /Users/phil3/Documents/Development/grfx/grfx2/headers/gfrm.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = gfrm.hpp; path = grfx2/headers/gfrm.hpp; sourceTree = SOURCE_ROOT; };
+		F2ECD73CEA264D518CC72050 /* /Users/phil3/Documents/Development/grfx/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		F478B7F898734B909B9156E2 /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/sources/bas3.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = bas3.cpp; path = weiss/weiss3/sources/bas3.cpp; sourceTree = SOURCE_ROOT; };
+		FA24783A34354573AD15429E /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/sources/idx3.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = idx3.cpp; path = weiss/weiss3/sources/idx3.cpp; sourceTree = SOURCE_ROOT; };
+		FA56857B344A468EA2466A05 /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/sources/rfn3.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = rfn3.cpp; path = weiss/weiss3/sources/rfn3.cpp; sourceTree = SOURCE_ROOT; };
+		FADF4CC5DC044B738FE16BFD /* /Users/phil3/Documents/Development/grfx/grfx2/sources/grct.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = grct.cpp; path = grfx2/sources/grct.cpp; sourceTree = SOURCE_ROOT; };
+		FEF73ED8635B43EBA75E9C3E /* /Users/phil3/Documents/Development/grfx/arr/sources/barr3.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = barr3.cpp; path = arr/sources/barr3.cpp; sourceTree = SOURCE_ROOT; };
+		FFAD8982AD084AD3BB8F331D /* /Users/phil3/Documents/Development/grfx/arr/sources/darr2.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = darr2.cpp; path = arr/sources/darr2.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2FDEF2DC19B049F7A0721D04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30EB105F5D724A128F396DF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F170810D7964288AB326A8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7798788E698746A99141B48C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77B917ACEFCE404EAA032E44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87B18400C41045A78B7303E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFA23B0FF25748EEA1300729 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8DF6974496A49DBAC1F30DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D897B125E58C4704A0F15A16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0FE6AD4816E64649A69AA86B = {
+			isa = PBXGroup;
+			children = (
+				4377CAE87EE6488084D2EA31 /* grfx2 */,
+				44060942427146DB9E65A55B /* grfx3 */,
+				BE201E6BA0E044529E3817A0 /* grfx */,
+				A5B85CD7E01B4F3D8975335A /* ALL_BUILD */,
+				158847D3B2A141B68D0A6527 /* tlbx */,
+				6DD00004543B4A23A9E25F10 /* arr */,
+				9B9722CB08B44EDBBF879E3E /* examples */,
+				2AFCAE20641549EAAED28234 /* weiss2 */,
+				576EB4DB08A34F479917B3EC /* weiss3 */,
+				10EAE70B98674DCDB1A2C11B /* weiss */,
+				44E263FB627C42819B71A6E6 /* Products */,
+				2C13B596D7594F278AC61E93 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		10EAE70B98674DCDB1A2C11B /* weiss */ = {
+			isa = PBXGroup;
+			children = (
+				5AE486C95D2C43D79E1DA8E3 /* Header Files */,
+				69EE0246F68543B096F3A801 /* /Users/phil3/Documents/Development/grfx/weiss/CMakeLists.txt */,
+			);
+			name = weiss;
+			sourceTree = "<group>";
+		};
+		158847D3B2A141B68D0A6527 /* tlbx */ = {
+			isa = PBXGroup;
+			children = (
+				AB9749524C62417BBD73E0D8 /* Header Files */,
+				79B1BA5CADD3432EA20AA1C3 /* Source Files */,
+				DAFA0777FCBF43ECB897FB91 /* /Users/phil3/Documents/Development/grfx/tlbx/CMakeLists.txt */,
+			);
+			name = tlbx;
+			sourceTree = "<group>";
+		};
+		2AFCAE20641549EAAED28234 /* weiss2 */ = {
+			isa = PBXGroup;
+			children = (
+				DA502885D9474BB585F641EF /* Header Files */,
+				9DE86F530335402BB8DECEBF /* Source Files */,
+				2D1898F3529A49A19E6C6D7D /* /Users/phil3/Documents/Development/grfx/weiss/CMakeLists.txt */,
+			);
+			name = weiss2;
+			sourceTree = "<group>";
+		};
+		2C13B596D7594F278AC61E93 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2F8FB491049343A9BC181D25 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				2699E31925594B89A06EDFC2 /* /Users/phil3/Documents/Development/grfx/grfx3/sources/gfrm3.cpp */,
+				75EFE27AB8F04B828480156B /* /Users/phil3/Documents/Development/grfx/grfx3/sources/glne3.cpp */,
+				59EA1340BE5642E0B4A2568C /* /Users/phil3/Documents/Development/grfx/grfx3/sources/gpnt3.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		33DC8F6FAB154887A4B9F9A1 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				D990C933AC324040B4B97127 /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gbdy.cpp */,
+				4CDF35E129014FA0A26291E8 /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gbmp.cpp */,
+				EDAD5FE62D1B401DA11A24B2 /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gcmr.cpp */,
+				A264A4D855514A6ABF8615AE /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gcrd.cpp */,
+				8BB464ACFC35410DB10CAB67 /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gctx.cpp */,
+				3B55315AE5DD4AF58EA7A2A7 /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gfgr.cpp */,
+				ECF9B7C9D72B43B18E4301A9 /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gfrm.cpp */,
+				C3C1D61DAFCC4C0982006AC5 /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gidx.cpp */,
+				EBF5FEE68C2742F5A2001124 /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gimg.cpp */,
+				C94140F2968049038AE64F7C /* /Users/phil3/Documents/Development/grfx/grfx2/sources/glne.cpp */,
+				87A181CF7F824D3583A46BF3 /* /Users/phil3/Documents/Development/grfx/grfx2/sources/glyr.cpp */,
+				57289EA76D7B46B8BEF96946 /* /Users/phil3/Documents/Development/grfx/grfx2/sources/govl.cpp */,
+				DDE9F90382DD4C019153B6F2 /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gply.cpp */,
+				ED34C5772A1E450998174405 /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gpnt.cpp */,
+				FADF4CC5DC044B738FE16BFD /* /Users/phil3/Documents/Development/grfx/grfx2/sources/grct.cpp */,
+				E97AE35F87364E818669268F /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gstr.cpp */,
+				81DD837340C64F37AF4F45FE /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gvtr.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		4377CAE87EE6488084D2EA31 /* grfx2 */ = {
+			isa = PBXGroup;
+			children = (
+				4BF00DD1B8D94B69BCF7B27E /* Header Files */,
+				33DC8F6FAB154887A4B9F9A1 /* Source Files */,
+				F2ECD73CEA264D518CC72050 /* /Users/phil3/Documents/Development/grfx/CMakeLists.txt */,
+			);
+			name = grfx2;
+			sourceTree = "<group>";
+		};
+		44060942427146DB9E65A55B /* grfx3 */ = {
+			isa = PBXGroup;
+			children = (
+				46BD780CD4CA4AF3A6C1CE03 /* Header Files */,
+				2F8FB491049343A9BC181D25 /* Source Files */,
+				55A8670F6B804C28B2DE8DD5 /* /Users/phil3/Documents/Development/grfx/CMakeLists.txt */,
+			);
+			name = grfx3;
+			sourceTree = "<group>";
+		};
+		44E263FB627C42819B71A6E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D66ED534F4C845139CAB5646 /* arr */,
+				57703624AD6E44EA81094FE4 /* examples */,
+				14DC0A7CF64146EE9FA8E0CA /* grfx */,
+				2C171BF93E6E4A2E8B39DE30 /* grfx2 */,
+				16B31009DB4C48DCB37169B7 /* grfx3 */,
+				B87B94406EB24565A83E88A0 /* tlbx */,
+				00D8714E615F447EB1EF4B5D /* weiss */,
+				25C66630F96B4CDAB5AF3949 /* weiss2 */,
+				3D9310E2559E47CE8345A03E /* weiss3 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46BD780CD4CA4AF3A6C1CE03 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				7901F17CF382492483508106 /* /Users/phil3/Documents/Development/grfx/grfx3/grfx3.hpp */,
+				8C8738D29E7A4570B5B15043 /* /Users/phil3/Documents/Development/grfx/grfx3/headers/gfrm3.hpp */,
+				B5FD18985D1D4D35B1DE9653 /* /Users/phil3/Documents/Development/grfx/grfx3/headers/glne3.hpp */,
+				54B24CD5DF404F3F8BBF7EF0 /* /Users/phil3/Documents/Development/grfx/grfx3/headers/gpnt3.hpp */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		4BF00DD1B8D94B69BCF7B27E /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				D59754672C32424898644E93 /* /Users/phil3/Documents/Development/grfx/grfx2/grfx2.hpp */,
+				E0CF49892E024075852D26C2 /* /Users/phil3/Documents/Development/grfx/grfx2/headers/gbdy.hpp */,
+				EE975E298ED747989B311D52 /* /Users/phil3/Documents/Development/grfx/grfx2/headers/gbmp.hpp */,
+				9B49FB7438EE4B10ABF8A535 /* /Users/phil3/Documents/Development/grfx/grfx2/headers/gcmr.hpp */,
+				460DC44499814553B12F32DE /* /Users/phil3/Documents/Development/grfx/grfx2/headers/gcrd.hpp */,
+				C6ECAAF0DF994A808661F3AB /* /Users/phil3/Documents/Development/grfx/grfx2/headers/gctx.hpp */,
+				DAA8FBCD47FC4CC281388863 /* /Users/phil3/Documents/Development/grfx/grfx2/headers/gfgr.hpp */,
+				F08DE7EE9E384D4C9CABF8F5 /* /Users/phil3/Documents/Development/grfx/grfx2/headers/gfrm.hpp */,
+				3517AA2FBD7D43D981968053 /* /Users/phil3/Documents/Development/grfx/grfx2/headers/gidx.hpp */,
+				47C9829B690949B493CD664F /* /Users/phil3/Documents/Development/grfx/grfx2/headers/gimg.hpp */,
+				24E4DA8AF02247ABB58B0882 /* /Users/phil3/Documents/Development/grfx/grfx2/headers/glne.hpp */,
+				6A2233FCD4A349ED82ED8FBD /* /Users/phil3/Documents/Development/grfx/grfx2/headers/glyr.hpp */,
+				8C7E141F1A8240B497A0F52D /* /Users/phil3/Documents/Development/grfx/grfx2/headers/govl.hpp */,
+				C3901E608C8840C195AE0033 /* /Users/phil3/Documents/Development/grfx/grfx2/headers/gply.hpp */,
+				31E50853CDAE4E29935F0552 /* /Users/phil3/Documents/Development/grfx/grfx2/headers/gpnt.hpp */,
+				1B5086A4403E49F6B5765D9B /* /Users/phil3/Documents/Development/grfx/grfx2/headers/grct.hpp */,
+				95DE1734310541498A5F34A0 /* /Users/phil3/Documents/Development/grfx/grfx2/headers/gstr.hpp */,
+				4CC876598FD74290A9E79E74 /* /Users/phil3/Documents/Development/grfx/grfx2/headers/gvtr.hpp */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		576EB4DB08A34F479917B3EC /* weiss3 */ = {
+			isa = PBXGroup;
+			children = (
+				B41BF84CBC4E4A1B86E73303 /* Header Files */,
+				F7B2F14972FA45F2A5461DAE /* Source Files */,
+				20D7C5776366402A9F2D7796 /* /Users/phil3/Documents/Development/grfx/weiss/CMakeLists.txt */,
+			);
+			name = weiss3;
+			sourceTree = "<group>";
+		};
+		5AE486C95D2C43D79E1DA8E3 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				A3B4578A777645CFB08DA56D /* /Users/phil3/Documents/Development/grfx/weiss/weiss.hpp */,
+				C0ED9E42406540D5981AE98A /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/weiss2.hpp */,
+				B7CCC9420B9E4AA291C693E7 /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/weiss3.hpp */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		5EB5B0E0B46540F1800CD2C9 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				5B35506563244003A27D990B /* /Users/phil3/Documents/Development/grfx/arr/arr.hpp */,
+				843BC4455BE0467DA2E7442C /* /Users/phil3/Documents/Development/grfx/arr/headers/arr1.hpp */,
+				08EB05C341454517BB812B82 /* /Users/phil3/Documents/Development/grfx/arr/headers/arr2.hpp */,
+				D89FAFAD294B4914BFBA95E7 /* /Users/phil3/Documents/Development/grfx/arr/headers/arr2slice.hpp */,
+				5A0F26CC25DD4717B3DECEC0 /* /Users/phil3/Documents/Development/grfx/arr/headers/arr2sub.hpp */,
+				4859407BFBA748FA9EE2005D /* /Users/phil3/Documents/Development/grfx/arr/headers/arr3.hpp */,
+				515CB79FB1FD497F91E8E3EB /* /Users/phil3/Documents/Development/grfx/arr/headers/barr1.hpp */,
+				D9464B0949654C9E93482307 /* /Users/phil3/Documents/Development/grfx/arr/headers/barr2.hpp */,
+				4B44A2FBE4024DF79F86385D /* /Users/phil3/Documents/Development/grfx/arr/headers/barr2slice.hpp */,
+				7D6AFF547A364616BCF25C69 /* /Users/phil3/Documents/Development/grfx/arr/headers/barr2sub.hpp */,
+				950A0C954E764C56AFC944F4 /* /Users/phil3/Documents/Development/grfx/arr/headers/barr3.hpp */,
+				A4336DC018C44E65B9E40874 /* /Users/phil3/Documents/Development/grfx/arr/headers/darr1.hpp */,
+				5713E558373E49E3904DA2DF /* /Users/phil3/Documents/Development/grfx/arr/headers/darr2.hpp */,
+				3F9121DF2D6F437FAAF0F159 /* /Users/phil3/Documents/Development/grfx/arr/headers/darr2slice.hpp */,
+				8D684626D31246C9869BF02D /* /Users/phil3/Documents/Development/grfx/arr/headers/darr2sub.hpp */,
+				1555F4761E3A4AA59614D134 /* /Users/phil3/Documents/Development/grfx/arr/headers/uiarr1.hpp */,
+				2AF5AB27DACF4B0D954B5A12 /* /Users/phil3/Documents/Development/grfx/arr/headers/uiarr2.hpp */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		6DD00004543B4A23A9E25F10 /* arr */ = {
+			isa = PBXGroup;
+			children = (
+				5EB5B0E0B46540F1800CD2C9 /* Header Files */,
+				C1636785C5B34BD686A75687 /* Source Files */,
+				A699FE8002AD400CAEBE90C6 /* /Users/phil3/Documents/Development/grfx/arr/CMakeLists.txt */,
+			);
+			name = arr;
+			sourceTree = "<group>";
+		};
+		74FAB8E3C7614959B9D7D1A3 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		79B1BA5CADD3432EA20AA1C3 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				4D35F07EE7E04C95AA5C888D /* /Users/phil3/Documents/Development/grfx/tlbx/sources/col.cpp */,
+				DDC60BEF77414816853DCA79 /* /Users/phil3/Documents/Development/grfx/tlbx/sources/mth.cpp */,
+				42F8F3A75323448CB151222A /* /Users/phil3/Documents/Development/grfx/tlbx/sources/str.cpp */,
+				B65E8106772544C8A72B725D /* /Users/phil3/Documents/Development/grfx/tlbx/sources/trg.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		9B9722CB08B44EDBBF879E3E /* examples */ = {
+			isa = PBXGroup;
+			children = (
+				A8F3C489ECBD48B79C03A0B8 /* Source Files */,
+				05ED2C2F900647A58C588A62 /* /Users/phil3/Documents/Development/grfx/arr/examples/CMakeLists.txt */,
+			);
+			name = examples;
+			sourceTree = "<group>";
+		};
+		9DE86F530335402BB8DECEBF /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				005948AECAA34EEB9EB4651E /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/sources/atr2.cpp */,
+				36B7AB083F3A457C9B5ACDCF /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/sources/crd2.cpp */,
+				9194409EDECE40CB8D0E8139 /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/sources/pnt2.cpp */,
+				A2E93FE6C55547F4BCB13E3B /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/sources/rtn2.cpp */,
+				22233D669EFD4EBC818161C0 /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/sources/scl2.cpp */,
+				41C3850FBA314192A1FB157D /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/sources/trf2.cpp */,
+				7D509E58E1174A238A76BF62 /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/sources/vtr2.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		A5B85CD7E01B4F3D8975335A /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				74FAB8E3C7614959B9D7D1A3 /* CMake Rules */,
+				A4341FB2346E4C70BEAB9818 /* /Users/phil3/Documents/Development/grfx/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		A8F3C489ECBD48B79C03A0B8 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				5DAE97A13FE94196A000E20D /* /Users/phil3/Documents/Development/grfx/arr/examples/examples.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		AB9749524C62417BBD73E0D8 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				6488D31DE96C474594A46474 /* /Users/phil3/Documents/Development/grfx/tlbx/headers/col.hpp */,
+				8028CC9E28994D16AD7D08BB /* /Users/phil3/Documents/Development/grfx/tlbx/headers/mth.hpp */,
+				4CF3BFE2E49F4917917119CC /* /Users/phil3/Documents/Development/grfx/tlbx/headers/str.hpp */,
+				A1EC5018802942418603EA26 /* /Users/phil3/Documents/Development/grfx/tlbx/headers/trg.hpp */,
+				6355845850AB4A749CCA4745 /* /Users/phil3/Documents/Development/grfx/tlbx/tlbx.hpp */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		B41BF84CBC4E4A1B86E73303 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA2481F97D6D4635A30053D0 /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/headers/ags3.hpp */,
+				0F2D7A4B56894FEA8529C17C /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/headers/atr3.hpp */,
+				022CD4D4BA7B44A0BB281D08 /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/headers/bas3.hpp */,
+				8374175949E14DBC9257264C /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/headers/crd3.hpp */,
+				0581C4674DFB43D2A1457C6B /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/headers/idx3.hpp */,
+				D4CC72F161BF442E91FF7F3C /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/headers/pnt3.hpp */,
+				DF714BA08D5D4F78A44251C6 /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/headers/rfn3.hpp */,
+				8C51A8BBC9074E4ABB7347FB /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/headers/rtn3.hpp */,
+				474F2AC791B84E87AC976FCC /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/headers/scl3.hpp */,
+				857021F9887E40249EAB9434 /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/headers/trf3.hpp */,
+				A6BC9A9EE15E41E4AED11C01 /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/headers/vtr3.hpp */,
+				7DC30D6E677B4D8CBAC42ECC /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/weiss3.hpp */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		BE201E6BA0E044529E3817A0 /* grfx */ = {
+			isa = PBXGroup;
+			children = (
+				CBF0CDAE2DC841F1BEDCEBEB /* Header Files */,
+				B792E86817CD403BB6A0F957 /* /Users/phil3/Documents/Development/grfx/CMakeLists.txt */,
+			);
+			name = grfx;
+			sourceTree = "<group>";
+		};
+		C1636785C5B34BD686A75687 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				696AEA42118444FAAE8B3E6A /* /Users/phil3/Documents/Development/grfx/arr/sources/arr.cpp */,
+				66402BBD9EEF46A18B224093 /* /Users/phil3/Documents/Development/grfx/arr/sources/barr1.cpp */,
+				38D452DF115444B194440436 /* /Users/phil3/Documents/Development/grfx/arr/sources/barr2.cpp */,
+				CA003231101141D1A178E69E /* /Users/phil3/Documents/Development/grfx/arr/sources/barr2slice.cpp */,
+				1F3A274624E443B6A7E7380D /* /Users/phil3/Documents/Development/grfx/arr/sources/barr2sub.cpp */,
+				FEF73ED8635B43EBA75E9C3E /* /Users/phil3/Documents/Development/grfx/arr/sources/barr3.cpp */,
+				B84FABA9B3684FB4966B00F3 /* /Users/phil3/Documents/Development/grfx/arr/sources/darr1.cpp */,
+				FFAD8982AD084AD3BB8F331D /* /Users/phil3/Documents/Development/grfx/arr/sources/darr2.cpp */,
+				62D270CB26E2410A8C610C45 /* /Users/phil3/Documents/Development/grfx/arr/sources/darr2slice.cpp */,
+				179645D4680047F2B7464C97 /* /Users/phil3/Documents/Development/grfx/arr/sources/darr2sub.cpp */,
+				BB116E491AED476E862C341B /* /Users/phil3/Documents/Development/grfx/arr/sources/mth.cpp */,
+				8D38CFF095DA4D12BC1BBDC9 /* /Users/phil3/Documents/Development/grfx/arr/sources/trg.cpp */,
+				AB8BF94BD09248208C06FE1B /* /Users/phil3/Documents/Development/grfx/arr/sources/uiarr1.cpp */,
+				976257FECF9940E697BF9D86 /* /Users/phil3/Documents/Development/grfx/arr/sources/uiarr2.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		CBF0CDAE2DC841F1BEDCEBEB /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				0BB8AECBB9F047A6B7D4EEB4 /* /Users/phil3/Documents/Development/grfx/grfx.hpp */,
+				BED39B9970654EC1BBF60365 /* /Users/phil3/Documents/Development/grfx/grfx2/grfx2.hpp */,
+				332BC718A4C848F3B8015015 /* /Users/phil3/Documents/Development/grfx/grfx3/grfx3.hpp */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		DA502885D9474BB585F641EF /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				14B5E7E63DF94D16BDA7076D /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/headers/atr2.hpp */,
+				0DC676507B5D42199C60EBB5 /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/headers/crd2.hpp */,
+				555FC5858A3A464DA857DB64 /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/headers/pnt2.hpp */,
+				D8B00ABFD71B4AF180DEBE48 /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/headers/rtn2.hpp */,
+				8E102781D05742578CB84112 /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/headers/scl2.hpp */,
+				5C8425DA3B4641D99B90F28C /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/headers/trf2.hpp */,
+				93172C1031CF4296B28E00A7 /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/headers/vtr2.hpp */,
+				02B6E5BCEDD541F8A4D1CAD6 /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/weiss2.hpp */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		F7B2F14972FA45F2A5461DAE /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				38F736F10D2644CDBBFA5BB8 /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/sources/ags3.cpp */,
+				49C061DE07FB4FAFAC44D598 /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/sources/atr3.cpp */,
+				F478B7F898734B909B9156E2 /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/sources/bas3.cpp */,
+				B8C4759850C1448683A42677 /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/sources/crd3.cpp */,
+				FA24783A34354573AD15429E /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/sources/idx3.cpp */,
+				9F8E06ED3B564E8EB04F1729 /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/sources/pnt3.cpp */,
+				FA56857B344A468EA2466A05 /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/sources/rfn3.cpp */,
+				C37C4571FC45409AB219DCFB /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/sources/rtn3.cpp */,
+				DBCB00E11F994D968023EA66 /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/sources/scl3.cpp */,
+				AE6B8CF720BB453A918F423D /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/sources/trf3.cpp */,
+				6790DD0CA62E451FBAEA64B1 /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/sources/vtr3.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		138EB76C7C814DB3BA3F81FF /* arr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01F5D03BF19B4A82BD3C1048 /* Build configuration list for PBXNativeTarget "arr" */;
+			buildPhases = (
+				B7408AF3F79642BAAF21623D /* Sources */,
+				87B18400C41045A78B7303E2 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A14B284F124C405F830C79F2 /* PBXTargetDependency */,
+			);
+			name = arr;
+			productName = arr;
+			productReference = D66ED534F4C845139CAB5646 /* arr */;
+			productType = "com.apple.product-type.library.static";
+		};
+		2178968EE03D4015BD148EB0 /* grfx2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F4712F6D3114BDC96489827 /* Build configuration list for PBXNativeTarget "grfx2" */;
+			buildPhases = (
+				045AA1F67DAA4CB5B447DD74 /* Sources */,
+				30EB105F5D724A128F396DF1 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				474ABBF2D997444788F24AF2 /* PBXTargetDependency */,
+				E880A8A0CD784FC8B0942958 /* PBXTargetDependency */,
+				CEF337C1B27849A2ADD97F8D /* PBXTargetDependency */,
+			);
+			name = grfx2;
+			productName = grfx2;
+			productReference = 2C171BF93E6E4A2E8B39DE30 /* grfx2 */;
+			productType = "com.apple.product-type.library.static";
+		};
+		32D80BF4BB1D47468AEB845B /* weiss3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE946CE77D8040A9A5BD8D93 /* Build configuration list for PBXNativeTarget "weiss3" */;
+			buildPhases = (
+				5D10ADB0591F460DA93411F7 /* Sources */,
+				7798788E698746A99141B48C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				584CA6BDA5254952A527FD02 /* PBXTargetDependency */,
+				C2758ECC162147D5B046B359 /* PBXTargetDependency */,
+			);
+			name = weiss3;
+			productName = weiss3;
+			productReference = 3D9310E2559E47CE8345A03E /* weiss3 */;
+			productType = "com.apple.product-type.library.static";
+		};
+		4E7043ECA22D45D4BABA1DA2 /* weiss */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40A719C4DD684F87B8676C7F /* Build configuration list for PBXNativeTarget "weiss" */;
+			buildPhases = (
+				77B917ACEFCE404EAA032E44 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69303F3F3CF44544BAC50CF7 /* PBXTargetDependency */,
+				16E9FA5846B34B48B437A798 /* PBXTargetDependency */,
+				1E88308CED2C4B158AF4DF57 /* PBXTargetDependency */,
+				FCB1580F01FB469C9A19CB73 /* PBXTargetDependency */,
+			);
+			name = weiss;
+			productName = weiss;
+			productReference = 00D8714E615F447EB1EF4B5D /* weiss */;
+			productType = "com.apple.product-type.library.static";
+		};
+		7C8D836B57B5425EA1FE3530 /* tlbx */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BF1E74CA4F24CC9B5B54673 /* Build configuration list for PBXNativeTarget "tlbx" */;
+			buildPhases = (
+				20D6843513654511BF2BD452 /* Sources */,
+				D897B125E58C4704A0F15A16 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tlbx;
+			productName = tlbx;
+			productReference = B87B94406EB24565A83E88A0 /* tlbx */;
+			productType = "com.apple.product-type.library.static";
+		};
+		861623BDFD374A959537B1AB /* grfx */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6F56B81E441447D92D43E8A /* Build configuration list for PBXNativeTarget "grfx" */;
+			buildPhases = (
+				AFA23B0FF25748EEA1300729 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E83DBDCE311747978C1A563C /* PBXTargetDependency */,
+				20B168747F25464FBC6C6957 /* PBXTargetDependency */,
+				5E49AABB71F34DD885640FFE /* PBXTargetDependency */,
+				69FE480E5A3C40C7816293D5 /* PBXTargetDependency */,
+				652FA8E0C9AF406C81439E8D /* PBXTargetDependency */,
+				0747B7DFD03444E7BBD13B5B /* PBXTargetDependency */,
+				07E3F7ADCD95488382C24AC5 /* PBXTargetDependency */,
+				80281DCC18064B5F8DE9D2F4 /* PBXTargetDependency */,
+			);
+			name = grfx;
+			productName = grfx;
+			productReference = 14DC0A7CF64146EE9FA8E0CA /* grfx */;
+			productType = "com.apple.product-type.library.static";
+		};
+		AB873B60AEEA4B30AEBFCBAB /* examples */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F60265962F6469C9C41E676 /* Build configuration list for PBXNativeTarget "examples" */;
+			buildPhases = (
+				3817D7E824FB4362A5B5C4FD /* Sources */,
+				2FDEF2DC19B049F7A0721D04 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A20F1CF8987F42BBB0FC4DE2 /* PBXTargetDependency */,
+				8D92BA45617D4C8A8570E279 /* PBXTargetDependency */,
+			);
+			name = examples;
+			productName = examples;
+			productReference = 57703624AD6E44EA81094FE4 /* examples */;
+			productType = "com.apple.product-type.tool";
+		};
+		E13B695D7B534B8BA7369EF0 /* grfx3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5EA7E6D4994459DBE264AF2 /* Build configuration list for PBXNativeTarget "grfx3" */;
+			buildPhases = (
+				3F040FCDCF2E47C1943141DD /* Sources */,
+				C8DF6974496A49DBAC1F30DF /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				78F1462433E444E49E33AA73 /* PBXTargetDependency */,
+				9E433104778F4CEBA3FD69A7 /* PBXTargetDependency */,
+				A187FCA1976643139B941FD9 /* PBXTargetDependency */,
+				E0094939BCE44DB3BE7CF8F2 /* PBXTargetDependency */,
+				D5FC579CE8314DDC8D29F5C3 /* PBXTargetDependency */,
+				50ECD2B282A14B2C93FAA1A9 /* PBXTargetDependency */,
+			);
+			name = grfx3;
+			productName = grfx3;
+			productReference = 16B31009DB4C48DCB37169B7 /* grfx3 */;
+			productType = "com.apple.product-type.library.static";
+		};
+		EA9788DA22924699B62E0917 /* weiss2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A1C9F9171864AA9B5288FF2 /* Build configuration list for PBXNativeTarget "weiss2" */;
+			buildPhases = (
+				5D3E3358682240359F98BE8A /* Sources */,
+				3F170810D7964288AB326A8A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				340CE83192A242069A9B58CF /* PBXTargetDependency */,
+				A50293F2E8224332A0EB7288 /* PBXTargetDependency */,
+			);
+			name = weiss2;
+			productName = weiss2;
+			productReference = 25C66630F96B4CDAB5AF3949 /* weiss2 */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7040A1951EA6441D9061FB24 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1540;
+			};
+			buildConfigurationList = 9A5B6A35065B4C8797ECA77B /* Build configuration list for PBXProject "grfx" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				81F09CD542AC4C02B47D377A /* Debug */,
+				CCA3E87392F1454E90E43613 /* Release */,
+				AE4B2CCD54F34BCEA8FE731C /* MinSizeRel */,
+				A59C371F08F84AEDA9132208 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 0FE6AD4816E64649A69AA86B;
+			projectDirPath = /Users/phil3/Documents/Development/grfx;
+			projectRoot = "";
+			targets = (
+				58E74CB9E0B1471A9B7E6543 /* ALL_BUILD */,
+				3C78B583444B4EA3A80C4938 /* ZERO_CHECK */,
+				138EB76C7C814DB3BA3F81FF /* arr */,
+				AB873B60AEEA4B30AEBFCBAB /* examples */,
+				861623BDFD374A959537B1AB /* grfx */,
+				2178968EE03D4015BD148EB0 /* grfx2 */,
+				E13B695D7B534B8BA7369EF0 /* grfx3 */,
+				7C8D836B57B5425EA1FE3530 /* tlbx */,
+				4E7043ECA22D45D4BABA1DA2 /* weiss */,
+				EA9788DA22924699B62E0917 /* weiss2 */,
+				32D80BF4BB1D47468AEB845B /* weiss3 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2569E71633637433A76F2F19 /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+/Users/phil3/Documents/Development/grfx/build/CMakeFiles/ZERO_CHECK			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/phil3/Documents/Development/grfx/build
+  make -f /Users/phil3/Documents/Development/grfx/build/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/phil3/Documents/Development/grfx/build
+  make -f /Users/phil3/Documents/Development/grfx/build/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/phil3/Documents/Development/grfx/build
+  make -f /Users/phil3/Documents/Development/grfx/build/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/phil3/Documents/Development/grfx/build
+  make -f /Users/phil3/Documents/Development/grfx/build/CMakeScripts/ReRunCMake.make
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		8D0C794DA68A6C72B8AD6AFD /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+/Users/phil3/Documents/Development/grfx/build/CMakeFiles/ALL_BUILD			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/phil3/Documents/Development/grfx/build
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/phil3/Documents/Development/grfx/build
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/phil3/Documents/Development/grfx/build
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/phil3/Documents/Development/grfx/build
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		045AA1F67DAA4CB5B447DD74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B555D0C40984EC49728820E /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gbdy.cpp */,
+				C97C604FFBDA4F0DA2B86290 /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gbmp.cpp */,
+				DF1F8D978C0D4759A35AAFDF /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gcmr.cpp */,
+				39C7F77F8AD347808E5775A7 /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gcrd.cpp */,
+				0A45942DAB1C4DFD83A94183 /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gctx.cpp */,
+				AFE0AA293A6A4AF08AA1E22B /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gfgr.cpp */,
+				8FECEA8D2E6D4F4AA673A239 /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gfrm.cpp */,
+				F0CA76468F784867A315E2CC /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gidx.cpp */,
+				E49996D32520494BBD292C15 /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gimg.cpp */,
+				06621493BD7142718055F501 /* /Users/phil3/Documents/Development/grfx/grfx2/sources/glne.cpp */,
+				06F698F0B9EA4D05AEE4FD82 /* /Users/phil3/Documents/Development/grfx/grfx2/sources/glyr.cpp */,
+				DAB8299B65C54D0481F3FA4D /* /Users/phil3/Documents/Development/grfx/grfx2/sources/govl.cpp */,
+				82EA4B7C4B284A2DB15ED9E7 /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gply.cpp */,
+				F981386EAD184794B0D1E8B1 /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gpnt.cpp */,
+				D491CE10E6B247BFBEB48C1F /* /Users/phil3/Documents/Development/grfx/grfx2/sources/grct.cpp */,
+				83D66E2987BC4BC681967E54 /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gstr.cpp */,
+				5C795D7DC80F4726922C9412 /* /Users/phil3/Documents/Development/grfx/grfx2/sources/gvtr.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20D6843513654511BF2BD452 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2A6629368994C54B3A4D00D /* /Users/phil3/Documents/Development/grfx/tlbx/sources/col.cpp */,
+				6737F00503944E3E92EDBF3F /* /Users/phil3/Documents/Development/grfx/tlbx/sources/mth.cpp */,
+				BA4E82F4439944B9AACD8D06 /* /Users/phil3/Documents/Development/grfx/tlbx/sources/str.cpp */,
+				292DF45348D94AC49B5DE871 /* /Users/phil3/Documents/Development/grfx/tlbx/sources/trg.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3817D7E824FB4362A5B5C4FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E17DB8304E9C4D6A930FAC24 /* /Users/phil3/Documents/Development/grfx/arr/examples/examples.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F040FCDCF2E47C1943141DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30D6D0161D8542479D5CB623 /* /Users/phil3/Documents/Development/grfx/grfx3/sources/gfrm3.cpp */,
+				7DC4CDE010294DB9801B867A /* /Users/phil3/Documents/Development/grfx/grfx3/sources/glne3.cpp */,
+				A9D55CCFE06344E69BA15CEF /* /Users/phil3/Documents/Development/grfx/grfx3/sources/gpnt3.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D10ADB0591F460DA93411F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A029934BE6E4F15A0C81D4D /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/sources/ags3.cpp */,
+				6334AACA347F41EEBD161057 /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/sources/atr3.cpp */,
+				15D19AAA727347E6A183CC0D /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/sources/bas3.cpp */,
+				FA20B83D380C44D9A1271CFB /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/sources/crd3.cpp */,
+				D4AA710B529F40B4B688B068 /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/sources/idx3.cpp */,
+				0B58ECDBC78441449D160F04 /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/sources/pnt3.cpp */,
+				DF0A7824568548A5AD590960 /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/sources/rfn3.cpp */,
+				03AD48DA0FDD4DCBA551E01F /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/sources/rtn3.cpp */,
+				73B9964627CF4CF29F49021F /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/sources/scl3.cpp */,
+				62410F9F125045988102B805 /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/sources/trf3.cpp */,
+				01407B83D1C24B098082AF4C /* /Users/phil3/Documents/Development/grfx/weiss/weiss3/sources/vtr3.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D3E3358682240359F98BE8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E53AEF7C7A040DD902E836E /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/sources/atr2.cpp */,
+				A64D9AB2EBDC4807A52EE342 /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/sources/crd2.cpp */,
+				ACD22144824D4A40921A9BA3 /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/sources/pnt2.cpp */,
+				C1CEDCA16D1A400CA9B2F637 /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/sources/rtn2.cpp */,
+				ADC8694ED9D24E0BBD968A43 /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/sources/scl2.cpp */,
+				D0D18A172F4F455FB9047DF5 /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/sources/trf2.cpp */,
+				54A83F3ED50348E99C0E87ED /* /Users/phil3/Documents/Development/grfx/weiss/weiss2/sources/vtr2.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7408AF3F79642BAAF21623D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5451749786C45D481C19785 /* /Users/phil3/Documents/Development/grfx/arr/sources/arr.cpp */,
+				CE99F9A9DB9A498C93883696 /* /Users/phil3/Documents/Development/grfx/arr/sources/barr1.cpp */,
+				424D58D617D14401B0EE1FD0 /* /Users/phil3/Documents/Development/grfx/arr/sources/barr2.cpp */,
+				A31E451D592D4194B23B0C06 /* /Users/phil3/Documents/Development/grfx/arr/sources/barr2slice.cpp */,
+				FB7572291DED40AF85190298 /* /Users/phil3/Documents/Development/grfx/arr/sources/barr2sub.cpp */,
+				4D9459457A9B400BAA813B3D /* /Users/phil3/Documents/Development/grfx/arr/sources/barr3.cpp */,
+				02F65FAABEA043F5840650E1 /* /Users/phil3/Documents/Development/grfx/arr/sources/darr1.cpp */,
+				68CC5EA8FBF44D99953BBAF0 /* /Users/phil3/Documents/Development/grfx/arr/sources/darr2.cpp */,
+				956D6F01347142E3B92A0C89 /* /Users/phil3/Documents/Development/grfx/arr/sources/darr2slice.cpp */,
+				A51ADB3EB3484AE1A7E7A951 /* /Users/phil3/Documents/Development/grfx/arr/sources/darr2sub.cpp */,
+				A56CEB69BC7C4D0A86864437 /* /Users/phil3/Documents/Development/grfx/arr/sources/mth.cpp */,
+				E14609445CB542FB88265707 /* /Users/phil3/Documents/Development/grfx/arr/sources/trg.cpp */,
+				F4FD035E1DB64C79B91D0E98 /* /Users/phil3/Documents/Development/grfx/arr/sources/uiarr1.cpp */,
+				E2247EF3AB8644EAA74C1FF2 /* /Users/phil3/Documents/Development/grfx/arr/sources/uiarr2.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0747B7DFD03444E7BBD13B5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA9788DA22924699B62E0917 /* weiss2 */;
+			targetProxy = 4E65EE7C0247409194B28EC6 /* PBXContainerItemProxy */;
+		};
+		07E3F7ADCD95488382C24AC5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32D80BF4BB1D47468AEB845B /* weiss3 */;
+			targetProxy = F331C585392B4F29AA09E88D /* PBXContainerItemProxy */;
+		};
+		16E9FA5846B34B48B437A798 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA9788DA22924699B62E0917 /* weiss2 */;
+			targetProxy = E4300F7A25CA40BFAEF01D29 /* PBXContainerItemProxy */;
+		};
+		1E88308CED2C4B158AF4DF57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32D80BF4BB1D47468AEB845B /* weiss3 */;
+			targetProxy = 9023BF6D3E864578AE52A468 /* PBXContainerItemProxy */;
+		};
+		20B168747F25464FBC6C6957 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2178968EE03D4015BD148EB0 /* grfx2 */;
+			targetProxy = C398A99B7E80412282C1B210 /* PBXContainerItemProxy */;
+		};
+		2E7DC400FF474EF9BBE54B3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 138EB76C7C814DB3BA3F81FF /* arr */;
+			targetProxy = 29F29961A4714EE68B7A73E3 /* PBXContainerItemProxy */;
+		};
+		30AC6E8DDD2F4205A50CE19C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 861623BDFD374A959537B1AB /* grfx */;
+			targetProxy = AEBA2060253D4F0DAF1BEF23 /* PBXContainerItemProxy */;
+		};
+		340CE83192A242069A9B58CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7C8D836B57B5425EA1FE3530 /* tlbx */;
+			targetProxy = E45455A0FF434B3399CC7FF1 /* PBXContainerItemProxy */;
+		};
+		47290D7C111A43809DF80FCC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E13B695D7B534B8BA7369EF0 /* grfx3 */;
+			targetProxy = 9829D25124CC484FA5957C1B /* PBXContainerItemProxy */;
+		};
+		474ABBF2D997444788F24AF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C78B583444B4EA3A80C4938 /* ZERO_CHECK */;
+			targetProxy = 26BA6A1A745D416F9C7C69CF /* PBXContainerItemProxy */;
+		};
+		50ECD2B282A14B2C93FAA1A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 138EB76C7C814DB3BA3F81FF /* arr */;
+			targetProxy = 0826FC132CCB49A0AAD7070F /* PBXContainerItemProxy */;
+		};
+		5699727F852844A1B2CE4CD1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4E7043ECA22D45D4BABA1DA2 /* weiss */;
+			targetProxy = 6B5040F67ABC455AB1E873EE /* PBXContainerItemProxy */;
+		};
+		584CA6BDA5254952A527FD02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7C8D836B57B5425EA1FE3530 /* tlbx */;
+			targetProxy = 16DE9B74004C488DB2E0B129 /* PBXContainerItemProxy */;
+		};
+		5E49AABB71F34DD885640FFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4E7043ECA22D45D4BABA1DA2 /* weiss */;
+			targetProxy = 94DFB3F755B944568B6A20D8 /* PBXContainerItemProxy */;
+		};
+		652FA8E0C9AF406C81439E8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7C8D836B57B5425EA1FE3530 /* tlbx */;
+			targetProxy = 691B1A7BB29B41F5BE9A5F4A /* PBXContainerItemProxy */;
+		};
+		69303F3F3CF44544BAC50CF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7C8D836B57B5425EA1FE3530 /* tlbx */;
+			targetProxy = 014FD385D6814ACB9E5BD03C /* PBXContainerItemProxy */;
+		};
+		69FE480E5A3C40C7816293D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E13B695D7B534B8BA7369EF0 /* grfx3 */;
+			targetProxy = 84921AEF72494EE88AEC5A0B /* PBXContainerItemProxy */;
+		};
+		78F1462433E444E49E33AA73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C78B583444B4EA3A80C4938 /* ZERO_CHECK */;
+			targetProxy = 6039C4135A7340DE83057397 /* PBXContainerItemProxy */;
+		};
+		80281DCC18064B5F8DE9D2F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 138EB76C7C814DB3BA3F81FF /* arr */;
+			targetProxy = 2A3A7B2DE6FB4879BE163DBD /* PBXContainerItemProxy */;
+		};
+		8D92BA45617D4C8A8570E279 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 138EB76C7C814DB3BA3F81FF /* arr */;
+			targetProxy = E25C9807865F4D6AAEDCA8DD /* PBXContainerItemProxy */;
+		};
+		8DDDB99A67494CCAA0D44E68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32D80BF4BB1D47468AEB845B /* weiss3 */;
+			targetProxy = 636CBBFBDC4043EDA0F274A7 /* PBXContainerItemProxy */;
+		};
+		9E433104778F4CEBA3FD69A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4E7043ECA22D45D4BABA1DA2 /* weiss */;
+			targetProxy = 5514A4D3AB4F4D2EAECA6573 /* PBXContainerItemProxy */;
+		};
+		9EBF97B6B2B2451A835C0942 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7C8D836B57B5425EA1FE3530 /* tlbx */;
+			targetProxy = 0D9F6EF48A28435DB90E7F2D /* PBXContainerItemProxy */;
+		};
+		A14B284F124C405F830C79F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7C8D836B57B5425EA1FE3530 /* tlbx */;
+			targetProxy = 96C457B34B214B0F95046A47 /* PBXContainerItemProxy */;
+		};
+		A187FCA1976643139B941FD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7C8D836B57B5425EA1FE3530 /* tlbx */;
+			targetProxy = F13C4C420BE24CEEA2B98297 /* PBXContainerItemProxy */;
+		};
+		A20F1CF8987F42BBB0FC4DE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7C8D836B57B5425EA1FE3530 /* tlbx */;
+			targetProxy = A2236C80EB6D4BEC97272808 /* PBXContainerItemProxy */;
+		};
+		A50293F2E8224332A0EB7288 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 138EB76C7C814DB3BA3F81FF /* arr */;
+			targetProxy = 50EDB727108E41AD8AAFB871 /* PBXContainerItemProxy */;
+		};
+		AFD1D25946D9436CA4A00AC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C78B583444B4EA3A80C4938 /* ZERO_CHECK */;
+			targetProxy = 7CD120315D73475BA3ABFDF0 /* PBXContainerItemProxy */;
+		};
+		BDC2831BA656432992FA39A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA9788DA22924699B62E0917 /* weiss2 */;
+			targetProxy = CB00A496EC064B529C4101F6 /* PBXContainerItemProxy */;
+		};
+		BFA297C44C4842D09A0892CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2178968EE03D4015BD148EB0 /* grfx2 */;
+			targetProxy = B624227165AB4539B0593A55 /* PBXContainerItemProxy */;
+		};
+		C2758ECC162147D5B046B359 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 138EB76C7C814DB3BA3F81FF /* arr */;
+			targetProxy = B79E4255F6294F44877A04E0 /* PBXContainerItemProxy */;
+		};
+		CEF337C1B27849A2ADD97F8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 138EB76C7C814DB3BA3F81FF /* arr */;
+			targetProxy = 185B04AD9FB74EFBB2F9E199 /* PBXContainerItemProxy */;
+		};
+		D5FC579CE8314DDC8D29F5C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32D80BF4BB1D47468AEB845B /* weiss3 */;
+			targetProxy = A899C751EDF6448F9D9E5CAD /* PBXContainerItemProxy */;
+		};
+		E0094939BCE44DB3BE7CF8F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA9788DA22924699B62E0917 /* weiss2 */;
+			targetProxy = CAF90F3D1A9544CEA122FE23 /* PBXContainerItemProxy */;
+		};
+		E83DBDCE311747978C1A563C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C78B583444B4EA3A80C4938 /* ZERO_CHECK */;
+			targetProxy = F135AC0A7AB8461EA9847456 /* PBXContainerItemProxy */;
+		};
+		E880A8A0CD784FC8B0942958 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7C8D836B57B5425EA1FE3530 /* tlbx */;
+			targetProxy = C8C351CF16744DFD8143C64A /* PBXContainerItemProxy */;
+		};
+		FCB1580F01FB469C9A19CB73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 138EB76C7C814DB3BA3F81FF /* arr */;
+			targetProxy = 98D1E0AB26F541D691073580 /* PBXContainerItemProxy */;
+		};
+		FCD27E0367074C338AB6CD3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB873B60AEEA4B30AEBFCBAB /* examples */;
+			targetProxy = 11BD0FEB7CE54CADA693E237 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0531E7695D824A54B5D582A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/phil3/Documents/Development/grfx/build/weiss/Release;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/phil3/Documents/Development/grfx/weiss/.,/Users/phil3/Documents/Development/grfx/weiss/weiss2,/Users/phil3/Documents/Development/grfx/weiss/weiss2/headers,/Users/phil3/Documents/Development/grfx/weiss/weiss3,/Users/phil3/Documents/Development/grfx/weiss/weiss3/headers,/Users/phil3/Documents/Development/grfx/weiss/tlbx,/Users/phil3/Documents/Development/grfx/weiss/arr,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = weiss;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/phil3/Documents/Development/grfx/build/build/weiss.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		0864A5CCF50141FCBE265590 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/phil3/Documents/Development/grfx/build/tlbx/RelWithDebInfo;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/phil3/Documents/Development/grfx/tlbx/headers,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=gnu++17' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = tlbx;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/phil3/Documents/Development/grfx/build/build/tlbx.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		09FB0B849BB0461888611BA8 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/phil3/Documents/Development/grfx/build/build;
+			};
+			name = MinSizeRel;
+		};
+		0A05A211618742F885B9888B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/phil3/Documents/Development/grfx/build/build;
+			};
+			name = Release;
+		};
+		0BE0ADFD0ABD48E8A422151A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/phil3/Documents/Development/grfx/build/Debug;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/phil3/Documents/Development/grfx/.,/Users/phil3/Documents/Development/grfx/grfx2,/Users/phil3/Documents/Development/grfx/grfx2/headers,/Users/phil3/Documents/Development/grfx/grfx3,/Users/phil3/Documents/Development/grfx/grfx3/headers,/Users/phil3/Documents/Development/grfx/tlbx,/Users/phil3/Documents/Development/grfx/arr,/Users/phil3/Documents/Development/grfx/weiss,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = grfx;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/phil3/Documents/Development/grfx/build/build/grfx.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		1DF0E70F346940549B538642 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/phil3/Documents/Development/grfx/build/arr/examples/Debug;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/phil3/Documents/Development/grfx/arr,/Users/phil3/Documents/Development/grfx/arr/headers,/Users/phil3/Documents/Development/grfx/arr/tlbx,/Users/phil3/Documents/Development/grfx/arr/.,/Users/phil3/Documents/Development/grfx/arr/tlbx/headers,"$(inherited)");
+				INSTALL_PATH = "";
+				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++17' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Users/phil3/Documents/Development/grfx/build/arr/Debug/libarr.a,/Users/phil3/Documents/Development/grfx/build/tlbx/Debug/libtlbx.a,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = examples;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/phil3/Documents/Development/grfx/build/build/examples.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		2908539F8B2B43058A714BCF /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/phil3/Documents/Development/grfx/build/weiss/RelWithDebInfo;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/phil3/Documents/Development/grfx/weiss/.,/Users/phil3/Documents/Development/grfx/weiss/weiss2,/Users/phil3/Documents/Development/grfx/weiss/weiss2/headers,/Users/phil3/Documents/Development/grfx/weiss/tlbx,/Users/phil3/Documents/Development/grfx/weiss/arr,/Users/phil3/Documents/Development/grfx/tlbx/headers,/Users/phil3/Documents/Development/grfx/arr/.,/Users/phil3/Documents/Development/grfx/arr/headers,/Users/phil3/Documents/Development/grfx/arr/tlbx,/Users/phil3/Documents/Development/grfx/arr/tlbx/headers,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=gnu++17' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = weiss2;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/phil3/Documents/Development/grfx/build/build/weiss2.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		29932FA869D0401498CF235D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/phil3/Documents/Development/grfx/build/arr/examples/Release;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/phil3/Documents/Development/grfx/arr,/Users/phil3/Documents/Development/grfx/arr/headers,/Users/phil3/Documents/Development/grfx/arr/tlbx,/Users/phil3/Documents/Development/grfx/arr/.,/Users/phil3/Documents/Development/grfx/arr/tlbx/headers,"$(inherited)");
+				INSTALL_PATH = "";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Users/phil3/Documents/Development/grfx/build/arr/Release/libarr.a,/Users/phil3/Documents/Development/grfx/build/tlbx/Release/libtlbx.a,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = examples;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/phil3/Documents/Development/grfx/build/build/examples.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		2A5B842B02914A0ABDE6E20F /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/phil3/Documents/Development/grfx/build/weiss/RelWithDebInfo;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/phil3/Documents/Development/grfx/weiss/.,/Users/phil3/Documents/Development/grfx/weiss/weiss2,/Users/phil3/Documents/Development/grfx/weiss/weiss2/headers,/Users/phil3/Documents/Development/grfx/weiss/weiss3,/Users/phil3/Documents/Development/grfx/weiss/weiss3/headers,/Users/phil3/Documents/Development/grfx/weiss/tlbx,/Users/phil3/Documents/Development/grfx/weiss/arr,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = weiss;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/phil3/Documents/Development/grfx/build/build/weiss.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		2B78FD8C08C04BF3AB5BB138 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/phil3/Documents/Development/grfx/build/weiss/Debug;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/phil3/Documents/Development/grfx/weiss/.,/Users/phil3/Documents/Development/grfx/weiss/weiss2,/Users/phil3/Documents/Development/grfx/weiss/weiss2/headers,/Users/phil3/Documents/Development/grfx/weiss/tlbx,/Users/phil3/Documents/Development/grfx/weiss/arr,/Users/phil3/Documents/Development/grfx/tlbx/headers,/Users/phil3/Documents/Development/grfx/arr/.,/Users/phil3/Documents/Development/grfx/arr/headers,/Users/phil3/Documents/Development/grfx/arr/tlbx,/Users/phil3/Documents/Development/grfx/arr/tlbx/headers,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++17' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = weiss2;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/phil3/Documents/Development/grfx/build/build/weiss2.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		2BDE62DBC35A41929B7BC949 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/phil3/Documents/Development/grfx/build/tlbx/Release;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/phil3/Documents/Development/grfx/tlbx/headers,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = tlbx;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/phil3/Documents/Development/grfx/build/build/tlbx.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		36FE6A4355AD492E8F96E91B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		3950C2256FB940C8BD707EE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		3E66AC8B85D34F85AB5255C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/phil3/Documents/Development/grfx/build/Release;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/phil3/Documents/Development/grfx/.,/Users/phil3/Documents/Development/grfx/grfx2,/Users/phil3/Documents/Development/grfx/grfx2/headers,/Users/phil3/Documents/Development/grfx/tlbx,/Users/phil3/Documents/Development/grfx/arr,/Users/phil3/Documents/Development/grfx/weiss,/Users/phil3/Documents/Development/grfx/tlbx/headers,/Users/phil3/Documents/Development/grfx/arr/.,/Users/phil3/Documents/Development/grfx/arr/headers,/Users/phil3/Documents/Development/grfx/arr/tlbx,/Users/phil3/Documents/Development/grfx/arr/tlbx/headers,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = grfx2;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/phil3/Documents/Development/grfx/build/build/grfx2.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		415CDE9F95DC47BFB684F910 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/phil3/Documents/Development/grfx/build/weiss/Release;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/phil3/Documents/Development/grfx/weiss/.,/Users/phil3/Documents/Development/grfx/weiss/weiss2,/Users/phil3/Documents/Development/grfx/weiss/weiss2/headers,/Users/phil3/Documents/Development/grfx/weiss/tlbx,/Users/phil3/Documents/Development/grfx/weiss/arr,/Users/phil3/Documents/Development/grfx/tlbx/headers,/Users/phil3/Documents/Development/grfx/arr/.,/Users/phil3/Documents/Development/grfx/arr/headers,/Users/phil3/Documents/Development/grfx/arr/tlbx,/Users/phil3/Documents/Development/grfx/arr/tlbx/headers,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = weiss2;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/phil3/Documents/Development/grfx/build/build/weiss2.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		4C27266D518F437E9C458AB2 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/phil3/Documents/Development/grfx/build/MinSizeRel;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/phil3/Documents/Development/grfx/.,/Users/phil3/Documents/Development/grfx/grfx2,/Users/phil3/Documents/Development/grfx/grfx2/headers,/Users/phil3/Documents/Development/grfx/tlbx,/Users/phil3/Documents/Development/grfx/arr,/Users/phil3/Documents/Development/grfx/weiss,/Users/phil3/Documents/Development/grfx/tlbx/headers,/Users/phil3/Documents/Development/grfx/arr/.,/Users/phil3/Documents/Development/grfx/arr/headers,/Users/phil3/Documents/Development/grfx/arr/tlbx,/Users/phil3/Documents/Development/grfx/arr/tlbx/headers,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = grfx2;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/phil3/Documents/Development/grfx/build/build/grfx2.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		569FD4839D58462582046C50 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/phil3/Documents/Development/grfx/build/arr/RelWithDebInfo;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/phil3/Documents/Development/grfx/arr/.,/Users/phil3/Documents/Development/grfx/arr/headers,/Users/phil3/Documents/Development/grfx/arr/tlbx,/Users/phil3/Documents/Development/grfx/arr/tlbx/headers,/Users/phil3/Documents/Development/grfx/tlbx/headers,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=gnu++17' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = arr;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/phil3/Documents/Development/grfx/build/build/arr.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		56B26DEF27624671862CB44E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/phil3/Documents/Development/grfx/build/arr/Release;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/phil3/Documents/Development/grfx/arr/.,/Users/phil3/Documents/Development/grfx/arr/headers,/Users/phil3/Documents/Development/grfx/arr/tlbx,/Users/phil3/Documents/Development/grfx/arr/tlbx/headers,/Users/phil3/Documents/Development/grfx/tlbx/headers,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = arr;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/phil3/Documents/Development/grfx/build/build/arr.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		6353F7A7264F4CDDB4D6A5AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/phil3/Documents/Development/grfx/build/Debug;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/phil3/Documents/Development/grfx/.,/Users/phil3/Documents/Development/grfx/grfx3,/Users/phil3/Documents/Development/grfx/grfx3/headers,/Users/phil3/Documents/Development/grfx/tlbx,/Users/phil3/Documents/Development/grfx/arr,/Users/phil3/Documents/Development/grfx/weiss,/Users/phil3/Documents/Development/grfx/tlbx/headers,/Users/phil3/Documents/Development/grfx/arr/.,/Users/phil3/Documents/Development/grfx/arr/headers,/Users/phil3/Documents/Development/grfx/arr/tlbx,/Users/phil3/Documents/Development/grfx/arr/tlbx/headers,/Users/phil3/Documents/Development/grfx/weiss/.,/Users/phil3/Documents/Development/grfx/weiss/weiss2,/Users/phil3/Documents/Development/grfx/weiss/weiss2/headers,/Users/phil3/Documents/Development/grfx/weiss/weiss3,/Users/phil3/Documents/Development/grfx/weiss/weiss3/headers,/Users/phil3/Documents/Development/grfx/weiss/tlbx,/Users/phil3/Documents/Development/grfx/weiss/arr,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++17' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = grfx3;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/phil3/Documents/Development/grfx/build/build/grfx3.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		69FE2303BDC54F85AA2647B3 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		6C71F787F01946D1877FF944 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/phil3/Documents/Development/grfx/build/RelWithDebInfo;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/phil3/Documents/Development/grfx/.,/Users/phil3/Documents/Development/grfx/grfx2,/Users/phil3/Documents/Development/grfx/grfx2/headers,/Users/phil3/Documents/Development/grfx/tlbx,/Users/phil3/Documents/Development/grfx/arr,/Users/phil3/Documents/Development/grfx/weiss,/Users/phil3/Documents/Development/grfx/tlbx/headers,/Users/phil3/Documents/Development/grfx/arr/.,/Users/phil3/Documents/Development/grfx/arr/headers,/Users/phil3/Documents/Development/grfx/arr/tlbx,/Users/phil3/Documents/Development/grfx/arr/tlbx/headers,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=gnu++17' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = grfx2;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/phil3/Documents/Development/grfx/build/build/grfx2.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		7025EF85D9E94AF5896CCD4F /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/phil3/Documents/Development/grfx/build/arr/MinSizeRel;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/phil3/Documents/Development/grfx/arr/.,/Users/phil3/Documents/Development/grfx/arr/headers,/Users/phil3/Documents/Development/grfx/arr/tlbx,/Users/phil3/Documents/Development/grfx/arr/tlbx/headers,/Users/phil3/Documents/Development/grfx/tlbx/headers,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = arr;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/phil3/Documents/Development/grfx/build/build/arr.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		7326AC7600194CDEAD0CC368 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/phil3/Documents/Development/grfx/build/Debug;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/phil3/Documents/Development/grfx/.,/Users/phil3/Documents/Development/grfx/grfx2,/Users/phil3/Documents/Development/grfx/grfx2/headers,/Users/phil3/Documents/Development/grfx/tlbx,/Users/phil3/Documents/Development/grfx/arr,/Users/phil3/Documents/Development/grfx/weiss,/Users/phil3/Documents/Development/grfx/tlbx/headers,/Users/phil3/Documents/Development/grfx/arr/.,/Users/phil3/Documents/Development/grfx/arr/headers,/Users/phil3/Documents/Development/grfx/arr/tlbx,/Users/phil3/Documents/Development/grfx/arr/tlbx/headers,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++17' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = grfx2;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/phil3/Documents/Development/grfx/build/build/grfx2.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		744E466560624FB0BB39B3F5 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/phil3/Documents/Development/grfx/build/RelWithDebInfo;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/phil3/Documents/Development/grfx/.,/Users/phil3/Documents/Development/grfx/grfx3,/Users/phil3/Documents/Development/grfx/grfx3/headers,/Users/phil3/Documents/Development/grfx/tlbx,/Users/phil3/Documents/Development/grfx/arr,/Users/phil3/Documents/Development/grfx/weiss,/Users/phil3/Documents/Development/grfx/tlbx/headers,/Users/phil3/Documents/Development/grfx/arr/.,/Users/phil3/Documents/Development/grfx/arr/headers,/Users/phil3/Documents/Development/grfx/arr/tlbx,/Users/phil3/Documents/Development/grfx/arr/tlbx/headers,/Users/phil3/Documents/Development/grfx/weiss/.,/Users/phil3/Documents/Development/grfx/weiss/weiss2,/Users/phil3/Documents/Development/grfx/weiss/weiss2/headers,/Users/phil3/Documents/Development/grfx/weiss/weiss3,/Users/phil3/Documents/Development/grfx/weiss/weiss3/headers,/Users/phil3/Documents/Development/grfx/weiss/tlbx,/Users/phil3/Documents/Development/grfx/weiss/arr,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=gnu++17' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = grfx3;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/phil3/Documents/Development/grfx/build/build/grfx3.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		7789D87249584B8F9DE24F3C /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/phil3/Documents/Development/grfx/build/weiss/MinSizeRel;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/phil3/Documents/Development/grfx/weiss/.,/Users/phil3/Documents/Development/grfx/weiss/weiss2,/Users/phil3/Documents/Development/grfx/weiss/weiss2/headers,/Users/phil3/Documents/Development/grfx/weiss/weiss3,/Users/phil3/Documents/Development/grfx/weiss/weiss3/headers,/Users/phil3/Documents/Development/grfx/weiss/tlbx,/Users/phil3/Documents/Development/grfx/weiss/arr,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = weiss;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/phil3/Documents/Development/grfx/build/build/weiss.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		77C45615497A49C1B618306B /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		7CAA9EB5DCA14D50A9F36A22 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/phil3/Documents/Development/grfx/build/weiss/RelWithDebInfo;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/phil3/Documents/Development/grfx/weiss/.,/Users/phil3/Documents/Development/grfx/weiss/weiss3,/Users/phil3/Documents/Development/grfx/weiss/weiss3/headers,/Users/phil3/Documents/Development/grfx/weiss/tlbx,/Users/phil3/Documents/Development/grfx/weiss/arr,/Users/phil3/Documents/Development/grfx/tlbx/headers,/Users/phil3/Documents/Development/grfx/arr/.,/Users/phil3/Documents/Development/grfx/arr/headers,/Users/phil3/Documents/Development/grfx/arr/tlbx,/Users/phil3/Documents/Development/grfx/arr/tlbx/headers,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=gnu++17' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = weiss3;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/phil3/Documents/Development/grfx/build/build/weiss3.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		8825D1148BFA4459A361619B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/phil3/Documents/Development/grfx/build/Release;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/phil3/Documents/Development/grfx/.,/Users/phil3/Documents/Development/grfx/grfx3,/Users/phil3/Documents/Development/grfx/grfx3/headers,/Users/phil3/Documents/Development/grfx/tlbx,/Users/phil3/Documents/Development/grfx/arr,/Users/phil3/Documents/Development/grfx/weiss,/Users/phil3/Documents/Development/grfx/tlbx/headers,/Users/phil3/Documents/Development/grfx/arr/.,/Users/phil3/Documents/Development/grfx/arr/headers,/Users/phil3/Documents/Development/grfx/arr/tlbx,/Users/phil3/Documents/Development/grfx/arr/tlbx/headers,/Users/phil3/Documents/Development/grfx/weiss/.,/Users/phil3/Documents/Development/grfx/weiss/weiss2,/Users/phil3/Documents/Development/grfx/weiss/weiss2/headers,/Users/phil3/Documents/Development/grfx/weiss/weiss3,/Users/phil3/Documents/Development/grfx/weiss/weiss3/headers,/Users/phil3/Documents/Development/grfx/weiss/tlbx,/Users/phil3/Documents/Development/grfx/weiss/arr,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = grfx3;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/phil3/Documents/Development/grfx/build/build/grfx3.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		8BAB62B9F8BB442F80F6F26A /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		95D44BE4252C47C1B614081A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		966B7DE66A6E4E9C88B7E427 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/phil3/Documents/Development/grfx/build/MinSizeRel;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/phil3/Documents/Development/grfx/.,/Users/phil3/Documents/Development/grfx/grfx3,/Users/phil3/Documents/Development/grfx/grfx3/headers,/Users/phil3/Documents/Development/grfx/tlbx,/Users/phil3/Documents/Development/grfx/arr,/Users/phil3/Documents/Development/grfx/weiss,/Users/phil3/Documents/Development/grfx/tlbx/headers,/Users/phil3/Documents/Development/grfx/arr/.,/Users/phil3/Documents/Development/grfx/arr/headers,/Users/phil3/Documents/Development/grfx/arr/tlbx,/Users/phil3/Documents/Development/grfx/arr/tlbx/headers,/Users/phil3/Documents/Development/grfx/weiss/.,/Users/phil3/Documents/Development/grfx/weiss/weiss2,/Users/phil3/Documents/Development/grfx/weiss/weiss2/headers,/Users/phil3/Documents/Development/grfx/weiss/weiss3,/Users/phil3/Documents/Development/grfx/weiss/weiss3/headers,/Users/phil3/Documents/Development/grfx/weiss/tlbx,/Users/phil3/Documents/Development/grfx/weiss/arr,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = grfx3;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/phil3/Documents/Development/grfx/build/build/grfx3.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		9A37DADEFDA1432A9A5F25EE /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		9A87C87730184DC7AC620CB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/phil3/Documents/Development/grfx/build/Release;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/phil3/Documents/Development/grfx/.,/Users/phil3/Documents/Development/grfx/grfx2,/Users/phil3/Documents/Development/grfx/grfx2/headers,/Users/phil3/Documents/Development/grfx/grfx3,/Users/phil3/Documents/Development/grfx/grfx3/headers,/Users/phil3/Documents/Development/grfx/tlbx,/Users/phil3/Documents/Development/grfx/arr,/Users/phil3/Documents/Development/grfx/weiss,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = grfx;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/phil3/Documents/Development/grfx/build/build/grfx.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		9F2AB5ED42C946808004753F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/phil3/Documents/Development/grfx/build/weiss/Debug;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/phil3/Documents/Development/grfx/weiss/.,/Users/phil3/Documents/Development/grfx/weiss/weiss2,/Users/phil3/Documents/Development/grfx/weiss/weiss2/headers,/Users/phil3/Documents/Development/grfx/weiss/weiss3,/Users/phil3/Documents/Development/grfx/weiss/weiss3/headers,/Users/phil3/Documents/Development/grfx/weiss/tlbx,/Users/phil3/Documents/Development/grfx/weiss/arr,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = weiss;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/phil3/Documents/Development/grfx/build/build/weiss.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		9FB7DCD8E3D44479A1C44EED /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/phil3/Documents/Development/grfx/build/arr/examples/MinSizeRel;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/phil3/Documents/Development/grfx/arr,/Users/phil3/Documents/Development/grfx/arr/headers,/Users/phil3/Documents/Development/grfx/arr/tlbx,/Users/phil3/Documents/Development/grfx/arr/.,/Users/phil3/Documents/Development/grfx/arr/tlbx/headers,"$(inherited)");
+				INSTALL_PATH = "";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Users/phil3/Documents/Development/grfx/build/arr/MinSizeRel/libarr.a,/Users/phil3/Documents/Development/grfx/build/tlbx/MinSizeRel/libtlbx.a,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = examples;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/phil3/Documents/Development/grfx/build/build/examples.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		A3A78B910B0E4F90BAA7A847 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/phil3/Documents/Development/grfx/build/weiss/Debug;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/phil3/Documents/Development/grfx/weiss/.,/Users/phil3/Documents/Development/grfx/weiss/weiss3,/Users/phil3/Documents/Development/grfx/weiss/weiss3/headers,/Users/phil3/Documents/Development/grfx/weiss/tlbx,/Users/phil3/Documents/Development/grfx/weiss/arr,/Users/phil3/Documents/Development/grfx/tlbx/headers,/Users/phil3/Documents/Development/grfx/arr/.,/Users/phil3/Documents/Development/grfx/arr/headers,/Users/phil3/Documents/Development/grfx/arr/tlbx,/Users/phil3/Documents/Development/grfx/arr/tlbx/headers,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++17' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = weiss3;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/phil3/Documents/Development/grfx/build/build/weiss3.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		A57631E33345429E90FDCEB6 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/phil3/Documents/Development/grfx/build/weiss/MinSizeRel;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/phil3/Documents/Development/grfx/weiss/.,/Users/phil3/Documents/Development/grfx/weiss/weiss2,/Users/phil3/Documents/Development/grfx/weiss/weiss2/headers,/Users/phil3/Documents/Development/grfx/weiss/tlbx,/Users/phil3/Documents/Development/grfx/weiss/arr,/Users/phil3/Documents/Development/grfx/tlbx/headers,/Users/phil3/Documents/Development/grfx/arr/.,/Users/phil3/Documents/Development/grfx/arr/headers,/Users/phil3/Documents/Development/grfx/arr/tlbx,/Users/phil3/Documents/Development/grfx/arr/tlbx/headers,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = weiss2;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/phil3/Documents/Development/grfx/build/build/weiss2.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		A969353F3BC440489CBC4774 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/phil3/Documents/Development/grfx/build/arr/Debug;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/phil3/Documents/Development/grfx/arr/.,/Users/phil3/Documents/Development/grfx/arr/headers,/Users/phil3/Documents/Development/grfx/arr/tlbx,/Users/phil3/Documents/Development/grfx/arr/tlbx/headers,/Users/phil3/Documents/Development/grfx/tlbx/headers,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++17' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = arr;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/phil3/Documents/Development/grfx/build/build/arr.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		B3B55086853349B88CC091A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/phil3/Documents/Development/grfx/build/weiss/Release;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/phil3/Documents/Development/grfx/weiss/.,/Users/phil3/Documents/Development/grfx/weiss/weiss3,/Users/phil3/Documents/Development/grfx/weiss/weiss3/headers,/Users/phil3/Documents/Development/grfx/weiss/tlbx,/Users/phil3/Documents/Development/grfx/weiss/arr,/Users/phil3/Documents/Development/grfx/tlbx/headers,/Users/phil3/Documents/Development/grfx/arr/.,/Users/phil3/Documents/Development/grfx/arr/headers,/Users/phil3/Documents/Development/grfx/arr/tlbx,/Users/phil3/Documents/Development/grfx/arr/tlbx/headers,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = weiss3;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/phil3/Documents/Development/grfx/build/build/weiss3.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		B96DAA0071CC43FCBD98C5D1 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/phil3/Documents/Development/grfx/build/build;
+			};
+			name = RelWithDebInfo;
+		};
+		C745901617E649F69508921E /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/phil3/Documents/Development/grfx/build/RelWithDebInfo;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/phil3/Documents/Development/grfx/.,/Users/phil3/Documents/Development/grfx/grfx2,/Users/phil3/Documents/Development/grfx/grfx2/headers,/Users/phil3/Documents/Development/grfx/grfx3,/Users/phil3/Documents/Development/grfx/grfx3/headers,/Users/phil3/Documents/Development/grfx/tlbx,/Users/phil3/Documents/Development/grfx/arr,/Users/phil3/Documents/Development/grfx/weiss,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = grfx;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/phil3/Documents/Development/grfx/build/build/grfx.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		D0B64980DF3E4AB98AAF6A0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk;
+				SYMROOT = /Users/phil3/Documents/Development/grfx/build/build;
+			};
+			name = Debug;
+		};
+		DAD62E11AF22450E8A391CC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		DF0E380DD5244EE18A135C07 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/phil3/Documents/Development/grfx/build/tlbx/MinSizeRel;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/phil3/Documents/Development/grfx/tlbx/headers,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = tlbx;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/phil3/Documents/Development/grfx/build/build/tlbx.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		E5BA7E70DE884C8EA5B16078 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/phil3/Documents/Development/grfx/build/arr/examples/RelWithDebInfo;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/phil3/Documents/Development/grfx/arr,/Users/phil3/Documents/Development/grfx/arr/headers,/Users/phil3/Documents/Development/grfx/arr/tlbx,/Users/phil3/Documents/Development/grfx/arr/.,/Users/phil3/Documents/Development/grfx/arr/tlbx/headers,"$(inherited)");
+				INSTALL_PATH = "";
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=gnu++17' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Users/phil3/Documents/Development/grfx/build/arr/RelWithDebInfo/libarr.a,/Users/phil3/Documents/Development/grfx/build/tlbx/RelWithDebInfo/libtlbx.a,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = examples;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/phil3/Documents/Development/grfx/build/build/examples.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		ED207E4A9D20481C9D8AA6E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/phil3/Documents/Development/grfx/build/tlbx/Debug;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/phil3/Documents/Development/grfx/tlbx/headers,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++17' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = tlbx;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/phil3/Documents/Development/grfx/build/build/tlbx.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		EFE459A5007D42EFBCB28F22 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/phil3/Documents/Development/grfx/build/MinSizeRel;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/phil3/Documents/Development/grfx/.,/Users/phil3/Documents/Development/grfx/grfx2,/Users/phil3/Documents/Development/grfx/grfx2/headers,/Users/phil3/Documents/Development/grfx/grfx3,/Users/phil3/Documents/Development/grfx/grfx3/headers,/Users/phil3/Documents/Development/grfx/tlbx,/Users/phil3/Documents/Development/grfx/arr,/Users/phil3/Documents/Development/grfx/weiss,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = grfx;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/phil3/Documents/Development/grfx/build/build/grfx.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		F6226A0F3F104482AA64E08E /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/phil3/Documents/Development/grfx/build/weiss/MinSizeRel;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/phil3/Documents/Development/grfx/weiss/.,/Users/phil3/Documents/Development/grfx/weiss/weiss3,/Users/phil3/Documents/Development/grfx/weiss/weiss3/headers,/Users/phil3/Documents/Development/grfx/weiss/tlbx,/Users/phil3/Documents/Development/grfx/weiss/arr,/Users/phil3/Documents/Development/grfx/tlbx/headers,/Users/phil3/Documents/Development/grfx/arr/.,/Users/phil3/Documents/Development/grfx/arr/headers,/Users/phil3/Documents/Development/grfx/arr/tlbx,/Users/phil3/Documents/Development/grfx/arr/tlbx/headers,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = weiss3;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/phil3/Documents/Development/grfx/build/build/weiss3.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01F5D03BF19B4A82BD3C1048 /* Build configuration list for PBXNativeTarget "arr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A969353F3BC440489CBC4774 /* Debug */,
+				56B26DEF27624671862CB44E /* Release */,
+				7025EF85D9E94AF5896CCD4F /* MinSizeRel */,
+				569FD4839D58462582046C50 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		0A1C9F9171864AA9B5288FF2 /* Build configuration list for PBXNativeTarget "weiss2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B78FD8C08C04BF3AB5BB138 /* Debug */,
+				415CDE9F95DC47BFB684F910 /* Release */,
+				A57631E33345429E90FDCEB6 /* MinSizeRel */,
+				2908539F8B2B43058A714BCF /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		1F4712F6D3114BDC96489827 /* Build configuration list for PBXNativeTarget "grfx2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7326AC7600194CDEAD0CC368 /* Debug */,
+				3E66AC8B85D34F85AB5255C3 /* Release */,
+				4C27266D518F437E9C458AB2 /* MinSizeRel */,
+				6C71F787F01946D1877FF944 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		298E3A4E78E841F18B10FC48 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAD62E11AF22450E8A391CC4 /* Debug */,
+				3950C2256FB940C8BD707EE5 /* Release */,
+				8BAB62B9F8BB442F80F6F26A /* MinSizeRel */,
+				77C45615497A49C1B618306B /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		3BF1E74CA4F24CC9B5B54673 /* Build configuration list for PBXNativeTarget "tlbx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED207E4A9D20481C9D8AA6E9 /* Debug */,
+				2BDE62DBC35A41929B7BC949 /* Release */,
+				DF0E380DD5244EE18A135C07 /* MinSizeRel */,
+				0864A5CCF50141FCBE265590 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		40A719C4DD684F87B8676C7F /* Build configuration list for PBXNativeTarget "weiss" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F2AB5ED42C946808004753F /* Debug */,
+				0531E7695D824A54B5D582A6 /* Release */,
+				7789D87249584B8F9DE24F3C /* MinSizeRel */,
+				2A5B842B02914A0ABDE6E20F /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4F60265962F6469C9C41E676 /* Build configuration list for PBXNativeTarget "examples" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DF0E70F346940549B538642 /* Debug */,
+				29932FA869D0401498CF235D /* Release */,
+				9FB7DCD8E3D44479A1C44EED /* MinSizeRel */,
+				E5BA7E70DE884C8EA5B16078 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5801EC20D2144436BE06E719 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95D44BE4252C47C1B614081A /* Debug */,
+				36FE6A4355AD492E8F96E91B /* Release */,
+				9A37DADEFDA1432A9A5F25EE /* MinSizeRel */,
+				69FE2303BDC54F85AA2647B3 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9A5B6A35065B4C8797ECA77B /* Build configuration list for PBXProject "grfx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0B64980DF3E4AB98AAF6A0B /* Debug */,
+				0A05A211618742F885B9888B /* Release */,
+				09FB0B849BB0461888611BA8 /* MinSizeRel */,
+				B96DAA0071CC43FCBD98C5D1 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DE946CE77D8040A9A5BD8D93 /* Build configuration list for PBXNativeTarget "weiss3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3A78B910B0E4F90BAA7A847 /* Debug */,
+				B3B55086853349B88CC091A8 /* Release */,
+				F6226A0F3F104482AA64E08E /* MinSizeRel */,
+				7CAA9EB5DCA14D50A9F36A22 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E6F56B81E441447D92D43E8A /* Build configuration list for PBXNativeTarget "grfx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BE0ADFD0ABD48E8A422151A /* Debug */,
+				9A87C87730184DC7AC620CB2 /* Release */,
+				EFE459A5007D42EFBCB28F22 /* MinSizeRel */,
+				C745901617E649F69508921E /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F5EA7E6D4994459DBE264AF2 /* Build configuration list for PBXNativeTarget "grfx3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6353F7A7264F4CDDB4D6A5AF /* Debug */,
+				8825D1148BFA4459A361619B /* Release */,
+				966B7DE66A6E4E9C88B7E427 /* MinSizeRel */,
+				744E466560624FB0BB39B3F5 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7040A1951EA6441D9061FB24 /* Project object */;
+}
