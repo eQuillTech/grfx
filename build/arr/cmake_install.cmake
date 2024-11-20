@@ -39,9 +39,3 @@ endif()
 
 set(CMAKE_BINARY_DIR "/Users/phil3/Documents/Development/grfx/build")
 
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for each subdirectory.
-  include("/Users/phil3/Documents/Development/grfx/build/arr/examples/cmake_install.cmake")
-
-endif()
-

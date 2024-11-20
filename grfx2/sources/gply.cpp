@@ -5,7 +5,7 @@
 #include "CoreGraphics/CoreGraphics.h"
 
 #include "tlbx.hpp"
-#include "grfx.hpp"
+#include "grfx2.hpp"
 
 using namespace std;
 
@@ -23,7 +23,7 @@ bool triangleIsCCW(gpnt pA,gpnt pB,gpnt pC)
 }
 
 //
-gply::gply(const Gfrm& f)
+gply::gply(const gfrm & f)
 {
 	clear();
 	append(f.bottomRight());
@@ -263,7 +263,7 @@ double gply::distTo(const gpnt &p) const
 }
 
 //
-gply gply::map(const Gfrm &fNew,const Gfrm &fOld) const
+gply gply::map(const gfrm  &fNew,const gfrm  &fOld) const
 {
 	gply p(*this);
 	for(size_t i=0;i<size();++i)
@@ -271,7 +271,7 @@ gply gply::map(const Gfrm &fNew,const Gfrm &fOld) const
 	return p;
 }
 
-void gply::trace(CGContextRef context,const CGRect &Rframe,const Gfrm &frameF) const
+void gply::trace(CGContextRef context,const CGRect &Rframe,const gfrm  &frameF) const
 {
 	CGContextBeginPath(context);
 	bool first=true;
@@ -289,14 +289,14 @@ void gply::trace(CGContextRef context,const CGRect &Rframe,const Gfrm &frameF) c
 }
 	
 //
-void gply::doFill(CGContextRef context,const CGRect &Rframe,const Gfrm &frameF) const
+void gply::doFill(CGContextRef context,const CGRect &Rframe,const gfrm  &frameF) const
 {
 	trace(context,Rframe,frameF);
 	CGContextFillPath(context);
 }
 	
 //
-void gply::doStroke(CGContextRef context,const CGRect &Rframe,const Gfrm &frameF) const
+void gply::doStroke(CGContextRef context,const CGRect &Rframe,const gfrm  &frameF) const
 {
 	trace(context,Rframe,frameF);
 	CGContextStrokePath(context);

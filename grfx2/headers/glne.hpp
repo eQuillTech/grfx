@@ -6,7 +6,6 @@
 #include "CoreGraphics/CoreGraphics.h"
 
 #include "weiss.hpp"
-#include "Grfx_defs.hpp"
 
 #ifndef _GPNT_
 #include "gpnt.hpp"
@@ -16,14 +15,14 @@
 #include "grct.hpp"
 #endif
 
-class glne:public Gfgr
+class glne:public gfgr
 {
 private:
 	gpnt _pStart;
 	gvtr _v;
 	
 public:
-	glne(const gpnt p=pnt2::Po,const gvtr v=Vtr2::Vo):_pStart(p),_v(v){}
+	glne(const gpnt p=pnt2::Po,const gvtr v=vtr2::Vo):_pStart(p),_v(v){}
 	glne(const gpnt &pStart,const gpnt &pStop):glne(pStart,pStop-pStart){}
 	glne(double x0,double y0,double x1,double y1):glne(gpnt(x0,y0),gvtr(x1-x0,y1-y0)){}
 
@@ -48,8 +47,8 @@ public:
 	glne operator+(const gvtr &V) const;
 	glne operator-(const gvtr &V) const;
 
-	bool clip(const Gfrm &fClip,glne &lDest) const;
-	glne map(const Gfrm &fNew,const Gfrm &fOld) const;
+	bool clip(const gfrm  &fClip,glne &lDest) const;
+	glne map(const gfrm  &fNew,const gfrm  &fOld) const;
 
 	gpnt closestPoint(const gpnt &p) const;
 	double distTo(const gpnt &p) const;
@@ -62,7 +61,7 @@ public:
 	
 	friend glne operator*(double x,const glne &l);
 
-	void doStroke(CGContextRef context,const CGRect &Rframe,const Gfrm &frameF) const override;
+	void doStroke(CGContextRef context,const CGRect &Rframe,const gfrm  &frameF) const override;
 
 };
 

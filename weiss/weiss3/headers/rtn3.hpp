@@ -4,38 +4,38 @@
 #define _RTN3_
 
 #ifndef _TRF3_
-#include "Trf3.hpp"
+#include "trf3.hpp"
 #endif
 
-class Vtr3;
+class vtr3;
 
 //
-class Rtn3:public Trf3
+class rtn3:public trf3
 {
 private:
-	Rtn3(const Trf3 &T):Trf3(T){}
+	rtn3(const trf3 &T):trf3(T){}
 
 public:
-	Rtn3(const Vtr3 &V0,const Vtr3 &V1,const Vtr3 &V2);
-	Rtn3(const Vtr3 &V2,double angle);
-	Rtn3(const Vtr3 &V,const Vtr3 &Vp);
-	Rtn3(const double theta,const double phi,const double rho);
-	Rtn3(const VtrDir &dir);
-	//	Rtn3(const Rtn3 &R) noexcept:Trf3(R){}//copy constructor
+	rtn3(const vtr3 &V0,const vtr3 &V1,const vtr3 &V2);
+	rtn3(const vtr3 &V2,double angle);
+	rtn3(const vtr3 &V,const vtr3 &Vp);
+	rtn3(const double theta,const double phi,const double rho);
+	rtn3(const VtrDir &dir);
+	//	rtn3(const rtn3 &R) noexcept:trf3(R){}//copy constructor
 
-	Rtn3 operator*(const Rtn3 &R) const noexcept{return Trf3::operator*(R);}
-	Rtn3 operator/(const Rtn3 &R) const noexcept{return Trf3::operator/(R);}
-	Rtn3 operator*=(const Rtn3 &R) noexcept{return Trf3::operator*=(R);}
-	Rtn3 operator/=(const Rtn3 &R) noexcept{return Trf3::operator/=(R);}
+	rtn3 operator*(const rtn3 &R) const noexcept{return trf3::operator*(R);}
+	rtn3 operator/(const rtn3 &R) const noexcept{return trf3::operator/(R);}
+	rtn3 operator*=(const rtn3 &R) noexcept{return trf3::operator*=(R);}
+	rtn3 operator/=(const rtn3 &R) noexcept{return trf3::operator/=(R);}
 	
-	Rtn3 inv() const{return Trf3::inv();}
+	rtn3 inv() const{return trf3::inv();}
 
-	Trf3 operator*(const Trf3 &T) const noexcept{return Trf3::operator*(T);}
-	Trf3 operator/(const Trf3 &T) const noexcept{return Trf3::operator/(T);}
+	trf3 operator*(const trf3 &T) const noexcept{return trf3::operator*(T);}
+	trf3 operator/(const trf3 &T) const noexcept{return trf3::operator/(T);}
 	
-	Vtr3 operator*(const Vtr3 &V) const{return Trf3::operator*(V);}
+	vtr3 operator*(const vtr3 &V) const{return trf3::operator*(V);}
 
-	static const Rtn3 Ro;
+	static const rtn3 Ro;
 };
 
 #endif

@@ -5,9 +5,9 @@
 #include <CoreGraphics/CoreGraphics.h>
 
 #include "tlbx.hpp"
-#include "grfx.hpp"
+#include "grfx2.hpp"
 
-glne zeroL(pnt2::Po,Vtr2::Vo);
+glne zeroL(pnt2::Po,vtr2::Vo);
 
 //
 glne glne::operator+=(const gvtr &v)
@@ -62,7 +62,7 @@ glne glne::operator/(double x) const
 }
 
 //
-bool glne::clip(const Gfrm &fClip,glne &lDest) const
+bool glne::clip(const gfrm  &fClip,glne &lDest) const
 {
 	lDest=*this;
 	gpnt pStart=start();
@@ -76,7 +76,7 @@ bool glne::clip(const Gfrm &fClip,glne &lDest) const
 }
 
 //
-glne glne::map(const Gfrm &fNew,const Gfrm &fOld) const
+glne glne::map(const gfrm  &fNew,const gfrm  &fOld) const
 {
 	gpnt pStart=start();
 	gpnt pStop=stop();
@@ -116,7 +116,7 @@ gpnt glne::center() const
 }
 
 //
-void glne::doStroke(CGContextRef context,const CGRect &Rframe,const Gfrm &frameF) const
+void glne::doStroke(CGContextRef context,const CGRect &Rframe,const gfrm  &frameF) const
 {
 	CGContextSaveGState(context);
 	const CGPoint Pstart=start().map(Rframe,frameF);

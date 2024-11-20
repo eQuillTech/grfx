@@ -10,50 +10,50 @@
 #include "arr.hpp"
 
 #ifndef _VTR3_
-#include "Vtr3.hpp"
+#include "vtr3.hpp"
 #endif
 
 #ifndef _TRF3_
-#include "Trf3.hpp"
+#include "trf3.hpp"
 #endif
 
-class Ags3;
+class ags3;
 
 //
-class Atr3
+class atr3
 {
 protected:
-	Trf3 _t;
-	Vtr3 _v;
+	trf3 _t;
+	vtr3 _v;
 	
 public:
-	explicit Atr3():_t(Trf3::To),_v(Vtr3::Vo){}
-	explicit Atr3(const Trf3 &T,const Vtr3 &V):_t(T),_v(V){}
-	explicit Atr3(const Trf3 &T):_t(T),_v(Vtr3::Vo){}
-	explicit Atr3(const Vtr3 &V):_t(Trf3::To),_v(V){}
-	explicit Atr3(const Trf3 &T,const Pnt3 &P);
+	explicit atr3():_t(trf3::To),_v(vtr3::Vo){}
+	explicit atr3(const trf3 &T,const vtr3 &V):_t(T),_v(V){}
+	explicit atr3(const trf3 &T):_t(T),_v(vtr3::Vo){}
+	explicit atr3(const vtr3 &V):_t(trf3::To),_v(V){}
+	explicit atr3(const trf3 &T,const pnt3 &P);
 
-	Vtr3 operator*(const Vtr3 &V) const noexcept;
-	Pnt3 operator*(const Pnt3 &P) const noexcept;
+	vtr3 operator*(const vtr3 &V) const noexcept;
+	pnt3 operator*(const pnt3 &P) const noexcept;
 
-	Atr3 operator*(const Atr3 &T) const;
-	Atr3 operator/(const Atr3 &T) const;
-	Atr3 operator*=(const Atr3 &T){return *this=T*(*this);}
-	Atr3 operator/=(const Atr3 &T){return *this=*this/T;}
+	atr3 operator*(const atr3 &T) const;
+	atr3 operator/(const atr3 &T) const;
+	atr3 operator*=(const atr3 &T){return *this=T*(*this);}
+	atr3 operator/=(const atr3 &T){return *this=*this/T;}
 
 	operator arr::darr2() const;
-	friend std::ostream& operator<<(std::ostream &os,const Atr3 &T);
+	friend std::ostream& operator<<(std::ostream &os,const atr3 &T);
 
-	Trf3 &A(){return _t;}
-	Vtr3 &b(){return _v;}
-	Trf3 const &A() const{return _t;}
-	Vtr3 const &b() const{return _v;}
+	trf3 &A(){return _t;}
+	vtr3 &b(){return _v;}
+	trf3 const &A() const{return _t;}
+	vtr3 const &b() const{return _v;}
 
-	Ags3 operator*(const Ags3 &A) const;
-	Atr3 inv() const;
-	static Atr3 ident();
+	ags3 operator*(const ags3 &A) const;
+	atr3 inv() const;
+	static atr3 ident();
 
-	static const Atr3 Ato;
+	static const atr3 Ato;
 	
 	operator simd::float4x4();
 	//simd::float4x4 perspective(const double yTop,const double xLeft,const double yBottom,const double xRight,const double zNear,const double zFar);

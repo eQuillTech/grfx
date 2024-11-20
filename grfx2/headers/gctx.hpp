@@ -10,7 +10,7 @@
 #endif
 
 //
-class gctx:public Gfrm
+class gctx:public gfrm 
 {
 private:
 	CGContextRef m_context=nullptr;
@@ -20,8 +20,8 @@ private:
 	uint32_t m_bitmapInfo=kCGImageAlphaPremultipliedLast;
 	
 public:
-	gctx():Gfrm(){}
-	gctx(std::size_t width,std::size_t height,const Gfrm &f);
+	gctx():gfrm (){}
+	gctx(std::size_t width,std::size_t height,const gfrm  &f);
 	~gctx();
 
 	CGContextRef contextRef(){return m_context;}

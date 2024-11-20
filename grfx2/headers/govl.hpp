@@ -7,19 +7,19 @@
 #include "CoreGraphics/CoreGraphics.h"
 
 #ifndef _GFRM_
-#include "Gfrm.h"
+#include "gfrm .h"
 #endif
 
-class govl:public Gfrm
+class govl:public gfrm 
 {
 public:	
-	govl(const double t=0.,const double l=0.,const double b=0.,const double r=0.):Gfrm(t,l,b,r){}
-	govl(const gpnt tl,const gpnt br):Gfrm(tl,br){}
-	govl(const Gfrm &f):Gfrm(f){}
-	govl(const grct &r):Gfrm(r){}
+	govl(const double t=0.,const double l=0.,const double b=0.,const double r=0.):gfrm (t,l,b,r){}
+	govl(const gpnt tl,const gpnt br):gfrm (tl,br){}
+	govl(const gfrm  &f):gfrm (f){}
+	govl(const grct &r):gfrm (r){}
 	~govl(){}
 
-	govl operator=(const Gfrm &f);
+	govl operator=(const gfrm  &f);
 	double meanRadius() const{return halfMeanSize();}
 
 	//

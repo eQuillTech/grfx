@@ -10,12 +10,12 @@
 using namespace std;
 
 //
-Rtn2::Rtn2(const Rtn2 &R):Trf2(R)
+rtn2::rtn2(const rtn2 &R):trf2(R)
 {
 }
 
 //
-Rtn2::Rtn2(const Vtr2 &V,const Vtr2 &Vp):Trf2()
+rtn2::rtn2(const vtr2 &V,const vtr2 &Vp):trf2()
 {
 	double magV=V.len();
 	double magVp=Vp.len();
@@ -23,20 +23,20 @@ Rtn2::Rtn2(const Vtr2 &V,const Vtr2 &Vp):Trf2()
 	if((magV>0.)&&(magVp>0.))
 	{
 		double angle=atan2(V.dot(Vp),V.cross(Vp));
-		*this=Rtn2(angle);
+		*this=rtn2(angle);
 	}
 }
 
 //
-Rtn2::Rtn2(const double angle):Trf2()
+rtn2::rtn2(const double angle):trf2()
 {
 	double c=cos(angle),s=sin(angle);
 	double u[2][2]={{c,s},{-s,c}};
-	*this=Trf2(u);
+	*this=trf2(u);
 }
 
 //
-Rtn2::Rtn2(const Trf2 &T)
+rtn2::rtn2(const trf2 &T)
 {
 	for(size_t i=0;i<2;i++)
 		for(size_t j=0;j<2;j++)
@@ -44,26 +44,26 @@ Rtn2::Rtn2(const Trf2 &T)
 }
 
 //
-Rtn2 Rtn2::operator*(const Rtn2 &R) const
+rtn2 rtn2::operator*(const rtn2 &R) const
 {
-	return Trf2(*this)*R;
+	return trf2(*this)*R;
 }
 
 //
-Rtn2 Rtn2::operator/(const Rtn2 &R) const
+rtn2 rtn2::operator/(const rtn2 &R) const
 {
-	return Trf2(*this)/R;
+	return trf2(*this)/R;
 }
 
 //
-Rtn2 Rtn2::operator/=(const Rtn2 &R)
+rtn2 rtn2::operator/=(const rtn2 &R)
 {
 	return (*this)*=(*this)/R;
 }
 
 //
-Rtn2 Rtn2::inv() const
+rtn2 rtn2::inv() const
 {
-	return Trf2(*this).inv();
+	return trf2(*this).inv();
 
 }

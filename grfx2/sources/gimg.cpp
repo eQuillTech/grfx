@@ -4,12 +4,12 @@
 #include "CoreGraphics/CoreGraphics.h"
 
 #include "tlbx.hpp"
-#include "grfx.hpp"
+#include "grfx2.hpp"
 
 using namespace std;
 
 //
-gimg::gimg(const GimgData& data,const Gfrm &f):Gfrm(f),m_imageR(data.m_imageR)
+gimg::gimg(const gimgData& data,const gfrm &f):gfrm(f),m_imageR(data.m_imageR)
 {
 	m_transform.a=1;m_transform.b=0;
 	m_transform.c=0;m_transform.d=-1;

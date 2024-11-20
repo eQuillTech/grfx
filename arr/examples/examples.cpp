@@ -11,7 +11,7 @@
 #include "arr.hpp"
 
 namespace examples {
-
+ 
 void example1(){
 
 	arr::darr1 d1({1,2,3});

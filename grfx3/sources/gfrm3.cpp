@@ -4,7 +4,8 @@
 #include <math.h>
 
 #include "tlbx.hpp"
-#include "grfx.hpp"
+#include "grfx2.hpp"
+#include "grfx3.hpp"
 
 using namespace std;
 
@@ -82,20 +83,20 @@ bool gfrm3::isIn(const gfrm3 &F) const
 //
 bool gfrm3::overlaps(const gfrm3 &F) const
 {
-	double resX=sgn(F.left()-left())
-		+sgn(F.left()-right())
-		+sgn(F.right()-left())
-		+sgn(F.right()-right());
+	double resX=mth::sgn(F.left()-left())
+		+mth::sgn(F.left()-right())
+		+mth::sgn(F.right()-left())
+		+mth::sgn(F.right()-right());
 		
-	double resY=sgn(F.front()-front())
-		+sgn(F.front()-back())
-		+sgn(F.back()-front())
-		+sgn(F.back()-front());
+	double resY=mth::sgn(F.front()-front())
+		+mth::sgn(F.front()-back())
+		+mth::sgn(F.back()-front())
+		+mth::sgn(F.back()-front());
 
-	double resZ=sgn(F.bottom()-bottom())
-		+sgn(F.bottom()-top())
-		+sgn(F.top()-bottom())
-		+sgn(F.top()-top());
+	double resZ=mth::sgn(F.bottom()-bottom())
+		+mth::sgn(F.bottom()-top())
+		+mth::sgn(F.top()-bottom())
+		+mth::sgn(F.top()-top());
 
 	return (fabs(resX)<3.)&&(fabs(resY)<3.)&&(fabs(resZ)<3.);
 }
@@ -141,8 +142,8 @@ void gfrm3::move(vtr3 &V,const gfrm3 &boundF) const
 gfrm3 gfrm3::map(const gfrm3 &newF,const gfrm3 &oldF) const
 {
 	gfrm3 rp=*this;
-	rp._originP=Gpnt3(_originP).map(newF,oldF);
-	rp._diagV=Gpnt3(_originP+_diagV).map(newF,oldF)-rp._originP;
+	rp._originP=gpnt3(_originP).map(newF,oldF);
+	rp._diagV=gpnt3(_originP+_diagV).map(newF,oldF)-rp._originP;
 	return rp;
 }
 
@@ -159,7 +160,7 @@ ostream& operator<<(ostream &os,const gfrm3 &F)
 	return os;
 }
 
-gfrm3::operator Ags3() const
+gfrm3::operator ags3() const
 {
-	return Ags3(Bas3(_diagV.x()*vtr3::Vx,_diagV.y()*vtr3::Vy,_diagV.z()*vtr3::Vz),_originP);
+	return ags3(bas3(_diagV.x()*vtr3::Vx,_diagV.y()*vtr3::Vy,_diagV.z()*vtr3::Vz),_originP);
 }

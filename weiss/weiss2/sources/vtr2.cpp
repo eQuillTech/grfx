@@ -9,18 +9,18 @@
 
 using namespace std;
 
-constexpr const Vtr2 Vtr2::Vo(0.,0.);
-constexpr const Vtr2 Vtr2::Vx(1.,0.);
-constexpr const Vtr2 Vtr2::Vy(0.,1.);
+constexpr const vtr2 vtr2::Vo(0.,0.);
+constexpr const vtr2 vtr2::Vx(1.,0.);
+constexpr const vtr2 vtr2::Vy(0.,1.);
 
 //
-double Vtr2::cross(const Vtr2 &V) const
+double vtr2::cross(const vtr2 &V) const
 {
 	return _x*V._y-_y*V._x;
 }
 
 //
-ostream& operator<<(ostream &os,const Vtr2 &V)
+ostream& operator<<(ostream &os,const vtr2 &V)
 {
 	os<<"("<<V.x()<<","<<V.y()<<")";
 	return os;

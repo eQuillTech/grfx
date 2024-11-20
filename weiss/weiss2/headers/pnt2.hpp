@@ -8,47 +8,47 @@
 #endif
 
 #ifndef _CRD2_
-#include "Crd2.hpp"
+#include "crd2.hpp"
 #endif
 
-class Vtr2;
-class Trf2;
-class Atr2;
+class vtr2;
+class trf2;
+class atr2;
 
 //
-class Pnt2:public Crd2
+class pnt2:public crd2
 {
 public:
-	constexpr Pnt2():Crd2(){}
-	constexpr Pnt2(double x,double y):Crd2(x,y){}
-	Pnt2(const double x[2]):Crd2(x){}
-	Pnt2(const Crd2 &C):Crd2(C){}
-	Pnt2(const arr::darr1 &A):Crd2(A){}
+	constexpr pnt2():crd2(){}
+	constexpr pnt2(double x,double y):crd2(x,y){}
+	pnt2(const double x[2]):crd2(x){}
+	pnt2(const crd2 &C):crd2(C){}
+	pnt2(const arr::darr1 &A):crd2(A){}
 
-	Pnt2 operator+(const Vtr2 &V) const;
-	Pnt2 operator-(const Vtr2 &V) const;
-	Pnt2 operator+=(const Vtr2 &V);
-	Pnt2 operator-=(const Vtr2 &V);
+	pnt2 operator+(const vtr2 &V) const;
+	pnt2 operator-(const vtr2 &V) const;
+	pnt2 operator+=(const vtr2 &V);
+	pnt2 operator-=(const vtr2 &V);
 
-	Vtr2 operator-(const Pnt2 &P) const;
+	vtr2 operator-(const pnt2 &P) const;
 	
-	bool operator==(const Pnt2 &P) const;
-	bool operator!=(const Pnt2 &P) const;
+	bool operator==(const pnt2 &P) const;
+	bool operator!=(const pnt2 &P) const;
 
 	inline double sqrdist() const{return sqrlen();}
 	inline double dist() const{return len();}
 
-	Pnt2 operator*=(const Trf2 &T);
-	Pnt2 operator*=(const Atr2 &T);
+	pnt2 operator*=(const trf2 &T);
+	pnt2 operator*=(const atr2 &T);
 
-	Pnt2 neg(){return Crd2::operator-(*this);}
-	static const Pnt2 Po;
+	pnt2 neg(){return crd2::operator-(*this);}
+	static const pnt2 Po;
 };
 
 //
-inline double sqrdist(const Pnt2 &p){return p.sqrdist();}
-inline double dist(const Pnt2 &p){return p.dist();}
+inline double sqrdist(const pnt2 &p){return p.sqrdist();}
+inline double dist(const pnt2 &p){return p.dist();}
  
-typedef std::vector<Pnt2> Pnt2Vector;
+typedef std::vector<pnt2> Pnt2Vector;
 
 #endif

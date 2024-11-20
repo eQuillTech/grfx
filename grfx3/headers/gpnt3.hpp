@@ -11,19 +11,19 @@
 class gfrm3;
 
 
-class Gpnt3:public pnt3
+class gpnt3:public pnt3
 {
 public:
-	Gpnt3(double x=0.,double y=0.,double z=0.):pnt3(x,y,z){}
-	Gpnt3(const darr1 &A):pnt3(A){}
-	Gpnt3(const Crd3 &C):pnt3(C){}
+	gpnt3(double x=0.,double y=0.,double z=0.):pnt3(x,y,z){}
+	gpnt3(const arr::darr1 &A):pnt3(A){}
+	gpnt3(const crd3 &C):pnt3(C){}
 
-	Gpnt3 map(const gfrm3 &newF,const gfrm3 &oldF) const;
+	gpnt3 map(const gfrm3 &newF,const gfrm3 &oldF) const;
 	
-	friend std::ostream& operator<<(std::ostream &os,const Gpnt3 &P);
+	friend std::ostream& operator<<(std::ostream &os,const gpnt3 &P);
 	
 };
 
-typedef arr1<Gpnt3> Gpnt3_arr1;
+typedef arr::arr1<gpnt3> gpnt3_arr1;
 
 #endif

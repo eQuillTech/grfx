@@ -10,42 +10,42 @@
 #include "arr.hpp"
 
 #ifndef _VTR2_
-#include "Vtr2.hpp"
+#include "vtr2.hpp"
 #endif
 
 #ifndef _TRF2_
-#include "Trf2.hpp"
+#include "trf2.hpp"
 #endif
 
 //
-class Atr2
+class atr2
 {
 protected:
-	Trf2 _t;
-	Vtr2 _v;
+	trf2 _t;
+	vtr2 _v;
 	
 public:
-	Atr2(const Trf2 &T=Trf2::To,const Vtr2 &V=Vtr2::Vo){_t=T;_v=V;}
+	atr2(const trf2 &T=trf2::To,const vtr2 &V=vtr2::Vo){_t=T;_v=V;}
 
-	Vtr2 operator*(const Vtr2 &V) const;
-	Pnt2 operator*(const Pnt2 &P) const;
+	vtr2 operator*(const vtr2 &V) const;
+	pnt2 operator*(const pnt2 &P) const;
 
-	Atr2 operator*(const Atr2 &T) const;
-	Atr2 operator/(const Atr2 &T) const;
-	Atr2 operator*=(const Atr2 &T){return *this=T*(*this);}
-	Atr2 operator/=(const Atr2 &T){return *this=*this/T;}
+	atr2 operator*(const atr2 &T) const;
+	atr2 operator/(const atr2 &T) const;
+	atr2 operator*=(const atr2 &T){return *this=T*(*this);}
+	atr2 operator/=(const atr2 &T){return *this=*this/T;}
 
 	operator arr::darr2() const;
 
-	Trf2 &A(){return _t;}
-	Vtr2 &b(){return _v;}
-	Trf2 const &A() const{return _t;}
-	Vtr2 const &b() const{return _v;}
+	trf2 &A(){return _t;}
+	vtr2 &b(){return _v;}
+	trf2 const &A() const{return _t;}
+	vtr2 const &b() const{return _v;}
 
-	Atr2 inv() const;
-	static Atr2 ident();
+	atr2 inv() const;
+	static atr2 ident();
 
-	static const Atr2 Ato;
+	static const atr2 Ato;
 };
 
 #endif

@@ -5,12 +5,12 @@
 #include "CoreGraphics/CoreGraphics.h"
 
 #include "tlbx.hpp"
-#include "grfx.hpp"
+#include "grfx2.hpp"
 
 using namespace std;
 
 //
-gctx::gctx(size_t width,size_t height,const Gfrm &f):Gfrm(f),m_width(width),m_height(height)
+gctx::gctx(size_t width,size_t height,const gfrm  &f):gfrm (f),m_width(width),m_height(height)
 {
 	size_t bytesPerRow=(m_width*4);
 	size_t byteCount=(bytesPerRow*m_height);

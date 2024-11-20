@@ -5,12 +5,13 @@
 #include "CoreGraphics/CoreGraphics.h"
 
 #include "tlbx.hpp"
-#include "grfx.hpp"
+#include "grfx2.hpp"
+#include "grfx3.hpp"
 
 using namespace std;
 	
 //
-Gpnt3 Gpnt3::map(const gfrm3 &newF,const gfrm3 &oldF) const
+gpnt3 gpnt3::map(const gfrm3 &newF,const gfrm3 &oldF) const
 {
 	double scaleX=newF.width()/oldF.width();
 	double scaleY=newF.depth()/oldF.depth();
@@ -20,7 +21,7 @@ Gpnt3 Gpnt3::map(const gfrm3 &newF,const gfrm3 &oldF) const
 	double offsetY=newF.front()-scaleY*oldF.front();
 	double offsetZ=newF.bottom()-scaleZ*oldF.bottom();
 
-	Gpnt3 P;
+	gpnt3 P;
 	P.x()=scaleX*x()+offsetX;
 	P.y()=scaleY*y()+offsetY;
 	P.z()=scaleZ*z()+offsetZ;
@@ -29,7 +30,7 @@ Gpnt3 Gpnt3::map(const gfrm3 &newF,const gfrm3 &oldF) const
 }
 
 //
-ostream& operator<<(ostream &os,const Gpnt3 &P)
+ostream& operator<<(ostream &os,const gpnt3 &P)
 {
 	os<<"("<<P.x()<<","<<P.y()<<","<<P.z()<<")";
 	return os;

@@ -9,12 +9,12 @@
 
 using namespace std;
 
-const Rtn3 Rtn3::Ro(Vtr3::Vz,0.);
+const rtn3 rtn3::Ro(vtr3::Vz,0.);
 
 //
-Rtn3::Rtn3(const Vtr3 &V0,const Vtr3 &V1,const Vtr3 &V2):Trf3()
+rtn3::rtn3(const vtr3 &V0,const vtr3 &V1,const vtr3 &V2):trf3()
 {
-	Vtr3 V[3];
+	vtr3 V[3];
 	
 	V[0]=(V1.cross(V2)).norm();
 	V[1]=(V2.cross(V0)).norm();
@@ -25,62 +25,62 @@ Rtn3::Rtn3(const Vtr3 &V0,const Vtr3 &V1,const Vtr3 &V2):Trf3()
 }
 
 //
-Rtn3::Rtn3(const Vtr3 &V,const double angle):Trf3()
+rtn3::rtn3(const vtr3 &V,const double angle):trf3()
 {
-	Vtr3 u[3];
+	vtr3 u[3];
 	if(V.len()>0.)
 	{
 		u[2]=V.norm();
-		u[1]=u[2].cross(Vtr3::Vx);
+		u[1]=u[2].cross(vtr3::Vx);
 		u[0]=u[1].cross(u[2]);
 		if((u[1].len()==0.)||(u[0].len()==0.))
 		{
-			u[0]=Vtr3::Vy.cross(u[2]);
+			u[0]=vtr3::Vy.cross(u[2]);
 			u[1]=u[2].cross(u[0]);
 		}
-		Rtn3 R(u[0],u[1],u[2]);
+		rtn3 R(u[0],u[1],u[2]);
 		
-		Vtr3 up[3];
-		up[0]=cos(angle)*Vtr3::Vx+sin(angle)*Vtr3::Vy;
-		up[1]=-sin(angle)*Vtr3::Vx+cos(angle)*Vtr3::Vy;
-		up[2]=Vtr3::Vz;
-		Rtn3 Rp(up[0],up[1],up[2]);		
+		vtr3 up[3];
+		up[0]=cos(angle)*vtr3::Vx+sin(angle)*vtr3::Vy;
+		up[1]=-sin(angle)*vtr3::Vx+cos(angle)*vtr3::Vy;
+		up[2]=vtr3::Vz;
+		rtn3 Rp(up[0],up[1],up[2]);		
 		*this=R*Rp*(R.inv());
 	}
 	else
 	{
-		*this=Trf3::ident();
+		*this=trf3::ident();
 	}
 }
 
 //
-Rtn3::Rtn3(const Vtr3 &V,const Vtr3 &Vp):Trf3()
+rtn3::rtn3(const vtr3 &V,const vtr3 &Vp):trf3()
 {
 	double Lprod=V.len()*Vp.len();
 	if(Lprod>0.)
 	{
 		double angle=acos(V.dot(Vp)/Lprod);
-		Vtr3 axisV=V.cross(Vp)/Lprod;
+		vtr3 axisV=V.cross(Vp)/Lprod;
 		if(axisV.len()>0.)
-			*this=Rtn(axisV,angle);
+			*this=rtn(axisV,angle);
 		else
-			*this=Trf3::ident();
+			*this=trf3::ident();
 	}
 }
 
 //
-Rtn3::Rtn3(const double theta,const double phi,const double rho):Trf3()
+rtn3::rtn3(const double theta,const double phi,const double rho):trf3()
 {
-	*this=Rtn(Vtr::Vz,phi)*Rtn3(Vtr3::Vy,theta)*Rtn(Vtr::Vz,rho);
+	*this=rtn3(vtr3::Vz,phi)*rtn3(vtr3::Vy,theta)*rtn3(vtr3::Vz,rho);
 }
 
 //
-Rtn3::Rtn3(const VtrDir &dir):Trf3()
+rtn3::rtn3(const VtrDir &dir):trf3()
 {
-	Vtr3 axisY=dir._axisZ.cross(dir._axisX);
-	Rtn3 R_rho(dir._axisZ,dir._rho);
-	Rtn3 R_theta(axisY,dir._theta);
-	Rtn3 R_phi(dir._axisZ,dir._phi);
+	vtr3 axisY=dir._axisZ.cross(dir._axisX);
+	rtn3 R_rho(dir._axisZ,dir._rho);
+	rtn3 R_theta(axisY,dir._theta);
+	rtn3 R_phi(dir._axisZ,dir._phi);
 	*this=R_phi*R_theta*R_rho;
 }
 

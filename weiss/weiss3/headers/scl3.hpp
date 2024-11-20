@@ -4,28 +4,28 @@
 #define _SCL3_
 
 #ifndef _TRF3_
-#include "Trf3.hpp"
+#include "trf3.hpp"
 #endif
 
-//Scl3
-class Scl3:public Trf3
+//scl3
+class scl3:public trf3
 {
 private:
-	Scl3(const Trf3 &T):Trf3(T){}
+	scl3(const trf3 &T):trf3(T){}
 	
 public:
-	Scl3(double x);
-	//Scl3(const Scl3 &S) noexcept:Trf3(S){}
+	scl3(double x);
+	//scl3(const scl3 &S) noexcept:trf3(S){}
 
-	Scl3 operator*(const Scl3 &S) const noexcept{return Trf3::operator*(S);}
-	Scl3 operator/(const Scl3 &S) const noexcept{return Trf3::operator/(S);}
-	Scl3 operator*=(const Scl3 &S) noexcept{return (*this)=(*this)*(S);}
-	Scl3 operator/=(const Scl3 &S) noexcept{return (*this)=(*this)/(S);}
+	scl3 operator*(const scl3 &S) const noexcept{return trf3::operator*(S);}
+	scl3 operator/(const scl3 &S) const noexcept{return trf3::operator/(S);}
+	scl3 operator*=(const scl3 &S) noexcept{return (*this)=(*this)*(S);}
+	scl3 operator/=(const scl3 &S) noexcept{return (*this)=(*this)/(S);}
 
-	Scl3 inv() const{return Trf3::inv();}
+	scl3 inv() const{return trf3::inv();}
 	
-	Trf3 operator*(const Trf3 &T) const noexcept{return Trf3::operator*(T);}
-	Trf3 operator/(const Trf3 &T) const noexcept{return Trf3::operator/(T);}
+	trf3 operator*(const trf3 &T) const noexcept{return trf3::operator*(T);}
+	trf3 operator/(const trf3 &T) const noexcept{return trf3::operator/(T);}
 };
 	
 #endif

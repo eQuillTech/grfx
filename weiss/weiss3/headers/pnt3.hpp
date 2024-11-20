@@ -8,39 +8,39 @@
 #include "arr.hpp"
 
 #ifndef _CRD3_
-#include "Crd3.hpp"
+#include "crd3.hpp"
 #endif
 
-class Vtr3;
-class Trf3;
-class Atr3;
+class vtr3;
+class trf3;
+class atr3;
 
 //
-class Pnt3:public Crd3
+class pnt3:public crd3
 {
 private:
 
 public:
-	explicit Pnt3(const Crd3 &C):Crd3(C){}
-	constexpr Pnt3():Crd3(){}
-	constexpr Pnt3(double x,double y,double z):Crd3(x,y,z){}
-	Pnt3(const arr::darr1 &A):Crd3(A){}
+	explicit pnt3(const crd3 &C):crd3(C){}
+	constexpr pnt3():crd3(){}
+	constexpr pnt3(double x,double y,double z):crd3(x,y,z){}
+	pnt3(const arr::darr1 &A):crd3(A){}
 
-	Pnt3 operator+(const Vtr3 &V) const;
-	Pnt3 operator-(const Vtr3 &V) const;
-	Pnt3 operator+=(const Vtr3 &V);
-	Pnt3 operator-=(const Vtr3 &V);
+	pnt3 operator+(const vtr3 &V) const;
+	pnt3 operator-(const vtr3 &V) const;
+	pnt3 operator+=(const vtr3 &V);
+	pnt3 operator-=(const vtr3 &V);
 
-	Vtr3 operator-(const Pnt3 &P) const;
+	vtr3 operator-(const pnt3 &P) const;
 	
-	bool operator==(const Pnt3 &P) const;
-	bool operator!=(const Pnt3 &P) const;
+	bool operator==(const pnt3 &P) const;
+	bool operator!=(const pnt3 &P) const;
 
-	Pnt3 operator*(const Atr3 &T) const;
-	Pnt3 operator*=(const Atr3 &T);
+	pnt3 operator*(const atr3 &T) const;
+	pnt3 operator*=(const atr3 &T);
 
-	Pnt3 operator/(const Atr3 &T) const;
-	Pnt3 operator/=(const Atr3 &T);
+	pnt3 operator/(const atr3 &T) const;
+	pnt3 operator/=(const atr3 &T);
 
 	double dist() const;
 
@@ -52,14 +52,14 @@ public:
 	double const& y() const{return _y;}
 	double const& z() const{return _z;}
 
-	static const Pnt3 Po;
+	static const pnt3 Po;
 	operator simd::float4();
 	operator simd::float3();
 };
 
 //
-inline double dist(const Pnt3 &p){return p.dist();}
+inline double dist(const pnt3 &p){return p.dist();}
  
-typedef std::vector<Pnt3> Pnt3Vector;
+typedef std::vector<pnt3> Pnt3Vector;
 
 #endif

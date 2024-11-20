@@ -9,7 +9,7 @@
 /* Begin PBXAggregateTarget section */
 		3C78B583444B4EA3A80C4938 /* ZERO_CHECK */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = A42AB17714104E48BA1BF695 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildConfigurationList = CA91E038612644A9942CB5F7 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
 			buildPhases = (
 				4721A44D6B13092E214C97CB /* Generate CMakeFiles/ZERO_CHECK */,
 			);
@@ -20,13 +20,13 @@
 		};
 		58E74CB9E0B1471A9B7E6543 /* ALL_BUILD */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = C1F2F149E546443E8015CE96 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildConfigurationList = 96BD849C734049CEBBEAB3DB /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
 			buildPhases = (
 				6C8E9CEF525F22880D3A5F36 /* Generate CMakeFiles/ALL_BUILD */,
 			);
 			dependencies = (
-				21428992E27346C99A524237 /* PBXTargetDependency */,
-				AF563CF64CB54C5A9AC7E6A9 /* PBXTargetDependency */,
+				0F10D790210C4308A5DAB4C8 /* PBXTargetDependency */,
+				20AB248FD8C74D9F9B74E1CB /* PBXTargetDependency */,
 			);
 			name = ALL_BUILD;
 			productName = ALL_BUILD;
@@ -34,41 +34,41 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		104E5E95AAB74BA98271A139 /* /Users/phil3/Documents/Development/grfx/tlbx/headers/col.hpp */ = {isa = PBXBuildFile; fileRef = 34EE4E9772FB49DEADB6C98A /* /Users/phil3/Documents/Development/grfx/tlbx/headers/col.hpp */; };
-		188C33312EF84F26966F212B /* /Users/phil3/Documents/Development/grfx/tlbx/sources/str.cpp */ = {isa = PBXBuildFile; fileRef = 80FE47A32246448480C321A9 /* /Users/phil3/Documents/Development/grfx/tlbx/sources/str.cpp */; };
-		199DAEA9155B46A9B7E156D0 /* /Users/phil3/Documents/Development/grfx/tlbx/sources/mth.cpp */ = {isa = PBXBuildFile; fileRef = D8C33384F92247ADA827EF61 /* /Users/phil3/Documents/Development/grfx/tlbx/sources/mth.cpp */; };
-		31A83C55C0DE485D86D51900 /* /Users/phil3/Documents/Development/grfx/tlbx/headers/trg.hpp */ = {isa = PBXBuildFile; fileRef = BA1DAABA61CF486480A98275 /* /Users/phil3/Documents/Development/grfx/tlbx/headers/trg.hpp */; };
-		3EFDA9F0C4A44E40B11F9698 /* /Users/phil3/Documents/Development/grfx/tlbx/sources/col.cpp */ = {isa = PBXBuildFile; fileRef = BB57960453C64F578D20E95B /* /Users/phil3/Documents/Development/grfx/tlbx/sources/col.cpp */; };
-		561665326C5F496994EC3C8E /* /Users/phil3/Documents/Development/grfx/tlbx/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = CC8F9871AFFE4E8CB098A34C /* /Users/phil3/Documents/Development/grfx/tlbx/CMakeLists.txt */; };
-		76DC8284865F4542ADEA8E74 /* /Users/phil3/Documents/Development/grfx/tlbx/tlbx.hpp */ = {isa = PBXBuildFile; fileRef = 8737C11938534982A81CFF6C /* /Users/phil3/Documents/Development/grfx/tlbx/tlbx.hpp */; };
-		8D5405D44C4C4600B908E019 /* /Users/phil3/Documents/Development/grfx/tlbx/headers/mth.hpp */ = {isa = PBXBuildFile; fileRef = C592B153090F4B77A01E94C1 /* /Users/phil3/Documents/Development/grfx/tlbx/headers/mth.hpp */; };
-		968C0683995E46ABA105191F /* /Users/phil3/Documents/Development/grfx/tlbx/sources/trg.cpp */ = {isa = PBXBuildFile; fileRef = 5B96C67510C545B89EB2CC1E /* /Users/phil3/Documents/Development/grfx/tlbx/sources/trg.cpp */; };
-		FC85287563044B1294A7405B /* /Users/phil3/Documents/Development/grfx/tlbx/headers/str.hpp */ = {isa = PBXBuildFile; fileRef = 1D9B2C3E8C8C460086F5E7B1 /* /Users/phil3/Documents/Development/grfx/tlbx/headers/str.hpp */; };
+		2604530C06304D7D95F65DDA /* /Users/phil3/Documents/Development/grfx/tlbx/headers/col.hpp */ = {isa = PBXBuildFile; fileRef = A4C73B5C48DB43A6BA7A3491 /* /Users/phil3/Documents/Development/grfx/tlbx/headers/col.hpp */; };
+		3FB57161628E4079AEF877FF /* /Users/phil3/Documents/Development/grfx/tlbx/sources/col.cpp */ = {isa = PBXBuildFile; fileRef = F39378C0B66340FE83AE317B /* /Users/phil3/Documents/Development/grfx/tlbx/sources/col.cpp */; };
+		9BF3DCFB7AFA46BBBA1F4032 /* /Users/phil3/Documents/Development/grfx/tlbx/headers/str.hpp */ = {isa = PBXBuildFile; fileRef = 6960760FE43446C4A3B0DA0C /* /Users/phil3/Documents/Development/grfx/tlbx/headers/str.hpp */; };
+		9E313F90EF024B2986D9EB4D /* /Users/phil3/Documents/Development/grfx/tlbx/headers/trg.hpp */ = {isa = PBXBuildFile; fileRef = CF2B91895D6B482F98355D7B /* /Users/phil3/Documents/Development/grfx/tlbx/headers/trg.hpp */; };
+		AF2FE4EF9BAE42B89614A85D /* /Users/phil3/Documents/Development/grfx/tlbx/sources/mth.cpp */ = {isa = PBXBuildFile; fileRef = DE29FF485C6447359840E115 /* /Users/phil3/Documents/Development/grfx/tlbx/sources/mth.cpp */; };
+		D36D3F459544449EBA3E3857 /* /Users/phil3/Documents/Development/grfx/tlbx/tlbx.hpp */ = {isa = PBXBuildFile; fileRef = 0EB014CBD85B4BDD8DA006E9 /* /Users/phil3/Documents/Development/grfx/tlbx/tlbx.hpp */; };
+		D8739D85FB7746F2A52F4D33 /* /Users/phil3/Documents/Development/grfx/tlbx/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = CAD12CACC94A4080AB30C5EF /* /Users/phil3/Documents/Development/grfx/tlbx/CMakeLists.txt */; };
+		DCD88C5F5C1048568B757C34 /* /Users/phil3/Documents/Development/grfx/tlbx/sources/trg.cpp */ = {isa = PBXBuildFile; fileRef = 7672C953EEB44E9290F65B79 /* /Users/phil3/Documents/Development/grfx/tlbx/sources/trg.cpp */; };
+		DEE1D4DC446A43CD9112E0FA /* /Users/phil3/Documents/Development/grfx/tlbx/sources/str.cpp */ = {isa = PBXBuildFile; fileRef = C48822942D494E2AB5C2EA11 /* /Users/phil3/Documents/Development/grfx/tlbx/sources/str.cpp */; };
+		E94748081D9E4C7BB3BCB69F /* /Users/phil3/Documents/Development/grfx/tlbx/headers/mth.hpp */ = {isa = PBXBuildFile; fileRef = 3A4E442FAE6444F99E210681 /* /Users/phil3/Documents/Development/grfx/tlbx/headers/mth.hpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildStyle section */
-		222E9A13B09946D68B041A9B /* MinSizeRel */ = {
+		2F266724CDE1421F85F7C1FF /* MinSizeRel */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 			};
 			name = MinSizeRel;
 		};
-		A61A673525D844EB9EEEB80F /* Release */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = Release;
-		};
-		B4260997D07446FE92CD95B5 /* RelWithDebInfo */ = {
+		6B56D03B03DB4D27836BB7E1 /* RelWithDebInfo */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 			};
 			name = RelWithDebInfo;
 		};
-		D6BEAFD5B30343FBBE7D49EF /* Debug */ = {
+		871048059025447CB2C51ABB /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		DB5169172D034A43AF6E6670 /* Debug */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
@@ -78,46 +78,46 @@
 /* End PBXBuildStyle section */
 
 /* Begin PBXContainerItemProxy section */
-		25EB4EE8CB394CA089E132D5 /* PBXContainerItemProxy */ = {
+		758B2CCE1EB540AAAAD33878 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B91C50E1FA540D882063EAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C78B583444B4EA3A80C4938;
+			remoteInfo = ZERO_CHECK;
+		};
+		C5C2AA7A26CF4799B758F86F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B91C50E1FA540D882063EAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C78B583444B4EA3A80C4938;
+			remoteInfo = ZERO_CHECK;
+		};
+		DD315B365A234A35B19DA0F7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8B91C50E1FA540D882063EAD /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 7C8D836B57B5425EA1FE3530;
 			remoteInfo = tlbx;
 		};
-		3AEFFF45AC2D4A149220B250 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8B91C50E1FA540D882063EAD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3C78B583444B4EA3A80C4938;
-			remoteInfo = ZERO_CHECK;
-		};
-		6899DB2C03BD4F939C2EDEB5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8B91C50E1FA540D882063EAD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3C78B583444B4EA3A80C4938;
-			remoteInfo = ZERO_CHECK;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0D2840D9DB114FB3BF2B3F90 /* /Users/phil3/Documents/Development/grfx/tlbx/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		1D9B2C3E8C8C460086F5E7B1 /* /Users/phil3/Documents/Development/grfx/tlbx/headers/str.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = str.hpp; path = headers/str.hpp; sourceTree = SOURCE_ROOT; };
-		34EE4E9772FB49DEADB6C98A /* /Users/phil3/Documents/Development/grfx/tlbx/headers/col.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = col.hpp; path = headers/col.hpp; sourceTree = SOURCE_ROOT; };
-		5B96C67510C545B89EB2CC1E /* /Users/phil3/Documents/Development/grfx/tlbx/sources/trg.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = trg.cpp; path = sources/trg.cpp; sourceTree = SOURCE_ROOT; };
-		80FE47A32246448480C321A9 /* /Users/phil3/Documents/Development/grfx/tlbx/sources/str.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = str.cpp; path = sources/str.cpp; sourceTree = SOURCE_ROOT; };
-		8737C11938534982A81CFF6C /* /Users/phil3/Documents/Development/grfx/tlbx/tlbx.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = tlbx.hpp; path = tlbx.hpp; sourceTree = SOURCE_ROOT; };
-		993C7D720BB44BC793625B89 /* tlbx */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libtlbx.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA1DAABA61CF486480A98275 /* /Users/phil3/Documents/Development/grfx/tlbx/headers/trg.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = trg.hpp; path = headers/trg.hpp; sourceTree = SOURCE_ROOT; };
-		BB57960453C64F578D20E95B /* /Users/phil3/Documents/Development/grfx/tlbx/sources/col.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = col.cpp; path = sources/col.cpp; sourceTree = SOURCE_ROOT; };
-		C592B153090F4B77A01E94C1 /* /Users/phil3/Documents/Development/grfx/tlbx/headers/mth.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = mth.hpp; path = headers/mth.hpp; sourceTree = SOURCE_ROOT; };
-		CC8F9871AFFE4E8CB098A34C /* /Users/phil3/Documents/Development/grfx/tlbx/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		D8C33384F92247ADA827EF61 /* /Users/phil3/Documents/Development/grfx/tlbx/sources/mth.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = mth.cpp; path = sources/mth.cpp; sourceTree = SOURCE_ROOT; };
+		0EB014CBD85B4BDD8DA006E9 /* /Users/phil3/Documents/Development/grfx/tlbx/tlbx.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = tlbx.hpp; path = tlbx.hpp; sourceTree = SOURCE_ROOT; };
+		3A4E442FAE6444F99E210681 /* /Users/phil3/Documents/Development/grfx/tlbx/headers/mth.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = mth.hpp; path = headers/mth.hpp; sourceTree = SOURCE_ROOT; };
+		3ECE3FA54B314228AF4C74A5 /* /Users/phil3/Documents/Development/grfx/tlbx/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		6960760FE43446C4A3B0DA0C /* /Users/phil3/Documents/Development/grfx/tlbx/headers/str.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = str.hpp; path = headers/str.hpp; sourceTree = SOURCE_ROOT; };
+		7672C953EEB44E9290F65B79 /* /Users/phil3/Documents/Development/grfx/tlbx/sources/trg.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = trg.cpp; path = sources/trg.cpp; sourceTree = SOURCE_ROOT; };
+		A4C73B5C48DB43A6BA7A3491 /* /Users/phil3/Documents/Development/grfx/tlbx/headers/col.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = col.hpp; path = headers/col.hpp; sourceTree = SOURCE_ROOT; };
+		C48822942D494E2AB5C2EA11 /* /Users/phil3/Documents/Development/grfx/tlbx/sources/str.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = str.cpp; path = sources/str.cpp; sourceTree = SOURCE_ROOT; };
+		CAD12CACC94A4080AB30C5EF /* /Users/phil3/Documents/Development/grfx/tlbx/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		CF2B91895D6B482F98355D7B /* /Users/phil3/Documents/Development/grfx/tlbx/headers/trg.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = trg.hpp; path = headers/trg.hpp; sourceTree = SOURCE_ROOT; };
+		D02AAEA7F3EF40969D669BAD /* tlbx */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libtlbx.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE29FF485C6447359840E115 /* /Users/phil3/Documents/Development/grfx/tlbx/sources/mth.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = mth.cpp; path = sources/mth.cpp; sourceTree = SOURCE_ROOT; };
+		F39378C0B66340FE83AE317B /* /Users/phil3/Documents/Development/grfx/tlbx/sources/col.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = col.cpp; path = sources/col.cpp; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2EFDC46220F24F6CB77A9DD5 /* Frameworks */ = {
+		F0539955354741B488D79FD9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -127,78 +127,78 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		20BB137EFF664EE6B4B6FA97 /* Source Files */ = {
+		3BADD48DD31E43D282A2DEB0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BB57960453C64F578D20E95B /* /Users/phil3/Documents/Development/grfx/tlbx/sources/col.cpp */,
-				D8C33384F92247ADA827EF61 /* /Users/phil3/Documents/Development/grfx/tlbx/sources/mth.cpp */,
-				80FE47A32246448480C321A9 /* /Users/phil3/Documents/Development/grfx/tlbx/sources/str.cpp */,
-				5B96C67510C545B89EB2CC1E /* /Users/phil3/Documents/Development/grfx/tlbx/sources/trg.cpp */,
+				D02AAEA7F3EF40969D669BAD /* tlbx */,
 			);
-			name = "Source Files";
+			name = Products;
 			sourceTree = "<group>";
 		};
-		259B51FD3BF446C38FC79FB3 /* Header Files */ = {
+		64C0B64778034D46B1F2797B /* tlbx */ = {
 			isa = PBXGroup;
 			children = (
-				34EE4E9772FB49DEADB6C98A /* /Users/phil3/Documents/Development/grfx/tlbx/headers/col.hpp */,
-				C592B153090F4B77A01E94C1 /* /Users/phil3/Documents/Development/grfx/tlbx/headers/mth.hpp */,
-				1D9B2C3E8C8C460086F5E7B1 /* /Users/phil3/Documents/Development/grfx/tlbx/headers/str.hpp */,
-				BA1DAABA61CF486480A98275 /* /Users/phil3/Documents/Development/grfx/tlbx/headers/trg.hpp */,
-				8737C11938534982A81CFF6C /* /Users/phil3/Documents/Development/grfx/tlbx/tlbx.hpp */,
+				9E713B2FD3584969B0E4472F /* Header Files */,
+				A7C17532747346B9A8B91E7B /* Source Files */,
+				CAD12CACC94A4080AB30C5EF /* /Users/phil3/Documents/Development/grfx/tlbx/CMakeLists.txt */,
 			);
-			name = "Header Files";
+			name = tlbx;
 			sourceTree = "<group>";
 		};
-		735BEAE073E54245B5BDAA09 = {
-			isa = PBXGroup;
-			children = (
-				FEC1AFF79B544C539F417CC5 /* tlbx */,
-				BE143D72FA684522B477938C /* ALL_BUILD */,
-				8D143CB773AD44E7870B388E /* Products */,
-				7E0EC6A02BF04B28AC675E9B /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		7E0EC6A02BF04B28AC675E9B /* Frameworks */ = {
+		6BB401D8F8D7494F9D4AA00F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		8D143CB773AD44E7870B388E /* Products */ = {
+		9E713B2FD3584969B0E4472F /* Header Files */ = {
 			isa = PBXGroup;
 			children = (
-				993C7D720BB44BC793625B89 /* tlbx */,
+				A4C73B5C48DB43A6BA7A3491 /* /Users/phil3/Documents/Development/grfx/tlbx/headers/col.hpp */,
+				3A4E442FAE6444F99E210681 /* /Users/phil3/Documents/Development/grfx/tlbx/headers/mth.hpp */,
+				6960760FE43446C4A3B0DA0C /* /Users/phil3/Documents/Development/grfx/tlbx/headers/str.hpp */,
+				CF2B91895D6B482F98355D7B /* /Users/phil3/Documents/Development/grfx/tlbx/headers/trg.hpp */,
+				0EB014CBD85B4BDD8DA006E9 /* /Users/phil3/Documents/Development/grfx/tlbx/tlbx.hpp */,
 			);
-			name = Products;
+			name = "Header Files";
 			sourceTree = "<group>";
 		};
-		B3A3F23BAD304E7699F21180 /* CMake Rules */ = {
+		A7C17532747346B9A8B91E7B /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				F39378C0B66340FE83AE317B /* /Users/phil3/Documents/Development/grfx/tlbx/sources/col.cpp */,
+				DE29FF485C6447359840E115 /* /Users/phil3/Documents/Development/grfx/tlbx/sources/mth.cpp */,
+				C48822942D494E2AB5C2EA11 /* /Users/phil3/Documents/Development/grfx/tlbx/sources/str.cpp */,
+				7672C953EEB44E9290F65B79 /* /Users/phil3/Documents/Development/grfx/tlbx/sources/trg.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		B9DAC9D4C1FC447B9043EC84 = {
+			isa = PBXGroup;
+			children = (
+				64C0B64778034D46B1F2797B /* tlbx */,
+				E4C9B2CEE11F4EED85CF74D2 /* ALL_BUILD */,
+				3BADD48DD31E43D282A2DEB0 /* Products */,
+				6BB401D8F8D7494F9D4AA00F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CC27A9677093456F9E36B2F9 /* CMake Rules */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = "CMake Rules";
 			sourceTree = "<group>";
 		};
-		BE143D72FA684522B477938C /* ALL_BUILD */ = {
+		E4C9B2CEE11F4EED85CF74D2 /* ALL_BUILD */ = {
 			isa = PBXGroup;
 			children = (
-				B3A3F23BAD304E7699F21180 /* CMake Rules */,
-				0D2840D9DB114FB3BF2B3F90 /* /Users/phil3/Documents/Development/grfx/tlbx/CMakeLists.txt */,
+				CC27A9677093456F9E36B2F9 /* CMake Rules */,
+				3ECE3FA54B314228AF4C74A5 /* /Users/phil3/Documents/Development/grfx/tlbx/CMakeLists.txt */,
 			);
 			name = ALL_BUILD;
-			sourceTree = "<group>";
-		};
-		FEC1AFF79B544C539F417CC5 /* tlbx */ = {
-			isa = PBXGroup;
-			children = (
-				259B51FD3BF446C38FC79FB3 /* Header Files */,
-				20BB137EFF664EE6B4B6FA97 /* Source Files */,
-				CC8F9871AFFE4E8CB098A34C /* /Users/phil3/Documents/Development/grfx/tlbx/CMakeLists.txt */,
-			);
-			name = tlbx;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,19 +206,19 @@
 /* Begin PBXNativeTarget section */
 		7C8D836B57B5425EA1FE3530 /* tlbx */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C42661BC2D774B42A0568D49 /* Build configuration list for PBXNativeTarget "tlbx" */;
+			buildConfigurationList = 1FEF0F0E9B1D42F9AAA82B3B /* Build configuration list for PBXNativeTarget "tlbx" */;
 			buildPhases = (
-				FF4FD2241108400E93409E2E /* Sources */,
-				2EFDC46220F24F6CB77A9DD5 /* Frameworks */,
+				8574F6513C27492B81814B73 /* Sources */,
+				F0539955354741B488D79FD9 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				16265980E3E145899B2A069A /* PBXTargetDependency */,
+				246C3B43E7CA4CF293621C23 /* PBXTargetDependency */,
 			);
 			name = tlbx;
 			productName = tlbx;
-			productReference = 993C7D720BB44BC793625B89 /* tlbx */;
+			productReference = D02AAEA7F3EF40969D669BAD /* tlbx */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -230,18 +230,18 @@
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1540;
 			};
-			buildConfigurationList = 48559F14E59C4D3AAD4C1280 /* Build configuration list for PBXProject "tlbx" */;
+			buildConfigurationList = B3622E3B5F884116B12E8B9E /* Build configuration list for PBXProject "tlbx" */;
 			buildSettings = {
 			};
 			buildStyles = (
-				D6BEAFD5B30343FBBE7D49EF /* Debug */,
-				A61A673525D844EB9EEEB80F /* Release */,
-				222E9A13B09946D68B041A9B /* MinSizeRel */,
-				B4260997D07446FE92CD95B5 /* RelWithDebInfo */,
+				DB5169172D034A43AF6E6670 /* Debug */,
+				871048059025447CB2C51ABB /* Release */,
+				2F266724CDE1421F85F7C1FF /* MinSizeRel */,
+				6B56D03B03DB4D27836BB7E1 /* RelWithDebInfo */,
 			);
 			compatibilityVersion = "Xcode 3.2";
 			hasScannedForEncodings = 0;
-			mainGroup = 735BEAE073E54245B5BDAA09;
+			mainGroup = B9DAC9D4C1FC447B9043EC84;
 			projectDirPath = /Users/phil3/Documents/Development/grfx/tlbx;
 			projectRoot = "";
 			targets = (
@@ -352,283 +352,39 @@ exit 0";
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		FF4FD2241108400E93409E2E /* Sources */ = {
+		8574F6513C27492B81814B73 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3EFDA9F0C4A44E40B11F9698 /* /Users/phil3/Documents/Development/grfx/tlbx/sources/col.cpp */,
-				199DAEA9155B46A9B7E156D0 /* /Users/phil3/Documents/Development/grfx/tlbx/sources/mth.cpp */,
-				188C33312EF84F26966F212B /* /Users/phil3/Documents/Development/grfx/tlbx/sources/str.cpp */,
-				968C0683995E46ABA105191F /* /Users/phil3/Documents/Development/grfx/tlbx/sources/trg.cpp */,
+				3FB57161628E4079AEF877FF /* /Users/phil3/Documents/Development/grfx/tlbx/sources/col.cpp */,
+				AF2FE4EF9BAE42B89614A85D /* /Users/phil3/Documents/Development/grfx/tlbx/sources/mth.cpp */,
+				DEE1D4DC446A43CD9112E0FA /* /Users/phil3/Documents/Development/grfx/tlbx/sources/str.cpp */,
+				DCD88C5F5C1048568B757C34 /* /Users/phil3/Documents/Development/grfx/tlbx/sources/trg.cpp */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		16265980E3E145899B2A069A /* PBXTargetDependency */ = {
+		0F10D790210C4308A5DAB4C8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3C78B583444B4EA3A80C4938 /* ZERO_CHECK */;
-			targetProxy = 6899DB2C03BD4F939C2EDEB5 /* PBXContainerItemProxy */;
+			targetProxy = C5C2AA7A26CF4799B758F86F /* PBXContainerItemProxy */;
 		};
-		21428992E27346C99A524237 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3C78B583444B4EA3A80C4938 /* ZERO_CHECK */;
-			targetProxy = 3AEFFF45AC2D4A149220B250 /* PBXContainerItemProxy */;
-		};
-		AF563CF64CB54C5A9AC7E6A9 /* PBXTargetDependency */ = {
+		20AB248FD8C74D9F9B74E1CB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 7C8D836B57B5425EA1FE3530 /* tlbx */;
-			targetProxy = 25EB4EE8CB394CA089E132D5 /* PBXContainerItemProxy */;
+			targetProxy = DD315B365A234A35B19DA0F7 /* PBXContainerItemProxy */;
+		};
+		246C3B43E7CA4CF293621C23 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C78B583444B4EA3A80C4938 /* ZERO_CHECK */;
+			targetProxy = 758B2CCE1EB540AAAAD33878 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		061BCC694F2948489B2CA07B /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		255E8F9236B8426E8E0F0ED9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SYMROOT = /Users/phil3/Documents/Development/grfx/build/build;
-			};
-			name = Release;
-		};
-		37493CEEEF114CB388F7ED09 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		3A4326F991A54C47970F50CC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = /Users/phil3/Documents/Development/grfx/build/tlbx/Release;
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .a;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/Users/phil3/Documents/Development/grfx/tlbx/headers,"$(inherited)");
-				INSTALL_PATH = "";
-				LIBRARY_STYLE = STATIC;
-				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' ";
-				OTHER_LIBTOOLFLAGS = ("");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = tlbx;
-				SECTORDER_FLAGS = "";
-				TARGET_TEMP_DIR = "/Users/phil3/Documents/Development/grfx/build/build/tlbx.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Release;
-		};
-		4579F6190DA6442E97BAF677 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = /Users/phil3/Documents/Development/grfx/build/tlbx/MinSizeRel;
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .a;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/Users/phil3/Documents/Development/grfx/tlbx/headers,"$(inherited)");
-				INSTALL_PATH = "";
-				LIBRARY_STYLE = STATIC;
-				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' ";
-				OTHER_LIBTOOLFLAGS = ("");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = tlbx;
-				SECTORDER_FLAGS = "";
-				TARGET_TEMP_DIR = "/Users/phil3/Documents/Development/grfx/build/build/tlbx.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		503075750A614A579083E5FC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk;
-				SYMROOT = /Users/phil3/Documents/Development/grfx/build/build;
-			};
-			name = Debug;
-		};
-		5A21D8E4AC6C40FF9A9C0FF6 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		5B636D14EBB943FC8F35909E /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = /Users/phil3/Documents/Development/grfx/build/tlbx/RelWithDebInfo;
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .a;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 2;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/Users/phil3/Documents/Development/grfx/tlbx/headers,"$(inherited)");
-				INSTALL_PATH = "";
-				LIBRARY_STYLE = STATIC;
-				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=gnu++17' ";
-				OTHER_LIBTOOLFLAGS = ("");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = tlbx;
-				SECTORDER_FLAGS = "";
-				TARGET_TEMP_DIR = "/Users/phil3/Documents/Development/grfx/build/build/tlbx.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		7394602DD96A49A2A8574CF4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Release;
-		};
-		751F3F05D01841B2B6DEC5FD /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		9955F2CBE460411FA3BE8FF6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Debug;
-		};
-		9A19F3A6DC9D4029B2A7D2CA /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SYMROOT = /Users/phil3/Documents/Development/grfx/build/build;
-			};
-			name = MinSizeRel;
-		};
-		ADEB13A211AB44D08D75C5F6 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SYMROOT = /Users/phil3/Documents/Development/grfx/build/build;
-			};
-			name = RelWithDebInfo;
-		};
-		DA97AA050E2448EFA2EAFCC9 /* Debug */ = {
+		2171A57C23B74D0AB1979135 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -641,7 +397,7 @@ exit 0";
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/Users/phil3/Documents/Development/grfx/tlbx/headers,"$(inherited)");
+				HEADER_SEARCH_PATHS = (/Users/phil3/Documents/Development/grfx/tlbx,/Users/phil3/Documents/Development/grfx/tlbx/headers,"$(inherited)");
 				INSTALL_PATH = "";
 				LIBRARY_STYLE = STATIC;
 				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++17' ";
@@ -655,7 +411,7 @@ exit 0";
 			};
 			name = Debug;
 		};
-		F71DDC4F69D24C508F10A0CE /* Release */ = {
+		268C047A47BC42B180AEC877 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -668,14 +424,34 @@ exit 0";
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = ("","$(inherited)");
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
+				PRODUCT_NAME = ALL_BUILD;
 				SECTORDER_FLAGS = "";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("$(inherited)");
 			};
-			name = Release;
+			name = Debug;
 		};
-		FD33058B972643C79018D37A /* Debug */ = {
+		45B759728532492FAC2AF3DB /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		4C743BD943E144B5AD509FF4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -695,49 +471,273 @@ exit 0";
 			};
 			name = Debug;
 		};
+		5C61D01907DE49D69CF68F17 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/phil3/Documents/Development/grfx/build/build;
+			};
+			name = RelWithDebInfo;
+		};
+		6C3512BB6C2C41E8A6150C15 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/phil3/Documents/Development/grfx/build/tlbx/RelWithDebInfo;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/phil3/Documents/Development/grfx/tlbx,/Users/phil3/Documents/Development/grfx/tlbx/headers,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=gnu++17' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = tlbx;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/phil3/Documents/Development/grfx/build/build/tlbx.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		74E550E0AD40456788FBD710 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		8CDD82472C9941919F7B081D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/phil3/Documents/Development/grfx/build/tlbx/Release;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/phil3/Documents/Development/grfx/tlbx,/Users/phil3/Documents/Development/grfx/tlbx/headers,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = tlbx;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/phil3/Documents/Development/grfx/build/build/tlbx.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		94E68CB2D39A4B3094EC731E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/phil3/Documents/Development/grfx/build/build;
+			};
+			name = Release;
+		};
+		9798FE90F1D84272A60AA709 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		A69914C3B45A447597457BA2 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/phil3/Documents/Development/grfx/build/tlbx/MinSizeRel;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/phil3/Documents/Development/grfx/tlbx,/Users/phil3/Documents/Development/grfx/tlbx/headers,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = tlbx;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/phil3/Documents/Development/grfx/build/build/tlbx.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		AD35E8FA173148CCB9DE80C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		B32E79D69DA846AA9DF65D45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		C4F10CD5903B4B6798C87DBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk;
+				SYMROOT = /Users/phil3/Documents/Development/grfx/build/build;
+			};
+			name = Debug;
+		};
+		C500BAC479194067B0B47CA9 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		EBF69D2D4FC648F08761E3CF /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/phil3/Documents/Development/grfx/build/build;
+			};
+			name = MinSizeRel;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		48559F14E59C4D3AAD4C1280 /* Build configuration list for PBXProject "tlbx" */ = {
+		1FEF0F0E9B1D42F9AAA82B3B /* Build configuration list for PBXNativeTarget "tlbx" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				503075750A614A579083E5FC /* Debug */,
-				255E8F9236B8426E8E0F0ED9 /* Release */,
-				9A19F3A6DC9D4029B2A7D2CA /* MinSizeRel */,
-				ADEB13A211AB44D08D75C5F6 /* RelWithDebInfo */,
+				2171A57C23B74D0AB1979135 /* Debug */,
+				8CDD82472C9941919F7B081D /* Release */,
+				A69914C3B45A447597457BA2 /* MinSizeRel */,
+				6C3512BB6C2C41E8A6150C15 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		A42AB17714104E48BA1BF695 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+		96BD849C734049CEBBEAB3DB /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FD33058B972643C79018D37A /* Debug */,
-				F71DDC4F69D24C508F10A0CE /* Release */,
-				061BCC694F2948489B2CA07B /* MinSizeRel */,
-				37493CEEEF114CB388F7ED09 /* RelWithDebInfo */,
+				268C047A47BC42B180AEC877 /* Debug */,
+				B32E79D69DA846AA9DF65D45 /* Release */,
+				45B759728532492FAC2AF3DB /* MinSizeRel */,
+				C500BAC479194067B0B47CA9 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		C1F2F149E546443E8015CE96 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+		B3622E3B5F884116B12E8B9E /* Build configuration list for PBXProject "tlbx" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9955F2CBE460411FA3BE8FF6 /* Debug */,
-				7394602DD96A49A2A8574CF4 /* Release */,
-				5A21D8E4AC6C40FF9A9C0FF6 /* MinSizeRel */,
-				751F3F05D01841B2B6DEC5FD /* RelWithDebInfo */,
+				C4F10CD5903B4B6798C87DBE /* Debug */,
+				94E68CB2D39A4B3094EC731E /* Release */,
+				EBF69D2D4FC648F08761E3CF /* MinSizeRel */,
+				5C61D01907DE49D69CF68F17 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		C42661BC2D774B42A0568D49 /* Build configuration list for PBXNativeTarget "tlbx" */ = {
+		CA91E038612644A9942CB5F7 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DA97AA050E2448EFA2EAFCC9 /* Debug */,
-				3A4326F991A54C47970F50CC /* Release */,
-				4579F6190DA6442E97BAF677 /* MinSizeRel */,
-				5B636D14EBB943FC8F35909E /* RelWithDebInfo */,
+				4C743BD943E144B5AD509FF4 /* Debug */,
+				AD35E8FA173148CCB9DE80C2 /* Release */,
+				9798FE90F1D84272A60AA709 /* MinSizeRel */,
+				74E550E0AD40456788FBD710 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

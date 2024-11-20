@@ -9,10 +9,10 @@
 
 using namespace std;
 
-constexpr const Trf2 Trf2::To=Trf2::ident();
+constexpr const trf2 trf2::To=trf2::ident();
 
 //
-Trf2::Trf2(const arr::darr2 &D)
+trf2::trf2(const arr::darr2 &D)
 {
 	if((D.size(0)==2)&&(D.size(1)==2))
 		for(size_t i=0;i<2;++i)
@@ -23,7 +23,7 @@ Trf2::Trf2(const arr::darr2 &D)
 }
 
 //
-Trf2::operator arr::darr2() const
+trf2::operator arr::darr2() const
 {
 	arr::darr2 A(3,3);
 	for(size_t i=0;i<2;++i)
@@ -33,28 +33,28 @@ Trf2::operator arr::darr2() const
 }
 
 //
-Vtr2 Trf2::operator*(const Vtr2 &V) const
+vtr2 trf2::operator*(const vtr2 &V) const
 {
 	double x[2]={0.,0.};
 	for(size_t i=0;i<2;++i)
 		for(size_t j=0;j<2;++j)
 			x[i]+=_p[i][j]*V(j);
-	return Vtr2(x);
+	return vtr2(x);
 }
 
 //
-Pnt2 Trf2::operator*(const Pnt2 &P) const
+pnt2 trf2::operator*(const pnt2 &P) const
 {
 	double x[2]={0.,0.};
 	for(size_t i=0;i<2;++i)
 		for(size_t j=0;j<2;++j)
 			x[i]+=_p[i][j]*P(j);
-	return Pnt2(x);
+	return pnt2(x);
 }
 //
-Trf2 Trf2::operator*(const Trf2 &T) const
+trf2 trf2::operator*(const trf2 &T) const
 {
-	Trf2 Tp;
+	trf2 Tp;
 	for(size_t i=0;i<2;++i)
 		for(size_t j=0;j<2;++j)
 			for(size_t k=0;k<2;++k)
@@ -63,28 +63,28 @@ Trf2 Trf2::operator*(const Trf2 &T) const
 }
 
 //
-Trf2 Trf2::inv() const
+trf2 trf2::inv() const
 {
 	return arr::darr2(*this).inv();
 }
 
 
 //resolve predef
-Vtr2 Vtr2::operator*=(const Trf2 &T)
+vtr2 vtr2::operator*=(const trf2 &T)
 {
 	return *this=T*(*this);
 }
 
 //resolve predef
-Pnt2 Pnt2::operator*=(const Trf2 &T)
+pnt2 pnt2::operator*=(const trf2 &T)
 {
 	return *this=T*(*this);
 }
 
 //
-Trf2 operator*(double x,const Trf2 &T)
+trf2 operator*(double x,const trf2 &T)
 {
-	Trf2 Tp;
+	trf2 Tp;
 	for(size_t i=0;i<2;++i)
 		for(size_t j=0;j<2;++j)
 			Tp._p[i][j]=x*T._p[i][j];
@@ -92,7 +92,7 @@ Trf2 operator*(double x,const Trf2 &T)
 }
 
 //
-Trf2 operator/(double x,const Trf2 &T)
+trf2 operator/(double x,const trf2 &T)
 {
 	return x*T.inv();
 }

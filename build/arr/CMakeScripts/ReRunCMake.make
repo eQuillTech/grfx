@@ -6,7 +6,6 @@ space:= $(empty) $(empty)
 spaceplus:= $(empty)\ $(empty)
 
 TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/phil3/Documents/Development/grfx/arr/CMakeLists.txt))
-TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/phil3/Documents/Development/grfx/arr/examples/CMakeLists.txt))
 
 /Users/phil3/Documents/Development/grfx/build/CMakeFiles/cmake.check_cache: $(TARGETS)
 	/Applications/CMake.app/Contents/bin/cmake -H/Users/phil3/Documents/Development/grfx -B/Users/phil3/Documents/Development/grfx/build

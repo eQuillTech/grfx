@@ -10,7 +10,7 @@
 using namespace std;
 
 //
-Rfn3::Rfn3(const Vtr3 &V):Trf3()
+rfn3::rfn3(const vtr3 &V):trf3()
 {
-	*this=-Rtn3(V,trg::Pi);
+	*this=-rtn3(V,trg::Pi);
 }

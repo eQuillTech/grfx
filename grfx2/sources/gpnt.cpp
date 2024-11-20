@@ -5,14 +5,14 @@
 #include "CoreGraphics/CoreGraphics.h"
 
 #include "tlbx.hpp"
-#include "grfx.hpp"
+#include "grfx2.hpp"
 
 using namespace std;
 
-const Gpnt_arr1 nullP_arr(0);
+const gpnt_arr1 nullP_arr(0);
 
 //
-bool gpnt::clip(const Gfrm &rClip,const gpnt &pOther,gpnt &pDest) const
+bool gpnt::clip(const gfrm  &rClip,const gpnt &pOther,gpnt &pDest) const
 {
 	pDest=*this;
 	if(pOther.x()==x())
@@ -66,7 +66,7 @@ bool gpnt::clip(const Gfrm &rClip,const gpnt &pOther,gpnt &pDest) const
 }
 	
 //
-CGPoint gpnt::map(const CGRect &Rframe,const Gfrm &frameF) const
+CGPoint gpnt::map(const CGRect &Rframe,const gfrm  &frameF) const
 {
 	CGPoint P;
 
@@ -93,7 +93,7 @@ CGPoint gpnt::map(const CGRect &Rframe,const Gfrm &frameF) const
 }
 
 //
-CGPoint gpnt::mapFrac(const CGRect &Rframe,const Gfrm &frameF) const
+CGPoint gpnt::mapFrac(const CGRect &Rframe,const gfrm  &frameF) const
 {
 	CGPoint P=map(Rframe,frameF);
 	CGPoint Pfrac;
@@ -115,21 +115,21 @@ void gpnt::lineTo(CGContextRef context,const CGPoint &P)
 }
 
 //
-void gpnt::doMoveTo(CGContextRef context,const CGRect &Rframe,const Gfrm &frameF) const
+void gpnt::doMoveTo(CGContextRef context,const CGRect &Rframe,const gfrm  &frameF) const
 {
 	CGPoint P=map(Rframe,frameF);
 	gpnt::moveTo(context,P);
 }
 
 //
-void gpnt::doLineTo(CGContextRef context,const CGRect &Rframe,const Gfrm &frameF) const
+void gpnt::doLineTo(CGContextRef context,const CGRect &Rframe,const gfrm  &frameF) const
 {
 	CGPoint P=map(Rframe,frameF);
 	gpnt::lineTo(context,P);
 }
 
 //
-gpnt gpnt::map(const Gfrm &fNew,const Gfrm &fOld) const
+gpnt gpnt::map(const gfrm  &fNew,const gfrm  &fOld) const
 {
 	double scaleX=fNew.width()/fOld.width();
 	double scaleY=fNew.height()/fOld.height();

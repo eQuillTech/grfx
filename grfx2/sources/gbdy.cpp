@@ -4,20 +4,20 @@
 #include "CoreGraphics/CoreGraphics.h"
 
 #include "tlbx.hpp"
-#include "grfx.hpp"
+#include "grfx2.hpp"
 
 using namespace std;
 
 //const gbdy nullBdy(nullPly,nullPly);
 
 //
-gbdy gbdy::map(const Gfrm &fNew,const Gfrm &fOld)
+gbdy gbdy::map(const gfrm  &fNew,const gfrm  &fOld)
 {
 	return gbdy(coarse().map(fNew,fOld),fine().map(fNew,fOld));
 };
 
 //
-const gbdy gbdy::map(const Gfrm &fNew,const Gfrm &fOld) const
+const gbdy gbdy::map(const gfrm  &fNew,const gfrm  &fOld) const
 {
 	return gbdy(coarse().map(fNew,fOld),fine().map(fNew,fOld));
 };

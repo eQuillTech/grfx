@@ -5,7 +5,7 @@
 
 #include "arr.hpp"
 
-class Crd3
+class crd3
 {
 protected:
 	union
@@ -17,21 +17,21 @@ protected:
 		double _p[3]; // array representation
 	};
 
-	Crd3 operator+() const{return *this;}
-	Crd3 operator-() const{return Crd3(-_x,-_y,-_z);}
+	crd3 operator+() const{return *this;}
+	crd3 operator-() const{return crd3(-_x,-_y,-_z);}
 	
-	Crd3 operator+(const Crd3 &c) const{return Crd3(_x+c._x,_y+c._y,_z+c._z);}
-	Crd3 operator-(const Crd3 &c) const{return Crd3(_x-c._x,_y-c._y,_z-c._z);}
+	crd3 operator+(const crd3 &c) const{return crd3(_x+c._x,_y+c._y,_z+c._z);}
+	crd3 operator-(const crd3 &c) const{return crd3(_x-c._x,_y-c._y,_z-c._z);}
 	
-	Crd3 operator+=(const Crd3 &c){return *this=(*this)+c;}
-	Crd3 operator-=(const Crd3 &c){return *this=(*this)-c;}
-	Crd3 operator*=(double x){return *this=x*(*this);}
-	Crd3 operator/=(double x){return *this=(*this)/x;}
-	bool operator==(const Crd3 &c) const{return (_x==c._x)&&(_y==c._y)&&(_z==c._z);}
-	bool operator!=(const Crd3 &c) const{return !((*this)==c);}
+	crd3 operator+=(const crd3 &c){return *this=(*this)+c;}
+	crd3 operator-=(const crd3 &c){return *this=(*this)-c;}
+	crd3 operator*=(double x){return *this=x*(*this);}
+	crd3 operator/=(double x){return *this=(*this)/x;}
+	bool operator==(const crd3 &c) const{return (_x==c._x)&&(_y==c._y)&&(_z==c._z);}
+	bool operator!=(const crd3 &c) const{return !((*this)==c);}
 
-	friend Crd3 operator*(double x,const Crd3 &c){return Crd3(x*c._x,x*c._y,x*c._z);}
-	Crd3 operator/(double x) const{return Crd3(_x/x,_y/x,_z/x);}
+	friend crd3 operator*(double x,const crd3 &c){return crd3(x*c._x,x*c._y,x*c._z);}
+	crd3 operator/(double x) const{return crd3(_x/x,_y/x,_z/x);}
 
 	double sqrlen() const{return _x*_x+_y*_y+_z*_z;}
 	double len() const{return sqrt(sqrlen());}
@@ -45,15 +45,15 @@ protected:
 	double const& z() const{return _z;}
 
 public:
-	constexpr Crd3(double x=0.,double y=0.,double z=0.):_x(x),_y(y),_z(z){}
-	constexpr Crd3(const double x[3]):_x(x[0]),_y(x[1]),_z(x[2]){}
-	Crd3(const arr::darr1 &A);
+	constexpr crd3(double x=0.,double y=0.,double z=0.):_x(x),_y(y),_z(z){}
+	constexpr crd3(const double x[3]):_x(x[0]),_y(x[1]),_z(x[2]){}
+	crd3(const arr::darr1 &A);
 	
 	operator arr::darr1() const;
 	
 	double& operator()(const size_t i0);
 	double const& operator()(const size_t i0) const;
-	friend std::ostream& operator<<(std::ostream &os,const Crd3 &C);
+	friend std::ostream& operator<<(std::ostream &os,const crd3 &C);
 };
 
 #endif

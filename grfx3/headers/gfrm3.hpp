@@ -10,8 +10,8 @@
 class gfrm3
 {
 private:
-	Pnt _originP;//center
-	Vtr _diagV;
+	pnt3 _originP;//center
+	vtr3 _diagV;
 
 public:
 	gfrm3(){}
@@ -45,7 +45,7 @@ public:
 	gfrm3 operator-=(const vtr3 &V);
 	gfrm3 operator*=(const double x);
 	gfrm3 operator/=(const double x);
-	//Gfrm set(const Gfrm &r);
+	//gfrm  set(const gfrm  &r);
 	
 	gfrm3 map(const gfrm3 &newF,const gfrm3 &oldF) const;
 	bool isIn(const gfrm3 &F) const;
@@ -91,9 +91,9 @@ public:
 
 	static const gfrm3 unitF;
 	
-	operator Ags3() const;
+	operator ags3() const;
 };
 
-typedef arr1<gfrm3> Gfrm3_arr1;
+typedef arr::arr1<gfrm3> gfrm3_arr1;
 
 #endif

@@ -13,7 +13,7 @@
 #include "gcrd.h"
 #endif
 
-class Gfrm;
+class gfrm;
 
 //
 class gvtr:public gcrd
@@ -58,6 +58,6 @@ gvtr norm(const gvtr &V);
 
 extern gvtr zeroV,xV,yV;
 
-typedef arr1<gvtr> Gvtr_arr1;
+typedef arr1<gvtr> gvtr_arr1;
 
 #endif

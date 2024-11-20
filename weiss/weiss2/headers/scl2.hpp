@@ -3,21 +3,21 @@
 #ifndef _SCL2_
 #define _SCL2_
 
-class Trf2;
+class trf2;
 
-//Scl2
-class Scl2:public Trf2
+//scl2
+class scl2:public trf2
 {
 
 	public:	
-	Scl2(double x);
+	scl2(double x);
 
-	Scl2 inverse() const;
+	scl2 inverse() const;
 	
-	Scl2 operator*(const Scl2 &S);
-	Scl2 operator/(const Scl2 &S);
-	Scl2 operator*=(const Scl2 &S);
-	Scl2 operator/=(const Scl2 &S);
+	scl2 operator*(const scl2 &S);
+	scl2 operator/(const scl2 &S);
+	scl2 operator*=(const scl2 &S);
+	scl2 operator/=(const scl2 &S);
 
 };
 	

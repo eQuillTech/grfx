@@ -6,9 +6,10 @@ file(GLOB_RECURSE cpp_sources sources/*.cpp)
 set(cpp_srcs ${PROJECT_NAME}.hpp ${cpp_headers} ${cpp_sources})
 
 add_library(${PROJECT_NAME} STATIC ${cpp_srcs})
-        
-# Enable include with <> pair
-target_include_directories(${PROJECT_NAME} PUBLIC headers)
+
+message(STATUS "project ${CMAKE_PROJECT_NAME}")
+target_include_directories(${PROJECT_NAME} PUBLIC
+    ${PROJECT_SOURCE_DIR} ${PROJECT_SOURCE_DIR}/headers)
 
 target_compile_features(${PROJECT_NAME} PRIVATE cxx_std_17)
 

@@ -1,0 +1,37 @@
+dependencies: \
+  /Users/phil3/Documents/Development/grfx/weiss/weiss2/sources/rtn2.cpp \
+  /Users/phil3/Documents/Development/grfx/tlbx/tlbx.hpp \
+  /Users/phil3/Documents/Development/grfx/tlbx/headers/col.hpp \
+  /Users/phil3/Documents/Development/grfx/tlbx/headers/mth.hpp \
+  /Users/phil3/Documents/Development/grfx/tlbx/headers/trg.hpp \
+  /Users/phil3/Documents/Development/grfx/tlbx/headers/str.hpp \
+  /Users/phil3/Documents/Development/grfx/arr/arr.hpp \
+  /Users/phil3/Documents/Development/grfx/arr/headers/arr1.hpp \
+  /Users/phil3/Documents/Development/grfx/arr/headers/../sources/arr1.tem \
+  /Users/phil3/Documents/Development/grfx/arr/headers/arr2.hpp \
+  /Users/phil3/Documents/Development/grfx/arr/headers/../sources/arr2.tem \
+  /Users/phil3/Documents/Development/grfx/arr/headers/arr3.hpp \
+  /Users/phil3/Documents/Development/grfx/arr/headers/../sources/arr3.tem \
+  /Users/phil3/Documents/Development/grfx/arr/headers/arr2slice.hpp \
+  /Users/phil3/Documents/Development/grfx/arr/headers/../sources/arr2slice.tem \
+  /Users/phil3/Documents/Development/grfx/arr/headers/arr2sub.hpp \
+  /Users/phil3/Documents/Development/grfx/arr/headers/../sources/arr2sub.tem \
+  /Users/phil3/Documents/Development/grfx/arr/headers/darr1.hpp \
+  /Users/phil3/Documents/Development/grfx/arr/headers/darr2.hpp \
+  /Users/phil3/Documents/Development/grfx/arr/headers/darr2slice.hpp \
+  /Users/phil3/Documents/Development/grfx/arr/headers/darr2sub.hpp \
+  /Users/phil3/Documents/Development/grfx/arr/headers/uiarr1.hpp \
+  /Users/phil3/Documents/Development/grfx/arr/headers/uiarr2.hpp \
+  /Users/phil3/Documents/Development/grfx/arr/headers/barr1.hpp \
+  /Users/phil3/Documents/Development/grfx/arr/headers/barr2.hpp \
+  /Users/phil3/Documents/Development/grfx/arr/headers/barr3.hpp \
+  /Users/phil3/Documents/Development/grfx/arr/headers/barr2slice.hpp \
+  /Users/phil3/Documents/Development/grfx/arr/headers/barr2sub.hpp \
+  /Users/phil3/Documents/Development/grfx/weiss/weiss2/weiss2.hpp \
+  /Users/phil3/Documents/Development/grfx/weiss/weiss2/headers/crd2.hpp \
+  /Users/phil3/Documents/Development/grfx/weiss/weiss2/headers/pnt2.hpp \
+  /Users/phil3/Documents/Development/grfx/weiss/weiss2/headers/vtr2.hpp \
+  /Users/phil3/Documents/Development/grfx/weiss/weiss2/headers/trf2.hpp \
+  /Users/phil3/Documents/Development/grfx/weiss/weiss2/headers/rtn2.hpp \
+  /Users/phil3/Documents/Development/grfx/weiss/weiss2/headers/scl2.hpp \
+  /Users/phil3/Documents/Development/grfx/weiss/weiss2/headers/atr2.hpp

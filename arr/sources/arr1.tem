@@ -51,7 +51,7 @@ arr1<data_type> arr1<data_type>::reverse()
 template <class data_type>
 void arr1<data_type>::clear()
 {
-    delete [] m_a;
+    delete [] m_a.release();
     m_a = nullptr;
     m_n = 0;
 }

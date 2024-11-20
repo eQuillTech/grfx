@@ -7,46 +7,46 @@
 
 using namespace std;
 
-constexpr const Pnt2 Pnt2::Po(0.,0.);
+constexpr const pnt2 pnt2::Po(0.,0.);
 
 //
-Pnt2 Pnt2::operator+=(const Vtr2 &V)
+pnt2 pnt2::operator+=(const vtr2 &V)
 {
 	return *this=(*this)+V;
 }
 
 //
-Pnt2 Pnt2::operator-=(const Vtr2 &V)
+pnt2 pnt2::operator-=(const vtr2 &V)
 {
 	return *this=(*this)-V;
 }
 
 //
-Pnt2 Pnt2::operator+(const Vtr2 &V) const
+pnt2 pnt2::operator+(const vtr2 &V) const
 {
-	return 	Pnt2(_x+V.x(),_y+V.y());
+	return 	pnt2(_x+V.x(),_y+V.y());
 }
 
 //
-Pnt2 Pnt2::operator-(const Vtr2 &V) const
+pnt2 pnt2::operator-(const vtr2 &V) const
 {
-	return Pnt2(_x-V.x(),_y-V.y());
+	return pnt2(_x-V.x(),_y-V.y());
 }
 
 //
-Vtr2 Pnt2::operator-(const Pnt2 &P) const
+vtr2 pnt2::operator-(const pnt2 &P) const
 {
-	return Vtr2(_x-P._x,_y-P._y);
+	return vtr2(_x-P._x,_y-P._y);
 }
 
 //
-bool Pnt2::operator==(const Pnt2 &P) const
+bool pnt2::operator==(const pnt2 &P) const
 {
 	return (_x==P._x)&&(_y==P._y);
 }
 
 //
-bool Pnt2::operator!=(const Pnt2 &P) const
+bool pnt2::operator!=(const pnt2 &P) const
 {
 	return !((*this)==P);
 }

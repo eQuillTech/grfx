@@ -9,7 +9,7 @@
 using namespace std;
 
 //
-Crd3::Crd3(const arr::darr1 &A)
+crd3::crd3(const arr::darr1 &A)
 {
 	if(A.size()==3)
 	{
@@ -21,7 +21,7 @@ Crd3::Crd3(const arr::darr1 &A)
 }
 
 //
-Crd3::operator arr::darr1() const
+crd3::operator arr::darr1() const
 {
 	arr::darr1 d(3);
 	d(0)=_x;d(1)=_y;d(2)=_z;
@@ -29,7 +29,7 @@ Crd3::operator arr::darr1() const
 }
 
 //
-double& Crd3::operator()(const size_t i)
+double& crd3::operator()(const size_t i)
 {
 	if(i<3)
 		return _p[i];
@@ -39,7 +39,7 @@ double& Crd3::operator()(const size_t i)
 }
 
 //
-double const& Crd3::operator()(const size_t i) const
+double const& crd3::operator()(const size_t i) const
 {
 	if(i<3)
 		return _p[i];
@@ -49,7 +49,7 @@ double const& Crd3::operator()(const size_t i) const
 }
 
 //friend
-ostream& operator<<(ostream &os,const Crd3 &C)
+ostream& operator<<(ostream &os,const crd3 &C)
 {
 	os<<"("<<C.x()<<","<<C.y()<<","<<C.z()<<")";
 	return os;

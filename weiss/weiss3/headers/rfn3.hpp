@@ -4,22 +4,22 @@
 #define _RFN3_
 
 #ifndef _TRF3_
-#include "Trf3.hpp"
+#include "trf3.hpp"
 #endif
 
-class Vtr3;
+class vtr3;
 
 //
-class Rfn3:public Trf3
+class rfn3:public trf3
 {
 private:
-	Rfn3(const Trf3 &T):Trf3(T){}
+	rfn3(const trf3 &T):trf3(T){}
 
 public:
-	Rfn3(const Vtr3 &V);
+	rfn3(const vtr3 &V);
 
-	Trf3 operator*(const Trf3 &T) const noexcept{return Trf3::operator*(T);}
-	Trf3 operator/(const Trf3 &T) const noexcept{return Trf3::operator/(T);}
+	trf3 operator*(const trf3 &T) const noexcept{return trf3::operator*(T);}
+	trf3 operator/(const trf3 &T) const noexcept{return trf3::operator/(T);}
 };
 
 #endif

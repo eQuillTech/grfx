@@ -28,7 +28,6 @@ TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Applications/CMake.app/Cont
 TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Applications/CMake.app/Contents/share/cmake-3.26/Modules/Platform/UnixPaths.cmake))
 TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/phil3/Documents/Development/grfx/CMakeLists.txt))
 TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/phil3/Documents/Development/grfx/arr/CMakeLists.txt))
-TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/phil3/Documents/Development/grfx/arr/examples/CMakeLists.txt))
 TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/phil3/Documents/Development/grfx/build/CMakeFiles/3.26.3/CMakeCCompiler.cmake))
 TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/phil3/Documents/Development/grfx/build/CMakeFiles/3.26.3/CMakeCXXCompiler.cmake))
 TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/phil3/Documents/Development/grfx/build/CMakeFiles/3.26.3/CMakeSystem.cmake))

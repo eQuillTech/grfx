@@ -8,7 +8,7 @@
 using namespace std;
 
 //
-Crd2::Crd2(const arr::darr1 &A)
+crd2::crd2(const arr::darr1 &A)
 {
 	if(A.size()==2)
 	{
@@ -20,7 +20,7 @@ Crd2::Crd2(const arr::darr1 &A)
 }
 
 //
-Crd2::operator arr::darr1() const
+crd2::operator arr::darr1() const
 {
 	arr::darr1 d(2);
 	d(0)=_x;d(1)=_y;
@@ -28,7 +28,7 @@ Crd2::operator arr::darr1() const
 }
 
 //
-double& Crd2::operator()(const size_t i)
+double& crd2::operator()(const size_t i)
 {
 	if(i<2)
 		return _p[i];
@@ -38,7 +38,7 @@ double& Crd2::operator()(const size_t i)
 }
 
 //
-double const& Crd2::operator()(const size_t i) const
+double const& crd2::operator()(const size_t i) const
 {
 	if(i<2)
 		return _p[i];

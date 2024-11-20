@@ -5,9 +5,8 @@
 
 #include "CoreGraphics/CoreGraphics.h"
 #include "weiss.hpp"
-#include "Grfx_defs.hpp"
 
-typedef Vtr2 gvtr;
+typedef vtr2 gvtr;
 
 #ifndef _GPNT_
 #include "gpnt.h"
@@ -16,7 +15,7 @@ typedef Vtr2 gvtr;
 //predef
 class gcmr;
 
-class Gfrm:public Gfgr
+class gfrm :public gfgr
 {
 private:
 	gpnt m_bottomLeftP;
@@ -24,11 +23,11 @@ private:
 	//double m_top,m_left,m_bottom,m_right;
 
 public:
-	//Gfrm(){}
-	Gfrm(const gpnt& tl,const gvtr& d);
-	Gfrm(const double t=0.,const double l=0.,const double b=0.,const double r=0.);
-	Gfrm(const gpnt& tl,const gpnt& br);
-	Gfrm(const CGRect& R);
+	//gfrm (){}
+	gfrm (const gpnt& tl,const gvtr& d);
+	gfrm (const double t=0.,const double l=0.,const double b=0.,const double r=0.);
+	gfrm (const gpnt& tl,const gpnt& br);
+	gfrm (const CGRect& R);
 
 	double top(){return (m_bottomLeftP+m_diagV).y();}
 	double left(){return m_bottomLeftP.x();}
@@ -48,28 +47,28 @@ public:
 	double const width() const{return m_diagV.x();}
 	double const height() const{return m_diagV.y();}
 	
-	bool operator==(const Gfrm &f) const;
+	bool operator==(const gfrm  &f) const;
 	
-	Gfrm operator+(const gvtr &v) const;
-	Gfrm operator-(const gvtr &v) const;
-	Gfrm operator/(const double x) const;
+	gfrm  operator+(const gvtr &v) const;
+	gfrm  operator-(const gvtr &v) const;
+	gfrm  operator/(const double x) const;
 
-	Gfrm operator+=(const gvtr &v);
-	Gfrm operator-=(const gvtr &v);
-	Gfrm operator*=(const double x);
-	Gfrm operator/=(const double x);
-	//Gfrm set(const Gfrm &r);
+	gfrm  operator+=(const gvtr &v);
+	gfrm  operator-=(const gvtr &v);
+	gfrm  operator*=(const double x);
+	gfrm  operator/=(const double x);
+	//gfrm  set(const gfrm  &r);
 	
-	Gfrm map(const Gfrm &fNew,const Gfrm &fOld) const;
-	CGRect map(const CGRect &Rframe,const Gfrm &frameF) const;
+	gfrm  map(const gfrm  &fNew,const gfrm  &fOld) const;
+	CGRect map(const CGRect &Rframe,const gfrm  &frameF) const;
 	gpnt map(const CGPoint &P,const CGRect &Rframe) const;
-	Gfrm map(const CGRect &Rframe,const CGRect &R) const;
+	gfrm  map(const CGRect &Rframe,const CGRect &R) const;
 	double map(const double d,const CGRect &Rframe) const;
-	bool isIn(const Gfrm &f) const;
-	bool overlaps(const Gfrm &f) const;
-	friend Gfrm operator*(const double x,const Gfrm &f);
-	void move(gvtr &v,const Gfrm &fBound) const;
-	Gfrm alter() const;
+	bool isIn(const gfrm  &f) const;
+	bool overlaps(const gfrm  &f) const;
+	friend gfrm  operator*(const double x,const gfrm  &f);
+	void move(gvtr &v,const gfrm  &fBound) const;
+	gfrm  alter() const;
 	//fl_err read(tfl &T);
 //	fl_err write(tfl &T);
 	bool isIn(const gpnt &p) const;
@@ -87,9 +86,9 @@ public:
 	double centerX() const{return center().x();}
 	double centerY() const{return center().y();}
 	double totalSize() const{return width()+height();}
-	double meanSize() const{return pwr(width()*height(),0.5);}
+	double meanSize() const{return mth::pwr(width()*height(),0.5);}
 	double halfMeanSize() const{return 0.5*meanSize();}
-	Gfrm scale(const double f) const;
+	gfrm  scale(const double f) const;
 
 	double awidth() const{return fabs(width());}
 	double aheight() const{return fabs(height());}
@@ -97,8 +96,8 @@ public:
 	CGRect sRect() const{return CGRectMake(left(),top(),width(),height());}
 	CGSize sSize() const{return CGSizeMake(width(),height());}
 
-	Gfrm &R(){return *this;}
-	const Gfrm &R() const{return *this;}
+	gfrm &R(){return *this;}
+	const gfrm &R() const{return *this;}
 	
 	virtual void doFill(CGContextRef context,const CGRect &Rdest) const{}
 	virtual void doStroke(CGContextRef context,const CGRect &Rdest) const{}
@@ -106,24 +105,24 @@ public:
 	virtual void doRender(CGContextRef context,const CGRect &Rdest,const CGRect &Rclip) const{}
 	virtual void doRadGradient(CGContextRef context,const CGRect &Rdest,CGGradientRef grad) const{}
 
-	void doFill(CGContextRef context,const CGRect &Rframe,const Gfrm &frameF) const override;
-	void doStroke(CGContextRef context,const CGRect &Rframe,const Gfrm &frameF) const override;
-	void doRender(CGContextRef context,const CGRect &Rframe,const Gfrm &frameF) const override;
-	void doRender(CGContextRef context,const CGRect &Rframe,const Gfrm &frameF,const CGRect &Rext) const override;
-	void doRadGradient(CGContextRef context,const CGRect &Rframe,const Gfrm &frameF,CGGradientRef grad,const CGPoint &Pi,const CGPoint &Pf,const double Ri,const double Rf) const override;
+	void doFill(CGContextRef context,const CGRect &Rframe,const gfrm  &frameF) const override;
+	void doStroke(CGContextRef context,const CGRect &Rframe,const gfrm  &frameF) const override;
+	void doRender(CGContextRef context,const CGRect &Rframe,const gfrm  &frameF) const override;
+	void doRender(CGContextRef context,const CGRect &Rframe,const gfrm  &frameF,const CGRect &Rext) const override;
+	void doRadGradient(CGContextRef context,const CGRect &Rframe,const gfrm  &frameF,CGGradientRef grad,const CGPoint &Pi,const CGPoint &Pf,const double Ri,const double Rf) const override;
 
-	friend double width(const Gfrm &f){return f.width();}
-	friend double height(const Gfrm &f){return f.height();}
+	friend double width(const gfrm  &f){return f.width();}
+	friend double height(const gfrm  &f){return f.height();}
 
-	friend std::ostream& operator<<(std::ostream &os,const Gfrm &f);
+	friend std::ostream& operator<<(std::ostream &os,const gfrm  &f);
 	
-	Gfrm proj(const gcmr &cmr,const double z) const;
-	Gfrm invproj(const gcmr &cmr,const double z) const;
+	gfrm proj(const gcmr &cmr,const double z) const;
+	gfrm invproj(const gcmr &cmr,const double z) const;
 };
 
 std::ostream& operator<<(std::ostream &os,const CGRect &R);
 
-typedef arr1<Gfrm> Gfrm_arr1;
+typedef arr::arr1<gfrm> gfrm_arr1;
 
-extern const Gfrm unitF;
+extern const gfrm  unitF;
 #endif

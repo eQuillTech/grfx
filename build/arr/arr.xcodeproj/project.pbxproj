@@ -9,7 +9,7 @@
 /* Begin PBXAggregateTarget section */
 		3C78B583444B4EA3A80C4938 /* ZERO_CHECK */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 4EE2ACAA3E214100BC3BA746 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildConfigurationList = 3C8B4F742A36443A96D23EA1 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
 			buildPhases = (
 				C9822329F2C394C7539A1C2E /* Generate CMakeFiles/ZERO_CHECK */,
 			);
@@ -20,14 +20,13 @@
 		};
 		58E74CB9E0B1471A9B7E6543 /* ALL_BUILD */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = BA05181F5DA7454C8805A3C9 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildConfigurationList = 78AACCCC9F834DF69B791228 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
 			buildPhases = (
 				00EA94681806AEB752C77564 /* Generate CMakeFiles/ALL_BUILD */,
 			);
 			dependencies = (
-				0723B28F9A824E5B8A8FDC9F /* PBXTargetDependency */,
-				6AB1B056DF4941558E431DAB /* PBXTargetDependency */,
-				E38D21E862D444118C8194BF /* PBXTargetDependency */,
+				0D4F9732EDC6495E9E9C4F2A /* PBXTargetDependency */,
+				F8434423069B4920BBFE3443 /* PBXTargetDependency */,
 			);
 			name = ALL_BUILD;
 			productName = ALL_BUILD;
@@ -35,103 +34,92 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		0057A04665FD45E493FBD6C8 /* /Users/phil3/Documents/Development/grfx/arr/examples/examples.cpp */ = {isa = PBXBuildFile; fileRef = F25E588409F947D48EDB4FE7 /* /Users/phil3/Documents/Development/grfx/arr/examples/examples.cpp */; };
-		03C2A70F43E9424EADC6C2DE /* /Users/phil3/Documents/Development/grfx/arr/sources/uiarr1.cpp */ = {isa = PBXBuildFile; fileRef = 783EB05D5D57497280E2E60C /* /Users/phil3/Documents/Development/grfx/arr/sources/uiarr1.cpp */; };
-		0567065E01444513ADE28FF5 /* /Users/phil3/Documents/Development/grfx/arr/sources/barr2slice.cpp */ = {isa = PBXBuildFile; fileRef = BDD2AF7771B24CC69982BC59 /* /Users/phil3/Documents/Development/grfx/arr/sources/barr2slice.cpp */; };
-		076B3947230A4ACDA2CBE7D2 /* /Users/phil3/Documents/Development/grfx/arr/sources/barr3.cpp */ = {isa = PBXBuildFile; fileRef = 4677269AA7B24496ABB027D5 /* /Users/phil3/Documents/Development/grfx/arr/sources/barr3.cpp */; };
-		15100133A43A47EE8F23354B /* /Users/phil3/Documents/Development/grfx/arr/headers/barr2slice.hpp */ = {isa = PBXBuildFile; fileRef = 469C047ABC0C43C79D9DD8C4 /* /Users/phil3/Documents/Development/grfx/arr/headers/barr2slice.hpp */; };
-		19FB5976D2C8481389325FC6 /* /Users/phil3/Documents/Development/grfx/arr/headers/uiarr2.hpp */ = {isa = PBXBuildFile; fileRef = CE45AF88227E47EA9D717D84 /* /Users/phil3/Documents/Development/grfx/arr/headers/uiarr2.hpp */; };
-		1DAC0DE6F4A24653915159D9 /* /Users/phil3/Documents/Development/grfx/arr/sources/darr2.cpp */ = {isa = PBXBuildFile; fileRef = 580567387B644490B9A450DD /* /Users/phil3/Documents/Development/grfx/arr/sources/darr2.cpp */; };
-		1EFE3A7257CA41219FB7CF34 /* /Users/phil3/Documents/Development/grfx/arr/headers/uiarr1.hpp */ = {isa = PBXBuildFile; fileRef = F2DCE0C7BCBF4BB0824B62C0 /* /Users/phil3/Documents/Development/grfx/arr/headers/uiarr1.hpp */; };
-		1F56592884D643C39ED3693F /* /Users/phil3/Documents/Development/grfx/arr/headers/arr2slice.hpp */ = {isa = PBXBuildFile; fileRef = 450F9F3956CA493F8855115C /* /Users/phil3/Documents/Development/grfx/arr/headers/arr2slice.hpp */; };
-		210A836D00194DFB8C352818 /* /Users/phil3/Documents/Development/grfx/arr/sources/darr1.cpp */ = {isa = PBXBuildFile; fileRef = AFD1D137B8244506A76AD307 /* /Users/phil3/Documents/Development/grfx/arr/sources/darr1.cpp */; };
-		2CC9D96E276F45EEAF5A8ABB /* /Users/phil3/Documents/Development/grfx/arr/sources/barr2sub.cpp */ = {isa = PBXBuildFile; fileRef = 55C897875CC34CA3B91F8A69 /* /Users/phil3/Documents/Development/grfx/arr/sources/barr2sub.cpp */; };
-		3DD93FAFA7BD4E14A97C10FE /* /Users/phil3/Documents/Development/grfx/arr/headers/darr1.hpp */ = {isa = PBXBuildFile; fileRef = B0EC0E57C0164B1F8FDA1C4D /* /Users/phil3/Documents/Development/grfx/arr/headers/darr1.hpp */; };
-		40B13088A9684F269FCBC3F5 /* /Users/phil3/Documents/Development/grfx/arr/headers/darr2slice.hpp */ = {isa = PBXBuildFile; fileRef = A5A3EE19AC4542D18094EEC8 /* /Users/phil3/Documents/Development/grfx/arr/headers/darr2slice.hpp */; };
-		50B19DC805FC443C9820F81F /* /Users/phil3/Documents/Development/grfx/arr/arr.hpp */ = {isa = PBXBuildFile; fileRef = 63F1EC2D24434B95A4155E4C /* /Users/phil3/Documents/Development/grfx/arr/arr.hpp */; };
-		57FB7BC05551481FACA24623 /* /Users/phil3/Documents/Development/grfx/arr/sources/mth.cpp */ = {isa = PBXBuildFile; fileRef = 6C0D1BB26D534C27A890AE3E /* /Users/phil3/Documents/Development/grfx/arr/sources/mth.cpp */; };
-		58FA75C9F3ED4BFDBD102CC2 /* /Users/phil3/Documents/Development/grfx/arr/sources/darr2slice.cpp */ = {isa = PBXBuildFile; fileRef = AAAFC3F384C641E2AC005853 /* /Users/phil3/Documents/Development/grfx/arr/sources/darr2slice.cpp */; };
-		707CC7C232DF47CDABB5B8F2 /* /Users/phil3/Documents/Development/grfx/arr/headers/arr2.hpp */ = {isa = PBXBuildFile; fileRef = FAD7E974132A4CAC9A936B39 /* /Users/phil3/Documents/Development/grfx/arr/headers/arr2.hpp */; };
-		7DAEF65276EC489A84CD1D84 /* /Users/phil3/Documents/Development/grfx/arr/sources/trg.cpp */ = {isa = PBXBuildFile; fileRef = 8AC83EB2F5D0418AA76A0E0F /* /Users/phil3/Documents/Development/grfx/arr/sources/trg.cpp */; };
-		87D33243C100406FA25ADFA8 /* /Users/phil3/Documents/Development/grfx/arr/headers/arr1.hpp */ = {isa = PBXBuildFile; fileRef = CE5BA48E048046C6B225717A /* /Users/phil3/Documents/Development/grfx/arr/headers/arr1.hpp */; };
-		893B665F38F64FC2BE20C625 /* /Users/phil3/Documents/Development/grfx/arr/headers/darr2.hpp */ = {isa = PBXBuildFile; fileRef = 7A6A46266FE047EE86D4ABF8 /* /Users/phil3/Documents/Development/grfx/arr/headers/darr2.hpp */; };
-		8D242F866C1E4EA7A6F537D2 /* /Users/phil3/Documents/Development/grfx/arr/headers/barr2sub.hpp */ = {isa = PBXBuildFile; fileRef = 91EA5A7BC3F146A397F8C16B /* /Users/phil3/Documents/Development/grfx/arr/headers/barr2sub.hpp */; };
-		975C4DB3E9D144579A9B7959 /* /Users/phil3/Documents/Development/grfx/arr/sources/uiarr2.cpp */ = {isa = PBXBuildFile; fileRef = 7F4B8173A7D4455E8300CF98 /* /Users/phil3/Documents/Development/grfx/arr/sources/uiarr2.cpp */; };
-		983AD63D843B47118F755588 /* /Users/phil3/Documents/Development/grfx/arr/sources/darr2sub.cpp */ = {isa = PBXBuildFile; fileRef = 5E4036DB30E041D3834BE034 /* /Users/phil3/Documents/Development/grfx/arr/sources/darr2sub.cpp */; };
-		A781B2C84A694289864C97FE /* /Users/phil3/Documents/Development/grfx/arr/sources/arr.cpp */ = {isa = PBXBuildFile; fileRef = E47EFE6E682B41CF9016E598 /* /Users/phil3/Documents/Development/grfx/arr/sources/arr.cpp */; };
-		A8B96FA011914BBD82129582 /* /Users/phil3/Documents/Development/grfx/arr/headers/barr1.hpp */ = {isa = PBXBuildFile; fileRef = 799865CE969C4B989342421E /* /Users/phil3/Documents/Development/grfx/arr/headers/barr1.hpp */; };
-		AF9B0B43951F4ECA9F5DBA95 /* /Users/phil3/Documents/Development/grfx/arr/headers/arr3.hpp */ = {isa = PBXBuildFile; fileRef = E142A57D17FB4E2989E1C7ED /* /Users/phil3/Documents/Development/grfx/arr/headers/arr3.hpp */; };
-		B125EBEF79734369A672055C /* /Users/phil3/Documents/Development/grfx/arr/sources/barr2.cpp */ = {isa = PBXBuildFile; fileRef = 066ED8A8B9B9485985D2A39D /* /Users/phil3/Documents/Development/grfx/arr/sources/barr2.cpp */; };
-		BEE907C58D5F453D80593C95 /* /Users/phil3/Documents/Development/grfx/arr/examples/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 3E029A2D2B9C4CDDB5AFFE27 /* /Users/phil3/Documents/Development/grfx/arr/examples/CMakeLists.txt */; };
-		CBE71FB907214DD4A1B9C464 /* /Users/phil3/Documents/Development/grfx/arr/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 723FD5CF4E164812B4A611AC /* /Users/phil3/Documents/Development/grfx/arr/CMakeLists.txt */; };
-		D011758411714400A65CAC0A /* /Users/phil3/Documents/Development/grfx/arr/headers/arr2sub.hpp */ = {isa = PBXBuildFile; fileRef = 4C5F7FA1A77040BD85E79608 /* /Users/phil3/Documents/Development/grfx/arr/headers/arr2sub.hpp */; };
-		D4556EA437BC44769DC00C89 /* /Users/phil3/Documents/Development/grfx/arr/headers/barr2.hpp */ = {isa = PBXBuildFile; fileRef = EA0D2E82395F4B91ACABC72C /* /Users/phil3/Documents/Development/grfx/arr/headers/barr2.hpp */; };
-		E15BEC19F5774643A7AB5752 /* /Users/phil3/Documents/Development/grfx/arr/headers/barr3.hpp */ = {isa = PBXBuildFile; fileRef = 702ECB3D350D4B9E8D97B030 /* /Users/phil3/Documents/Development/grfx/arr/headers/barr3.hpp */; };
-		F1D5BEC217B74093AE83856A /* /Users/phil3/Documents/Development/grfx/arr/sources/barr1.cpp */ = {isa = PBXBuildFile; fileRef = 1EE400AD4023496F8276BE12 /* /Users/phil3/Documents/Development/grfx/arr/sources/barr1.cpp */; };
-		FBBD8981E3EC4CBA8DA0AA53 /* /Users/phil3/Documents/Development/grfx/arr/headers/darr2sub.hpp */ = {isa = PBXBuildFile; fileRef = E9533D87CF04404D840CE006 /* /Users/phil3/Documents/Development/grfx/arr/headers/darr2sub.hpp */; };
+		0508491DD78042D291587914 /* /Users/phil3/Documents/Development/grfx/arr/headers/uiarr2.hpp */ = {isa = PBXBuildFile; fileRef = 84DB0E3FD97B4183B307F69C /* /Users/phil3/Documents/Development/grfx/arr/headers/uiarr2.hpp */; };
+		07F659E5794A4D07B9C740D9 /* /Users/phil3/Documents/Development/grfx/arr/sources/trg.cpp */ = {isa = PBXBuildFile; fileRef = 664FCBE19B00465C9CD3E030 /* /Users/phil3/Documents/Development/grfx/arr/sources/trg.cpp */; };
+		0941F253EF3142048633AAD4 /* /Users/phil3/Documents/Development/grfx/arr/sources/arr1.tem */ = {isa = PBXBuildFile; fileRef = 3C753BED947F444C88B8A31E /* /Users/phil3/Documents/Development/grfx/arr/sources/arr1.tem */; };
+		111398E2A07E4A2C9C5F03EE /* /Users/phil3/Documents/Development/grfx/arr/sources/uiarr2.cpp */ = {isa = PBXBuildFile; fileRef = E0071C4E2EF2498D97AAA5EC /* /Users/phil3/Documents/Development/grfx/arr/sources/uiarr2.cpp */; };
+		1AF56278691C4955B50E77D0 /* /Users/phil3/Documents/Development/grfx/arr/headers/arr3.hpp */ = {isa = PBXBuildFile; fileRef = D42374ECFA7344C29CC17D97 /* /Users/phil3/Documents/Development/grfx/arr/headers/arr3.hpp */; };
+		3AD0F090C25B4DACAC475D5D /* /Users/phil3/Documents/Development/grfx/arr/headers/darr2slice.hpp */ = {isa = PBXBuildFile; fileRef = EA00B6CA8A214BB4AD05A4F5 /* /Users/phil3/Documents/Development/grfx/arr/headers/darr2slice.hpp */; };
+		3B7921F960F44BB09ECB4882 /* /Users/phil3/Documents/Development/grfx/arr/headers/barr1.hpp */ = {isa = PBXBuildFile; fileRef = 6B9DCCCD08E9461499C63637 /* /Users/phil3/Documents/Development/grfx/arr/headers/barr1.hpp */; };
+		3DD6D22B18994BE8AA50523F /* /Users/phil3/Documents/Development/grfx/arr/sources/barr1.cpp */ = {isa = PBXBuildFile; fileRef = C7EDB7C5293741FB86CA67E4 /* /Users/phil3/Documents/Development/grfx/arr/sources/barr1.cpp */; };
+		3E3B73B7B158479CACB7E080 /* /Users/phil3/Documents/Development/grfx/arr/sources/darr2.cpp */ = {isa = PBXBuildFile; fileRef = 69F2BC53A13E4E79A674EF04 /* /Users/phil3/Documents/Development/grfx/arr/sources/darr2.cpp */; };
+		4153D6B5511443C5A665F55A /* /Users/phil3/Documents/Development/grfx/arr/sources/arr.cpp */ = {isa = PBXBuildFile; fileRef = 485EEC70F2E14BA69A3F0D63 /* /Users/phil3/Documents/Development/grfx/arr/sources/arr.cpp */; };
+		42152C365B65448685116BC9 /* /Users/phil3/Documents/Development/grfx/arr/sources/darr2sub.cpp */ = {isa = PBXBuildFile; fileRef = CAD4AFEA9C6C436AB6BF169F /* /Users/phil3/Documents/Development/grfx/arr/sources/darr2sub.cpp */; };
+		43F66B776A1E44CA850C0682 /* /Users/phil3/Documents/Development/grfx/arr/headers/darr2.hpp */ = {isa = PBXBuildFile; fileRef = 5E80562E715A402E94142145 /* /Users/phil3/Documents/Development/grfx/arr/headers/darr2.hpp */; };
+		53BD6447BC634901AB65D40B /* /Users/phil3/Documents/Development/grfx/arr/arr.hpp */ = {isa = PBXBuildFile; fileRef = 26AC46231569440CAA18EA2F /* /Users/phil3/Documents/Development/grfx/arr/arr.hpp */; };
+		565A8E876024452AA40C05D6 /* /Users/phil3/Documents/Development/grfx/arr/sources/arr2sub.tem */ = {isa = PBXBuildFile; fileRef = 32D644E3B1EE40B888134511 /* /Users/phil3/Documents/Development/grfx/arr/sources/arr2sub.tem */; };
+		5B28372286B84E2D90239452 /* /Users/phil3/Documents/Development/grfx/arr/sources/barr2sub.cpp */ = {isa = PBXBuildFile; fileRef = FBE339B0530C4D2394461989 /* /Users/phil3/Documents/Development/grfx/arr/sources/barr2sub.cpp */; };
+		626B88E50598418FB921DCE8 /* /Users/phil3/Documents/Development/grfx/arr/headers/barr2slice.hpp */ = {isa = PBXBuildFile; fileRef = E20B89FF4E53414385B3EAB8 /* /Users/phil3/Documents/Development/grfx/arr/headers/barr2slice.hpp */; };
+		641F4009C39246E29E3A8D57 /* /Users/phil3/Documents/Development/grfx/arr/sources/darr2slice.cpp */ = {isa = PBXBuildFile; fileRef = 9D2CAA70052A479A9EE3E047 /* /Users/phil3/Documents/Development/grfx/arr/sources/darr2slice.cpp */; };
+		649C666F2FA440B1BFE69D1F /* /Users/phil3/Documents/Development/grfx/arr/headers/uiarr1.hpp */ = {isa = PBXBuildFile; fileRef = 84D2195AF00B43CBB12E8DB2 /* /Users/phil3/Documents/Development/grfx/arr/headers/uiarr1.hpp */; };
+		655CC8ABA03D4F62B468C037 /* /Users/phil3/Documents/Development/grfx/arr/sources/barr2.cpp */ = {isa = PBXBuildFile; fileRef = D5B354DBA9084F5CA2692894 /* /Users/phil3/Documents/Development/grfx/arr/sources/barr2.cpp */; };
+		6D4F95CE29354A8CA513A182 /* /Users/phil3/Documents/Development/grfx/arr/sources/arr2slice.tem */ = {isa = PBXBuildFile; fileRef = 549D4948DE7C4AC59BB1F35B /* /Users/phil3/Documents/Development/grfx/arr/sources/arr2slice.tem */; };
+		7A87358D261A4197B89D848C /* /Users/phil3/Documents/Development/grfx/arr/headers/darr2sub.hpp */ = {isa = PBXBuildFile; fileRef = 14B438FE31114AF498F83828 /* /Users/phil3/Documents/Development/grfx/arr/headers/darr2sub.hpp */; };
+		84FD626C65624AD9987F9428 /* /Users/phil3/Documents/Development/grfx/arr/headers/arr2.hpp */ = {isa = PBXBuildFile; fileRef = 15613577629C4854A88423B8 /* /Users/phil3/Documents/Development/grfx/arr/headers/arr2.hpp */; };
+		87923E011BE84FA09F3E4AD8 /* /Users/phil3/Documents/Development/grfx/arr/headers/arr2slice.hpp */ = {isa = PBXBuildFile; fileRef = 3A2A38154D8744ACBAAD3190 /* /Users/phil3/Documents/Development/grfx/arr/headers/arr2slice.hpp */; };
+		91724B5AC5924043BE7974B1 /* /Users/phil3/Documents/Development/grfx/arr/sources/barr2slice.cpp */ = {isa = PBXBuildFile; fileRef = 766E7993DAEF4613B743BC05 /* /Users/phil3/Documents/Development/grfx/arr/sources/barr2slice.cpp */; };
+		9B25E506E2BB4011B9108E4E /* /Users/phil3/Documents/Development/grfx/arr/sources/barr3.cpp */ = {isa = PBXBuildFile; fileRef = 77E862B57E9F4E1E81A8452F /* /Users/phil3/Documents/Development/grfx/arr/sources/barr3.cpp */; };
+		9B3F9B1013AD4A4882647B92 /* /Users/phil3/Documents/Development/grfx/arr/headers/arr2sub.hpp */ = {isa = PBXBuildFile; fileRef = D236AA06006F4FF0ACA7E5E2 /* /Users/phil3/Documents/Development/grfx/arr/headers/arr2sub.hpp */; };
+		9FFB7882C44842518758AC72 /* /Users/phil3/Documents/Development/grfx/arr/sources/mth.cpp */ = {isa = PBXBuildFile; fileRef = 725145669C034D469670426C /* /Users/phil3/Documents/Development/grfx/arr/sources/mth.cpp */; };
+		A6E4B4974B884B4BA2ADFDE8 /* /Users/phil3/Documents/Development/grfx/arr/headers/arr1.hpp */ = {isa = PBXBuildFile; fileRef = F9FAE99F67C64FD680F2432C /* /Users/phil3/Documents/Development/grfx/arr/headers/arr1.hpp */; };
+		A8B300F9836947B4A1F218EE /* /Users/phil3/Documents/Development/grfx/arr/sources/arr3.tem */ = {isa = PBXBuildFile; fileRef = 521A6A3A16FA4360AE9D72D4 /* /Users/phil3/Documents/Development/grfx/arr/sources/arr3.tem */; };
+		B90948E98A854E19AEF37F28 /* /Users/phil3/Documents/Development/grfx/arr/sources/darr1.cpp */ = {isa = PBXBuildFile; fileRef = FD435EFBF62C49D38E42E97A /* /Users/phil3/Documents/Development/grfx/arr/sources/darr1.cpp */; };
+		B9BE4D14631E4E9B8B4CDE67 /* /Users/phil3/Documents/Development/grfx/arr/headers/barr2.hpp */ = {isa = PBXBuildFile; fileRef = DCC574F5C1174E45B5CFF3AE /* /Users/phil3/Documents/Development/grfx/arr/headers/barr2.hpp */; };
+		BD7B21CEAEB241D08DF928A8 /* /Users/phil3/Documents/Development/grfx/arr/headers/barr3.hpp */ = {isa = PBXBuildFile; fileRef = 69DE2923461142FAA69B6EA3 /* /Users/phil3/Documents/Development/grfx/arr/headers/barr3.hpp */; };
+		C1CD41990EF9437984AA5295 /* /Users/phil3/Documents/Development/grfx/arr/sources/arr2.tem */ = {isa = PBXBuildFile; fileRef = 2C14E021AB434806BE2F77E1 /* /Users/phil3/Documents/Development/grfx/arr/sources/arr2.tem */; };
+		C3C3C53E17194080A18851E5 /* /Users/phil3/Documents/Development/grfx/arr/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 7B9E4B8653974AE8B8B8F16C /* /Users/phil3/Documents/Development/grfx/arr/CMakeLists.txt */; };
+		DCA810CADB2145EF97E8B891 /* /Users/phil3/Documents/Development/grfx/arr/sources/uiarr1.cpp */ = {isa = PBXBuildFile; fileRef = 17FC65E73E264433B4A224C5 /* /Users/phil3/Documents/Development/grfx/arr/sources/uiarr1.cpp */; };
+		E2C26772C8D940AAB12AE82E /* /Users/phil3/Documents/Development/grfx/arr/headers/darr1.hpp */ = {isa = PBXBuildFile; fileRef = 87B975DB9F64430CB5451B54 /* /Users/phil3/Documents/Development/grfx/arr/headers/darr1.hpp */; };
+		EDC9FFCD780A4B418D7B7329 /* /Users/phil3/Documents/Development/grfx/arr/headers/barr2sub.hpp */ = {isa = PBXBuildFile; fileRef = C5185401936542858391C4F9 /* /Users/phil3/Documents/Development/grfx/arr/headers/barr2sub.hpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildStyle section */
-		2D7FC132C74240B3A6BACD34 /* Release */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = Release;
-		};
-		A049C190CA74435F8E250957 /* MinSizeRel */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = MinSizeRel;
-		};
-		DB32135BD60C43A0833ED9F8 /* Debug */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = Debug;
-		};
-		F21A7DB282F047A29024DCA8 /* RelWithDebInfo */ = {
+		235FC47EAC474D61B56ED8B0 /* RelWithDebInfo */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 			};
 			name = RelWithDebInfo;
 		};
+		4910F6F7A10B488186A70BC2 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		90B3DE4D86404E0CA5D79E9E /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		BB8707513C664BD49C71F32A /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
 /* End PBXBuildStyle section */
 
 /* Begin PBXContainerItemProxy section */
-		1D1D47CF20D84FE4AD74E9CD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 47E0197A5BDA45D7AE40A7D0 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AB873B60AEEA4B30AEBFCBAB;
-			remoteInfo = examples;
-		};
-		3CC502E46F7E48C68CDD3C43 /* PBXContainerItemProxy */ = {
+		3BCED9AA05604336B69F55A3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 47E0197A5BDA45D7AE40A7D0 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 138EB76C7C814DB3BA3F81FF;
 			remoteInfo = arr;
 		};
-		6E353C182B2A40F7A1D5658C /* PBXContainerItemProxy */ = {
+		4999262017894478897C3B56 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 47E0197A5BDA45D7AE40A7D0 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 3C78B583444B4EA3A80C4938;
 			remoteInfo = ZERO_CHECK;
 		};
-		A2F3D957313F4D34952474F8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 47E0197A5BDA45D7AE40A7D0 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 138EB76C7C814DB3BA3F81FF;
-			remoteInfo = arr;
-		};
-		BBF1835481654375BA6EEAE0 /* PBXContainerItemProxy */ = {
+		FB2CA764D1A54798B64833EF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 47E0197A5BDA45D7AE40A7D0 /* Project object */;
 			proxyType = 1;
@@ -141,54 +129,49 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		066ED8A8B9B9485985D2A39D /* /Users/phil3/Documents/Development/grfx/arr/sources/barr2.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = barr2.cpp; path = sources/barr2.cpp; sourceTree = SOURCE_ROOT; };
-		1EE400AD4023496F8276BE12 /* /Users/phil3/Documents/Development/grfx/arr/sources/barr1.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = barr1.cpp; path = sources/barr1.cpp; sourceTree = SOURCE_ROOT; };
-		3E029A2D2B9C4CDDB5AFFE27 /* /Users/phil3/Documents/Development/grfx/arr/examples/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = examples/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		428079A848814E65B1D3805B /* /Users/phil3/Documents/Development/grfx/arr/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		450F9F3956CA493F8855115C /* /Users/phil3/Documents/Development/grfx/arr/headers/arr2slice.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = arr2slice.hpp; path = headers/arr2slice.hpp; sourceTree = SOURCE_ROOT; };
-		4677269AA7B24496ABB027D5 /* /Users/phil3/Documents/Development/grfx/arr/sources/barr3.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = barr3.cpp; path = sources/barr3.cpp; sourceTree = SOURCE_ROOT; };
-		469C047ABC0C43C79D9DD8C4 /* /Users/phil3/Documents/Development/grfx/arr/headers/barr2slice.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = barr2slice.hpp; path = headers/barr2slice.hpp; sourceTree = SOURCE_ROOT; };
-		4C5F7FA1A77040BD85E79608 /* /Users/phil3/Documents/Development/grfx/arr/headers/arr2sub.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = arr2sub.hpp; path = headers/arr2sub.hpp; sourceTree = SOURCE_ROOT; };
-		55C897875CC34CA3B91F8A69 /* /Users/phil3/Documents/Development/grfx/arr/sources/barr2sub.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = barr2sub.cpp; path = sources/barr2sub.cpp; sourceTree = SOURCE_ROOT; };
-		580567387B644490B9A450DD /* /Users/phil3/Documents/Development/grfx/arr/sources/darr2.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = darr2.cpp; path = sources/darr2.cpp; sourceTree = SOURCE_ROOT; };
-		5E4036DB30E041D3834BE034 /* /Users/phil3/Documents/Development/grfx/arr/sources/darr2sub.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = darr2sub.cpp; path = sources/darr2sub.cpp; sourceTree = SOURCE_ROOT; };
-		63F1EC2D24434B95A4155E4C /* /Users/phil3/Documents/Development/grfx/arr/arr.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = arr.hpp; path = arr.hpp; sourceTree = SOURCE_ROOT; };
-		6C0D1BB26D534C27A890AE3E /* /Users/phil3/Documents/Development/grfx/arr/sources/mth.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = mth.cpp; path = sources/mth.cpp; sourceTree = SOURCE_ROOT; };
-		702ECB3D350D4B9E8D97B030 /* /Users/phil3/Documents/Development/grfx/arr/headers/barr3.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = barr3.hpp; path = headers/barr3.hpp; sourceTree = SOURCE_ROOT; };
-		723FD5CF4E164812B4A611AC /* /Users/phil3/Documents/Development/grfx/arr/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		783EB05D5D57497280E2E60C /* /Users/phil3/Documents/Development/grfx/arr/sources/uiarr1.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = uiarr1.cpp; path = sources/uiarr1.cpp; sourceTree = SOURCE_ROOT; };
-		799865CE969C4B989342421E /* /Users/phil3/Documents/Development/grfx/arr/headers/barr1.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = barr1.hpp; path = headers/barr1.hpp; sourceTree = SOURCE_ROOT; };
-		7A6A46266FE047EE86D4ABF8 /* /Users/phil3/Documents/Development/grfx/arr/headers/darr2.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = darr2.hpp; path = headers/darr2.hpp; sourceTree = SOURCE_ROOT; };
-		7C3D2E19F08A4AD7BBC62BC8 /* arr */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libarr.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		7F4B8173A7D4455E8300CF98 /* /Users/phil3/Documents/Development/grfx/arr/sources/uiarr2.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = uiarr2.cpp; path = sources/uiarr2.cpp; sourceTree = SOURCE_ROOT; };
-		8AC83EB2F5D0418AA76A0E0F /* /Users/phil3/Documents/Development/grfx/arr/sources/trg.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = trg.cpp; path = sources/trg.cpp; sourceTree = SOURCE_ROOT; };
-		91EA5A7BC3F146A397F8C16B /* /Users/phil3/Documents/Development/grfx/arr/headers/barr2sub.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = barr2sub.hpp; path = headers/barr2sub.hpp; sourceTree = SOURCE_ROOT; };
-		A5A3EE19AC4542D18094EEC8 /* /Users/phil3/Documents/Development/grfx/arr/headers/darr2slice.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = darr2slice.hpp; path = headers/darr2slice.hpp; sourceTree = SOURCE_ROOT; };
-		AAAFC3F384C641E2AC005853 /* /Users/phil3/Documents/Development/grfx/arr/sources/darr2slice.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = darr2slice.cpp; path = sources/darr2slice.cpp; sourceTree = SOURCE_ROOT; };
-		AFD1D137B8244506A76AD307 /* /Users/phil3/Documents/Development/grfx/arr/sources/darr1.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = darr1.cpp; path = sources/darr1.cpp; sourceTree = SOURCE_ROOT; };
-		B0EC0E57C0164B1F8FDA1C4D /* /Users/phil3/Documents/Development/grfx/arr/headers/darr1.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = darr1.hpp; path = headers/darr1.hpp; sourceTree = SOURCE_ROOT; };
-		B61381151A71494FB181824C /* examples */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = examples; sourceTree = BUILT_PRODUCTS_DIR; };
-		BDD2AF7771B24CC69982BC59 /* /Users/phil3/Documents/Development/grfx/arr/sources/barr2slice.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = barr2slice.cpp; path = sources/barr2slice.cpp; sourceTree = SOURCE_ROOT; };
-		CE45AF88227E47EA9D717D84 /* /Users/phil3/Documents/Development/grfx/arr/headers/uiarr2.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = uiarr2.hpp; path = headers/uiarr2.hpp; sourceTree = SOURCE_ROOT; };
-		CE5BA48E048046C6B225717A /* /Users/phil3/Documents/Development/grfx/arr/headers/arr1.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = arr1.hpp; path = headers/arr1.hpp; sourceTree = SOURCE_ROOT; };
-		E142A57D17FB4E2989E1C7ED /* /Users/phil3/Documents/Development/grfx/arr/headers/arr3.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = arr3.hpp; path = headers/arr3.hpp; sourceTree = SOURCE_ROOT; };
-		E47EFE6E682B41CF9016E598 /* /Users/phil3/Documents/Development/grfx/arr/sources/arr.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = arr.cpp; path = sources/arr.cpp; sourceTree = SOURCE_ROOT; };
-		E9533D87CF04404D840CE006 /* /Users/phil3/Documents/Development/grfx/arr/headers/darr2sub.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = darr2sub.hpp; path = headers/darr2sub.hpp; sourceTree = SOURCE_ROOT; };
-		EA0D2E82395F4B91ACABC72C /* /Users/phil3/Documents/Development/grfx/arr/headers/barr2.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = barr2.hpp; path = headers/barr2.hpp; sourceTree = SOURCE_ROOT; };
-		F25E588409F947D48EDB4FE7 /* /Users/phil3/Documents/Development/grfx/arr/examples/examples.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = examples.cpp; path = examples/examples.cpp; sourceTree = SOURCE_ROOT; };
-		F2DCE0C7BCBF4BB0824B62C0 /* /Users/phil3/Documents/Development/grfx/arr/headers/uiarr1.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = uiarr1.hpp; path = headers/uiarr1.hpp; sourceTree = SOURCE_ROOT; };
-		FAD7E974132A4CAC9A936B39 /* /Users/phil3/Documents/Development/grfx/arr/headers/arr2.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = arr2.hpp; path = headers/arr2.hpp; sourceTree = SOURCE_ROOT; };
+		14B438FE31114AF498F83828 /* /Users/phil3/Documents/Development/grfx/arr/headers/darr2sub.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = darr2sub.hpp; path = headers/darr2sub.hpp; sourceTree = SOURCE_ROOT; };
+		15613577629C4854A88423B8 /* /Users/phil3/Documents/Development/grfx/arr/headers/arr2.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = arr2.hpp; path = headers/arr2.hpp; sourceTree = SOURCE_ROOT; };
+		17FC65E73E264433B4A224C5 /* /Users/phil3/Documents/Development/grfx/arr/sources/uiarr1.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = uiarr1.cpp; path = sources/uiarr1.cpp; sourceTree = SOURCE_ROOT; };
+		26AC46231569440CAA18EA2F /* /Users/phil3/Documents/Development/grfx/arr/arr.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = arr.hpp; path = arr.hpp; sourceTree = SOURCE_ROOT; };
+		2C14E021AB434806BE2F77E1 /* /Users/phil3/Documents/Development/grfx/arr/sources/arr2.tem */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = arr2.tem; path = sources/arr2.tem; sourceTree = SOURCE_ROOT; };
+		32D644E3B1EE40B888134511 /* /Users/phil3/Documents/Development/grfx/arr/sources/arr2sub.tem */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = arr2sub.tem; path = sources/arr2sub.tem; sourceTree = SOURCE_ROOT; };
+		3A2A38154D8744ACBAAD3190 /* /Users/phil3/Documents/Development/grfx/arr/headers/arr2slice.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = arr2slice.hpp; path = headers/arr2slice.hpp; sourceTree = SOURCE_ROOT; };
+		3C753BED947F444C88B8A31E /* /Users/phil3/Documents/Development/grfx/arr/sources/arr1.tem */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = arr1.tem; path = sources/arr1.tem; sourceTree = SOURCE_ROOT; };
+		485EEC70F2E14BA69A3F0D63 /* /Users/phil3/Documents/Development/grfx/arr/sources/arr.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = arr.cpp; path = sources/arr.cpp; sourceTree = SOURCE_ROOT; };
+		521A6A3A16FA4360AE9D72D4 /* /Users/phil3/Documents/Development/grfx/arr/sources/arr3.tem */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = arr3.tem; path = sources/arr3.tem; sourceTree = SOURCE_ROOT; };
+		549D4948DE7C4AC59BB1F35B /* /Users/phil3/Documents/Development/grfx/arr/sources/arr2slice.tem */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = arr2slice.tem; path = sources/arr2slice.tem; sourceTree = SOURCE_ROOT; };
+		5E80562E715A402E94142145 /* /Users/phil3/Documents/Development/grfx/arr/headers/darr2.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = darr2.hpp; path = headers/darr2.hpp; sourceTree = SOURCE_ROOT; };
+		664FCBE19B00465C9CD3E030 /* /Users/phil3/Documents/Development/grfx/arr/sources/trg.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = trg.cpp; path = sources/trg.cpp; sourceTree = SOURCE_ROOT; };
+		69DE2923461142FAA69B6EA3 /* /Users/phil3/Documents/Development/grfx/arr/headers/barr3.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = barr3.hpp; path = headers/barr3.hpp; sourceTree = SOURCE_ROOT; };
+		69F2BC53A13E4E79A674EF04 /* /Users/phil3/Documents/Development/grfx/arr/sources/darr2.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = darr2.cpp; path = sources/darr2.cpp; sourceTree = SOURCE_ROOT; };
+		6B9DCCCD08E9461499C63637 /* /Users/phil3/Documents/Development/grfx/arr/headers/barr1.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = barr1.hpp; path = headers/barr1.hpp; sourceTree = SOURCE_ROOT; };
+		725145669C034D469670426C /* /Users/phil3/Documents/Development/grfx/arr/sources/mth.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = mth.cpp; path = sources/mth.cpp; sourceTree = SOURCE_ROOT; };
+		766E7993DAEF4613B743BC05 /* /Users/phil3/Documents/Development/grfx/arr/sources/barr2slice.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = barr2slice.cpp; path = sources/barr2slice.cpp; sourceTree = SOURCE_ROOT; };
+		77E862B57E9F4E1E81A8452F /* /Users/phil3/Documents/Development/grfx/arr/sources/barr3.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = barr3.cpp; path = sources/barr3.cpp; sourceTree = SOURCE_ROOT; };
+		7B9E4B8653974AE8B8B8F16C /* /Users/phil3/Documents/Development/grfx/arr/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		84D2195AF00B43CBB12E8DB2 /* /Users/phil3/Documents/Development/grfx/arr/headers/uiarr1.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = uiarr1.hpp; path = headers/uiarr1.hpp; sourceTree = SOURCE_ROOT; };
+		84DB0E3FD97B4183B307F69C /* /Users/phil3/Documents/Development/grfx/arr/headers/uiarr2.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = uiarr2.hpp; path = headers/uiarr2.hpp; sourceTree = SOURCE_ROOT; };
+		87B975DB9F64430CB5451B54 /* /Users/phil3/Documents/Development/grfx/arr/headers/darr1.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = darr1.hpp; path = headers/darr1.hpp; sourceTree = SOURCE_ROOT; };
+		966A90CB417D4C36B3950E1B /* arr */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libarr.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D2CAA70052A479A9EE3E047 /* /Users/phil3/Documents/Development/grfx/arr/sources/darr2slice.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = darr2slice.cpp; path = sources/darr2slice.cpp; sourceTree = SOURCE_ROOT; };
+		C5185401936542858391C4F9 /* /Users/phil3/Documents/Development/grfx/arr/headers/barr2sub.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = barr2sub.hpp; path = headers/barr2sub.hpp; sourceTree = SOURCE_ROOT; };
+		C7EDB7C5293741FB86CA67E4 /* /Users/phil3/Documents/Development/grfx/arr/sources/barr1.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = barr1.cpp; path = sources/barr1.cpp; sourceTree = SOURCE_ROOT; };
+		CAD4AFEA9C6C436AB6BF169F /* /Users/phil3/Documents/Development/grfx/arr/sources/darr2sub.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = darr2sub.cpp; path = sources/darr2sub.cpp; sourceTree = SOURCE_ROOT; };
+		D236AA06006F4FF0ACA7E5E2 /* /Users/phil3/Documents/Development/grfx/arr/headers/arr2sub.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = arr2sub.hpp; path = headers/arr2sub.hpp; sourceTree = SOURCE_ROOT; };
+		D42374ECFA7344C29CC17D97 /* /Users/phil3/Documents/Development/grfx/arr/headers/arr3.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = arr3.hpp; path = headers/arr3.hpp; sourceTree = SOURCE_ROOT; };
+		D5B354DBA9084F5CA2692894 /* /Users/phil3/Documents/Development/grfx/arr/sources/barr2.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = barr2.cpp; path = sources/barr2.cpp; sourceTree = SOURCE_ROOT; };
+		D5D0A086E107436FAAD68199 /* /Users/phil3/Documents/Development/grfx/arr/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		DCC574F5C1174E45B5CFF3AE /* /Users/phil3/Documents/Development/grfx/arr/headers/barr2.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = barr2.hpp; path = headers/barr2.hpp; sourceTree = SOURCE_ROOT; };
+		E0071C4E2EF2498D97AAA5EC /* /Users/phil3/Documents/Development/grfx/arr/sources/uiarr2.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = uiarr2.cpp; path = sources/uiarr2.cpp; sourceTree = SOURCE_ROOT; };
+		E20B89FF4E53414385B3EAB8 /* /Users/phil3/Documents/Development/grfx/arr/headers/barr2slice.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = barr2slice.hpp; path = headers/barr2slice.hpp; sourceTree = SOURCE_ROOT; };
+		EA00B6CA8A214BB4AD05A4F5 /* /Users/phil3/Documents/Development/grfx/arr/headers/darr2slice.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = darr2slice.hpp; path = headers/darr2slice.hpp; sourceTree = SOURCE_ROOT; };
+		F9FAE99F67C64FD680F2432C /* /Users/phil3/Documents/Development/grfx/arr/headers/arr1.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = arr1.hpp; path = headers/arr1.hpp; sourceTree = SOURCE_ROOT; };
+		FBE339B0530C4D2394461989 /* /Users/phil3/Documents/Development/grfx/arr/sources/barr2sub.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = barr2sub.cpp; path = sources/barr2sub.cpp; sourceTree = SOURCE_ROOT; };
+		FD435EFBF62C49D38E42E97A /* /Users/phil3/Documents/Development/grfx/arr/sources/darr1.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = darr1.cpp; path = sources/darr1.cpp; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		66BEBE1F2A054704B0258348 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F2A2C5C394F94D1DB5ED6045 /* Frameworks */ = {
+		0A504302101F48DFB6A77167 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -198,119 +181,105 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		06782D4EEAFB480894C3E5C1 /* Frameworks */ = {
+		0B4252B149994B0A9B80F156 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3048AD76DB0D4320878E4C6B /* Products */ = {
+		15921A66C7A145F4878C1867 /* ALL_BUILD */ = {
 			isa = PBXGroup;
 			children = (
-				7C3D2E19F08A4AD7BBC62BC8 /* arr */,
-				B61381151A71494FB181824C /* examples */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		59188C62B3A14054B5100C4F /* Source Files */ = {
-			isa = PBXGroup;
-			children = (
-				F25E588409F947D48EDB4FE7 /* /Users/phil3/Documents/Development/grfx/arr/examples/examples.cpp */,
-			);
-			name = "Source Files";
-			sourceTree = "<group>";
-		};
-		891E0102091B4DDC9247C18A /* examples */ = {
-			isa = PBXGroup;
-			children = (
-				59188C62B3A14054B5100C4F /* Source Files */,
-				3E029A2D2B9C4CDDB5AFFE27 /* /Users/phil3/Documents/Development/grfx/arr/examples/CMakeLists.txt */,
-			);
-			name = examples;
-			sourceTree = "<group>";
-		};
-		8EFE8E18B4C440A6BEC0589A /* Source Files */ = {
-			isa = PBXGroup;
-			children = (
-				E47EFE6E682B41CF9016E598 /* /Users/phil3/Documents/Development/grfx/arr/sources/arr.cpp */,
-				1EE400AD4023496F8276BE12 /* /Users/phil3/Documents/Development/grfx/arr/sources/barr1.cpp */,
-				066ED8A8B9B9485985D2A39D /* /Users/phil3/Documents/Development/grfx/arr/sources/barr2.cpp */,
-				BDD2AF7771B24CC69982BC59 /* /Users/phil3/Documents/Development/grfx/arr/sources/barr2slice.cpp */,
-				55C897875CC34CA3B91F8A69 /* /Users/phil3/Documents/Development/grfx/arr/sources/barr2sub.cpp */,
-				4677269AA7B24496ABB027D5 /* /Users/phil3/Documents/Development/grfx/arr/sources/barr3.cpp */,
-				AFD1D137B8244506A76AD307 /* /Users/phil3/Documents/Development/grfx/arr/sources/darr1.cpp */,
-				580567387B644490B9A450DD /* /Users/phil3/Documents/Development/grfx/arr/sources/darr2.cpp */,
-				AAAFC3F384C641E2AC005853 /* /Users/phil3/Documents/Development/grfx/arr/sources/darr2slice.cpp */,
-				5E4036DB30E041D3834BE034 /* /Users/phil3/Documents/Development/grfx/arr/sources/darr2sub.cpp */,
-				6C0D1BB26D534C27A890AE3E /* /Users/phil3/Documents/Development/grfx/arr/sources/mth.cpp */,
-				8AC83EB2F5D0418AA76A0E0F /* /Users/phil3/Documents/Development/grfx/arr/sources/trg.cpp */,
-				783EB05D5D57497280E2E60C /* /Users/phil3/Documents/Development/grfx/arr/sources/uiarr1.cpp */,
-				7F4B8173A7D4455E8300CF98 /* /Users/phil3/Documents/Development/grfx/arr/sources/uiarr2.cpp */,
-			);
-			name = "Source Files";
-			sourceTree = "<group>";
-		};
-		A1F3AF6F39024216950ED56D /* arr */ = {
-			isa = PBXGroup;
-			children = (
-				DA57E6A5BDD147E4AD090DA0 /* Header Files */,
-				8EFE8E18B4C440A6BEC0589A /* Source Files */,
-				723FD5CF4E164812B4A611AC /* /Users/phil3/Documents/Development/grfx/arr/CMakeLists.txt */,
-			);
-			name = arr;
-			sourceTree = "<group>";
-		};
-		AE82B6645FE043A190029C45 /* ALL_BUILD */ = {
-			isa = PBXGroup;
-			children = (
-				F07C42267FAD4CBCA11FBBBE /* CMake Rules */,
-				428079A848814E65B1D3805B /* /Users/phil3/Documents/Development/grfx/arr/CMakeLists.txt */,
+				4FBA026C909344759F49DD47 /* CMake Rules */,
+				D5D0A086E107436FAAD68199 /* /Users/phil3/Documents/Development/grfx/arr/CMakeLists.txt */,
 			);
 			name = ALL_BUILD;
 			sourceTree = "<group>";
 		};
-		C311FB1BC26348F789245B5A = {
+		4A6D3748CEA943848F47F992 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A1F3AF6F39024216950ED56D /* arr */,
-				AE82B6645FE043A190029C45 /* ALL_BUILD */,
-				891E0102091B4DDC9247C18A /* examples */,
-				3048AD76DB0D4320878E4C6B /* Products */,
-				06782D4EEAFB480894C3E5C1 /* Frameworks */,
+				966A90CB417D4C36B3950E1B /* arr */,
 			);
+			name = Products;
 			sourceTree = "<group>";
 		};
-		DA57E6A5BDD147E4AD090DA0 /* Header Files */ = {
-			isa = PBXGroup;
-			children = (
-				63F1EC2D24434B95A4155E4C /* /Users/phil3/Documents/Development/grfx/arr/arr.hpp */,
-				CE5BA48E048046C6B225717A /* /Users/phil3/Documents/Development/grfx/arr/headers/arr1.hpp */,
-				FAD7E974132A4CAC9A936B39 /* /Users/phil3/Documents/Development/grfx/arr/headers/arr2.hpp */,
-				450F9F3956CA493F8855115C /* /Users/phil3/Documents/Development/grfx/arr/headers/arr2slice.hpp */,
-				4C5F7FA1A77040BD85E79608 /* /Users/phil3/Documents/Development/grfx/arr/headers/arr2sub.hpp */,
-				E142A57D17FB4E2989E1C7ED /* /Users/phil3/Documents/Development/grfx/arr/headers/arr3.hpp */,
-				799865CE969C4B989342421E /* /Users/phil3/Documents/Development/grfx/arr/headers/barr1.hpp */,
-				EA0D2E82395F4B91ACABC72C /* /Users/phil3/Documents/Development/grfx/arr/headers/barr2.hpp */,
-				469C047ABC0C43C79D9DD8C4 /* /Users/phil3/Documents/Development/grfx/arr/headers/barr2slice.hpp */,
-				91EA5A7BC3F146A397F8C16B /* /Users/phil3/Documents/Development/grfx/arr/headers/barr2sub.hpp */,
-				702ECB3D350D4B9E8D97B030 /* /Users/phil3/Documents/Development/grfx/arr/headers/barr3.hpp */,
-				B0EC0E57C0164B1F8FDA1C4D /* /Users/phil3/Documents/Development/grfx/arr/headers/darr1.hpp */,
-				7A6A46266FE047EE86D4ABF8 /* /Users/phil3/Documents/Development/grfx/arr/headers/darr2.hpp */,
-				A5A3EE19AC4542D18094EEC8 /* /Users/phil3/Documents/Development/grfx/arr/headers/darr2slice.hpp */,
-				E9533D87CF04404D840CE006 /* /Users/phil3/Documents/Development/grfx/arr/headers/darr2sub.hpp */,
-				F2DCE0C7BCBF4BB0824B62C0 /* /Users/phil3/Documents/Development/grfx/arr/headers/uiarr1.hpp */,
-				CE45AF88227E47EA9D717D84 /* /Users/phil3/Documents/Development/grfx/arr/headers/uiarr2.hpp */,
-			);
-			name = "Header Files";
-			sourceTree = "<group>";
-		};
-		F07C42267FAD4CBCA11FBBBE /* CMake Rules */ = {
+		4FBA026C909344759F49DD47 /* CMake Rules */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		5EA9C861253344E59DEFF95D /* arr */ = {
+			isa = PBXGroup;
+			children = (
+				E8EABCABDEBE46B68D878CA4 /* Header Files */,
+				AD230A481E7D4CECB88FFF20 /* Source Files */,
+				7B9E4B8653974AE8B8B8F16C /* /Users/phil3/Documents/Development/grfx/arr/CMakeLists.txt */,
+				3C753BED947F444C88B8A31E /* /Users/phil3/Documents/Development/grfx/arr/sources/arr1.tem */,
+				2C14E021AB434806BE2F77E1 /* /Users/phil3/Documents/Development/grfx/arr/sources/arr2.tem */,
+				549D4948DE7C4AC59BB1F35B /* /Users/phil3/Documents/Development/grfx/arr/sources/arr2slice.tem */,
+				32D644E3B1EE40B888134511 /* /Users/phil3/Documents/Development/grfx/arr/sources/arr2sub.tem */,
+				521A6A3A16FA4360AE9D72D4 /* /Users/phil3/Documents/Development/grfx/arr/sources/arr3.tem */,
+			);
+			name = arr;
+			sourceTree = "<group>";
+		};
+		8F498CEDA63E4F1FBE09B60F = {
+			isa = PBXGroup;
+			children = (
+				5EA9C861253344E59DEFF95D /* arr */,
+				15921A66C7A145F4878C1867 /* ALL_BUILD */,
+				4A6D3748CEA943848F47F992 /* Products */,
+				0B4252B149994B0A9B80F156 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AD230A481E7D4CECB88FFF20 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				485EEC70F2E14BA69A3F0D63 /* /Users/phil3/Documents/Development/grfx/arr/sources/arr.cpp */,
+				C7EDB7C5293741FB86CA67E4 /* /Users/phil3/Documents/Development/grfx/arr/sources/barr1.cpp */,
+				D5B354DBA9084F5CA2692894 /* /Users/phil3/Documents/Development/grfx/arr/sources/barr2.cpp */,
+				766E7993DAEF4613B743BC05 /* /Users/phil3/Documents/Development/grfx/arr/sources/barr2slice.cpp */,
+				FBE339B0530C4D2394461989 /* /Users/phil3/Documents/Development/grfx/arr/sources/barr2sub.cpp */,
+				77E862B57E9F4E1E81A8452F /* /Users/phil3/Documents/Development/grfx/arr/sources/barr3.cpp */,
+				FD435EFBF62C49D38E42E97A /* /Users/phil3/Documents/Development/grfx/arr/sources/darr1.cpp */,
+				69F2BC53A13E4E79A674EF04 /* /Users/phil3/Documents/Development/grfx/arr/sources/darr2.cpp */,
+				9D2CAA70052A479A9EE3E047 /* /Users/phil3/Documents/Development/grfx/arr/sources/darr2slice.cpp */,
+				CAD4AFEA9C6C436AB6BF169F /* /Users/phil3/Documents/Development/grfx/arr/sources/darr2sub.cpp */,
+				725145669C034D469670426C /* /Users/phil3/Documents/Development/grfx/arr/sources/mth.cpp */,
+				664FCBE19B00465C9CD3E030 /* /Users/phil3/Documents/Development/grfx/arr/sources/trg.cpp */,
+				17FC65E73E264433B4A224C5 /* /Users/phil3/Documents/Development/grfx/arr/sources/uiarr1.cpp */,
+				E0071C4E2EF2498D97AAA5EC /* /Users/phil3/Documents/Development/grfx/arr/sources/uiarr2.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		E8EABCABDEBE46B68D878CA4 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				26AC46231569440CAA18EA2F /* /Users/phil3/Documents/Development/grfx/arr/arr.hpp */,
+				F9FAE99F67C64FD680F2432C /* /Users/phil3/Documents/Development/grfx/arr/headers/arr1.hpp */,
+				15613577629C4854A88423B8 /* /Users/phil3/Documents/Development/grfx/arr/headers/arr2.hpp */,
+				3A2A38154D8744ACBAAD3190 /* /Users/phil3/Documents/Development/grfx/arr/headers/arr2slice.hpp */,
+				D236AA06006F4FF0ACA7E5E2 /* /Users/phil3/Documents/Development/grfx/arr/headers/arr2sub.hpp */,
+				D42374ECFA7344C29CC17D97 /* /Users/phil3/Documents/Development/grfx/arr/headers/arr3.hpp */,
+				6B9DCCCD08E9461499C63637 /* /Users/phil3/Documents/Development/grfx/arr/headers/barr1.hpp */,
+				DCC574F5C1174E45B5CFF3AE /* /Users/phil3/Documents/Development/grfx/arr/headers/barr2.hpp */,
+				E20B89FF4E53414385B3EAB8 /* /Users/phil3/Documents/Development/grfx/arr/headers/barr2slice.hpp */,
+				C5185401936542858391C4F9 /* /Users/phil3/Documents/Development/grfx/arr/headers/barr2sub.hpp */,
+				69DE2923461142FAA69B6EA3 /* /Users/phil3/Documents/Development/grfx/arr/headers/barr3.hpp */,
+				87B975DB9F64430CB5451B54 /* /Users/phil3/Documents/Development/grfx/arr/headers/darr1.hpp */,
+				5E80562E715A402E94142145 /* /Users/phil3/Documents/Development/grfx/arr/headers/darr2.hpp */,
+				EA00B6CA8A214BB4AD05A4F5 /* /Users/phil3/Documents/Development/grfx/arr/headers/darr2slice.hpp */,
+				14B438FE31114AF498F83828 /* /Users/phil3/Documents/Development/grfx/arr/headers/darr2sub.hpp */,
+				84D2195AF00B43CBB12E8DB2 /* /Users/phil3/Documents/Development/grfx/arr/headers/uiarr1.hpp */,
+				84DB0E3FD97B4183B307F69C /* /Users/phil3/Documents/Development/grfx/arr/headers/uiarr2.hpp */,
+			);
+			name = "Header Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,37 +287,20 @@
 /* Begin PBXNativeTarget section */
 		138EB76C7C814DB3BA3F81FF /* arr */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 64C1268BCD37452AB6CF96EC /* Build configuration list for PBXNativeTarget "arr" */;
+			buildConfigurationList = A0DFE652C1034B999E860B96 /* Build configuration list for PBXNativeTarget "arr" */;
 			buildPhases = (
-				892733A74D9F40F0AB14180B /* Sources */,
-				66BEBE1F2A054704B0258348 /* Frameworks */,
+				345B79E6488A4333BB2F65EE /* Sources */,
+				0A504302101F48DFB6A77167 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2D8A07913C784800B6ABE535 /* PBXTargetDependency */,
+				71B6DF0C9A2742A4BDEC17DC /* PBXTargetDependency */,
 			);
 			name = arr;
 			productName = arr;
-			productReference = 7C3D2E19F08A4AD7BBC62BC8 /* arr */;
+			productReference = 966A90CB417D4C36B3950E1B /* arr */;
 			productType = "com.apple.product-type.library.static";
-		};
-		AB873B60AEEA4B30AEBFCBAB /* examples */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B2F7951D78B3484191633F48 /* Build configuration list for PBXNativeTarget "examples" */;
-			buildPhases = (
-				FFD70D114E004A08BD2A7B0F /* Sources */,
-				F2A2C5C394F94D1DB5ED6045 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				089F40284CA24E68A6C22024 /* PBXTargetDependency */,
-			);
-			name = examples;
-			productName = examples;
-			productReference = B61381151A71494FB181824C /* examples */;
-			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
@@ -359,25 +311,24 @@
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1540;
 			};
-			buildConfigurationList = 3CA73489AB1241E0BD133FF3 /* Build configuration list for PBXProject "arr" */;
+			buildConfigurationList = 4EE057DF930346779A4F9169 /* Build configuration list for PBXProject "arr" */;
 			buildSettings = {
 			};
 			buildStyles = (
-				DB32135BD60C43A0833ED9F8 /* Debug */,
-				2D7FC132C74240B3A6BACD34 /* Release */,
-				A049C190CA74435F8E250957 /* MinSizeRel */,
-				F21A7DB282F047A29024DCA8 /* RelWithDebInfo */,
+				4910F6F7A10B488186A70BC2 /* Debug */,
+				BB8707513C664BD49C71F32A /* Release */,
+				90B3DE4D86404E0CA5D79E9E /* MinSizeRel */,
+				235FC47EAC474D61B56ED8B0 /* RelWithDebInfo */,
 			);
 			compatibilityVersion = "Xcode 3.2";
 			hasScannedForEncodings = 0;
-			mainGroup = C311FB1BC26348F789245B5A;
+			mainGroup = 8F498CEDA63E4F1FBE09B60F;
 			projectDirPath = /Users/phil3/Documents/Development/grfx/arr;
 			projectRoot = "";
 			targets = (
 				58E74CB9E0B1471A9B7E6543 /* ALL_BUILD */,
 				3C78B583444B4EA3A80C4938 /* ZERO_CHECK */,
 				138EB76C7C814DB3BA3F81FF /* arr */,
-				AB873B60AEEA4B30AEBFCBAB /* examples */,
 			);
 		};
 /* End PBXProject section */
@@ -482,284 +433,49 @@ fi
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		892733A74D9F40F0AB14180B /* Sources */ = {
+		345B79E6488A4333BB2F65EE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A781B2C84A694289864C97FE /* /Users/phil3/Documents/Development/grfx/arr/sources/arr.cpp */,
-				F1D5BEC217B74093AE83856A /* /Users/phil3/Documents/Development/grfx/arr/sources/barr1.cpp */,
-				B125EBEF79734369A672055C /* /Users/phil3/Documents/Development/grfx/arr/sources/barr2.cpp */,
-				0567065E01444513ADE28FF5 /* /Users/phil3/Documents/Development/grfx/arr/sources/barr2slice.cpp */,
-				2CC9D96E276F45EEAF5A8ABB /* /Users/phil3/Documents/Development/grfx/arr/sources/barr2sub.cpp */,
-				076B3947230A4ACDA2CBE7D2 /* /Users/phil3/Documents/Development/grfx/arr/sources/barr3.cpp */,
-				210A836D00194DFB8C352818 /* /Users/phil3/Documents/Development/grfx/arr/sources/darr1.cpp */,
-				1DAC0DE6F4A24653915159D9 /* /Users/phil3/Documents/Development/grfx/arr/sources/darr2.cpp */,
-				58FA75C9F3ED4BFDBD102CC2 /* /Users/phil3/Documents/Development/grfx/arr/sources/darr2slice.cpp */,
-				983AD63D843B47118F755588 /* /Users/phil3/Documents/Development/grfx/arr/sources/darr2sub.cpp */,
-				57FB7BC05551481FACA24623 /* /Users/phil3/Documents/Development/grfx/arr/sources/mth.cpp */,
-				7DAEF65276EC489A84CD1D84 /* /Users/phil3/Documents/Development/grfx/arr/sources/trg.cpp */,
-				03C2A70F43E9424EADC6C2DE /* /Users/phil3/Documents/Development/grfx/arr/sources/uiarr1.cpp */,
-				975C4DB3E9D144579A9B7959 /* /Users/phil3/Documents/Development/grfx/arr/sources/uiarr2.cpp */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FFD70D114E004A08BD2A7B0F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0057A04665FD45E493FBD6C8 /* /Users/phil3/Documents/Development/grfx/arr/examples/examples.cpp */,
+				4153D6B5511443C5A665F55A /* /Users/phil3/Documents/Development/grfx/arr/sources/arr.cpp */,
+				3DD6D22B18994BE8AA50523F /* /Users/phil3/Documents/Development/grfx/arr/sources/barr1.cpp */,
+				655CC8ABA03D4F62B468C037 /* /Users/phil3/Documents/Development/grfx/arr/sources/barr2.cpp */,
+				91724B5AC5924043BE7974B1 /* /Users/phil3/Documents/Development/grfx/arr/sources/barr2slice.cpp */,
+				5B28372286B84E2D90239452 /* /Users/phil3/Documents/Development/grfx/arr/sources/barr2sub.cpp */,
+				9B25E506E2BB4011B9108E4E /* /Users/phil3/Documents/Development/grfx/arr/sources/barr3.cpp */,
+				B90948E98A854E19AEF37F28 /* /Users/phil3/Documents/Development/grfx/arr/sources/darr1.cpp */,
+				3E3B73B7B158479CACB7E080 /* /Users/phil3/Documents/Development/grfx/arr/sources/darr2.cpp */,
+				641F4009C39246E29E3A8D57 /* /Users/phil3/Documents/Development/grfx/arr/sources/darr2slice.cpp */,
+				42152C365B65448685116BC9 /* /Users/phil3/Documents/Development/grfx/arr/sources/darr2sub.cpp */,
+				9FFB7882C44842518758AC72 /* /Users/phil3/Documents/Development/grfx/arr/sources/mth.cpp */,
+				07F659E5794A4D07B9C740D9 /* /Users/phil3/Documents/Development/grfx/arr/sources/trg.cpp */,
+				DCA810CADB2145EF97E8B891 /* /Users/phil3/Documents/Development/grfx/arr/sources/uiarr1.cpp */,
+				111398E2A07E4A2C9C5F03EE /* /Users/phil3/Documents/Development/grfx/arr/sources/uiarr2.cpp */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0723B28F9A824E5B8A8FDC9F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AB873B60AEEA4B30AEBFCBAB /* examples */;
-			targetProxy = 1D1D47CF20D84FE4AD74E9CD /* PBXContainerItemProxy */;
-		};
-		089F40284CA24E68A6C22024 /* PBXTargetDependency */ = {
+		0D4F9732EDC6495E9E9C4F2A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 138EB76C7C814DB3BA3F81FF /* arr */;
-			targetProxy = 3CC502E46F7E48C68CDD3C43 /* PBXContainerItemProxy */;
+			targetProxy = 3BCED9AA05604336B69F55A3 /* PBXContainerItemProxy */;
 		};
-		2D8A07913C784800B6ABE535 /* PBXTargetDependency */ = {
+		71B6DF0C9A2742A4BDEC17DC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3C78B583444B4EA3A80C4938 /* ZERO_CHECK */;
-			targetProxy = BBF1835481654375BA6EEAE0 /* PBXContainerItemProxy */;
+			targetProxy = FB2CA764D1A54798B64833EF /* PBXContainerItemProxy */;
 		};
-		6AB1B056DF4941558E431DAB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 138EB76C7C814DB3BA3F81FF /* arr */;
-			targetProxy = A2F3D957313F4D34952474F8 /* PBXContainerItemProxy */;
-		};
-		E38D21E862D444118C8194BF /* PBXTargetDependency */ = {
+		F8434423069B4920BBFE3443 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3C78B583444B4EA3A80C4938 /* ZERO_CHECK */;
-			targetProxy = 6E353C182B2A40F7A1D5658C /* PBXContainerItemProxy */;
+			targetProxy = 4999262017894478897C3B56 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		039EB4AFB9744EB5A777FED3 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		1793B6D60E6D400684A6EDAE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk;
-				SYMROOT = /Users/phil3/Documents/Development/grfx/build/build;
-			};
-			name = Debug;
-		};
-		1B7BFAEE20254109893C3C8E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = /Users/phil3/Documents/Development/grfx/build/arr/examples/Debug;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/Users/phil3/Documents/Development/grfx/arr,/Users/phil3/Documents/Development/grfx/arr/headers,/Users/phil3/Documents/Development/grfx/arr/tlbx,/Users/phil3/Documents/Development/grfx/arr/.,/Users/phil3/Documents/Development/grfx/arr/tlbx/headers,"$(inherited)");
-				INSTALL_PATH = "";
-				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++17' ";
-				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Users/phil3/Documents/Development/grfx/build/arr/Debug/libarr.a,/Users/phil3/Documents/Development/grfx/build/tlbx/Debug/libtlbx.a,"$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = examples;
-				SECTORDER_FLAGS = "";
-				TARGET_TEMP_DIR = "/Users/phil3/Documents/Development/grfx/build/build/examples.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Debug;
-		};
-		3A1E80E312294EB6A67A0A0D /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SYMROOT = /Users/phil3/Documents/Development/grfx/build/build;
-			};
-			name = RelWithDebInfo;
-		};
-		418129C9599A479C892D36D7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Debug;
-		};
-		5738125DAE75491EA04FE177 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = /Users/phil3/Documents/Development/grfx/build/arr/examples/MinSizeRel;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/Users/phil3/Documents/Development/grfx/arr,/Users/phil3/Documents/Development/grfx/arr/headers,/Users/phil3/Documents/Development/grfx/arr/tlbx,/Users/phil3/Documents/Development/grfx/arr/.,/Users/phil3/Documents/Development/grfx/arr/tlbx/headers,"$(inherited)");
-				INSTALL_PATH = "";
-				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' ";
-				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Users/phil3/Documents/Development/grfx/build/arr/MinSizeRel/libarr.a,/Users/phil3/Documents/Development/grfx/build/tlbx/MinSizeRel/libtlbx.a,"$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = examples;
-				SECTORDER_FLAGS = "";
-				TARGET_TEMP_DIR = "/Users/phil3/Documents/Development/grfx/build/build/examples.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		62A6F127C40A4D15B733601C /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		62E4B0375D0C4244B3B6700A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Release;
-		};
-		7F8614C642944CD7839F567F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = /Users/phil3/Documents/Development/grfx/build/arr/examples/Release;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/Users/phil3/Documents/Development/grfx/arr,/Users/phil3/Documents/Development/grfx/arr/headers,/Users/phil3/Documents/Development/grfx/arr/tlbx,/Users/phil3/Documents/Development/grfx/arr/.,/Users/phil3/Documents/Development/grfx/arr/tlbx/headers,"$(inherited)");
-				INSTALL_PATH = "";
-				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' ";
-				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Users/phil3/Documents/Development/grfx/build/arr/Release/libarr.a,/Users/phil3/Documents/Development/grfx/build/tlbx/Release/libtlbx.a,"$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = examples;
-				SECTORDER_FLAGS = "";
-				TARGET_TEMP_DIR = "/Users/phil3/Documents/Development/grfx/build/build/examples.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Release;
-		};
-		810CBDCE60C84FA6893B696F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SYMROOT = /Users/phil3/Documents/Development/grfx/build/build;
-			};
-			name = Release;
-		};
-		82754D50AC5D45C2A4E14CBD /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = /Users/phil3/Documents/Development/grfx/build/arr/RelWithDebInfo;
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .a;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 2;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/Users/phil3/Documents/Development/grfx/arr/.,/Users/phil3/Documents/Development/grfx/arr/headers,/Users/phil3/Documents/Development/grfx/arr/tlbx,/Users/phil3/Documents/Development/grfx/arr/tlbx/headers,/Users/phil3/Documents/Development/grfx/tlbx/headers,"$(inherited)");
-				INSTALL_PATH = "";
-				LIBRARY_STYLE = STATIC;
-				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=gnu++17' ";
-				OTHER_LIBTOOLFLAGS = ("");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = arr;
-				SECTORDER_FLAGS = "";
-				TARGET_TEMP_DIR = "/Users/phil3/Documents/Development/grfx/build/build/arr.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		8D0BFC8542F2441FB3BC1BAE /* Release */ = {
+		1ED5E2A092AB4CE49B541473 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -772,7 +488,7 @@ fi
 				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/Users/phil3/Documents/Development/grfx/arr/.,/Users/phil3/Documents/Development/grfx/arr/headers,/Users/phil3/Documents/Development/grfx/arr/tlbx,/Users/phil3/Documents/Development/grfx/arr/tlbx/headers,/Users/phil3/Documents/Development/grfx/tlbx/headers,"$(inherited)");
+				HEADER_SEARCH_PATHS = (/Users/phil3/Documents/Development/grfx/arr,/Users/phil3/Documents/Development/grfx/arr/headers,/Users/phil3/Documents/Development/grfx/tlbx,/Users/phil3/Documents/Development/grfx/tlbx/headers,"$(inherited)");
 				INSTALL_PATH = "";
 				LIBRARY_STYLE = STATIC;
 				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' ";
@@ -786,7 +502,244 @@ fi
 			};
 			name = Release;
 		};
-		95D61EC031D748568F0B455C /* Release */ = {
+		27F4DB1CC8B447CE962837B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/phil3/Documents/Development/grfx/build/build;
+			};
+			name = Release;
+		};
+		2D60FCCF8D134047BBB418CE /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/phil3/Documents/Development/grfx/build/build;
+			};
+			name = MinSizeRel;
+		};
+		4B62AA2569524DA58F4B8D81 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		56B5B128F872426683EBD552 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/phil3/Documents/Development/grfx/build/arr/RelWithDebInfo;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/phil3/Documents/Development/grfx/arr,/Users/phil3/Documents/Development/grfx/arr/headers,/Users/phil3/Documents/Development/grfx/tlbx,/Users/phil3/Documents/Development/grfx/tlbx/headers,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=gnu++17' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = arr;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/phil3/Documents/Development/grfx/build/build/arr.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		757F7848C1ED43EE8AB7AEE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		75A1C8DE1A314222914264DC /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		7C1DF3BC5CF14E8597EE61A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		AF8E96DDF8A3476E8311198A /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		CAFB951496684702A9A66413 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk;
+				SYMROOT = /Users/phil3/Documents/Development/grfx/build/build;
+			};
+			name = Debug;
+		};
+		DAF175F14DAC4350AC85B20B /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/phil3/Documents/Development/grfx/build/arr/MinSizeRel;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/phil3/Documents/Development/grfx/arr,/Users/phil3/Documents/Development/grfx/arr/headers,/Users/phil3/Documents/Development/grfx/tlbx,/Users/phil3/Documents/Development/grfx/tlbx/headers,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = arr;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/phil3/Documents/Development/grfx/build/build/arr.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		E6232F6551334375A38BD5A6 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/phil3/Documents/Development/grfx/build/build;
+			};
+			name = RelWithDebInfo;
+		};
+		E7BB96DF9AC4420285D2D187 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		EC6A9DCA5ADE47219EF2A16B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		F85774056FDF44F386BC35A1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -806,7 +759,7 @@ fi
 			};
 			name = Release;
 		};
-		9D8DE29FF8954EE79F5CE762 /* Debug */ = {
+		FEEFD193969347198BF88876 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -819,7 +772,7 @@ fi
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/Users/phil3/Documents/Development/grfx/arr/.,/Users/phil3/Documents/Development/grfx/arr/headers,/Users/phil3/Documents/Development/grfx/arr/tlbx,/Users/phil3/Documents/Development/grfx/arr/tlbx/headers,/Users/phil3/Documents/Development/grfx/tlbx/headers,"$(inherited)");
+				HEADER_SEARCH_PATHS = (/Users/phil3/Documents/Development/grfx/arr,/Users/phil3/Documents/Development/grfx/arr/headers,/Users/phil3/Documents/Development/grfx/tlbx,/Users/phil3/Documents/Development/grfx/tlbx/headers,"$(inherited)");
 				INSTALL_PATH = "";
 				LIBRARY_STYLE = STATIC;
 				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++17' ";
@@ -833,184 +786,49 @@ fi
 			};
 			name = Debug;
 		};
-		AAD92B0A23064A5F8A743DCF /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		B39F998A5CC64F4B8B09CF16 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SYMROOT = /Users/phil3/Documents/Development/grfx/build/build;
-			};
-			name = MinSizeRel;
-		};
-		B41B07DDD3E2412BBB5B390A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Debug;
-		};
-		C651F64120664D5699AC0045 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		D1DF5ACC0F5C4C79AEBFD06C /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = /Users/phil3/Documents/Development/grfx/build/arr/MinSizeRel;
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .a;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/Users/phil3/Documents/Development/grfx/arr/.,/Users/phil3/Documents/Development/grfx/arr/headers,/Users/phil3/Documents/Development/grfx/arr/tlbx,/Users/phil3/Documents/Development/grfx/arr/tlbx/headers,/Users/phil3/Documents/Development/grfx/tlbx/headers,"$(inherited)");
-				INSTALL_PATH = "";
-				LIBRARY_STYLE = STATIC;
-				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' ";
-				OTHER_LIBTOOLFLAGS = ("");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = arr;
-				SECTORDER_FLAGS = "";
-				TARGET_TEMP_DIR = "/Users/phil3/Documents/Development/grfx/build/build/arr.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		EE99B2B4B00445049E469229 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = /Users/phil3/Documents/Development/grfx/build/arr/examples/RelWithDebInfo;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 2;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/Users/phil3/Documents/Development/grfx/arr,/Users/phil3/Documents/Development/grfx/arr/headers,/Users/phil3/Documents/Development/grfx/arr/tlbx,/Users/phil3/Documents/Development/grfx/arr/.,/Users/phil3/Documents/Development/grfx/arr/tlbx/headers,"$(inherited)");
-				INSTALL_PATH = "";
-				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=gnu++17' ";
-				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Users/phil3/Documents/Development/grfx/build/arr/RelWithDebInfo/libarr.a,/Users/phil3/Documents/Development/grfx/build/tlbx/RelWithDebInfo/libtlbx.a,"$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = examples;
-				SECTORDER_FLAGS = "";
-				TARGET_TEMP_DIR = "/Users/phil3/Documents/Development/grfx/build/build/examples.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3CA73489AB1241E0BD133FF3 /* Build configuration list for PBXProject "arr" */ = {
+		3C8B4F742A36443A96D23EA1 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1793B6D60E6D400684A6EDAE /* Debug */,
-				810CBDCE60C84FA6893B696F /* Release */,
-				B39F998A5CC64F4B8B09CF16 /* MinSizeRel */,
-				3A1E80E312294EB6A67A0A0D /* RelWithDebInfo */,
+				7C1DF3BC5CF14E8597EE61A2 /* Debug */,
+				EC6A9DCA5ADE47219EF2A16B /* Release */,
+				4B62AA2569524DA58F4B8D81 /* MinSizeRel */,
+				E7BB96DF9AC4420285D2D187 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		4EE2ACAA3E214100BC3BA746 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+		4EE057DF930346779A4F9169 /* Build configuration list for PBXProject "arr" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				418129C9599A479C892D36D7 /* Debug */,
-				62E4B0375D0C4244B3B6700A /* Release */,
-				AAD92B0A23064A5F8A743DCF /* MinSizeRel */,
-				C651F64120664D5699AC0045 /* RelWithDebInfo */,
+				CAFB951496684702A9A66413 /* Debug */,
+				27F4DB1CC8B447CE962837B2 /* Release */,
+				2D60FCCF8D134047BBB418CE /* MinSizeRel */,
+				E6232F6551334375A38BD5A6 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		64C1268BCD37452AB6CF96EC /* Build configuration list for PBXNativeTarget "arr" */ = {
+		78AACCCC9F834DF69B791228 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9D8DE29FF8954EE79F5CE762 /* Debug */,
-				8D0BFC8542F2441FB3BC1BAE /* Release */,
-				D1DF5ACC0F5C4C79AEBFD06C /* MinSizeRel */,
-				82754D50AC5D45C2A4E14CBD /* RelWithDebInfo */,
+				757F7848C1ED43EE8AB7AEE8 /* Debug */,
+				F85774056FDF44F386BC35A1 /* Release */,
+				AF8E96DDF8A3476E8311198A /* MinSizeRel */,
+				75A1C8DE1A314222914264DC /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		B2F7951D78B3484191633F48 /* Build configuration list for PBXNativeTarget "examples" */ = {
+		A0DFE652C1034B999E860B96 /* Build configuration list for PBXNativeTarget "arr" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1B7BFAEE20254109893C3C8E /* Debug */,
-				7F8614C642944CD7839F567F /* Release */,
-				5738125DAE75491EA04FE177 /* MinSizeRel */,
-				EE99B2B4B00445049E469229 /* RelWithDebInfo */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		BA05181F5DA7454C8805A3C9 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B41B07DDD3E2412BBB5B390A /* Debug */,
-				95D61EC031D748568F0B455C /* Release */,
-				62A6F127C40A4D15B733601C /* MinSizeRel */,
-				039EB4AFB9744EB5A777FED3 /* RelWithDebInfo */,
+				FEEFD193969347198BF88876 /* Debug */,
+				1ED5E2A092AB4CE49B541473 /* Release */,
+				DAF175F14DAC4350AC85B20B /* MinSizeRel */,
+				56B5B128F872426683EBD552 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

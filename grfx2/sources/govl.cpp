@@ -4,12 +4,12 @@
 #include "CoreGraphics/CoreGraphics.h"
 
 #include "tlbx.hpp"
-#include "grfx.hpp"
+#include "grfx2.hpp"
 
 using namespace std;
 
 //
-govl govl::operator=(const Gfrm &f)
+govl govl::operator=(const gfrm  &f)
 {
 	return *this=(govl)f;
 }

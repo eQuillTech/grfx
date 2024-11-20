@@ -6,14 +6,14 @@
 #include "arr.hpp"
 
 //predef(s)
-class Vtr3;
+class vtr3;
 class Axs3;
 
 //indx
-class Idx3:public Crd3
+class idx3:public crd3
 {
 private:
-	explicit Idx3(const Crd3 &C):Crd3(C){}
+	explicit idx3(const crd3 &C):crd3(C){}
 
 public:
 	double& h(){return _x;}
@@ -24,30 +24,30 @@ public:
 	double const& k() const{return _y;}
 	double const& l() const{return _z;}
 	
-	Idx3():Crd3(){}
-	Idx3(const double h,const double k,const double l):Crd3(h,k,l){}
-	Idx3(const arr::darr1 &D):Crd3(D){}
+	idx3():crd3(){}
+	idx3(const double h,const double k,const double l):crd3(h,k,l){}
+	idx3(const arr::darr1 &D):crd3(D){}
 
-	Idx3 round() const;
-	Idx3 operator+(const Idx3 &I) const{return Idx3(Crd3::operator+(I));}
-	Idx3 operator-(const Idx3 &I) const{return Idx3(Crd3::operator-(I));}
-	Idx3 operator+=(const Idx3 &I){return *this=*this+I;}
-	Idx3 operator-=(const Idx3 &I) {return *this=*this-I;}
+	idx3 round() const;
+	idx3 operator+(const idx3 &I) const{return idx3(crd3::operator+(I));}
+	idx3 operator-(const idx3 &I) const{return idx3(crd3::operator-(I));}
+	idx3 operator+=(const idx3 &I){return *this=*this+I;}
+	idx3 operator-=(const idx3 &I) {return *this=*this-I;}
 
-	static const Idx3 I000;
-	static const Idx3 I100;
-	static const Idx3 I010;
-	static const Idx3 I001;
-	static const Idx3 I111;
+	static const idx3 I000;
+	static const idx3 I100;
+	static const idx3 I010;
+	static const idx3 I001;
+	static const idx3 I111;
 
 	//
-	//Axs3 operator*(const Vtr3 &V) const;
+	//Axs3 operator*(const vtr3 &V) const;
 
 //	fl_err read(tfl &T);
-	friend std::ostream& operator<<(std::ostream &os,const Idx3 &I);
+	friend std::ostream& operator<<(std::ostream &os,const idx3 &I);
 };
 
-Idx3 round(const Idx3 &I3);
+idx3 round(const idx3 &I3);
 
 
 #endif

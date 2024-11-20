@@ -9,23 +9,23 @@
 #endif
 
 //
-struct GimgData
+struct gimgData
 {
 public:
-	GimgData(){}
-	GimgData(const CGImageRef& imageR):m_imageR(imageR){}
+	gimgData(){}
+	gimgData(const CGImageRef& imageR):m_imageR(imageR){}
 	CGImageRef m_imageR=nullptr;
 };
 
-class gimg:public Gfrm
+class gimg:public gfrm 
 {
 private:
 	CGImageRef m_imageR=nullptr;
 	CGAffineTransform m_transform;
 	
 public:
-	gimg():Gfrm(){}
-	gimg(const GimgData& data,const Gfrm &f);
+	gimg():gfrm (){}
+	gimg(const gimgData& data,const gfrm  &f);
 	~gimg(){}
 
 	CGImageRef imageRef(){return m_imageR;}
@@ -39,7 +39,7 @@ public:
 	void doRender(CGContextRef context,const CGRect &Rdest) const override;
 };
 	
-typedef arr1<gimg> Gimg_arr1;
-typedef arr1<gimg *> Gimg_parr1;
+typedef arr::arr1<gimg> Gimg_arr1;
+typedef arr::arr1<gimg *> Gimg_parr1;
 
 #endif

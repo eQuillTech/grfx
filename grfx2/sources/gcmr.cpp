@@ -6,10 +6,10 @@
 #include <CoreGraphics/CoreGraphics.h>
 
 #include "tlbx.hpp"
-#include "grfx.hpp"
+#include "grfx2.hpp"
 
 //friend
-Gfrm Gfrm::proj(const gcmr &cmr,const double z) const
+gfrm gfrm::proj(const gcmr &cmr,const double z) const
 {
 	if(z==cmr.m_aperZ)
 		return 0.*unitF;
@@ -28,7 +28,7 @@ gpnt gpnt::proj(const gcmr &cmr,const double z) const
 }
 
 //friend
-Gfrm Gfrm::invproj(const gcmr &cmr,const double z) const
+gfrm gfrm::invproj(const gcmr &cmr,const double z) const
 {
 	if(z==cmr.m_aperZ)
 		return 0.*unitF;

@@ -11,20 +11,20 @@
 #endif
 
 #ifndef _GFRM_
-#include "Gfrm.hpp"
+#include "gfrm .hpp"
 #endif
 
-class grct:public Gfrm
+class grct:public gfrm 
 {
 private:
 
 public:
-	grct():Gfrm(){}
-	grct(const double t,const double l,const double b,const double r):Gfrm(t,l,b,r){}
-	grct(const gpnt tl,const gpnt br):Gfrm(tl,br){}
-	grct(const Gfrm& f):Gfrm(f){}
-	grct(CGRect R):Gfrm(R){}
-	grct operator=(const Gfrm &f);
+	grct():gfrm (){}
+	grct(const double t,const double l,const double b,const double r):gfrm (t,l,b,r){}
+	grct(const gpnt tl,const gpnt br):gfrm (tl,br){}
+	grct(const gfrm & f):gfrm (f){}
+	grct(CGRect R):gfrm (R){}
+	grct operator=(const gfrm  &f);
 
 	//
 	static void fill(CGContextRef context,const CGRect &Rdest);
@@ -37,7 +37,7 @@ public:
 
 std::ostream& operator<<(std::ostream &os,const CGRect &R);
 
-typedef arr1<grct> Grct_arr1;
+typedef arr::arr1<grct> grct_arr1;
 
 extern const grct unitR;
 #endif

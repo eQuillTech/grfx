@@ -3,12 +3,12 @@
 #ifndef _WEISS2_
 #define _WEISS2_
 
-#include "Crd2.hpp"
-#include "Pnt2.hpp"
-#include "Vtr2.hpp"
-#include "Trf2.hpp"
-#include "Rtn2.hpp"
-#include "Scl2.hpp"
-#include "Atr2.hpp"
+#include "crd2.hpp"
+#include "pnt2.hpp"
+#include "vtr2.hpp"
+#include "trf2.hpp"
+#include "rtn2.hpp"
+#include "scl2.hpp"
+#include "atr2.hpp"
 
 #endif

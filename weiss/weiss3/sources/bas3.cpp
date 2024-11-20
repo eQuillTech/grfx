@@ -7,11 +7,11 @@
 #include "arr.hpp"
 #include "weiss3.hpp"
 
-const Bas3 Bas3::Bo(Vtr3::Vo,Vtr3::Vo,Vtr3::Vo);
-const Bas3 Bas3::Bxyz(Vtr3::Vx,Vtr3::Vy,Vtr3::Vz);
+const bas3 bas3::Bo(vtr3::Vo,vtr3::Vo,vtr3::Vo);
+const bas3 bas3::Bxyz(vtr3::Vx,vtr3::Vy,vtr3::Vz);
 
 //
-Bas3::Bas3(const arr::darr2 &D)
+bas3::bas3(const arr::darr2 &D)
 {
 	if((D.size(0)==3)&&(D.size(1)==3))
 	{
@@ -24,7 +24,7 @@ Bas3::Bas3(const arr::darr2 &D)
 }
 
 //
-Bas3::operator arr::darr2() const
+bas3::operator arr::darr2() const
 {
 	arr::darr2 A=arr::darr2::ident(3,3);
 	for(size_t i=0;i<3;++i)
@@ -34,38 +34,38 @@ Bas3::operator arr::darr2() const
 }
 
 //
-Idx3 Bas3::dot(const Vtr3 &V) const
+idx3 bas3::dot(const vtr3 &V) const
 {
-	return Idx3(_p[0].dot(V),_p[1].dot(V),_p[2].dot(V));
+	return idx3(_p[0].dot(V),_p[1].dot(V),_p[2].dot(V));
 }
 
 //
-Vtr3 Bas3::operator*(const Idx3 &I) const
+vtr3 bas3::operator*(const idx3 &I) const
 {
-	Vtr3 V=Vtr::Vo;
+	vtr3 V=vtr3::Vo;
 	for(size_t i=0;i<3;i++)
 		V+=I(i)*_p[i];
 	return V;
 }
 
 //
-Bas3 Bas3::recip() const
+bas3 bas3::recip() const
 {
 	double v=vol();
-	Vtr V[3];
+	vtr3 V[3];
 	for(size_t i=0;i<3;++i)
 		V[i]=_p[mth::cyc(i+1,3)].cross(_p[mth::cyc(i+2,3)])/v;
-	return Bas3(V);
+	return bas3(V);
 }
 	
 //
-double Bas3::vol() const
+double bas3::vol() const
 {
 	return a().dot(b().cross(c()));
 }
 
 //
-std::ostream& operator<<(std::ostream &os,const Bas3 &A)
+std::ostream& operator<<(std::ostream &os,const bas3 &A)
 {
 	os<<A.a()<<std::endl;
 	os<<A.b()<<std::endl;
@@ -74,9 +74,9 @@ std::ostream& operator<<(std::ostream &os,const Bas3 &A)
 }
 
 //
-Trf3 Bas3::dot(const Bas3 &B) const
+trf3 bas3::dot(const bas3 &B) const
 {
-	Trf3 T;
+	trf3 T;
 	for(size_t i=0;i<3;++i)
 		for(size_t j=0;j<3;++j)
 			T(i,j)=_p[i].dot(B._p[j]);
@@ -84,10 +84,10 @@ Trf3 Bas3::dot(const Bas3 &B) const
 }
 
 // returns (*this)*B.inv()
-Trf3 Bas3::to(const Bas3 &B) const
+trf3 bas3::to(const bas3 &B) const
 {
-	Bas3 Br=B.recip();
-	Trf3 T;
+	bas3 Br=B.recip();
+	trf3 T;
 	for(size_t i=0;i<3;++i)
 		for(size_t j=0;j<3;++j)
 		{
@@ -100,45 +100,45 @@ Trf3 Bas3::to(const Bas3 &B) const
 }
 
 //
-Bas3 Bas3::operator/(const Trf3 &T) const
+bas3 bas3::operator/(const trf3 &T) const
 {
 	return T.inv()*(*this);
 }
 
 //
-Bas3 Bas3::operator*=(const Trf3 &T)
+bas3 bas3::operator*=(const trf3 &T)
 {
 	return *this=T*(*this);
 }
 
 //
-Bas3 Bas3::operator/=(const Trf3 &T)
+bas3 bas3::operator/=(const trf3 &T)
 {
 	return *this=(*this)/T;
 }
 
 //
-Bas3 operator*(double x,const Bas3 &A)
+bas3 operator*(double x,const bas3 &A)
 {
-	return Bas3(x*A(0),x*A(1),x*A(2));
+	return bas3(x*A(0),x*A(1),x*A(2));
 }
 
 //
-Bas3 recip(Bas3 A)
+bas3 recip(bas3 A)
 {
 	return A.recip();
 }
 
 //
-double vol(const Bas3 &A)
+double vol(const bas3 &A)
 {
 	return A.vol();
 }
 
 /*
 //
-Bas3 operator*(const Trf3 &T,const Bas3 &B)
+bas3 operator*(const trf3 &T,const bas3 &B)
 {
-	return Bas3(T*(B.a()),T*(B.b()),T*(B.c()));
+	return bas3(T*(B.a()),T*(B.b()),T*(B.c()));
 }
 */

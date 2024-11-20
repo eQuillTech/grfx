@@ -9,9 +9,9 @@
 
 using namespace std;
 
-const Atr3 Atr3::Ato=Atr3();
+const atr3 atr3::Ato=atr3();
 
-Atr3::operator arr::darr2() const
+atr3::operator arr::darr2() const
 {
 	arr::darr2 A=arr::darr2::ident(4,4);
 	A.sub(0,0,3,3)=arr::darr2(_t);
@@ -20,52 +20,52 @@ Atr3::operator arr::darr2() const
 }
 
 //
-Atr3::Atr3(const Trf3 &T,const Pnt3 &P):_t(T)
+atr3::atr3(const trf3 &T,const pnt3 &P):_t(T)
 {
-	_v=(Trf3::ident()-T)*(P-Pnt3::Po);
+	_v=(trf3::ident()-T)*(P-pnt3::Po);
 }
 
 //
-Vtr3 Atr3::operator*(const Vtr3 &V) const noexcept
+vtr3 atr3::operator*(const vtr3 &V) const noexcept
 {
 	return _t*V;
 }
 
 //
-Pnt3 Atr3::operator*(const Pnt3 &P) const noexcept
+pnt3 atr3::operator*(const pnt3 &P) const noexcept
 {
-	return Pnt3::Po+_t*(P-Pnt3::Po)+_v;
+	return pnt3::Po+_t*(P-pnt3::Po)+_v;
 }
 
 //
-Atr3 Atr3::operator*(const Atr3 &T) const
+atr3 atr3::operator*(const atr3 &T) const
 {
-	return Atr3(_t*T._t,_t*T._v+_v);
+	return atr3(_t*T._t,_t*T._v+_v);
 }
 
 //
-Atr3 Atr3::inv() const
+atr3 atr3::inv() const
 {
-	Trf3 iT=_t.inv();
-	return Atr3(iT,iT*(-_v));
+	trf3 iT=_t.inv();
+	return atr3(iT,iT*(-_v));
 }
 
 //
-Ags3 Atr3::operator*(const Ags3 &A) const
+ags3 atr3::operator*(const ags3 &A) const
 {
-	Bas3 Bp=_t*A.B();
-	Pnt3 Pp=Pnt3::Po+_t*(A.p()-Pnt3::Po)+_v;
-	return Ags3(Bp,Pp);
+	bas3 Bp=_t*A.B();
+	pnt3 Pp=pnt3::Po+_t*(A.p()-pnt3::Po)+_v;
+	return ags3(Bp,Pp);
 }
 
 //static
-Atr3 Atr3::ident()
+atr3 atr3::ident()
 {
-	return Atr3();
+	return atr3();
 }
 
 //
-Atr3::operator simd::float4x4()
+atr3::operator simd::float4x4()
 {
 	using simd::float4;
 	return simd_matrix_from_rows
@@ -78,7 +78,7 @@ Atr3::operator simd::float4x4()
 }
 
 //
-ostream& operator<<(ostream &os,const Atr3 &T)
+ostream& operator<<(ostream &os,const atr3 &T)
 {
 	os<<T.A()<<"\n"<<T.b()<<"\n";
 	return os;

@@ -5,81 +5,81 @@
 #include "CoreGraphics/CoreGraphics.h"
 
 #include "tlbx.hpp"
-#include "grfx.hpp"
+#include "grfx2.hpp"
 
 using namespace std;
 
-const Gfrm unitF(1,-1,-1,1);
+const gfrm unitF(1,-1,-1,1);
 
 //
-Gfrm::Gfrm(const gpnt& bl,const gvtr& d)
+gfrm ::gfrm(const gpnt& bl,const gvtr& d)
 	:m_bottomLeftP(bl),m_diagV(d){}
 
 //
-Gfrm::Gfrm(const double t,const double l,const double b,const double r)
+gfrm ::gfrm(const double t,const double l,const double b,const double r)
 	:m_bottomLeftP(l,b),m_diagV(r-l,t-b){}
 
 //
-Gfrm::Gfrm(const gpnt& tl,const gpnt& br)
+gfrm ::gfrm(const gpnt& tl,const gpnt& br)
 	:m_bottomLeftP(tl.x(),br.y()),m_diagV(br.x()-tl.x(),tl.y()-br.y()){}
 
 //
-Gfrm::Gfrm(const CGRect& R)
+gfrm ::gfrm(const CGRect& R)
 {
 	m_bottomLeftP=gpnt(R.origin.x,R.origin.y);
 	m_diagV=gvtr(R.size.width,R.size.height);
 }
 	
 //
-bool Gfrm::operator==(const Gfrm &r) const
+bool gfrm ::operator==(const gfrm  &r) const
 {
 	return (m_bottomLeftP==r.bottomLeft())&&(m_diagV==r.diag());
 }
 
 //
-Gfrm Gfrm::operator+=(const gvtr &v)
+gfrm gfrm ::operator+=(const gvtr &v)
 {
 	return *this=*this+v;
 	}
 
 //
-Gfrm Gfrm::operator-=(const gvtr &v)
+gfrm gfrm ::operator-=(const gvtr &v)
 {
 	return *this=*this-v;
 	}
 
 //
-Gfrm Gfrm::operator*=(double x)
+gfrm gfrm ::operator*=(double x)
 {
 	return *this=x*(*this);
 	}
 	
 //
-Gfrm Gfrm::operator/=(const double x)
+gfrm gfrm ::operator/=(const double x)
 {
 	return *this=(*this)/x;
 	}
 
 //
-Gfrm Gfrm::operator+(const gvtr &v) const
+gfrm gfrm ::operator+(const gvtr &v) const
 {
-	return Gfrm(m_bottomLeftP+v,m_diagV);
+	return gfrm (m_bottomLeftP+v,m_diagV);
 }
 
 //
-Gfrm Gfrm::operator-(const gvtr &v) const
+gfrm gfrm ::operator-(const gvtr &v) const
 {
 	return *this+(-v);
 }
 
 //
-Gfrm Gfrm::operator/(const double x) const
+gfrm gfrm ::operator/(const double x) const
 {
-	return Gfrm(top()/x,left()/x,bottom()/x,right()/x);
+	return gfrm (top()/x,left()/x,bottom()/x,right()/x);
 }
 
 //
-bool Gfrm::isIn(const gpnt &p) const
+bool gfrm ::isIn(const gpnt &p) const
 {
 
 	double rx=(p.x()-left())/(right()-left());
@@ -88,38 +88,38 @@ bool Gfrm::isIn(const gpnt &p) const
 	}
 
 //
-bool Gfrm::isIn(const Gfrm &f) const
+bool gfrm ::isIn(const gfrm  &f) const
 {
 	return isIn(f.bottomLeft())&&isIn(f.topRight());
 }
 
 //
-bool Gfrm::overlaps(const Gfrm &f) const
+bool gfrm ::overlaps(const gfrm  &f) const
 {
-	double resX=sgn(f.left()-left())
-		+sgn(f.left()-right())
-		+sgn(f.right()-left())
-		+sgn(f.right()-right());
+	double resX=mth::sgn(f.left()-left())
+		+mth::sgn(f.left()-right())
+		+mth::sgn(f.right()-left())
+		+mth::sgn(f.right()-right());
 		
-	double resY=sgn(f.bottom()-bottom())
-		+sgn(f.bottom()-top())
-		+sgn(f.top()-bottom())
-		+sgn(f.top()-top());
+	double resY=mth::sgn(f.bottom()-bottom())
+		+mth::sgn(f.bottom()-top())
+		+mth::sgn(f.top()-bottom())
+		+mth::sgn(f.top()-top());
 		
 	return (fabs(resX)<3.)&&(fabs(resY)<3.);
 }
 
 //scale about center
-Gfrm Gfrm::scale(const double x) const
+gfrm gfrm ::scale(const double x) const
 {
 
 	gvtr scaled_diagV=x*m_diagV;
 	gpnt pBottomLeft=center()-scaled_diagV/2.;
-	return Gfrm(pBottomLeft,scaled_diagV);
+	return gfrm (pBottomLeft,scaled_diagV);
 }
 
 //
-void Gfrm::move(gvtr &v,const Gfrm &fBound) const
+void gfrm ::move(gvtr &v,const gfrm  &fBound) const
 {
 	double fac=1.;
 	if(v.y()!=0.)
@@ -141,9 +141,9 @@ void Gfrm::move(gvtr &v,const Gfrm &fBound) const
 }
 
 //
-Gfrm Gfrm::map(const Gfrm &fNew,const Gfrm &fOld) const
+gfrm gfrm ::map(const gfrm  &fNew,const gfrm  &fOld) const
 {
-	Gfrm rp=*this;
+	gfrm  rp=*this;
 	rp.m_bottomLeftP=m_bottomLeftP.map(fNew,fOld);
 	rp.m_diagV=topRight().map(fNew,fOld)-rp.m_bottomLeftP;
 	return rp;
@@ -152,7 +152,7 @@ Gfrm Gfrm::map(const Gfrm &fNew,const Gfrm &fOld) const
 //
 // CGRect origin is bottom-left, somehow.
 //
-CGRect Gfrm::map(const CGRect &Rframe,const Gfrm &frameF) const
+CGRect gfrm ::map(const CGRect &Rframe,const gfrm  &frameF) const
 {
 	CGRect R;
 
@@ -183,7 +183,7 @@ CGRect Gfrm::map(const CGRect &Rframe,const Gfrm &frameF) const
 }
 
 //
-gpnt Gfrm::map(const CGPoint &P,const CGRect &Rframe) const
+gpnt gfrm ::map(const CGPoint &P,const CGRect &Rframe) const
 {
 	float scaleX=width()/Rframe.size.width;
 	float scaleY=-height()/Rframe.size.height;
@@ -196,7 +196,7 @@ gpnt Gfrm::map(const CGPoint &P,const CGRect &Rframe) const
 }
 
 //
-Gfrm Gfrm::map(const CGRect &Rframe,const CGRect &R) const
+gfrm gfrm ::map(const CGRect &Rframe,const CGRect &R) const
 {
 	CGFloat Rtop=R.origin.y,Rbottom=Rtop+R.size.height;
 	CGFloat Rleft=R.origin.x,Rright=Rleft+R.size.width;
@@ -208,44 +208,44 @@ Gfrm Gfrm::map(const CGRect &Rframe,const CGRect &R) const
 	gpnt tl=map(R_topLeft,Rframe);
 	gpnt br=map(R_bottomRight,Rframe);
 	
-	return Gfrm(tl,br);
+	return gfrm (tl,br);
 }
 
 //Scale a scalar
-double Gfrm::map(const double d,const CGRect &Rframe) const
+double gfrm ::map(const double d,const CGRect &Rframe) const
 {
 	return d*(Rframe.size.height+Rframe.size.width)/totalSize();
 }
 
 //
-Gfrm Gfrm::alter() const
+gfrm gfrm ::alter() const
 {
-	return Gfrm(bottomRight(),-diag());
+	return gfrm (bottomRight(),-diag());
 }
 
 //
-void Gfrm::doFill(CGContextRef context,const CGRect &Rframe,const Gfrm &frameF) const
+void gfrm ::doFill(CGContextRef context,const CGRect &Rframe,const gfrm  &frameF) const
 {
 	CGRect Rdest=map(Rframe,frameF);
 	doFill(context,Rdest);
 }
 
 //
-void Gfrm::doStroke(CGContextRef context,const CGRect &Rframe,const Gfrm &frameF) const
+void gfrm ::doStroke(CGContextRef context,const CGRect &Rframe,const gfrm  &frameF) const
 {
 	CGRect Rdest=map(Rframe,frameF);
 	doStroke(context,Rdest);
 }
 
 //
-void Gfrm::doRender(CGContextRef context,const CGRect &Rframe,const Gfrm &frameF) const
+void gfrm ::doRender(CGContextRef context,const CGRect &Rframe,const gfrm  &frameF) const
 {
 	CGRect Rdest=map(Rframe,frameF);
 	doRender(context,Rdest);
 }
 
 //
-void Gfrm::doRender(CGContextRef context,const CGRect &Rframe,const Gfrm &frameF,const CGRect &Rext) const
+void gfrm ::doRender(CGContextRef context,const CGRect &Rframe,const gfrm  &frameF,const CGRect &Rext) const
 {
 	CGRect Rclip=map(Rframe,frameF);
 	CGContextClipToRect(context,Rclip);
@@ -253,7 +253,7 @@ void Gfrm::doRender(CGContextRef context,const CGRect &Rframe,const Gfrm &frameF
 }
 
 //
-void Gfrm::doRadGradient(CGContextRef context,const CGRect &Rframe,const Gfrm &frameF,CGGradientRef grad,const CGPoint &Pi,const CGPoint &Pf,const double ri,const double rf) const
+void gfrm ::doRadGradient(CGContextRef context,const CGRect &Rframe,const gfrm  &frameF,CGGradientRef grad,const CGPoint &Pi,const CGPoint &Pf,const double ri,const double rf) const
 {
 	CGRect Rclip=map(Rframe,frameF);
 	CGContextClipToRect(context,Rclip);
@@ -264,13 +264,13 @@ void Gfrm::doRadGradient(CGContextRef context,const CGRect &Rframe,const Gfrm &f
 }
 
 //scale about origin
-Gfrm operator*(const double x,const Gfrm &f)
+gfrm  operator*(const double x,const gfrm  &f)
 {
-	return Gfrm(gpnt(x*f.left(),x*f.bottom()),x*f.diag());
+	return gfrm (gpnt(x*f.left(),x*f.bottom()),x*f.diag());
 }
 
 //
-ostream& operator<<(ostream &os,const Gfrm &f)
+ostream& operator<<(ostream &os,const gfrm  &f)
 {
 	os<<"["<<f.topLeft()<<","<<f.bottomRight()<<"]";
 	return os;
