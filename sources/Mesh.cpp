@@ -12,7 +12,7 @@
 #include <list>
 #include <stack>
 
-#include "Topo.hpp"
+#include "Mesh.hpp"
 
 using namespace std;
 
@@ -72,12 +72,12 @@ void Mesh::clear()
 	_currentSubmesh=nullptr;
 }
 
-//
+// 
 void Mesh::operator*=(const atr3 &T)
 {
 	for(auto &vertex:_vertex)
 	{
-		Pnt &P=std::get<0>(vertex);
+		pnt3 &P=std::get<0>(vertex);
 		P*=T;
 		
 		vtr3 &nV=std::get<1>(vertex);

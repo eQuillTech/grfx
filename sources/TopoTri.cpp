@@ -1717,7 +1717,7 @@ void GetRange
 		{
 			if ((flag_img[iPos] & data_mask))
 			{
-				Pnt P(iX,ext_height - 1 - iY,point_img[iPos]);
+				pnt3 P(iX,ext_height - 1 - iY,point_img[iPos]);
 				meshRange.expand(P);
 			}
 			iPos++;
