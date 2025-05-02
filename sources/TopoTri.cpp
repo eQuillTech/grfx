@@ -31,7 +31,7 @@ static void GetPointImage
    int row[] = { -1, 0, -1, 0 };
    int col[] = { 0, -1, -1, 0 };
 
-   std::std::size_t iPos = 0;
+   std::size_t iPos = 0;
    for (std::size_t iY = 0; iY <= height; iY++)
    {
       for (std::size_t iX = 0; iX <= width; iX++)
@@ -332,11 +332,7 @@ static bool FlagPoints
    double inv_L_unif = sqrt(tri_res); // ~ mean inverse vertex spacing
 
    // Find local curvature in X for weighting
-   auto distX_img = std::vector<float>(new float[ext_width * ext_height]);
-   if (distX_img == nullptr)
-   {
-      return false;
-   }
+   auto distX_img = std::vector<float>(ext_width * ext_height);
    float wX_tot = 0.;
    int nX_tot_body_pts = 0;
    float abs_curvX_max = 0;
@@ -404,14 +400,10 @@ static bool FlagPoints
          iPos++;
       }
    }
-   distX_img.release();
-
+   
    // Create a tic image for vertex placement
-   auto tic_img = std::vector<bool>(new bool[ext_width * ext_height]);
-   if (tic_img == nullptr)
-   {
-      return false;
-   }
+   auto tic_img = std::vector<bool>(ext_width * ext_height);
+
    iPos = 0;
    for (std::size_t iY = 0; iY < ext_height; iY++)
    {
@@ -499,7 +491,6 @@ static bool FlagPoints
          phase += dphase;
       }
    }
-   distY_img.release();
 
    // Modify tic image to indicate coincidence of x- and y-tics
    for (std::size_t iX = 0; iX < ext_width; iX++)
@@ -516,10 +507,9 @@ static bool FlagPoints
             tic = true;
             prev_phase += floor(phase - prev_phase);
          }
-         tic_img[iPos] &= tic;
+         tic_img[iPos] = tic_img[iPos] && tic;
      }
    }
-   phaseY_img.release();
 
    // Flag additional fixed vertices
    std::size_t nCount=0;
@@ -536,7 +526,6 @@ static bool FlagPoints
          iPos++;
       }
     }
-    tic_img.release();
     return true;
 }
 
@@ -1474,7 +1463,7 @@ static bool MakeDelaunayTriangles
    }
 
    // Set arbitrary threshold before rejection of edge
-   std::size_t max_iters = (std::std::size_t)(n_edges * log10((double)n_edges + 1.));
+   std::size_t max_iters = (std::size_t)(n_edges * log10((double)n_edges + 1.));
    max_iters = (max_iters < 100000)? 100000 : max_iters;
    std::size_t n_edges_prev = n_edges;
    std::size_t i_iters = 0;
@@ -1733,7 +1722,7 @@ TopoTri::TopoTri
 ):Mesh()
 {
 	// Build bool patch image : true if valid pixel, false if "no data"
-	auto patch_img = std::vector<double>(width * height);
+	auto patch_img = std::vector<bool>(width * height);
 	int iPos = 0;
 	for (uint32_t iY = 0; iY < height; iY++)
 	{
@@ -1747,11 +1736,7 @@ TopoTri::TopoTri
 	// Create point image specifying pixel corners
 	std::size_t ext_width = width + 1;
 	std::size_t ext_height = height + 1;
-	auto point_img = std::vector<float>(new float[ext_width * ext_height]);
-	if (point_img == nullptr)
-	{
-		return;
-	}
+	auto point_img = std::vector<float>(ext_width * ext_height);
 	GetPointImage(width, height, patch_img, data_img, point_img);
 	
 	// Init flag image specifying point character
@@ -1766,11 +1751,7 @@ TopoTri::TopoTri
 	}
 
 	// Create an image of point indices
-	auto index_img = std::vector<long>(new long[ext_width * ext_height]);
-	if (index_img == nullptr)
-	{
-		return;
-	}
+	auto index_img = std::vector<long>(ext_width * ext_height);
 	std::vector<LattPoint> pts; // Vertices
 	IndexPoints(flag_img, ext_width, ext_height, index_img, pts);
 
@@ -1787,7 +1768,6 @@ TopoTri::TopoTri
 	{
 		return;
 	}
-	delete [] index_img.release();
 
 	// Eliminate unnecessary border points
 	if (!ReduceBorderPoints(flag_img, ext_width, ext_height, pts, _currentSubmesh->_tris, edge_triangs, pt_edges))
@@ -1837,8 +1817,6 @@ TopoTri::TopoTri
 		}
 	}
 	
-	delete [] flag_img.release();
-	delete [] point_img.release();
  }
 
 //-----------------------------------------------------------------------------
@@ -1848,7 +1826,7 @@ TopoTri::TopoTri
 //                file-size dependent, roughly log scale.
 // Parameters  :
 //    int sliderVal - value from panel slider (0 - 100)
-//    std::std::size_t n_pix - image size (pixels)
+//    std::size_t n_pix - image size (pixels)
 // Returns     :
 //    float - resolution factor (0 - 1)
 //-----------------------------------------------------------------------------
