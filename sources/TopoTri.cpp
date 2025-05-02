@@ -23,12 +23,12 @@ typedef std::tuple<LattEdge, long, long> LattSharedEdge; // edge and indices of 
 // Parameters  :  See parameter list...
 // Returns     :
 //-----------------------------------------------------------------------------
-void GetPointImage
+static void GetPointImage
 (
    size_t width, size_t height, // Original dimensions of image
-   std:::vector<bool> &patch_img, // Provided bool patch image
-   std:::vector<float> &data_img, // Original data (pixel) image
-   std:::vector<float> &point_img // Contains (extended) interpolated point image
+   std::vector<bool> &patch_img, // Provided bool patch image
+   std::vector<float> &data_img, // Original data (pixel) image
+   std::vector<float> &point_img // Contains (extended) interpolated point image
 )
 {
    int row[] = { -1, 0, -1, 0 };
@@ -74,7 +74,7 @@ void GetPointImage
 //    const LattPoint &P - Lattice point to check
 // Returns     :  true if point determined to be inside, false otherwise
 //-----------------------------------------------------------------------------
-bool IsLattPointInCircle(const std::vector<LattPoint> &tri_pts, const LattPoint &P)
+static bool IsLattPointInCircle(const std::vector<LattPoint> &tri_pts, const LattPoint &P)
 {
    if (tri_pts.size() != 3) // Need vertices of a triangle
    {
@@ -142,7 +142,7 @@ bool IsLattPointInCircle(const std::vector<LattPoint> &tri_pts, const LattPoint 
 //    const LattPoint &C - Triangle vertex
 // Returns     :  true if point determined to be inside, false otherwise
 //-----------------------------------------------------------------------------
-bool IsLattPointInTriang(const LattPoint &P, const LattPoint &A, const LattPoint &B, const LattPoint &C)
+static bool IsLattPointInTriang(const LattPoint &P, const LattPoint &A, const LattPoint &B, const LattPoint &C)
 {
    long ABx = B.first - A.first;
    long ABy = B.second - A.second;
@@ -182,7 +182,7 @@ bool IsLattPointInTriang(const LattPoint &P, const LattPoint &A, const LattPoint
 // Returns     :
 //    bool - true if edge is shared, false otherwise
 //-----------------------------------------------------------------------------
-bool IsTopEdgeShared(LattEdge &top_edge, std::queue<std::pair<LattEdge, long>> &bottom_edge_triangs)
+static bool IsTopEdgeShared(LattEdge &top_edge, std::queue<std::pair<LattEdge, long>> &bottom_edge_triangs)
 {
    while (!bottom_edge_triangs.empty())
    {
@@ -235,9 +235,9 @@ const short right_border_mask = 0b1001;
 // Parameters  :  See parameter list...
 // Returns     :
 //-----------------------------------------------------------------------------
-void InitFlagImage
-(  std:::vector<bool> &patch_img, // Patch image: true if pixel contains valid data, false if no-date
-   std:::vector<short> &flag_img,  // Contains (extended) image of point flags upon return
+static void InitFlagImage
+(  std::vector<bool> &patch_img, // Patch image: true if pixel contains valid data, false if no-date
+   std::vector<short> &flag_img,  // Contains (extended) image of point flags upon return
    size_t width, size_t height // Image dimensions
 )
 {
@@ -324,9 +324,9 @@ void InitFlagImage
 // Parameters  :  See parameter list...
 // Returns     :
 //-----------------------------------------------------------------------------
-bool FlagPoints
-(  std:::vector<float> &point_img, // (Extended) point image
-   std:::vector<short> &flag_img,  // (Extended) flag image - to be modified here
+static bool FlagPoints
+(  std::vector<float> &point_img, // (Extended) point image
+   std::vector<short> &flag_img,  // (Extended) flag image - to be modified here
    size_t ext_width, size_t ext_height, // (Extended) image dimensions
    float tri_res  // User-specified resolution parameter (0 - 1)
 )
@@ -335,7 +335,7 @@ bool FlagPoints
    double inv_L_unif = sqrt(tri_res); // ~ mean inverse vertex spacing
 
    // Find local curvature in X for weighting
-   auto distX_img = std:::vector<float>(new float[ext_width * ext_height]);
+   auto distX_img = std::vector<float>(new float[ext_width * ext_height]);
    if (distX_img == nullptr)
    {
       return false;
@@ -387,7 +387,7 @@ bool FlagPoints
    }
    
    // Oscillate in X
-   auto phaseX_img = std:::vector<double>(ext_width * ext_height);
+   auto phaseX_img = std::vector<double>(ext_width * ext_height);
    iPos = 0;
    for (size_t iY = 0; iY < ext_height; iY++)
    {
@@ -410,7 +410,7 @@ bool FlagPoints
    distX_img.release();
 
    // Create a tic image for vertex placement
-   auto tic_img = std:::vector<bool>(new bool[ext_width * ext_height]);
+   auto tic_img = std::vector<bool>(new bool[ext_width * ext_height]);
    if (tic_img == nullptr)
    {
       return false;
@@ -435,7 +435,7 @@ bool FlagPoints
    }
    
    // Find local curvature in Y for weighting
-   auto distY_img = std:::vector<float>(ext_width * ext_height);
+   auto distY_img = std::vector<float>(ext_width * ext_height);
    float wY_tot = 0.;
    int nY_tot_body_pts = 0;
    float abs_curvY_max = 0;
@@ -483,7 +483,7 @@ bool FlagPoints
    }
 
    // Oscillate in Y
-   auto phaseY_img = std:::vector<double>(ext_width * ext_height);
+   auto phaseY_img = std::vector<double>(ext_width * ext_height);
    for (size_t iX = 0; iX < ext_width; iX++)
    {
       double phase = 0.;
@@ -544,10 +544,10 @@ bool FlagPoints
 }
 
 //
-void IndexPoints
-(  std:::vector<short> &flag_img, // (Extended) image of flag bits for each point
+static void IndexPoints
+(  std::vector<short> &flag_img, // (Extended) image of flag bits for each point
    size_t ext_width, size_t ext_height, // (Extended) image dimensions
-   std:::vector<long> &index_img, // Contains (extended) point-index image upon return
+   std::vector<long> &index_img, // Contains (extended) point-index image upon return
    std::vector<LattPoint> &pts // Contains points (vertices) upon return
 )
 {
@@ -578,7 +578,7 @@ void IndexPoints
 // Parameters  :  See parameter list...
 // Returns     :
 //-----------------------------------------------------------------------------
-void BuildRowUpperTriangle
+static void BuildRowUpperTriangle
 (  long ind_00, long ind_m1, long ind_n0,
    std::queue<std::pair<LattEdge, long>> &bottom_edge_triangs, // Edge and triangle
    bool &right_edge_valid,
@@ -625,7 +625,7 @@ void BuildRowUpperTriangle
 // Parameters  :  See parameter list...
 // Returns     :
 //-----------------------------------------------------------------------------
-void BuildRowLowerTriangle
+static void BuildRowLowerTriangle
 (  long ind_00, long ind_01, long ind_m1,
    std::queue<std::pair<LattEdge, long>> &top_edge_triangs, // Edge and triangle
    bool &right_edge_valid,
@@ -663,14 +663,14 @@ void BuildRowLowerTriangle
 // Description :  Scans a row to find the next vertex point based on preset flags.
 //                The point array index is returned in pos_mn
 // Parameters  :
-//    std:::vector<short> &flag_img - Flag bits for each point
+//    std::vector<short> &flag_img - Flag bits for each point
 //    int ext_width - (Extended) image width
 //    int dY - Row offset (typically 0 or 1)
 //    int pos_00 - Reference origin index
 //    int pos_mn - Contains the index of the vertex point upon return
 // Returns     :  bool - true if vertex found, false otherwise
 //-----------------------------------------------------------------------------
-bool GetNextRowVertex(std:::vector<short> &flag_img, size_t ext_width, long dY, long pos_00, long &pos_mn)
+static bool GetNextRowVertex(std::vector<short> &flag_img, size_t ext_width, long dY, long pos_00, long &pos_mn)
 {
    long dX0 = 1;
    short flag = 0;
@@ -712,10 +712,10 @@ bool GetNextRowVertex(std:::vector<short> &flag_img, size_t ext_width, long dY, 
 //   \ |       *           /   \       ?
 // o o .                   .-o-.
 //-----------------------------------------------------------------------------
-bool BuildRowTriangles
+static bool BuildRowTriangles
 (
-   std:::vector<short> &flag_img, // (Extended) image of flag bits for each point
-   std:::vector<long> &index_img, // (Extended) image of point indices (-1 for no-data)
+   std::vector<short> &flag_img, // (Extended) image of flag bits for each point
+   std::vector<long> &index_img, // (Extended) image of point indices (-1 for no-data)
    size_t ext_width, size_t ext_height, // (Extended) image dimensions
    TriIndexVector &triangs, // Contains triangle indices upon return
    std::vector<std::tuple<LattEdge, long, long>> &edge_triangs, // Contains shared edges and sharing triangles upon return
@@ -840,7 +840,7 @@ bool BuildRowTriangles
 // Returns     :
 //    bool - true if valid third index found, false otherwise
 //-----------------------------------------------------------------------------
-bool FindThirdIndex(const TriIndex &triang, long jp, long jq, long &jr)
+static bool FindThirdIndex(const TriIndex &triang, long jp, long jq, long &jr)
 {
    jr = -1;
    for (size_t ir = 0; ir < 3; ir++)
@@ -866,7 +866,7 @@ bool FindThirdIndex(const TriIndex &triang, long jp, long jq, long &jr)
 // Returns     :
 //    bool - true if shared edge-index found, false otherwise
 //-----------------------------------------------------------------------------
-bool FindEdge(const std::list<long> &pt_edgesA, const std::list<long> &pt_edgesB, long &jedge)
+static bool FindEdge(const std::list<long> &pt_edgesA, const std::list<long> &pt_edgesB, long &jedge)
 {
    for (long jedgeA: pt_edgesA)
    {
@@ -893,7 +893,7 @@ bool FindEdge(const std::list<long> &pt_edgesA, const std::list<long> &pt_edgesB
 // Returns     :
 //    bool - true if shared edge-index found, false otherwise
 //-----------------------------------------------------------------------------
-bool ReassociateEdge
+static bool ReassociateEdge
 (  std::list<long> &pt_edgesA, // Shared-edge list for first vertex
    std::list<long> &pt_edgesB, // Shared-dge list for second vertex
    long jtriangOld, // Previous index of a bounding triangle
@@ -929,7 +929,7 @@ bool ReassociateEdge
 // Returns     :
 //    bool - true if successful, false otherwise
 //-----------------------------------------------------------------------------
-bool CleanupTriangs
+static bool CleanupTriangs
 (
    const std::vector<bool> &remove_pts, // true if point is to be deleted, false otherwise
    const std::vector<bool> &remove_edges, // true if edge is to be deleted, false otherwise
@@ -1049,9 +1049,9 @@ bool CleanupTriangs
 // Returns     :
 //    bool - true if successful, false otherwise
 //-----------------------------------------------------------------------------
-bool ReduceBorderPoints
+static bool ReduceBorderPoints
 (
-   std:::vector<short> &flag_img, // (Extended) flag image specifying point characteristics
+   std::vector<short> &flag_img, // (Extended) flag image specifying point characteristics
    size_t width, size_t height, // (Extended) image dimensions
    std::vector<LattPoint> &pts, // Points (vertices)
    TriIndexVector &triangs, // Triangles
@@ -1233,9 +1233,9 @@ bool ReduceBorderPoints
 // Returns     :
 //    bool - true if successful, false otherwise
 //-----------------------------------------------------------------------------
-bool SimplifyBorder
+static bool SimplifyBorder
 (
-   std:::vector<short> &flag_img, // (Extended) flag image specifying point characteristics
+   std::vector<short> &flag_img, // (Extended) flag image specifying point characteristics
    size_t width, size_t height, // (Extneded) image dimensions
    std::vector<LattPoint> &pts, // Points (vertices)
    TriIndexVector &triangs, // Triangles
@@ -1458,7 +1458,7 @@ bool SimplifyBorder
 // Returns     :
 //    bool - true if successful, false otherwise
 //-----------------------------------------------------------------------------
-bool MakeDelaunayTriangles
+static bool MakeDelaunayTriangles
 (  TriIndexVector &triangs, // Triangle indices
    const std::vector<LattPoint> &pts, // Vertex coords
    std::vector<std::tuple<LattEdge, long, long>> &edge_triangs, // Shared edges and sharing triangles
@@ -1631,9 +1631,9 @@ bool MakeDelaunayTriangles
 // Parameters  :  See parameter list...
 // Returns     :
 //-----------------------------------------------------------------------------
-void GetNormals
-(	std:::vector<float> &point_img, // (Extended) point image
-	std:::vector<short> &flag_img,  // (Extended) flag image - to be modified here
+static void GetNormals
+(	std::vector<float> &point_img, // (Extended) point image
+	std::vector<short> &flag_img,  // (Extended) flag image - to be modified here
 	size_t ext_width, size_t ext_height, // (Extended) image dimensions
 	std::vector<LattPoint> &pts, // Points to be retained
 	std::vector<vtr3> &norms // Contains normals to specfied points upon return
@@ -1689,7 +1689,7 @@ void GetNormals
 }
 
 //
-void GetRange
+static void GetRange
 (	std::vector<float> &point_img, // (Extended) point image
 	std::vector<short> &flag_img,  // (Extended) flag image - to be modified here
 	size_t ext_width, size_t ext_height, // (Extended) image dimensions
@@ -1750,7 +1750,7 @@ TopoTri::TopoTri
 	// Create point image specifying pixel corners
 	size_t ext_width = width + 1;
 	size_t ext_height = height + 1;
-	auto point_img = std:::vector<float>(new float[ext_width * ext_height]);
+	auto point_img = std::vector<float>(new float[ext_width * ext_height]);
 	if (point_img == nullptr)
 	{
 		return;
@@ -1769,7 +1769,7 @@ TopoTri::TopoTri
 	}
 
 	// Create an image of point indices
-	auto index_img = std:::vector<long>(new long[ext_width * ext_height]);
+	auto index_img = std::vector<long>(new long[ext_width * ext_height]);
 	if (index_img == nullptr)
 	{
 		return;
