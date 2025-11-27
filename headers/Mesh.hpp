@@ -14,11 +14,33 @@
 #include <map>
 
 #include "weiss.hpp"
-#include "grfx.hpp"
+#include "gfrm3.hpp"
 
-//
 typedef std::tuple<pnt3,vtr3,pnt2> MeshVertex;//Coord,Normal,TexCoord
 typedef std::vector<MeshVertex> MeshVertexVector;
+
+//Wavefront vertex assignment
+struct WFTIndex
+{
+	union
+	{
+		struct
+		{
+			long _iPos,_iNorm,_iTex;
+		};
+		long _p[3]; //array representation
+	};
+	WFTIndex(){}
+	WFTIndex(const long iPos,const long iNorm,const long iTex):
+		_iPos(iPos),_iNorm(iNorm),_iTex(iTex){}
+	bool operator==(const WFTIndex &rhs) const
+	{
+		return ((_p[0]==rhs._p[0])&&(_p[1]==rhs._p[1])&&(_p[2]==rhs._p[2]));
+	}
+};
+
+typedef std::vector<WFTIndex> WFTIndexVector;
+std::size_t findIndexOrPushVertex(WFTIndexVector &wftIndexVector,const WFTIndex &wftIndex);
 
 //
 struct TriIndex
@@ -66,7 +88,6 @@ struct MeshRange
 	pnt3 center() const{return _min+0.5*diag();}
 
 	operator gfrm3() const{return gfrm3(center(),diag());}
-	operator ags3() const{return ags3(gfrm3(*this));}
 	double const extent(const uint32_t i) const{return _max(i)-_min(i);}
 
 	void expand(const pnt3 &P)
@@ -94,14 +115,13 @@ typedef std::vector<TriIndex> TriIndexVector;
 struct SubMesh
 {
 public:
- 	std::vector<std::size_t> _vertex;
  	TriIndexVector _tris;	
 	atr _T=atr::Ato;
 	
 	std::size_t numTriang() const{return _tris.size();}
 	
 	void operator*=(const atr3 &T){_T*=T;}
-	void operator/=(const atr3 &T){_T*=T;}
+	void operator/=(const atr3 &T){_T/=T;}
 };
 
 //
@@ -131,26 +151,5 @@ public:
 	pnt3 center(){return _range.min()+0.5*(_range.max()-_range.min());}
 	double size(std::size_t iDim){return _range.max()(iDim)-_range.min()(iDim);}
 };
-
-//
-enum FragmentMode
-{
-	NoColorOrTexture = 0,
-	UseColorOnly = 1,
-	UseTextureOnly = 2,
-	UseColorAndTexture = 3
-};
-
-struct FragmentInfo
-{
-	col _color=col::Red;
-	std::string _sImage="";
-	FragmentMode _fragMode=NoColorOrTexture;
-	float _luminosity=0.0;
-	bool _useAlphaTest=false;
-};
-
-typedef std::map<std::string,FragmentInfo> FragmentMap;
-typedef std::map<std::string,CGImageRef> ImageMap;
 
 #endif

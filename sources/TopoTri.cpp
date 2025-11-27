@@ -4,7 +4,11 @@
 //
 //  Created by Phil Ahrenkiel on 4/5/23.
 //
+#include <queue>
+#include <list>
+#include <stack>
 
+#include "weiss.hpp"
 #include "Topo.hpp"
 
 // Type-defs for generating triangulations on a 2-D lattice

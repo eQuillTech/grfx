@@ -8,16 +8,9 @@
 #ifndef _TOPOTRI_
 #define _TOPOTRI_
 
-#include <stdio.h>
-#include <queue>
-#include <list>
-#include <stack>
+#include <cstdlib>
 
-#include "weiss.hpp"
-
-#ifndef _MESH_
-#include "Mesh.hpp"
-#endif
+class Mesh;
 
 //
 class TopoTri:public Mesh
