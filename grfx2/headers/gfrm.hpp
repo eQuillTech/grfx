@@ -111,18 +111,19 @@ public:
 	void doRender(CGContextRef context,const CGRect &Rframe,const gfrm  &frameF,const CGRect &Rext) const override;
 	void doRadGradient(CGContextRef context,const CGRect &Rframe,const gfrm  &frameF,CGGradientRef grad,const CGPoint &Pi,const CGPoint &Pf,const double Ri,const double Rf) const override;
 
-	friend double width(const gfrm  &f){return f.width();}
+	friend double width(const gfrm &f){return f.width();}
 	friend double height(const gfrm  &f){return f.height();}
 
 	friend std::ostream& operator<<(std::ostream &os,const gfrm  &f);
 	
 	gfrm proj(const gcmr &cmr,const double z) const;
 	gfrm invproj(const gcmr &cmr,const double z) const;
+	
+	static const gfrm unitF;
 };
 
 std::ostream& operator<<(std::ostream &os,const CGRect &R);
 
 typedef arr::arr1<gfrm> gfrm_arr1;
 
-extern const gfrm  unitF;
 #endif

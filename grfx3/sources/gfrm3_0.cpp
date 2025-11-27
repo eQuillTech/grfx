@@ -1,9 +1,10 @@
-//graphics gfrm3s - P. Ahrenkiel
+//graphics frames - P. Ahrenkiel
 
 #include <cstdlib>
 #include <math.h>
 
 #include "tlbx.hpp"
+//#include "grfx2.hpp"
 #include "gfrm3.hpp"
 
 const gfrm3 gfrm3::unitF(pnt3(-0.5,-0.5,-0.5),vtr3(1.,1.,1.));
@@ -11,7 +12,7 @@ const gfrm3 gfrm3::unitF(pnt3(-0.5,-0.5,-0.5),vtr3(1.,1.,1.));
 //
 bool gfrm3::operator==(const gfrm3 &F) const
 {
-	return true;//(P()==F.P())&&(B()==F.B());
+	return (_originP==F._originP)&&(_diagV==F._diagV);
 }
 
 //
@@ -41,7 +42,7 @@ gfrm3 gfrm3::operator/=(const double x)
 //
 gfrm3 gfrm3::operator+(const vtr3 &V) const
 {
-	return atr3(V)*(*this);
+	return gfrm3(_originP+V,_diagV);
 }
 
 //
@@ -53,7 +54,22 @@ gfrm3 gfrm3::operator-(const vtr3 &V) const
 //
 gfrm3 gfrm3::operator/(const double x) const
 {
-	return (1./x)*(*this);
+	return gfrm3(pnt3::Po+(_originP-pnt3::Po)/x,_diagV/x);
+}
+
+//
+pnt3 gfrm3::coord(const double xc,const double yc,const double zc) const
+{
+	return _originP-0.5*_diagV+vtr3(xc*_diagV.x(),yc*_diagV.y(),zc*_diagV.z());
+}
+
+//
+bool gfrm3::isIn(const pnt3 &P) const
+{
+	double rx=(P.x()-left())/(right()-left());
+	double ry=(P.y()-front())/(back()-front());
+	double rz=(P.z()-bottom())/(top()-bottom());
+	return (rx>=0.)&&(rx<=1.)&&(ry>=0.)&&(ry<=1.)&&(rz>=0.)&&(rz<=1.);
 }
 
 //
@@ -83,20 +99,11 @@ bool gfrm3::overlaps(const gfrm3 &F) const
 	return (fabs(resX)<3.)&&(fabs(resY)<3.)&&(fabs(resZ)<3.);
 }
 
-//scale about origin
-gfrm3 operator*(const double x,const gfrm3 &F)
-{
-	auto p0=F.center();
-	auto a=atr3(0.5*F.diag())*F;
-	a.B()*=scl3(x);
-	a*=atr3(p0-a*idx3(0.5,0.5,0.5));
-	return a;
-}
-
 //scale about center
 gfrm3 gfrm3::scale(const double x) const
 {
-	return x*(*this);
+	vtr3 diagV=x*_diagV;
+	return gfrm3(_originP,diagV);
 }
 
 //
@@ -129,3 +136,28 @@ void gfrm3::move(vtr3 &V,const gfrm3 &boundF) const
 	V*=fac;
 }
 
+//
+gfrm3 gfrm3::map(const gfrm3 &newF,const gfrm3 &oldF) const
+{
+	gfrm3 rp=*this;
+	rp._originP=gpnt3(_originP).map(newF,oldF);
+	rp._diagV=gpnt3(_originP+_diagV).map(newF,oldF)-rp._originP;
+	return rp;
+}
+
+//scale about origin
+gfrm3 operator*(const double x,const gfrm3 &F)
+{
+	return gfrm3(pnt3::Po+x*(F._originP-pnt3::Po),x*F._diagV);
+}
+
+std::ostream& operator<<(std::ostream &os,const gfrm3 &F)
+{
+	os<<"["<<F._originP<<","<<F._diagV<<"]";
+	return os;
+}
+
+gfrm3::operator ags3() const
+{
+	return ags3(_diagV,_originP);
+}

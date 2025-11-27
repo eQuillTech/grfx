@@ -7,9 +7,7 @@
 #include "tlbx.hpp"
 #include "grfx2.hpp"
 
-using namespace std;
-
-const gfrm unitF(1,-1,-1,1);
+const gfrm gfrm::unitF(1,-1,-1,1);
 
 //
 gfrm ::gfrm(const gpnt& bl,const gvtr& d)
@@ -112,14 +110,13 @@ bool gfrm ::overlaps(const gfrm  &f) const
 //scale about center
 gfrm gfrm ::scale(const double x) const
 {
-
 	gvtr scaled_diagV=x*m_diagV;
 	gpnt pBottomLeft=center()-scaled_diagV/2.;
 	return gfrm (pBottomLeft,scaled_diagV);
 }
 
 //
-void gfrm ::move(gvtr &v,const gfrm  &fBound) const
+void gfrm::move(gvtr &v,const gfrm  &fBound) const
 {
 	double fac=1.;
 	if(v.y()!=0.)
@@ -141,7 +138,7 @@ void gfrm ::move(gvtr &v,const gfrm  &fBound) const
 }
 
 //
-gfrm gfrm ::map(const gfrm  &fNew,const gfrm  &fOld) const
+gfrm gfrm::map(const gfrm  &fNew,const gfrm  &fOld) const
 {
 	gfrm  rp=*this;
 	rp.m_bottomLeftP=m_bottomLeftP.map(fNew,fOld);
@@ -270,14 +267,14 @@ gfrm  operator*(const double x,const gfrm  &f)
 }
 
 //
-ostream& operator<<(ostream &os,const gfrm  &f)
+std::ostream& operator<<(std::ostream &os,const gfrm &f)
 {
 	os<<"["<<f.topLeft()<<","<<f.bottomRight()<<"]";
 	return os;
 }
 
 //
-ostream& operator<<(ostream &os,const CGRect &R)
+std::ostream& operator<<(std::ostream &os,const CGRect &R)
 {
 	float top=R.origin.y,bottom=R.origin.y+R.size.height;
 	float left=R.origin.x,right=R.origin.x+R.size.width;
