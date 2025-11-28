@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10) # required
-project(topo)  # project name
+project(Topo)  # project name
 
 if(${CMAKE_PROJECT_NAME} STREQUAL "topo")
     set(modules_dir "")
