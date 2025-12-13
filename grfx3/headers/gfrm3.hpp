@@ -17,8 +17,7 @@ private:
 	
 public:
 	gfrm3(){}
-	gfrm3(const pnt3& centerP,const vtr3& diagV):
-		ags3(bas3({diagV.x(),0.,0.},{0.,diagV.y(),0.},{0.,0.,diagV.z()}),centerP-0.5*diagV){}
+	gfrm3(const pnt3& coordP,const vtr3& diagV,const idx3& coordI=idx3::Imid);
 
 	double left() const{return ((*this)*idx3::I000).x();}
 	double bottom() const{return ((*this)*idx3::I000).y();}
@@ -57,8 +56,8 @@ public:
 	//bool isIn(const pnt3 &P) const;
 	using ags3::isIn;
 	using ags3::A;
+	using ags3::operator*;
 	
-	//
 	pnt3 coord(const double xc,const double yc,const double zc) const{return (*this)*idx3(xc,yc,zc);}
 	pnt3 center() const{return coord(0.5,0.5,0.5);}
 	pnt3 corner000() const{return coord(0.,0.,0.);}
@@ -91,7 +90,7 @@ public:
 	friend double width(const gfrm3 &F){return F.width();}
 	friend double height(const gfrm3 &F){return F.height();}
 
-	friend std::ostream& operator<<(std::ostream &os,const gfrm3 &F);
+	//friend std::ostream& operator<<(std::ostream &os,const gfrm3 &F);
 
 	static const gfrm3 unitF;
 };
