@@ -26,11 +26,11 @@ set_target_properties(${PROJECT_NAME} PROPERTIES LINKER_LANGUAGE CXX)
 # submodules
 if(${CMAKE_PROJECT_NAME} STREQUAL ${PROJECT_NAME})
     message(STATUS "adding weiss")
-    add_subdirectory(weiss)
+    add_subdirectory(${modules_dir}weiss)
 endif()
 
 if(${CMAKE_PROJECT_NAME} STREQUAL ${PROJECT_NAME})
     message(STATUS "adding grfx")
-    add_subdirectory(grfx)
+    add_subdirectory(${modules_dir}grfx)
 endif()
 
