@@ -1,10 +1,4 @@
-//-----------------------------------------------------------------------------
-// Name        : 	ImgRegTiffTri.cpp
-// Description : 	Generates triangulations from TIFF image files, such as GeoTiff.
-//					   Image values are loaded as float and interpreted as function values,
-//					   typically corresponding to the z-component (height) of a
-//					   digital surface model (DSM) or similar mapping.
-//-----------------------------------------------------------------------------
+// Mesh - P.Ahrenkiel, 2023
 #include <cstdlib>
 #include <math.h>
 
@@ -80,24 +74,11 @@ void Mesh::operator*=(const atr3 &T)
 		
 		vtr3 &nV=std::get<1>(vertex);
 		nV*=T.A();
-		/*
-		vtr3 gradV(-nV(0),-nV(1),0.);
-		nV=vtr3(-gradV.x(),-gradV.y(),1);
-		nV=nV.norm();
-		*/
 	}
 	_range.min()*=T;
 	_range.max()*=T;
 }
-/*
-//
-void Mesh::operator*=(const trf3 &T)
-{
-	*this*=atr(T);
-}
-*/
 
-//
 void Mesh::operator/=(const atr3 &T)
 {
 	*this*=T.inv();

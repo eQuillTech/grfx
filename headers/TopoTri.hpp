@@ -10,7 +10,7 @@
 
 #include <cstdlib>
 
-class Mesh;
+#include "Mesh.hpp"
 
 //
 class TopoTri:public Mesh

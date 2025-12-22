@@ -1,7 +1,7 @@
 //topo - P. Ahrenkiel
 
-#ifndef _TOPO_
-#define _TOPO_
+#ifndef _TOPOMESH_
+#define _TOPOMESH_
 
 #include "Mesh.hpp"
 #include "TopoTri.hpp"

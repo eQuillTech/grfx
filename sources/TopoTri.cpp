@@ -9,7 +9,7 @@
 #include <stack>
 
 #include "weiss.hpp"
-#include "Topo.hpp"
+#include "TopoTri.hpp"
 
 // Type-defs for generating triangulations on a 2-D lattice
 typedef std::pair<long, long> LattPoint; // values are point coords

@@ -1,7 +1,4 @@
-//
-//  TiffTopo.h
-//  TiffTri_iOS
-//
+//  Mesh.h
 //  Created by Phil Ahrenkiel on 4/7/23.
 //
 
@@ -104,8 +101,6 @@ struct MeshRange
 			}
 		}
 	}
-	
-	//gfrm3 makegfrm3() const{return  gfrm3(center(),diag());}
 };
 
 //
