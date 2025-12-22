@@ -26,7 +26,7 @@ target_compile_features(${PROJECT_NAME} PRIVATE cxx_std_17)
 set_target_properties(${PROJECT_NAME} PROPERTIES LINKER_LANGUAGE CXX)
 
 # submodules
-if(${CMAKE_PROJECT_NAME} STREQUAL ${PROJECT_NAME})
+if(${CMAKE_PROJECT_NAME} STREQUAL ${PROJECT_NAME})git
     message(STATUS "adding tlbx")
     add_subdirectory(tlbx)
 endif()
