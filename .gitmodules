@@ -1,3 +1,7 @@
+[submodule "weiss"]
+	path = weiss
+	url = https://github.com/SPAhrenTech/weiss
+
 [submodule "grfx"]
 	path = grfx
 	url = https://github.com/SPAhrenTech/grfx
