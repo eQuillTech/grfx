@@ -6,13 +6,9 @@
 #include "CoreGraphics/CoreGraphics.h"
 #include "weiss.hpp"
 
-//
 class gfrm3:private ags3
 {
 private:
-	//pnt3 _originP;//center
-	//vtr3 _diagV;
-
 	gfrm3(const ags3& A):ags3(A){}
 	
 public:
