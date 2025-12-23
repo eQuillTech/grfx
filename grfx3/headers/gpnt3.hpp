@@ -15,7 +15,7 @@ class gpnt3:public pnt3
 {
 public:
 	gpnt3(double x=0.,double y=0.,double z=0.):pnt3(x,y,z){}
-	gpnt3(const arr::darr1 &A):pnt3(A){}
+	gpnt3(const arr::dbl1 &A):pnt3(A){}
 	gpnt3(const crd3 &C):pnt3(C){}
 
 	gpnt3 map(const gfrm3 &newF,const gfrm3 &oldF) const;

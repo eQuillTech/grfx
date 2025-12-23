@@ -15,7 +15,7 @@ protected:
 public:
 	gidx(){}
 	gidx(const std::size_t ip,const std::size_t jp){m_i=ip;m_j=jp;}
-	gidx(const arr::uiarr1 &a);
+	gidx(const arr::uint1 &a);
 
 	std::size_t& i(){return m_i;}
 	std::size_t& j(){return m_j;}

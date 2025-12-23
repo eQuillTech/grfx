@@ -21,7 +21,7 @@ class gvtr:public gcrd
 
 public:
 	gvtr(double x=0.,double y=0.):gcrd(x,y){}
-	gvtr(const darr1 &A):gcrd(A){}
+	gvtr(const dbl1 &A):gcrd(A){}
 	gvtr(const gcrd &c):gcrd(c){}
 	//gvtr(const gpnt &p){*this=p-origP;}
 	
@@ -45,7 +45,7 @@ public:
 	double dot(const gvtr &v) const{return (*this)*v;}
 	double sqrlen() const{return gcrd::sqrlen();}//double xp=x(), yp=y();return xp*xp+yp*yp;}
 	double len() const{return gcrd::len();}
-	gvtr norm() const{return darr1(*this).norm();}
+	gvtr norm() const{return dbl1(*this).norm();}
 
 	friend gvtr operator*(double x,const gvtr &v){return gvtr(x*v.m_x,x*v.m_y);}
 	friend std::ostream& operator<<(std::ostream &os,const gvtr &V);

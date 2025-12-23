@@ -14,9 +14,9 @@ protected:
 
 public:
 	gcrd(double x=0.,double y=0.):m_x(x),m_y(y){}
-	gcrd(const darr1 &A);
+	gcrd(const dbl1 &A);
 
-	operator darr1() const;
+	operator dbl1() const;
 	double& x(){return m_x;}
 	double& y(){return m_y;}
 	
@@ -29,8 +29,8 @@ public:
 	gcrd operator+() const{return *this;}
 	gcrd operator-() const{return gcrd(-m_x,-m_y);}
 
-	//gcrd operator+(const gcrd &c) const{return darr1(*this)+darr1(c);}
-	//gcrd operator-(const gcrd &c) const{return darr1(*this)-darr1(c);}
+	//gcrd operator+(const gcrd &c) const{return dbl1(*this)+dbl1(c);}
+	//gcrd operator-(const gcrd &c) const{return dbl1(*this)-dbl1(c);}
 //	gcrd operator+=(const gcrd &c){return *this=(*this)+c;}
 //	gcrd operator-=(const gcrd &c){return *this=(*this)-c;}
 

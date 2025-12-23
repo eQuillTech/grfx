@@ -7,14 +7,11 @@
 #include "tlbx.hpp"
 #include "grfx2.hpp"
 
-using namespace std;
-
 const gidx zeroI(0.,0.);
 const gidx xI(1.,0.);
 const gidx yI(0.,1.);
 
-//
-gidx::gidx(const arr::uiarr1 &a)
+gidx::gidx(const arr::uint1 &a)
 {
 	if(a.size()==2)
 	{
@@ -25,8 +22,7 @@ gidx::gidx(const arr::uiarr1 &a)
 		arr::err=-1;
 }
 
-//
-ostream& operator<<(ostream &os,const gidx &I)
+std::ostream& operator<<(std::ostream &os,const gidx &I)
 {
 	os<<"("<<I.i()<<","<<I.j()<<")";
 	return os;

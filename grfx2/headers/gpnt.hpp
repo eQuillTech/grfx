@@ -14,7 +14,7 @@ class gpnt:public pnt2
 {
 public:
 	gpnt(double x=0.,double y=0.):pnt2(x,y){}
-	gpnt(const arr::darr1 &A):pnt2(A){}
+	gpnt(const arr::dbl1 &A):pnt2(A){}
 	gpnt(const crd2 &C):pnt2(C){}
 
 	//bool operator==(const gpnt &p) const{return (_x==p._x)&&(_y==p._y);}
