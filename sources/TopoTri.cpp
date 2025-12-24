@@ -1661,16 +1661,16 @@ static void GetNormals
 				}
 			}
 		}
-		arr::darr1 F=arr::darr1::zero(3);
+		arr::dbl1 F=arr::dbl1::zero(3);
 		F(0)=F0;F(1)=F1;F(2)=F2;
 		
-		arr::darr2 S=arr::darr2::zero(3,3);
+		arr::dbl2 S=arr::dbl2::zero(3,3);
 		S(0,0)=S00;S(0,1)=S10;S(0,2)=S01;
 		S(1,0)=S10;S(1,1)=S20;S(1,2)=S11;
 		S(2,0)=S01;S(2,1)=S11;S(2,2)=S02;
 		if(S.det()!=0.)
 		{
-			arr::darr1 C=S.inv()*F;
+			arr::dbl1 C=S.inv()*F;
 			nV=vtr3(-C(1),-C(2),1);
 			nV=nV.norm();
 		}
