@@ -36,6 +36,3 @@ builds/
 *.out
 *.app
 
-tlbx/
-arr/
-weiss/
