@@ -2,11 +2,14 @@
 [submodule "tlbx"]
 	path = tlbx
 	url = https://github.com/eQuillTech/tlbx.git
+	branch = tlbx
 
 [submodule "arr"]
 	path = arr
 	url = https://github.com/eQuillTech/arr.git
+	branch = arr
 
 [submodule "weiss"]
 	path = weiss
 	url = https://github.com/eQuillTech/weiss.git
+	branch = weiss
