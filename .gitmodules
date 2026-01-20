@@ -13,3 +13,7 @@
 	path = weiss
 	url = https://github.com/eQuillTech/weiss.git
 	branch = weiss
+
+[submodule "googletest"]
+	path = googletest
+	url = https://github.com/google/googletest.git
