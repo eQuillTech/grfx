@@ -1,28 +1,25 @@
 //graphics polygons - P. Ahrenkiel
 
 #include <cstdlib>
-#include <math.h>
 #include "CoreGraphics/CoreGraphics.h"
 
-#include "tlbx.hpp"
-#include "grfx2.hpp"
+#include "gfrm.hpp"
+#include "gply.hpp"
 
-using namespace std;
+gply::gply(const std::size_t N0=0,gpnt* a=NULL):gpnt_arr1(0,a){}
+gply::gply(const gpnt_arr1& points):gpnt_arr1(points){}
 
-//
 double triangleArea(gpnt pA,gpnt pB,gpnt pC)
 {
 	return (pB-pA).cross(pC-pA);
 	//return pB.cross(pC)+pA.cross(pB)+pC.cross(pA);
 }
 
-//
 bool triangleIsCCW(gpnt pA,gpnt pB,gpnt pC)
 {
 	return triangleArea(pA,pB,pC)>0.;
 }
 
-//
 gply::gply(const gfrm & f)
 {
 	clear();
@@ -32,7 +29,6 @@ gply::gply(const gfrm & f)
 	append(f.bottomLeft());
 }
 
-//
 gply gply::operator+=(const gvtr &v)
 {
 	for(size_t i=0;i<size();++i)
@@ -40,7 +36,6 @@ gply gply::operator+=(const gvtr &v)
 	return *this;
 }
 
-//
 gply gply::operator-=(const gvtr &v)
 {
 	for(size_t i=0;i<size();++i)
@@ -48,7 +43,6 @@ gply gply::operator-=(const gvtr &v)
 	return *this;
 }
 
-//
 gply gply::operator+(const gvtr &v) const
 {
 	gply p=*this;
@@ -57,13 +51,11 @@ gply gply::operator+(const gvtr &v) const
 	return p;
 }
 
-//
 gply gply::operator-(const gvtr &v) const
 {
 	return *this+(-v);
 }
 
-//
 double gply::top() const
 {
 	double s=(*this)(0).y(),sp;
@@ -75,7 +67,6 @@ double gply::top() const
 	return s;
 }
 
-//
 double gply::left() const
 {
 	double s=(*this)(0).x(),sp;
@@ -110,38 +101,31 @@ double gply::right() const
 	return s;
 }
 
-//
 gpnt gply::center() const
 {
 	return gpnt((left()+right())/2.,(top()+bottom())/2.);
-	
 }
 
-//
 gpnt gply::topLeft() const
 {
 	return gpnt(left(),top());
 }
 
-//
 gpnt gply::topRight() const
 {
 	return gpnt(right(),top());
 }
 
-//
 gpnt gply::bottomLeft() const
 {
 	return gpnt(left(),bottom());
 }
 
-//
 gpnt gply::bottomRight() const
 {
 	return gpnt(right(),bottom());
 }
 
-//
 double gply::area() const
 {
 	size_t nP=size();
@@ -219,14 +203,12 @@ gpnt gply::closestPoint(const gpnt &p,glne &Lclose) const
 	return D;
 }
 
-//
 gpnt gply::closestPoint(const gpnt &p) const
 {
 	glne Lclose;
 	return closestPoint(p,Lclose);
 }
 
-//
 bool gply::intersection(const glne &L,gpnt &Pint,glne &Lint) const
 {
 	size_t nP=size();
@@ -249,20 +231,17 @@ bool gply::intersection(const glne &L,gpnt &Pint,glne &Lint) const
 	return found;
 }
 
-//
 bool gply::intersection(const glne &L,glne &Lint) const
 {
 	gpnt Pint;
 	return intersection(L,Pint,Lint);
 }
 
-//
 double gply::distTo(const gpnt &p) const
 {
 	return len(p-closestPoint(p));
 }
 
-//
 gply gply::map(const gfrm  &fNew,const gfrm  &fOld) const
 {
 	gply p(*this);
@@ -287,23 +266,20 @@ void gply::trace(CGContextRef context,const CGRect &Rframe,const gfrm  &frameF) 
 	CGContextClosePath(context);
 
 }
-	
-//
+
 void gply::doFill(CGContextRef context,const CGRect &Rframe,const gfrm  &frameF) const
 {
 	trace(context,Rframe,frameF);
 	CGContextFillPath(context);
 }
-	
-//
+
 void gply::doStroke(CGContextRef context,const CGRect &Rframe,const gfrm  &frameF) const
 {
 	trace(context,Rframe,frameF);
 	CGContextStrokePath(context);
 }
 
-//
-ostream& operator<<(ostream &os,const gply &P)
+std::ostream& operator<<(std::ostream &os,const gply &P)
 {
 	os<<"[";
 	bool first=TRUE;

@@ -17,11 +17,10 @@ file(GLOB_RECURSE cpp_headers2 ${PROJECT_NAME}2/headers/*.hpp)
 file(GLOB_RECURSE cpp_sources2 ${PROJECT_NAME}2/sources/*.cpp)
 set(cpp_srcs2 ${PROJECT_NAME}2/${PROJECT_NAME}2.hpp ${cpp_headers2} ${cpp_sources2})
 add_library(${PROJECT_NAME}2 STATIC ${cpp_srcs2})
-target_link_libraries(${PROJECT_NAME}2 PRIVATE tlbx arr)
+target_link_libraries(${PROJECT_NAME}2 PUBLIC tlbx arr weiss)
 target_include_directories(${PROJECT_NAME}2
     PUBLIC
         ${PROJECT_SOURCE_DIR}/${PROJECT_NAME}2 ${PROJECT_SOURCE_DIR}/${PROJECT_NAME}2/headers
-    PRIVATE
         ${modules_dir}tlbx ${modules_dir}tlbx/headers
         ${modules_dir}arr ${modules_dir}arr/headers
         ${modules_dir}weiss ${modules_dir}weiss/weiss2 ${modules_dir}weiss/weiss2/headers ${modules_dir}weiss/weiss3 ${modules_dir}weiss/weiss3/headers)
@@ -33,11 +32,10 @@ file(GLOB_RECURSE cpp_headers3 ${PROJECT_NAME}3/headers/*.hpp)
 file(GLOB_RECURSE cpp_sources3 ${PROJECT_NAME}3/sources/*.cpp)
 set(cpp_srcs3 ${PROJECT_NAME}3/${PROJECT_NAME}3.hpp ${cpp_headers3} ${cpp_sources3})
 add_library(${PROJECT_NAME}3 STATIC ${cpp_srcs3})
-target_link_libraries(${PROJECT_NAME}3 PRIVATE tlbx arr weiss)
+target_link_libraries(${PROJECT_NAME}3 PUBLIC tlbx arr weiss)
 target_include_directories(${PROJECT_NAME}3
     PUBLIC
         ${PROJECT_SOURCE_DIR}/${PROJECT_NAME}3 ${PROJECT_SOURCE_DIR}/${PROJECT_NAME}3/headers
-    PRIVATE
         ${PROJECT_SOURCE_DIR}/${PROJECT_NAME}2 ${PROJECT_SOURCE_DIR}/${PROJECT_NAME}2/headers
         ${modules_dir}tlbx ${modules_dir}tlbx/headers
         ${modules_dir}arr ${modules_dir}arr/headers

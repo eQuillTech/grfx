@@ -1,28 +1,24 @@
-//graphics lines - P. Ahrenkiel
+//graphics line segmentss - P. Ahrenkiel
 
 #include <cstdlib>
-#include <math.h>
 #include <CoreGraphics/CoreGraphics.h>
 
-#include "tlbx.hpp"
-#include "grfx2.hpp"
-#include "grfx3.hpp"
+#include "vtr3.hpp"
+#include "pnt3.hpp"
+#include "glne3.hpp"
 
 const glne3 glne3::zeroL(pnt3::Po,vtr3::Vo);
 
-//
 glne3 glne3::operator+=(const vtr3 &V)
 {
 	return *this=*this+V;
 }
 
-//
 glne3 glne3::operator-=(const vtr3 &V)
 {
 	return *this=*this-V;
 }
 
-//
 glne3 glne3::operator*=(double x)
 {
 	return *this=x*(*this);
@@ -34,7 +30,6 @@ glne3 glne3::operator/=(double x)
 	return *this=(*this)/x;
 	}
 
-//
 glne3 glne3::operator+(const vtr3 &V) const
 {
 	glne3 L(*this);
@@ -42,13 +37,11 @@ glne3 glne3::operator+(const vtr3 &V) const
 	return L;
 }
 
-//
 glne3 glne3::operator-(const vtr3 &V) const
 {
 	return *this+(-V);
 }
 
-//
 glne3 operator*(double x,const glne3 &L)
 {
 	pnt3 P=pnt3::Po+x*(L.P()-pnt3::Po);
@@ -56,13 +49,11 @@ glne3 operator*(double x,const glne3 &L)
 	return glne3(P,V);
 }
 
-//
 glne3 glne3::operator/(double x) const
 {
 	return (1./x)*(*this);
 }
 
-//
 glne3 glne3::map(const gfrm3 &newF,const gfrm3 &oldF) const
 {
 	pnt3 startP=start();
@@ -72,13 +63,11 @@ glne3 glne3::map(const gfrm3 &newF,const gfrm3 &oldF) const
 	return glne3(startP,stopP);
 }
 
-//
 double glne3::length() const
 {
 	return len(V());
 }
 
-//
 pnt3 glne3::closestPoint(const pnt3 &P) const
 {
 	pnt3 A=start();

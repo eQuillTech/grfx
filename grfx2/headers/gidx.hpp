@@ -3,34 +3,13 @@
 #ifndef _GIDX_
 #define _GIDX_
 
-#include "CoreGraphics/CoreGraphics.h"
+#include "idx2.hpp"
 
-#include "arr.hpp"
-
-class gidx
+class gidx:public idx2
 {
-protected:
-	std::size_t m_i,m_j;
-
-public:
-	gidx(){}
-	gidx(const std::size_t ip,const std::size_t jp){m_i=ip;m_j=jp;}
-	gidx(const arr::uiarr1 &a);
-
-	std::size_t& i(){return m_i;}
-	std::size_t& j(){return m_j;}
-	
-	std::size_t& operator()(const std::size_t k){return (k==0)?m_i:m_j;}
-	const std::size_t& operator()(const std::size_t k) const{return (k==0)?m_i:m_j;}
-
-	std::size_t const& i() const{return m_i;}
-	std::size_t const& j() const{return m_j;}
-	
-	friend std::ostream& operator<<(std::ostream &os,const gidx &I);
+	static const gidx zeroI,xI,xY;
 };
- 
-extern const gidx zeroI,xI,xY;
 
-typedef arr::arr1<gidx> Gidx_arr1;
+typedef arr::arr1<gidx2> gidx2_arr1;
 
 #endif

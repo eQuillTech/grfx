@@ -1,12 +1,10 @@
-//graphics frames - P. Ahrenkiel
+// 3-D graphics frames - P. Ahrenkiel
 
 #ifndef _GFRM3_
 #define _GFRM3_
 
-#include "CoreGraphics/CoreGraphics.h"
 #include "weiss.hpp"
 
-//
 class gfrm3
 {
 private:
@@ -45,7 +43,6 @@ public:
 	gfrm3 operator-=(const vtr3 &V);
 	gfrm3 operator*=(const double x);
 	gfrm3 operator/=(const double x);
-	//gfrm  set(const gfrm  &r);
 	
 	gfrm3 map(const gfrm3 &newF,const gfrm3 &oldF) const;
 	bool isIn(const gfrm3 &F) const;

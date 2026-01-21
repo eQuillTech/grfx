@@ -3,12 +3,9 @@
 #include <cstdlib>
 #include "CoreGraphics/CoreGraphics.h"
 
-#include "tlbx.hpp"
-#include "grfx2.hpp"
+#include "gfrm.hpp"
+#include "glyr.hpp"
 
-using namespace std;
-
-//
 glyr::glyr(const glyrData &data,const gfrm  &frameF):
 	gimg(data,frameF),
 	m_N_frames(data.m_N_framesX,data.m_N_framesY),m_iFrame(0,0)

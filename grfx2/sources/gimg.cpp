@@ -3,12 +3,9 @@
 #include <cstdlib>
 #include "CoreGraphics/CoreGraphics.h"
 
-#include "tlbx.hpp"
-#include "grfx2.hpp"
+#include "gfrm.hpp"
+#include "gimg.hpp"
 
-using namespace std;
-
-//
 gimg::gimg(const gimgData& data,const gfrm &f):gfrm(f),m_imageR(data.m_imageR)
 {
 	m_transform.a=1;m_transform.b=0;
@@ -17,7 +14,6 @@ gimg::gimg(const gimgData& data,const gfrm &f):gfrm(f),m_imageR(data.m_imageR)
 	m_transform.ty=imageHeight();//need to update for every draw
 }
 
-//
 void gimg::doRender(CGContextRef context,const CGRect &Rdest) const
 {
 	if(m_imageR==nullptr)return;
@@ -26,3 +22,12 @@ void gimg::doRender(CGContextRef context,const CGRect &Rdest) const
 	CGContextConcatCTM(context,transform);
   CGContextDrawImage(context,Rdest,m_imageR);
 }
+
+
+CGImageRef gimg::imageRef(){return m_imageR;}
+const CGImageRef gimg::imageRef() const{return m_imageR;}
+CGRect gimg::imageFrame() const{return CGRectMake(0,0,imageWidth(),imageHeight());}
+
+std::size_t gimg::imageWidth() const{return m_imageR?CGImageGetWidth(m_imageR):0;}
+std::size_t gimg::imageHeight() const{return m_imageR?CGImageGetHeight(m_imageR):0;}
+CGSize gimg::imageSize() const{return imageFrame().size;}

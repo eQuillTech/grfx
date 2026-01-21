@@ -3,11 +3,8 @@
 #ifndef _GBDY_
 #define _GBDY_
 
-#ifndef _GRFX_
-#include "grfx2.hpp"
-#endif
+#include "gply.hpp"
 
-//
 class gbdy
 {
 	gply m_coarse,m_fine;

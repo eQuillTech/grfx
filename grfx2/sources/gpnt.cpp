@@ -1,18 +1,19 @@
 //graphics points - P. Ahrenkiel
 
 #include <cstdlib>
-#include <math.h>
 #include "CoreGraphics/CoreGraphics.h"
 
-#include "tlbx.hpp"
-#include "grfx2.hpp"
+#include "dbl1.hpp"
 
-using namespace std;
+#include "gfrm.hpp"
+#include "gpnt.hpp"
 
 const gpnt_arr1 nullP_arr(0);
 
-//
-bool gpnt::clip(const gfrm  &rClip,const gpnt &pOther,gpnt &pDest) const
+gpnt::gpnt(double x=0.,double y=0.):pnt2(x,y){}
+gpnt::gpnt(const arr::dbl1 &A):pnt2(A){}
+	
+bool gpnt::clip(const gfrm &rClip,const gpnt &pOther,gpnt &pDest) const
 {
 	pDest=*this;
 	if(pOther.x()==x())
@@ -66,7 +67,7 @@ bool gpnt::clip(const gfrm  &rClip,const gpnt &pOther,gpnt &pDest) const
 }
 	
 //
-CGPoint gpnt::map(const CGRect &Rframe,const gfrm  &frameF) const
+CGPoint gpnt::map(const CGRect &Rframe,const gfrm &frameF) const
 {
 	CGPoint P;
 
@@ -92,8 +93,7 @@ CGPoint gpnt::map(const CGRect &Rframe,const gfrm  &frameF) const
 	return P;
 }
 
-//
-CGPoint gpnt::mapFrac(const CGRect &Rframe,const gfrm  &frameF) const
+CGPoint gpnt::mapFrac(const CGRect &Rframe,const gfrm &frameF) const
 {
 	CGPoint P=map(Rframe,frameF);
 	CGPoint Pfrac;
@@ -102,34 +102,29 @@ CGPoint gpnt::mapFrac(const CGRect &Rframe,const gfrm  &frameF) const
 	return Pfrac;
 }
 
-//
 void gpnt::moveTo(CGContextRef context,const CGPoint &P)
 {
 	CGContextMoveToPoint(context,P.x,P.y);
 }
 
-//
 void gpnt::lineTo(CGContextRef context,const CGPoint &P)
 {
 	CGContextAddLineToPoint(context,P.x,P.y);
 }
 
-//
-void gpnt::doMoveTo(CGContextRef context,const CGRect &Rframe,const gfrm  &frameF) const
+void gpnt::doMoveTo(CGContextRef context,const CGRect &Rframe,const gfrm &frameF) const
 {
 	CGPoint P=map(Rframe,frameF);
 	gpnt::moveTo(context,P);
 }
 
-//
-void gpnt::doLineTo(CGContextRef context,const CGRect &Rframe,const gfrm  &frameF) const
+void gpnt::doLineTo(CGContextRef context,const CGRect &Rframe,const gfrm &frameF) const
 {
 	CGPoint P=map(Rframe,frameF);
 	gpnt::lineTo(context,P);
 }
 
-//
-gpnt gpnt::map(const gfrm  &fNew,const gfrm  &fOld) const
+gpnt gpnt::map(const gfrm  &fNew,const gfrm &fOld) const
 {
 	double scaleX=fNew.width()/fOld.width();
 	double scaleY=fNew.height()/fOld.height();
@@ -144,18 +139,33 @@ gpnt gpnt::map(const gfrm  &fNew,const gfrm  &fOld) const
 	return p;
 }
 
-//
 ostream& operator<<(ostream &os,const gpnt &p)
 {
 	os<<"("<<p.x()<<","<<p.y()<<")";
 	return os;
 }
 
-//
 ostream& operator<<(ostream &os,const CGPoint &P)
 {
 	os<<"("<<P.x<<","<<P.y<<")";
 	return os;	
 }
 
+//friend
+gpnt gpnt::proj(const gcmr &cmr,const double z) const
+{
+	if(z==cmr.m_aperZ)
+		return pnt2::Po;
+	double mag=(cmr.m_plateZ-cmr.m_aperZ)/(z-cmr.m_aperZ);
+	return mag*(*this-cmr.m_aperP)+(cmr.m_aperP-pnt2::Po);
+}
+
+//friend
+gpnt gpnt::invproj(const gcmr &cmr,const double z) const
+{
+	if(z==cmr.m_aperZ)
+		return pnt2::Po;
+	double mag=(cmr.m_plateZ-cmr.m_aperZ)/(z-cmr.m_aperZ);
+	return mag*(*this-cmr.m_aperP)+(cmr.m_aperP-pnt2::Po);
+}
 

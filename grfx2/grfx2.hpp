@@ -3,11 +3,6 @@
 #ifndef _GRFX2_
 #define _GRFX2_
 
-#include "CoreGraphics/CoreGraphics.h"
-#include "weiss.hpp"
-typedef crd2 gcrd;
-typedef vtr2 gvtr;
-
 #include "gidx.hpp"
 #include "gpnt.hpp"
 #include "gfgr.hpp"

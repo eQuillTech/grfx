@@ -2,13 +2,11 @@
 
 #ifndef _GIMG_
 #define _GIMG_
+
 #include "CoreGraphics/CoreGraphics.h"
 
-#ifndef _GRCT_
-#include "grct.hpp"
-#endif
+class grct;
 
-//
 struct gimgData
 {
 public:
@@ -17,24 +15,24 @@ public:
 	CGImageRef m_imageR=nullptr;
 };
 
-class gimg:public gfrm 
+class gimg:public gfrm2
 {
 private:
 	CGImageRef m_imageR=nullptr;
 	CGAffineTransform m_transform;
 	
 public:
-	gimg():gfrm (){}
+	gimg():gfrm(){}
 	gimg(const gimgData& data,const gfrm  &f);
 	~gimg(){}
 
-	CGImageRef imageRef(){return m_imageR;}
-	const CGImageRef imageRef() const{return m_imageR;}
-	CGRect imageFrame() const{return CGRectMake(0,0,imageWidth(),imageHeight());}
+	CGImageRef imageRef();
+	const CGImageRef imageRef() const;
+	CGRect imageFrame() const;
 
-	std::size_t imageWidth() const{return m_imageR?CGImageGetWidth(m_imageR):0;}
-	std::size_t imageHeight() const{return m_imageR?CGImageGetHeight(m_imageR):0;}
-	CGSize imageSize() const{return imageFrame().size;}
+	std::size_t imageWidth() const;
+	std::size_t imageHeight() const;
+	CGSize imageSize() const;
 
 	void doRender(CGContextRef context,const CGRect &Rdest) const override;
 };

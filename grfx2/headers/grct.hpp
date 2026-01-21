@@ -3,30 +3,24 @@
 #ifndef _GRCT_
 #define _GRCT_
 
-//#import <UIKit/UIKit.h>
 #include "CoreGraphics/CoreGraphics.h"
 
-#ifndef _GPNT_
-#include "gpnt.hpp"
-#endif
+#include "gfrm.hpp"
 
-#ifndef _GFRM_
-#include "gfrm .hpp"
-#endif
+class gpnt;
 
-class grct:public gfrm 
+class grct:public gfrm
 {
 private:
 
 public:
-	grct():gfrm (){}
-	grct(const double t,const double l,const double b,const double r):gfrm (t,l,b,r){}
-	grct(const gpnt tl,const gpnt br):gfrm (tl,br){}
-	grct(const gfrm & f):gfrm (f){}
-	grct(CGRect R):gfrm (R){}
+	grct();
+	grct(const double t,const double l,const double b,const double r);
+	grct(const gpnt tl,const gpnt br);
+	grct(const gfrm & f);
+	grct(CGRect R);
 	grct operator=(const gfrm  &f);
 
-	//
 	static void fill(CGContextRef context,const CGRect &Rdest);
 	static void stroke(CGContextRef context,const CGRect &Rdest);
 

@@ -4,20 +4,18 @@
 #define _GPLY_
 
 #include "CoreGraphics/CoreGraphics.h"
-#include "arr.hpp"
-#include "weiss.hpp"
 
-#ifndef _GPNT_
+
+#include "gfgr.h"
 #include "gpnt.h"
-#endif
 
 class gply:public gfgr,public gpnt_arr1
 {
 private:
 	
 public:
-	gply(const std::size_t N0=0,gpnt* a=NULL):gpnt_arr1(0,a){}
-	gply(const gpnt_arr1& points):gpnt_arr1(points){}
+	gply(const std::size_t N0=0,gpnt* a=NULL);
+	gply(const gpnt_arr1& points);
 
 	gply(const gfrm  &f);//copy constructor
 	~gply(){}
@@ -38,13 +36,13 @@ public:
 	gply operator*=(double x);
 	gply operator/=(double x);
 	
-	gply map(const gfrm  &fNew,const gfrm  &fOld) const;
+	gply map(const gfrm &fNew,const gfrm &fOld) const;
 	bool isIn(const gpnt &f) const;
 
-	void trace(CGContextRef context,const CGRect &Rframe,const gfrm  &frameF) const;
+	void trace(CGContextRef context,const CGRect &Rframe,const gfrm &frameF) const;
 	
-	void doFill(CGContextRef context,const CGRect &Rframe,const gfrm  &frameF) const override;
-	void doStroke(CGContextRef context,const CGRect &Rframe,const gfrm  &frameF) const override;
+	void doFill(CGContextRef context,const CGRect &Rframe,const gfrm &frameF) const override;
+	void doStroke(CGContextRef context,const CGRect &Rframe,const gfrm &frameF) const override;
 
 	//
 	gpnt center() const;

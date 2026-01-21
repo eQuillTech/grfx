@@ -1,39 +1,50 @@
 //graphics lines - P. Ahrenkiel
 
 #include <cstdlib>
-#include <math.h>
+\\
 #include <CoreGraphics/CoreGraphics.h>
 
-#include "tlbx.hpp"
-#include "grfx2.hpp"
+#include "glne.hpp"
+#include "gpnt.hpp"
 
 glne zeroL(pnt2::Po,vtr2::Vo);
 
-//
+glne::glne(const gpnt p=pnt2::Po,const gvtr v=vtr2::Vo):_pStart(p),_v(v){}
+glne::glne(const gpnt &pStart,const gpnt &pStop):glne(pStart,pStop-pStart){}
+glne::glne(double x0,double y0,double x1,double y1):glne(gpnt(x0,y0),gvtr(x1-x0,y1-y0)){}
+
+gpnt& glne::P(){return _pStart;}
+gvtr& glne::V(){return _v;}
+
+gpnt const& glne::P() const{return _pStart;}
+gvtr const& glne::V() const{return _v;}
+
+gpnt glne::start() const{return P();}
+gpnt glne::stop() const{return P()+V();}
+
+glne glne::operator+() const{return *this;}
+glne glne::operator-() const{return glne(pnt2::Po+(pnt2::Po-_pStart),-_v);}
+	
 glne glne::operator+=(const gvtr &v)
 {
 	return *this=*this+v;
 }
 
-//
 glne glne::operator-=(const gvtr &v)
 {
 	return *this=*this-v;
 }
 
-//
 glne glne::operator*=(double x)
 {
 	return *this=x*(*this);
 	}
 	
-//
 glne glne::operator/=(double x)
 {
 	return *this=(*this)/x;
 	}
 
-//
 glne glne::operator+(const gvtr &v) const
 {
 	glne l(*this);
@@ -41,13 +52,11 @@ glne glne::operator+(const gvtr &v) const
 	return l;
 }
 
-//
 glne glne::operator-(const gvtr &v) const
 {
 	return *this+(-v);
 }
 
-//
 glne operator*(double x,const glne &l)
 {
 	gpnt p=pnt2::Po+x*(l.P()-pnt2::Po);
@@ -55,13 +64,11 @@ glne operator*(double x,const glne &l)
 	return glne(p,v);
 }
 
-//
 glne glne::operator/(double x) const
 {
 	return (1./x)*(*this);
 }
 
-//
 bool glne::clip(const gfrm  &fClip,glne &lDest) const
 {
 	lDest=*this;
@@ -75,7 +82,6 @@ bool glne::clip(const gfrm  &fClip,glne &lDest) const
 	return overlap;
 }
 
-//
 glne glne::map(const gfrm  &fNew,const gfrm  &fOld) const
 {
 	gpnt pStart=start();
@@ -85,13 +91,11 @@ glne glne::map(const gfrm  &fNew,const gfrm  &fOld) const
 	return glne(pStart,pStop);
 }
 
-//
 double glne::length() const
 {
 	return len(V());
 }
 
-//
 gpnt glne::closestPoint(const gpnt &p) const
 {
 	gpnt A=start();
@@ -103,19 +107,16 @@ gpnt glne::closestPoint(const gpnt &p) const
 	return A+t*AB;
 }
 
-//
 double glne::distTo(const gpnt &p) const
 {
 	return len(p-closestPoint(p));
 }
 
-//
 gpnt glne::center() const
 {
 	return P()+V()/2.;
 }
 
-//
 void glne::doStroke(CGContextRef context,const CGRect &Rframe,const gfrm  &frameF) const
 {
 	CGContextSaveGState(context);
@@ -129,7 +130,6 @@ void glne::doStroke(CGContextRef context,const CGRect &Rframe,const gfrm  &frame
 	CGContextRestoreGState(context);
 }
 
-//
 bool glne::intersects(const glne &l)
 {
 	gpnt pA=start();
@@ -149,7 +149,6 @@ bool glne::intersects(const glne &l)
 	return false;
 }
 
-//
 gpnt glne::intersection(const glne &l)
 {
 	gpnt pA=start();
@@ -173,7 +172,6 @@ gpnt glne::intersection(const glne &l)
 	return gpnt(x,y);
 }
 
-//
 bool glne::intersects(const glne &l,gpnt &Pint)
 {
 	if(intersects(l))

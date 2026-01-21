@@ -3,16 +3,11 @@
 #ifndef _GSTR_
 #define _GSTR_
 
-//#import <UIKit/UIKit.h>
 #include "CoreGraphics/CoreGraphics.h"
 
-#ifndef _GPNT_
-#include "gpnt.hpp"
-#endif
+#include "gfrm.hpp"
 
-#ifndef _GFRM_
-#include "gfrm .hpp"
-#endif
+class gpnt;
 
 class gstr:public gfrm 
 {
@@ -27,7 +22,6 @@ public:
 	gstr(CGRect R,const str s=""):gfrm (R){m_text=s;}
 	gstr operator=(const gfrm  &f){return *this=gstr(f,m_text);}
 
-	//
 	#if defined(TARGET_IOS) || defined(TARGET_TVOS)
 	void doRender(CGContextRef context,const CGRect &Rdest) const override;
 	#endif

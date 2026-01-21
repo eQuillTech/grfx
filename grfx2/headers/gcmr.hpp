@@ -1,22 +1,14 @@
 //graphics cameras - P. Ahrenkiel
 
-#ifndef _CMR_
-#define _CMR_
+#ifndef _GCMR_
+#define _GCMR_
 
-//#import <UIKit/UIKit.h>
 #include "CoreGraphics/CoreGraphics.h"
 
-#ifndef _GLNE_
-#include <glne.hpp>
-#endif
+#include "gfrm.hpp"
+#include "gpnt.hpp"
 
-#ifndef _GPNT_
-#include <gpnt.hpp>
-#endif
-
-#ifndef _GRCT_
-#include <grct.hpp>
-#endif
+class grct;
 
 //frame is the unshifted plate
 class gcmr:public gfrm 
@@ -27,13 +19,12 @@ protected:
 	double m_plateZ=0.;//plate z
 	
 public:
-	gcmr(const gfrm  &F,const gpnt &aperP=pnt2::Po,double aperZ=-100.,double plateZ=0.):
-		gfrm (F),m_aperP(aperP),m_aperZ(aperZ),m_plateZ(plateZ){}
+	gcmr(const gfrm  &F,const gpnt &aperP=pnt2::Po,double aperZ=-100.,double plateZ=0.);
 
-	gpnt &aperture(){return m_aperP;}
-	const gpnt &aperture() const{return m_aperP;}
+	gpnt &aperture();
+	const gpnt &aperture() const;
 	
-	gfrm  plate() const{return R()+(m_aperP-pnt2::Po);}
+	gfrm plate() const;
 
 	friend gfrm  gfrm ::proj(const gcmr &cmr,const double z) const;
 	friend gpnt gpnt::proj(const gcmr &cmr,const double z) const;

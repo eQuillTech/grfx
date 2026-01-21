@@ -4,11 +4,6 @@
 #define _GBMP_
 #include "CoreGraphics/CoreGraphics.h"
 
-#ifndef _GRCT_
-#include "grct.hpp"
-#endif
-
-//
 class gbmp
 {
 private:

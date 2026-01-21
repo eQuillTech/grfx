@@ -1,16 +1,16 @@
 //graphics points - P. Ahrenkiel
 
 #include <cstdlib>
-#include <math.h>
 #include "CoreGraphics/CoreGraphics.h"
 
-#include "tlbx.hpp"
-#include "grfx2.hpp"
-#include "grfx3.hpp"
+#include "dbl1.hpp"
+#include "gfrm3.hpp"
+#include "gpnt3.hpp"
 
-using namespace std;
+gpnt3::gpnt3(const pnt3 &P):pnt3(P){}
+gpnt3::gpnt3(double x=0.,double y=0.,double z=0.):pnt3(x,y,z){}
+gpnt3::gpnt3(const arr::dbl1 &A):pnt3(A){}
 	
-//
 gpnt3 gpnt3::map(const gfrm3 &newF,const gfrm3 &oldF) const
 {
 	double scaleX=newF.width()/oldF.width();
@@ -29,8 +29,7 @@ gpnt3 gpnt3::map(const gfrm3 &newF,const gfrm3 &oldF) const
 	return P;
 }
 
-//
-ostream& operator<<(ostream &os,const gpnt3 &P)
+std::ostream& operator<<(std::ostream &os,const gpnt3 &P)
 {
 	os<<"("<<P.x()<<","<<P.y()<<","<<P.z()<<")";
 	return os;

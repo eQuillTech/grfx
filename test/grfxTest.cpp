@@ -4,7 +4,7 @@
 #include "grfx.hpp"
 
 /*
- * arr tests
+ * grfx tests
  */
 TEST(grfxTest, grfx3)
 {

@@ -5,15 +5,9 @@
 
 #include "CoreGraphics/CoreGraphics.h"
 
-#include "weiss.hpp"
-
-#ifndef _GPNT_
+#include "gfgr.hpp"
 #include "gpnt.hpp"
-#endif
-
-#ifndef _GRCT_
-#include "grct.hpp"
-#endif
+#include "gvtr.hpp"
 
 class glne:public gfgr
 {

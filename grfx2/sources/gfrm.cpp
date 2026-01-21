@@ -1,85 +1,75 @@
 //graphics frames - P. Ahrenkiel
 
 #include <cstdlib>
-#include <math.h>
 #include "CoreGraphics/CoreGraphics.h"
 
-#include "tlbx.hpp"
-#include "grfx2.hpp"
-
-using namespace std;
+#include "gpnt.hpp"
+#include "gvtr.hpp"
+#include "gcmr.hpp"
+#include "gfrm.hpp"
 
 const gfrm unitF(1,-1,-1,1);
 
-//
-gfrm ::gfrm(const gpnt& bl,const gvtr& d)
+gfrm::gfrm(const gpnt& bl,const gvtr& d)
 	:m_bottomLeftP(bl),m_diagV(d){}
 
-//
-gfrm ::gfrm(const double t,const double l,const double b,const double r)
+gfrm::gfrm(const double t,const double l,const double b,const double r)
 	:m_bottomLeftP(l,b),m_diagV(r-l,t-b){}
 
-//
-gfrm ::gfrm(const gpnt& tl,const gpnt& br)
+gfrm::gfrm(const gpnt& tl,const gpnt& br)
 	:m_bottomLeftP(tl.x(),br.y()),m_diagV(br.x()-tl.x(),tl.y()-br.y()){}
 
-//
-gfrm ::gfrm(const CGRect& R)
+gfrm::gfrm(const CGRect& R)
 {
 	m_bottomLeftP=gpnt(R.origin.x,R.origin.y);
 	m_diagV=gvtr(R.size.width,R.size.height);
 }
 	
-//
-bool gfrm ::operator==(const gfrm  &r) const
+bool gfrm::operator==(const gfrm  &r) const
 {
 	return (m_bottomLeftP==r.bottomLeft())&&(m_diagV==r.diag());
 }
 
-//
-gfrm gfrm ::operator+=(const gvtr &v)
+gfrm gfrm::operator+=(const gvtr &v)
 {
 	return *this=*this+v;
 	}
 
-//
-gfrm gfrm ::operator-=(const gvtr &v)
+gfrm gfrm::operator-=(const gvtr &v)
 {
 	return *this=*this-v;
 	}
 
-//
-gfrm gfrm ::operator*=(double x)
+gfrm gfrm::operator*=(double x)
 {
 	return *this=x*(*this);
 	}
 	
-//
-gfrm gfrm ::operator/=(const double x)
+gfrm gfrm::operator/=(const double x)
 {
 	return *this=(*this)/x;
-	}
+}
 
 //
-gfrm gfrm ::operator+(const gvtr &v) const
+gfrm gfrm::operator+(const gvtr &v) const
 {
 	return gfrm (m_bottomLeftP+v,m_diagV);
 }
 
 //
-gfrm gfrm ::operator-(const gvtr &v) const
+gfrm gfrm::operator-(const gvtr &v) const
 {
 	return *this+(-v);
 }
 
 //
-gfrm gfrm ::operator/(const double x) const
+gfrm gfrm::operator/(const double x) const
 {
 	return gfrm (top()/x,left()/x,bottom()/x,right()/x);
 }
 
 //
-bool gfrm ::isIn(const gpnt &p) const
+bool gfrm::isIn(const gpnt &p) const
 {
 
 	double rx=(p.x()-left())/(right()-left());
@@ -88,13 +78,13 @@ bool gfrm ::isIn(const gpnt &p) const
 	}
 
 //
-bool gfrm ::isIn(const gfrm  &f) const
+bool gfrm::isIn(const gfrm  &f) const
 {
 	return isIn(f.bottomLeft())&&isIn(f.topRight());
 }
 
 //
-bool gfrm ::overlaps(const gfrm  &f) const
+bool gfrm::overlaps(const gfrm  &f) const
 {
 	double resX=mth::sgn(f.left()-left())
 		+mth::sgn(f.left()-right())
@@ -110,7 +100,7 @@ bool gfrm ::overlaps(const gfrm  &f) const
 }
 
 //scale about center
-gfrm gfrm ::scale(const double x) const
+gfrm gfrm::scale(const double x) const
 {
 
 	gvtr scaled_diagV=x*m_diagV;
@@ -119,7 +109,7 @@ gfrm gfrm ::scale(const double x) const
 }
 
 //
-void gfrm ::move(gvtr &v,const gfrm  &fBound) const
+void gfrm::move(gvtr &v,const gfrm  &fBound) const
 {
 	double fac=1.;
 	if(v.y()!=0.)
@@ -141,7 +131,7 @@ void gfrm ::move(gvtr &v,const gfrm  &fBound) const
 }
 
 //
-gfrm gfrm ::map(const gfrm  &fNew,const gfrm  &fOld) const
+gfrm gfrm::map(const gfrm  &fNew,const gfrm  &fOld) const
 {
 	gfrm  rp=*this;
 	rp.m_bottomLeftP=m_bottomLeftP.map(fNew,fOld);
@@ -152,7 +142,7 @@ gfrm gfrm ::map(const gfrm  &fNew,const gfrm  &fOld) const
 //
 // CGRect origin is bottom-left, somehow.
 //
-CGRect gfrm ::map(const CGRect &Rframe,const gfrm  &frameF) const
+CGRect gfrm::map(const CGRect &Rframe,const gfrm  &frameF) const
 {
 	CGRect R;
 
@@ -183,7 +173,7 @@ CGRect gfrm ::map(const CGRect &Rframe,const gfrm  &frameF) const
 }
 
 //
-gpnt gfrm ::map(const CGPoint &P,const CGRect &Rframe) const
+gpnt gfrm::map(const CGPoint &P,const CGRect &Rframe) const
 {
 	float scaleX=width()/Rframe.size.width;
 	float scaleY=-height()/Rframe.size.height;
@@ -196,7 +186,7 @@ gpnt gfrm ::map(const CGPoint &P,const CGRect &Rframe) const
 }
 
 //
-gfrm gfrm ::map(const CGRect &Rframe,const CGRect &R) const
+gfrm gfrm::map(const CGRect &Rframe,const CGRect &R) const
 {
 	CGFloat Rtop=R.origin.y,Rbottom=Rtop+R.size.height;
 	CGFloat Rleft=R.origin.x,Rright=Rleft+R.size.width;
@@ -212,40 +202,40 @@ gfrm gfrm ::map(const CGRect &Rframe,const CGRect &R) const
 }
 
 //Scale a scalar
-double gfrm ::map(const double d,const CGRect &Rframe) const
+double gfrm::map(const double d,const CGRect &Rframe) const
 {
 	return d*(Rframe.size.height+Rframe.size.width)/totalSize();
 }
 
 //
-gfrm gfrm ::alter() const
+gfrm gfrm::alter() const
 {
 	return gfrm (bottomRight(),-diag());
 }
 
 //
-void gfrm ::doFill(CGContextRef context,const CGRect &Rframe,const gfrm  &frameF) const
+void gfrm::doFill(CGContextRef context,const CGRect &Rframe,const gfrm  &frameF) const
 {
 	CGRect Rdest=map(Rframe,frameF);
 	doFill(context,Rdest);
 }
 
 //
-void gfrm ::doStroke(CGContextRef context,const CGRect &Rframe,const gfrm  &frameF) const
+void gfrm::doStroke(CGContextRef context,const CGRect &Rframe,const gfrm  &frameF) const
 {
 	CGRect Rdest=map(Rframe,frameF);
 	doStroke(context,Rdest);
 }
 
 //
-void gfrm ::doRender(CGContextRef context,const CGRect &Rframe,const gfrm  &frameF) const
+void gfrm::doRender(CGContextRef context,const CGRect &Rframe,const gfrm  &frameF) const
 {
 	CGRect Rdest=map(Rframe,frameF);
 	doRender(context,Rdest);
 }
 
 //
-void gfrm ::doRender(CGContextRef context,const CGRect &Rframe,const gfrm  &frameF,const CGRect &Rext) const
+void gfrm::doRender(CGContextRef context,const CGRect &Rframe,const gfrm  &frameF,const CGRect &Rext) const
 {
 	CGRect Rclip=map(Rframe,frameF);
 	CGContextClipToRect(context,Rclip);
@@ -253,7 +243,7 @@ void gfrm ::doRender(CGContextRef context,const CGRect &Rframe,const gfrm  &fram
 }
 
 //
-void gfrm ::doRadGradient(CGContextRef context,const CGRect &Rframe,const gfrm  &frameF,CGGradientRef grad,const CGPoint &Pi,const CGPoint &Pf,const double ri,const double rf) const
+void gfrm::doRadGradient(CGContextRef context,const CGRect &Rframe,const gfrm  &frameF,CGGradientRef grad,const CGPoint &Pi,const CGPoint &Pf,const double ri,const double rf) const
 {
 	CGRect Rclip=map(Rframe,frameF);
 	CGContextClipToRect(context,Rclip);
@@ -283,4 +273,14 @@ ostream& operator<<(ostream &os,const CGRect &R)
 	float left=R.origin.x,right=R.origin.x+R.size.width;
 	os<<"[("<<left<<","<<top<<"),("<<right<<","<<bottom<<")]";
 	return os;
+}
+
+//friend
+gfrm gfrm::proj(const gcmr &cmr,const double z) const
+{
+	if(z==cmr.m_aperZ)
+		return 0.*unitF;
+	double mag=(z-cmr.m_aperZ)/(cmr.m_plateZ-cmr.m_aperZ);
+	gvtr dV=cmr.m_aperP-pnt2::Po;
+	return mag*(*this-dV)+dV;
 }

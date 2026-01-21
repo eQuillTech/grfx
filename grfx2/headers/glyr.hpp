@@ -3,14 +3,10 @@
 #ifndef _GLYR_
 #define _GLYR_
 
-//#import <UIKit/UIKit.h>
 #include "CoreGraphics/CoreGraphics.h"
 
-#ifndef _GRFX_
-#include "grfx2.hpp"
-#endif
+#include "gimg.hpp"
 
-//
 struct glyrData:public gimgData
 {
 public:
@@ -20,7 +16,6 @@ public:
 	short m_N_framesY=1;
 };
 
-//
 class glyr:public gimg
 {
 private:

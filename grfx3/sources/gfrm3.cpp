@@ -3,69 +3,58 @@
 #include <cstdlib>
 #include <math.h>
 
-#include "tlbx.hpp"
-#include "grfx2.hpp"
-#include "grfx3.hpp"
+#include "pnt3.hpp"
+#include "ags3.hpp"
 
-using namespace std;
+#include "gfrm3.hpp"
 
 const gfrm3 gfrm3::unitF(pnt3(-0.5,-0.5,-0.5),vtr3(1.,1.,1.));
 
-//
 bool gfrm3::operator==(const gfrm3 &F) const
 {
 	return (_originP==F._originP)&&(_diagV==F._diagV);
 }
 
-//
 gfrm3 gfrm3::operator+=(const vtr3 &V)
 {
 	return *this=*this+V;
 	}
 
-//
 gfrm3 gfrm3::operator-=(const vtr3 &V)
 {
 	return *this=*this-V;
 	}
 
-//
 gfrm3 gfrm3::operator*=(double x)
 {
 	return *this=x*(*this);
-	}
-	
-//
+}
+
 gfrm3 gfrm3::operator/=(const double x)
 {
 	return *this=(*this)/x;
-	}
+}
 
-//
 gfrm3 gfrm3::operator+(const vtr3 &V) const
 {
 	return gfrm3(_originP+V,_diagV);
 }
 
-//
 gfrm3 gfrm3::operator-(const vtr3 &V) const
 {
 	return *this+(-V);
 }
 
-//
 gfrm3 gfrm3::operator/(const double x) const
 {
 	return gfrm3(pnt3::Po+(_originP-pnt3::Po)/x,_diagV/x);
 }
 
-//
 pnt3 gfrm3::coord(const double xc,const double yc,const double zc) const
 {
 	return _originP-0.5*_diagV+vtr3(xc*_diagV.x(),yc*_diagV.y(),zc*_diagV.z());
 }
 
-//
 bool gfrm3::isIn(const pnt3 &P) const
 {
 	double rx=(P.x()-left())/(right()-left());
@@ -74,13 +63,11 @@ bool gfrm3::isIn(const pnt3 &P) const
 	return (rx>=0.)&&(rx<=1.)&&(ry>=0.)&&(ry<=1.)&&(rz>=0.)&&(rz<=1.);
 }
 
-//
 bool gfrm3::isIn(const gfrm3 &F) const
 {
 	return isIn(F.corner000())&&isIn(F.corner111());
 }
 
-//
 bool gfrm3::overlaps(const gfrm3 &F) const
 {
 	double resX=mth::sgn(F.left()-left())
@@ -138,7 +125,6 @@ void gfrm3::move(vtr3 &V,const gfrm3 &boundF) const
 	V*=fac;
 }
 
-//
 gfrm3 gfrm3::map(const gfrm3 &newF,const gfrm3 &oldF) const
 {
 	gfrm3 rp=*this;
@@ -153,8 +139,7 @@ gfrm3 operator*(const double x,const gfrm3 &F)
 	return gfrm3(pnt3::Po+x*(F._originP-pnt3::Po),x*F._diagV);
 }
 
-//
-ostream& operator<<(ostream &os,const gfrm3 &F)
+std::ostream& operator<<(std::ostream &os,const gfrm3 &F)
 {
 	os<<"["<<F._originP<<","<<F._diagV<<"]";
 	return os;

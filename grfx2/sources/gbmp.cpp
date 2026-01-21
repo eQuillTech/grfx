@@ -3,12 +3,8 @@
 #include <cstdlib>
 #include "CoreGraphics/CoreGraphics.h"
 
-#include "tlbx.hpp"
-#include "grfx2.hpp"
+#include "gbmp.hpp"
 
-using namespace std;
-
-//
 gbmp::gbmp(const CGImageRef& imageR)
 {
 	_size.width=CGImageGetWidth(imageR);
@@ -39,7 +35,6 @@ gbmp::gbmp(const CGImageRef& imageR)
 	}
 }
 
-//
 gbmp::~gbmp()
 {
 	if(_bitmap)

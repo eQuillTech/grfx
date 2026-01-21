@@ -6,28 +6,21 @@
 #include "CoreGraphics/CoreGraphics.h"
 #include "weiss.hpp"
 
-typedef vtr2 gvtr;
-
-#ifndef _GPNT_
-#include "gpnt.h"
-#endif
-
-//predef
+class gpnt;
 class gcmr;
 
-class gfrm :public gfgr
+class gfrm:public gfgr
 {
 private:
 	gpnt m_bottomLeftP;
 	gvtr m_diagV;
-	//double m_top,m_left,m_bottom,m_right;
 
 public:
 	//gfrm (){}
-	gfrm (const gpnt& tl,const gvtr& d);
-	gfrm (const double t=0.,const double l=0.,const double b=0.,const double r=0.);
-	gfrm (const gpnt& tl,const gpnt& br);
-	gfrm (const CGRect& R);
+	gfrm(const gpnt& tl,const gvtr& d);
+	gfrm(const double t=0.,const double l=0.,const double b=0.,const double r=0.);
+	gfrm(const gpnt& tl,const gpnt& br);
+	gfrm(const CGRect& R);
 
 	double top(){return (m_bottomLeftP+m_diagV).y();}
 	double left(){return m_bottomLeftP.x();}
@@ -49,20 +42,20 @@ public:
 	
 	bool operator==(const gfrm  &f) const;
 	
-	gfrm  operator+(const gvtr &v) const;
-	gfrm  operator-(const gvtr &v) const;
-	gfrm  operator/(const double x) const;
+	gfrm operator+(const gvtr &v) const;
+	gfrm operator-(const gvtr &v) const;
+	gfrm operator/(const double x) const;
 
-	gfrm  operator+=(const gvtr &v);
-	gfrm  operator-=(const gvtr &v);
-	gfrm  operator*=(const double x);
-	gfrm  operator/=(const double x);
+	gfrm operator+=(const gvtr &v);
+	gfrm operator-=(const gvtr &v);
+	gfrm operator*=(const double x);
+	gfrm operator/=(const double x);
 	//gfrm  set(const gfrm  &r);
 	
-	gfrm  map(const gfrm  &fNew,const gfrm  &fOld) const;
+	gfrm map(const gfrm  &fNew,const gfrm  &fOld) const;
 	CGRect map(const CGRect &Rframe,const gfrm  &frameF) const;
 	gpnt map(const CGPoint &P,const CGRect &Rframe) const;
-	gfrm  map(const CGRect &Rframe,const CGRect &R) const;
+	gfrm map(const CGRect &Rframe,const CGRect &R) const;
 	double map(const double d,const CGRect &Rframe) const;
 	bool isIn(const gfrm  &f) const;
 	bool overlaps(const gfrm  &f) const;
