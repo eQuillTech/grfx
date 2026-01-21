@@ -8,7 +8,7 @@
 #include "gpnt3.hpp"
 
 gpnt3::gpnt3(const pnt3 &P):pnt3(P){}
-gpnt3::gpnt3(double x=0.,double y=0.,double z=0.):pnt3(x,y,z){}
+gpnt3::gpnt3(double x,double y,double z):pnt3(x,y,z){}
 gpnt3::gpnt3(const arr::dbl1 &A):pnt3(A){}
 	
 gpnt3 gpnt3::map(const gfrm3 &newF,const gfrm3 &oldF) const

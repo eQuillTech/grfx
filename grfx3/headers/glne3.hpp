@@ -3,13 +3,16 @@
 #ifndef _GLNE3_
 #define _GLNE3_
 
-#include "weiss.hpp"
+#include "pnt3.hpp"
+#include "vtr3.hpp"
+
+class gfrm3;
 
 class glne3
 {
 private:
-	pnt _startP;
-	vtr _extentV;
+	pnt3 _startP;
+	vtr3 _extentV;
 	
 public:
 	glne3(const pnt3 &startP=pnt3::Po,const vtr3 &extentV=vtr3::Vo):_startP(startP),_extentV(extentV){}

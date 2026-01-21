@@ -4,9 +4,10 @@
 #include "CoreGraphics/CoreGraphics.h"
 
 #include "gfrm.hpp"
+#include "glne.hpp"
 #include "gply.hpp"
 
-gply::gply(const std::size_t N0=0,gpnt* a=NULL):gpnt_arr1(0,a){}
+gply::gply(const std::size_t N0,gpnt* a):gpnt_arr1(0,a){}
 gply::gply(const gpnt_arr1& points):gpnt_arr1(points){}
 
 double triangleArea(gpnt pA,gpnt pB,gpnt pC)
@@ -184,7 +185,6 @@ bool gply::isIn(const gpnt &P) const
 
 }
 
-//
 gpnt gply::closestPoint(const gpnt &p,glne &Lclose) const
 {
 	size_t nP=size();

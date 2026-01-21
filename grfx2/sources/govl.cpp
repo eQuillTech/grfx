@@ -7,11 +7,11 @@
 #include "grct.hpp"
 #include "govl.hpp"
 
-govl::govl(const double t=0.,const double l=0.,const double b=0.,const double r=0.):gfrm (t,l,b,r){}
+govl::govl(const double t,const double l,const double b,const double r):gfrm (t,l,b,r){}
 govl::govl(const gpnt tl,const gpnt br):gfrm (tl,br){}
 govl::govl(const gfrm  &f):gfrm(f){}
 govl::govl(const grct &r):gfrm(r){}
-~govl::govl(){}
+govl::~govl(){}
 	
 govl govl::operator=(const gfrm  &f)
 {

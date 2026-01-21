@@ -5,6 +5,7 @@
 
 #include "CoreGraphics/CoreGraphics.h"
 
+#include "str.hpp"
 #include "gfrm.hpp"
 
 class gpnt;
@@ -15,12 +16,12 @@ private:
 	str m_text;
 	
 public:
-	gstr():gfrm (){m_text="";}
-	gstr(const double t,const double l,const double b,const double r,const str s=""):gfrm (t,l,b,r){}
-	gstr(const gpnt tl,const gpnt br,const str s=""):gfrm (tl,br){m_text=s;}
-	gstr(const gfrm & f,const str s=""):gfrm (f){m_text=s;}
-	gstr(CGRect R,const str s=""):gfrm (R){m_text=s;}
-	gstr operator=(const gfrm  &f){return *this=gstr(f,m_text);}
+	gstr();
+	gstr(const double t,const double l,const double b,const double r,const str s="");
+	gstr(const gpnt tl,const gpnt br,const str s="");
+	gstr(const gfrm & f,const str s="");
+	gstr(CGRect R,const str s="");
+	gstr operator=(const gfrm  &f);
 
 	#if defined(TARGET_IOS) || defined(TARGET_TVOS)
 	void doRender(CGContextRef context,const CGRect &Rdest) const override;

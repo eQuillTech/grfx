@@ -5,6 +5,7 @@
 
 #include "CoreGraphics/CoreGraphics.h"
 
+#include "dbl1.hpp"
 #include "pnt2.hpp"
 
 class gfrm;
@@ -14,7 +15,8 @@ class gpnt:public pnt2
 {
 public:
 	gpnt(double x=0.,double y=0.);
-	gpnt(const arr::darr1 &A);
+	gpnt(const arr::dbl1 &A);
+	gpnt(const pnt2 &P);
 
 	bool clip(const gfrm  &fClip,const gpnt &pOther,gpnt &pDest) const;
 	gpnt map(const gfrm  &fNew,const gfrm  &fOld) const;

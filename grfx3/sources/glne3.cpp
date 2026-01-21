@@ -5,7 +5,10 @@
 
 #include "vtr3.hpp"
 #include "pnt3.hpp"
+#include "gfrm3.hpp"
+#include "gpnt3.hpp"
 #include "glne3.hpp"
+
 
 const glne3 glne3::zeroL(pnt3::Po,vtr3::Vo);
 

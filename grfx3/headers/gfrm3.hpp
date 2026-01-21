@@ -3,35 +3,36 @@
 #ifndef _GFRM3_
 #define _GFRM3_
 
-#include "weiss.hpp"
+#include "vtr3.hpp"
+#include "idx3.hpp"
+#include "pnt3.hpp"
+#include "ags3.hpp"
 
-class gfrm3
+class gfrm3:private ags3
 {
 private:
-	pnt3 _originP;//center
-	vtr3 _diagV;
-
+	gfrm3(const ags3& A):ags3(A){}
+	
 public:
 	gfrm3(){}
-	gfrm3(const pnt3& originP,const vtr3& diagV):_originP(originP),_diagV(diagV){}
+	gfrm3(const pnt3& coordP,const vtr3& diagV,const idx3& coordI=idx3::Imid);
 
-	double left() const{return (_originP-0.5*_diagV).x();}
-	double front() const{return (_originP-0.5*_diagV).y();}
-	double bottom() const{return (_originP-0.5*_diagV).z();}
+	double left() const{return ((*this)*idx3::I000).x();}
+	double bottom() const{return ((*this)*idx3::I000).y();}
+	double front() const{return ((*this)*idx3::I000).z();}
 
-	double right() const{return (_originP+0.5*_diagV).x();}
-	double back() const{return (_originP+0.5*_diagV).y();}
-	double top() const{return (_originP+0.5*_diagV).z();}
+	double right() const{return ((*this)*idx3::I111).x();}
+	double top() const{return ((*this)*idx3::I111).y();}
+	double back() const{return ((*this)*idx3::I111).z();}
 	
-	double width() const{return _diagV.x();}
-	double depth() const{return _diagV.y();}
-	double height() const{return _diagV.z();}
+	double width() const{return B().a()*vtr3::Vx;}
+	double height() const{return B().b()*vtr3::Vy;}
+	double depth() const{return B().c()*vtr3::Vz;}
 
-	pnt3 &origin(){return _originP;}
-	pnt3 const &origin() const{return _originP;}
+	pnt3& origin(){return p();}
+	const pnt3& origin() const{return p();}
 
-	vtr3 &diag(){return _diagV;}
-	vtr3 const &diag() const{return _diagV;}
+	vtr3 diag() const{return B()*idx3::I111;}
 	
 	bool operator==(const gfrm3 &f) const;
 	
@@ -43,16 +44,19 @@ public:
 	gfrm3 operator-=(const vtr3 &V);
 	gfrm3 operator*=(const double x);
 	gfrm3 operator/=(const double x);
+	//gfrm  set(const gfrm  &r);
 	
 	gfrm3 map(const gfrm3 &newF,const gfrm3 &oldF) const;
 	bool isIn(const gfrm3 &F) const;
 	bool overlaps(const gfrm3 &F) const;
 	friend gfrm3 operator*(const double x,const gfrm3 &f);
 	//void move(vtr3 &V,const gfrm3 &boundF) const;
-	bool isIn(const pnt3 &P) const;
+	//bool isIn(const pnt3 &P) const;
+	using ags3::isIn;
+	using ags3::A;
+	using ags3::operator*;
 	
-	//
-	pnt3 coord(const double xc,const double yc,const double zc) const;
+	pnt3 coord(const double xc,const double yc,const double zc) const{return (*this)*idx3(xc,yc,zc);}
 	pnt3 center() const{return coord(0.5,0.5,0.5);}
 	pnt3 corner000() const{return coord(0.,0.,0.);}
 	pnt3 corner100() const{return coord(1.,0.,0.);}
@@ -69,7 +73,7 @@ public:
 	pnt3 faceCenterXY0() const{return coord(0.5,0.5,0.);}
 	pnt3 faceCenterXY1() const{return coord(0.5,0.5,1.);}
 
-	double meanSize() const{return _diagV.len();}
+	double meanSize() const{return (B()*idx3::I111).len();}
 	double halfMeanSize() const{return 0.5*meanSize();}
 	gfrm3 scale(const double f) const;
 	void move(vtr3 &V,const gfrm3 &boundF) const;
@@ -84,11 +88,9 @@ public:
 	friend double width(const gfrm3 &F){return F.width();}
 	friend double height(const gfrm3 &F){return F.height();}
 
-	friend std::ostream& operator<<(std::ostream &os,const gfrm3 &F);
+	//friend std::ostream& operator<<(std::ostream &os,const gfrm3 &F);
 
 	static const gfrm3 unitF;
-	
-	operator ags3() const;
 };
 
 typedef arr::arr1<gfrm3> gfrm3_arr1;

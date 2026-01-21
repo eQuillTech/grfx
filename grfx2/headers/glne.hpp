@@ -16,21 +16,21 @@ private:
 	gvtr _v;
 	
 public:
-	glne(const gpnt p=pnt2::Po,const gvtr v=vtr2::Vo):_pStart(p),_v(v){}
-	glne(const gpnt &pStart,const gpnt &pStop):glne(pStart,pStop-pStart){}
-	glne(double x0,double y0,double x1,double y1):glne(gpnt(x0,y0),gvtr(x1-x0,y1-y0)){}
+	glne(const gpnt p=pnt2::Po,const gvtr v=vtr2::Vo);
+	glne(const gpnt &pStart,const gpnt &pStop);
+	glne(double x0,double y0,double x1,double y1);
 
-	gpnt& P(){return _pStart;}
-	gvtr& V(){return _v;}
+	gpnt& P();
+	gvtr& V();
 	
-	gpnt const& P() const{return _pStart;}
-	gvtr const& V() const{return _v;}
+	gpnt const& P() const;
+	gvtr const& V() const;
 
-	gpnt start() const{return P();}
-	gpnt stop() const{return P()+V();}
+	gpnt start() const;
+	gpnt stop() const;
 
-	glne operator+() const{return *this;}
-	glne operator-() const{return glne(pnt2::Po+(pnt2::Po-_pStart),-_v);}
+	glne operator+() const;
+	glne operator-() const;
 
 	glne operator/(double x) const;
 	glne operator+=(const gvtr &V);

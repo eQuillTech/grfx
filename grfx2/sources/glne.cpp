@@ -1,15 +1,15 @@
 //graphics lines - P. Ahrenkiel
 
 #include <cstdlib>
-\\
 #include <CoreGraphics/CoreGraphics.h>
 
 #include "glne.hpp"
 #include "gpnt.hpp"
+#include "gply.hpp"
 
 glne zeroL(pnt2::Po,vtr2::Vo);
 
-glne::glne(const gpnt p=pnt2::Po,const gvtr v=vtr2::Vo):_pStart(p),_v(v){}
+glne::glne(const gpnt p,const gvtr v):_pStart(p),_v(v){}
 glne::glne(const gpnt &pStart,const gpnt &pStop):glne(pStart,pStop-pStart){}
 glne::glne(double x0,double y0,double x1,double y1):glne(gpnt(x0,y0),gvtr(x1-x0,y1-y0)){}
 

@@ -20,7 +20,7 @@ const gbdy gbdy::map(const gfrm &fNew,const gfrm &fOld) const
 
 std::ostream& operator<<(std::ostream &os,const gbdy &b)
 {
-	os<<"coarse:"<<b.coarse()<<endl;
-	os<<"fine:"<<b.fine()<<endl;
+	os<<"coarse:"<<b.coarse()<<std::endl;
+	os<<"fine:"<<b.fine()<<std::endl;
 	return os;
 }

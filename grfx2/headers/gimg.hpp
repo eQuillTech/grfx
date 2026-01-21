@@ -5,6 +5,8 @@
 
 #include "CoreGraphics/CoreGraphics.h"
 
+#include "gfrm.hpp"
+
 class grct;
 
 struct gimgData
@@ -15,7 +17,7 @@ public:
 	CGImageRef m_imageR=nullptr;
 };
 
-class gimg:public gfrm2
+class gimg:public gfrm
 {
 private:
 	CGImageRef m_imageR=nullptr;

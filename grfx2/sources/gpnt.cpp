@@ -4,15 +4,17 @@
 #include "CoreGraphics/CoreGraphics.h"
 
 #include "dbl1.hpp"
-
+#include "pnt2.hpp"
 #include "gfrm.hpp"
+#include "gcmr.hpp"
 #include "gpnt.hpp"
 
 const gpnt_arr1 nullP_arr(0);
 
-gpnt::gpnt(double x=0.,double y=0.):pnt2(x,y){}
+gpnt::gpnt(double x,double y):pnt2(x,y){}
 gpnt::gpnt(const arr::dbl1 &A):pnt2(A){}
-	
+gpnt::gpnt(const pnt2 &P):pnt2(P){}
+
 bool gpnt::clip(const gfrm &rClip,const gpnt &pOther,gpnt &pDest) const
 {
 	pDest=*this;
@@ -139,13 +141,13 @@ gpnt gpnt::map(const gfrm  &fNew,const gfrm &fOld) const
 	return p;
 }
 
-ostream& operator<<(ostream &os,const gpnt &p)
+std::ostream& operator<<(std::ostream &os,const gpnt &p)
 {
 	os<<"("<<p.x()<<","<<p.y()<<")";
 	return os;
 }
 
-ostream& operator<<(ostream &os,const CGPoint &P)
+std::ostream& operator<<(std::ostream &os,const CGPoint &P)
 {
 	os<<"("<<P.x<<","<<P.y<<")";
 	return os;	
@@ -157,7 +159,7 @@ gpnt gpnt::proj(const gcmr &cmr,const double z) const
 	if(z==cmr.m_aperZ)
 		return pnt2::Po;
 	double mag=(cmr.m_plateZ-cmr.m_aperZ)/(z-cmr.m_aperZ);
-	return mag*(*this-cmr.m_aperP)+(cmr.m_aperP-pnt2::Po);
+	return pnt2::Po+mag*(*this-cmr.m_aperP)+(cmr.m_aperP-pnt2::Po);
 }
 
 //friend
@@ -166,6 +168,6 @@ gpnt gpnt::invproj(const gcmr &cmr,const double z) const
 	if(z==cmr.m_aperZ)
 		return pnt2::Po;
 	double mag=(cmr.m_plateZ-cmr.m_aperZ)/(z-cmr.m_aperZ);
-	return mag*(*this-cmr.m_aperP)+(cmr.m_aperP-pnt2::Po);
+	return pnt2::Po+mag*(*this-cmr.m_aperP)+(cmr.m_aperP-pnt2::Po);
 }
 

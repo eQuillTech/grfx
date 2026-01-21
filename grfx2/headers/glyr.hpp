@@ -5,6 +5,8 @@
 
 #include "CoreGraphics/CoreGraphics.h"
 
+#include "gidx.hpp"
+#include "gfrm.hpp"
 #include "gimg.hpp"
 
 struct glyrData:public gimgData

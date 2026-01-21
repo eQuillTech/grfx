@@ -5,9 +5,10 @@
 
 #include "CoreGraphics/CoreGraphics.h"
 
+#include "gfgr.hpp"
+#include "gpnt.hpp"
 
-#include "gfgr.h"
-#include "gpnt.h"
+class glne;
 
 class gply:public gfgr,public gpnt_arr1
 {

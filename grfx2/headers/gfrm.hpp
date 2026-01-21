@@ -4,9 +4,13 @@
 #define _GFRM_
 
 #include "CoreGraphics/CoreGraphics.h"
-#include "weiss.hpp"
 
-class gpnt;
+#include "mth.hpp"
+
+#include "gfgr.hpp"
+#include "gvtr.hpp"
+#include "gpnt.hpp"
+
 class gcmr;
 
 class gfrm:public gfgr
@@ -66,37 +70,36 @@ public:
 //	fl_err write(tfl &T);
 	bool isIn(const gpnt &p) const;
 	
-	//
-	gpnt center() const{return m_bottomLeftP+m_diagV/2.;}
+	gpnt center() const;
 
-	gpnt topRight() const{return gpnt(right(),top());}
-	gpnt topLeft() const{return gpnt(left(),top());}
-	gpnt bottomRight() const{return gpnt(right(),bottom());}
-	gpnt centerLeft() const{return gpnt(left(),centerY());}
-	gpnt centerRight() const{return gpnt(right(),centerY());}
-	gpnt topCenter() const{return gpnt(centerX(),top());}
-	gpnt bottomCenter() const{return gpnt(centerX(),bottom());}
-	double centerX() const{return center().x();}
-	double centerY() const{return center().y();}
-	double totalSize() const{return width()+height();}
-	double meanSize() const{return mth::pwr(width()*height(),0.5);}
-	double halfMeanSize() const{return 0.5*meanSize();}
+	gpnt topRight() const;
+	gpnt topLeft() const;
+	gpnt bottomRight() const;
+	gpnt centerLeft() const;
+	gpnt centerRight() const;
+	gpnt topCenter() const;
+	gpnt bottomCenter() const;
+	double centerX() const;
+	double centerY() const;
+	double totalSize() const;
+	double meanSize() const;
+	double halfMeanSize() const;
 	gfrm  scale(const double f) const;
 
-	double awidth() const{return fabs(width());}
-	double aheight() const{return fabs(height());}
+	double awidth() const;
+	double aheight() const;
 
-	CGRect sRect() const{return CGRectMake(left(),top(),width(),height());}
-	CGSize sSize() const{return CGSizeMake(width(),height());}
+	CGRect sRect() const;
+	CGSize sSize() const;
 
-	gfrm &R(){return *this;}
-	const gfrm &R() const{return *this;}
+	gfrm &R();
+	const gfrm &R() const;
 	
-	virtual void doFill(CGContextRef context,const CGRect &Rdest) const{}
-	virtual void doStroke(CGContextRef context,const CGRect &Rdest) const{}
-	virtual void doRender(CGContextRef context,const CGRect &Rdest) const{}
-	virtual void doRender(CGContextRef context,const CGRect &Rdest,const CGRect &Rclip) const{}
-	virtual void doRadGradient(CGContextRef context,const CGRect &Rdest,CGGradientRef grad) const{}
+	virtual void doFill(CGContextRef context,const CGRect &Rdest) const;
+	virtual void doStroke(CGContextRef context,const CGRect &Rdest) const;
+	virtual void doRender(CGContextRef context,const CGRect &Rdest) const;
+	virtual void doRender(CGContextRef context,const CGRect &Rdest,const CGRect &Rclip) const;
+	virtual void doRadGradient(CGContextRef context,const CGRect &Rdest,CGGradientRef grad) const;
 
 	void doFill(CGContextRef context,const CGRect &Rframe,const gfrm  &frameF) const override;
 	void doStroke(CGContextRef context,const CGRect &Rframe,const gfrm  &frameF) const override;
@@ -104,10 +107,10 @@ public:
 	void doRender(CGContextRef context,const CGRect &Rframe,const gfrm  &frameF,const CGRect &Rext) const override;
 	void doRadGradient(CGContextRef context,const CGRect &Rframe,const gfrm  &frameF,CGGradientRef grad,const CGPoint &Pi,const CGPoint &Pf,const double Ri,const double Rf) const override;
 
-	friend double width(const gfrm  &f){return f.width();}
-	friend double height(const gfrm  &f){return f.height();}
+	friend double width(const gfrm &f);
+	friend double height(const gfrm &f);
 
-	friend std::ostream& operator<<(std::ostream &os,const gfrm  &f);
+	friend std::ostream& operator<<(std::ostream &os,const gfrm &f);
 	
 	gfrm proj(const gcmr &cmr,const double z) const;
 	gfrm invproj(const gcmr &cmr,const double z) const;

@@ -5,11 +5,10 @@
 
 #include "CoreGraphics/CoreGraphics.h"
 
-#ifndef _GRCT_
-#include "grct.hpp"
-#endif
+#include "gfrm.hpp"
 
-//
+class gimg;
+
 class gctx:public gfrm 
 {
 private:
@@ -24,19 +23,19 @@ public:
 	gctx(std::size_t width,std::size_t height,const gfrm  &f);
 	~gctx();
 
-	CGContextRef contextRef(){return m_context;}
+	CGContextRef contextRef();
 	
-	CFStringRef colorSpaceName(){return m_colorSpaceName;}
-	const CFStringRef colorSpaceName() const{return m_colorSpaceName;}
+	CFStringRef colorSpaceName();
+	const CFStringRef colorSpaceName() const;
 	
-	std::size_t contextWidth() const{return m_width;}
-	std::size_t contextHeight() const{return m_height;}
-	CGRect contextFrame() const{return CGRectMake(0,0,m_width,m_height);}
+	std::size_t contextWidth() const;
+	std::size_t contextHeight() const;
+	CGRect contextFrame() const;;
 	
-	void *bitmapData(){return CGBitmapContextGetData(m_context);}
+	void *bitmapData();
 
-	gimg image(){return gimg(CGBitmapContextCreateImage(m_context),R());}
-	const gimg image() const{return gimg(CGBitmapContextCreateImage(m_context),R());}
+	gimg image();
+	const gimg image() const;
 	
 	void doRender(CGContextRef context,const CGRect &Rdest) const override;
 };

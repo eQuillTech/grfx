@@ -7,7 +7,7 @@
 
 const gidx gidx::zeroI(0.,0.);
 const gidx gidx::xI(1.,0.);
-const gidx gidx:::yI(0.,1.);
+const gidx gidx::yI(0.,1.);
 
 gidx::gidx(const arr::uint1 &a)
 {
