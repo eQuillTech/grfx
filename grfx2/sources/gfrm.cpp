@@ -24,7 +24,24 @@ gfrm::gfrm(const CGRect& R)
 	m_bottomLeftP=gpnt(R.origin.x,R.origin.y);
 	m_diagV=gvtr(R.size.width,R.size.height);
 }
-	
+
+double gfrm::top(){return (m_bottomLeftP+m_diagV).y();}
+double gfrm::left(){return m_bottomLeftP.x();}
+double &gfrm::bottom(){return m_bottomLeftP.y();}
+double &gfrm::right(){return (m_bottomLeftP+m_diagV).x();}
+double &gfrm::width(){return m_diagV.x();}
+double &gfrm::height(){return m_diagV.y();}
+gpnt &gfrm::bottomLeft(){return m_bottomLeftP;}
+gvtr &gfrm::diag(){return m_diagV;}
+
+double const gfrm::top() const{return (m_bottomLeftP+m_diagV).y();}
+double const gfrm::left() const{return m_bottomLeftP.x();}
+double const gfrm::bottom() const{return m_bottomLeftP.y();}
+double const gfrm::right() const{return (m_bottomLeftP+m_diagV).x();}
+gpnt const &gfrm::bottomLeft() const{return m_bottomLeftP;}
+gvtr const &gfrm::diag() const{return m_diagV;}
+double const gfrm::width() const{return m_diagV.x();}
+
 bool gfrm::operator==(const gfrm  &r) const
 {
 	return (m_bottomLeftP==r.bottomLeft())&&(m_diagV==r.diag());

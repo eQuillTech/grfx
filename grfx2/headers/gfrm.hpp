@@ -26,23 +26,23 @@ public:
 	gfrm(const gpnt& tl,const gpnt& br);
 	gfrm(const CGRect& R);
 
-	double top(){return (m_bottomLeftP+m_diagV).y();}
-	double left(){return m_bottomLeftP.x();}
-	double &bottom(){return m_bottomLeftP.y();}
-	double &right(){return (m_bottomLeftP+m_diagV).x();}
-	double &width(){return m_diagV.x();}
-	double &height(){return m_diagV.y();}
-	gpnt &bottomLeft(){return m_bottomLeftP;}
-	gvtr &diag(){return m_diagV;}
+	double top();
+	double left();
+	double &bottom();
+	double &right();
+	double &width();
+	double &height();
+	gpnt &bottomLeft();
+	gvtr &diag();
 
-	double const top() const{return (m_bottomLeftP+m_diagV).y();}
-	double const left() const{return m_bottomLeftP.x();}
-	double const bottom() const{return m_bottomLeftP.y();}
-	double const right() const{return (m_bottomLeftP+m_diagV).x();}
-	gpnt const &bottomLeft() const{return m_bottomLeftP;}
-	gvtr const &diag() const{return m_diagV;}
-	double const width() const{return m_diagV.x();}
-	double const height() const{return m_diagV.y();}
+	double const top() const;
+	double const left() const;
+	double const bottom() const;
+	double const right() const;
+	gpnt const &bottomLeft() const;
+	gvtr const &diag() const;
+	double const width() const;
+	double const height() const;
 	
 	bool operator==(const gfrm  &f) const;
 	

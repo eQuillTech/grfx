@@ -1,0 +1,5 @@
+
+Can you fix this error when building grfx_tests?
+/Users/phil3/Documents/Development/grfx/grfx2/headers/gidx.hpp:6:10: 'idx2.hpp' file not found
+
+I messed up this git merge. I want to merge branch org-submods into main - just replace main with org-submods. Forget any existing changes on main. Can you do that?
