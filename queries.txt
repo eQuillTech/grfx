@@ -10,3 +10,15 @@ use the '--force' option. If the local git directory is not the correct repo
 or you are unsure what this means choose another name with the '--name' option.
 
 Can you fix that?
+
+When I run
+git submodule add https://github.com/google/googletest.git googletest
+
+It says
+fatal: 'googletest' already exists in the index
+
+Can you fix that?
+
+git submodule add https://github.com/eQuillTech/tlbx.git tlbx
+git submodule add https://github.com/eQuillTech/arr.git arr
+git submodule add https://github.com/eQuillTech/weiss.git weiss
