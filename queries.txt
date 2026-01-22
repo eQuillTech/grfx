@@ -23,4 +23,20 @@ git submodule add https://github.com/eQuillTech/tlbx.git tlbx
 git submodule add https://github.com/eQuillTech/arr.git arr
 git submodule add https://github.com/eQuillTech/weiss.git weiss
 
-I am trying to build target TopoMesh_tests
+I am trying to build objective-C target TriCalc, which uses the C++ library TopoMesh. I see the error 
+/Users/phil3/Documents/Development/TopoMesh/arr/headers/arr1.hpp:29:12: No template named 'initializer_list' in namespace 'std'
+I may need to change the language settings in CMakeLists.txt. Can you check that?
+
+Can you fix these warnings/errors when compiling target TriCalc?
+/Users/phil3/Documents/Development/TopoMesh/TriCalc/TriCalc.mm:16:23: Receiver 'NSImage' is a forward class and corresponding @interface may not exist
+/Users/phil3/Documents/Development/TopoMesh/TriCalc/TriCalc.mm:17:30: Instance method '-CGImageForProposedRect:context:hints:' not found (return type defaults to 'id')
+/Users/phil3/Documents/Development/TopoMesh/TriCalc/TriCalc.mm:17:13: Cannot initialize a variable of type 'CGImageRef' (aka 'CGImage *') with an rvalue of type 'id'
+
+How I can tell CMake to build TriCalc using CoreGraphics.framework?
+
+Can you fix this error when linking TriCalc?
+Undefined symbols for architecture x86_64:
+  "_OBJC_CLASS_$_NSImage", referenced from:
+       in TriCalc.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
