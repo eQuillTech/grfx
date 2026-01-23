@@ -13,8 +13,8 @@ else()
 endif()
 
 # grfx2
-file(GLOB_RECURSE cpp_headers2 ${PROJECT_NAME}2/headers/*.hpp)
-file(GLOB_RECURSE cpp_sources2 ${PROJECT_NAME}2/sources/*.cpp)
+file(GLOB_RECURSE cpp_headers2 CONFIGURE_DEPENDS ${PROJECT_NAME}2/headers/*.hpp)
+file(GLOB_RECURSE cpp_sources2 CONFIGURE_DEPENDS ${PROJECT_NAME}2/sources/*.cpp)
 set(cpp_srcs2 ${PROJECT_NAME}2/${PROJECT_NAME}2.hpp ${cpp_headers2} ${cpp_sources2})
 add_library(${PROJECT_NAME}2 STATIC ${cpp_srcs2})
 target_link_libraries(${PROJECT_NAME}2 PUBLIC tlbx arr weiss)
@@ -28,8 +28,8 @@ target_compile_features(${PROJECT_NAME}2 PRIVATE cxx_std_17)
 set_target_properties(${PROJECT_NAME}2 PROPERTIES LINKER_LANGUAGE CXX)
 
 # grfx3
-file(GLOB_RECURSE cpp_headers3 ${PROJECT_NAME}3/headers/*.hpp)
-file(GLOB_RECURSE cpp_sources3 ${PROJECT_NAME}3/sources/*.cpp)
+file(GLOB_RECURSE cpp_headers3 CONFIGURE_DEPENDS ${PROJECT_NAME}3/headers/*.hpp)
+file(GLOB_RECURSE cpp_sources3 CONFIGURE_DEPENDS ${PROJECT_NAME}3/sources/*.cpp)
 set(cpp_srcs3 ${PROJECT_NAME}3/${PROJECT_NAME}3.hpp ${cpp_headers3} ${cpp_sources3})
 add_library(${PROJECT_NAME}3 STATIC ${cpp_srcs3})
 target_link_libraries(${PROJECT_NAME}3 PUBLIC tlbx arr weiss)
