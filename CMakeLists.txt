@@ -89,6 +89,11 @@ if (${PROJECT_NAME}_BUILD_TESTING)
         set(BUILD_GMOCK OFF CACHE BOOL "" FORCE)
         set(CMAKE_SUPPRESS_REGENERATION ON CACHE BOOL "" FORCE)
         add_subdirectory(googletest)
+
+        # Organize gtest_main inside gtest folder
+        if(TARGET gtest_main)
+            set_target_properties(gtest_main PROPERTIES FOLDER "gtest")
+        endif()
     endif()
     add_subdirectory(test)
 endif()

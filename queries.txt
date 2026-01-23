@@ -5,3 +5,10 @@ Can you fix this error when building grfx_tests?
 I messed up this git merge. I want to merge branch org-submods into main - just replace main with org-submods. Forget any existing changes on main. Can you do that?
 
 Is it possible to put target "grfx_tests" inside target "grfx"?
+
+Can you change CMakeLists.txt for the project "grfx" so that the target "gtest_main" is shown as a subfolder of the target/folder "gtest"?
+We can't change anything in the submodule googletest.
+
+Can I eliminate "gtest_main" from the project "grfx" and build target "grfx_tests" without it?
+
+Can you set for FOLDER property of "gtest_main" to place it inside "gtest"?
