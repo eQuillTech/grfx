@@ -24,21 +24,11 @@ target_compile_features(${PROJECT_NAME} PUBLIC cxx_std_17)
 set_target_properties(${PROJECT_NAME} PROPERTIES LINKER_LANGUAGE CXX)
 
 # submodules
-if(${CMAKE_PROJECT_NAME} STREQUAL ${PROJECT_NAME} OR NOT TARGET tlbx)
-    add_subdirectory(tlbx)
-endif()
-
- if(${CMAKE_PROJECT_NAME} STREQUAL ${PROJECT_NAME} OR NOT TARGET arr)
-   add_subdirectory(arr)
-endif()
-
-if(${CMAKE_PROJECT_NAME} STREQUAL ${PROJECT_NAME} OR NOT TARGET weiss)
-   add_subdirectory(weiss)
-endif()
-
-if(${CMAKE_PROJECT_NAME} STREQUAL ${PROJECT_NAME} OR NOT TARGET grfx)
-   add_subdirectory(grfx)
-endif()
+foreach(subdir tlbx arr weiss grfx)
+    if(${CMAKE_PROJECT_NAME} STREQUAL ${PROJECT_NAME} OR NOT TARGET ${subdir})
+        add_subdirectory(${subdir})
+    endif()
+endforeach()
 
 # testing
 option(${PROJECT_NAME}_BUILD_TESTING "Build the testing tree" ON)

@@ -40,3 +40,8 @@ Undefined symbols for architecture x86_64:
        in TriCalc.o
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+How can I use CONFIGURE_DEPENDS to make CMake check the filesystem for changes in any submodules?
+
+Can you simplify lines 27-41 of CMakeLists.txt?
