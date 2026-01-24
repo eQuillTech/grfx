@@ -107,7 +107,7 @@
 		[data appendData: [NSMutableData dataWithBytes: &P(1) length: sizeof(double)]];
 		[data appendData: [NSMutableData dataWithBytes: &P(2) length: sizeof(double)]];
 
-		vtr &nV=std::get<1>(vertex);
+		vtr3 &nV=std::get<1>(vertex);
 		[data appendData: [NSMutableData dataWithBytes: &nV(0) length: sizeof(double)]];
 		[data appendData: [NSMutableData dataWithBytes: &nV(1) length: sizeof(double)]];
 		[data appendData: [NSMutableData dataWithBytes: &nV(2) length: sizeof(double)]];
@@ -170,7 +170,7 @@
 		}
 		for(auto &vertex:topoTri->_vertex)
 		{
-			vtr &nV=std::get<1>(vertex);
+			vtr3 &nV=std::get<1>(vertex);
 			oss<< "vn "<<nV(0)<<" "<<nV(1)<<" "<<nV(2)<<"\n";
 		}
 		for(auto &vertex:topoTri->_vertex)

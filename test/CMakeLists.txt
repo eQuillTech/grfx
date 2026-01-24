@@ -20,7 +20,9 @@ target_compile_features(${PROJECT_NAME}_tests PRIVATE cxx_std_17)
 target_include_directories(${PROJECT_NAME}_tests
     PRIVATE ${PROJECT_SOURCE_DIR} ${PROJECT_SOURCE_DIR}/headers)
 
-set_target_properties(${PROJECT_NAME}_tests PROPERTIES LINKER_LANGUAGE CXX)
+set_target_properties(${PROJECT_NAME}_tests PROPERTIES
+    LINKER_LANGUAGE CXX
+    FOLDER ${PROJECT_NAME})
 
 target_link_libraries(${PROJECT_NAME}_tests ${PROJECT_NAME} gtest)
 

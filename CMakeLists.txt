@@ -22,6 +22,9 @@ target_include_directories(${PROJECT_NAME}
         ${modules_dir}grfx ${modules_dir}grfx/grfx2 ${modules_dir}grfx/grfx2/headers ${modules_dir}grfx/grfx3 ${modules_dir}grfx/grfx3/headers)
 target_compile_features(${PROJECT_NAME} PUBLIC cxx_std_17)
 set_target_properties(${PROJECT_NAME} PROPERTIES LINKER_LANGUAGE CXX)
+source_group("headers" FILES ${cpp_headers})
+source_group("sources" FILES ${cpp_sources})
+source_group("" FILES ${PROJECT_NAME}.hpp)
 
 # submodules
 foreach(subdir tlbx arr weiss grfx)
@@ -39,6 +42,11 @@ if (${PROJECT_NAME}_BUILD_TESTING)
         set(BUILD_GMOCK OFF CACHE BOOL "" FORCE)
         set(CMAKE_SUPPRESS_REGENERATION ON CACHE BOOL "" FORCE)
         add_subdirectory(googletest)
+
+         # Organize gtest_main inside gtest folder
+        if(TARGET gtest_main)
+            set_target_properties(gtest_main PROPERTIES FOLDER "gtest")
+        endif()
     endif()
     add_subdirectory(test)
 endif()

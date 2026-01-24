@@ -1,6 +1,6 @@
 //
-//  Triangulation.hpp
-//  TiffTri
+//  Topographical Triangulation.hpp
+//  TopoTri
 //
 //  Created by Phil Ahrenkiel on 4/5/23.
 //
