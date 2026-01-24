@@ -68,17 +68,11 @@ target_include_directories(${PROJECT_NAME}
 source_group("" FILES ${PROJECT_NAME}.hpp)
 
 # submodules
-if(${CMAKE_PROJECT_NAME} STREQUAL ${PROJECT_NAME} OR NOT TARGET tlbx)
-    add_subdirectory(tlbx)
-endif()
-
- if(${CMAKE_PROJECT_NAME} STREQUAL ${PROJECT_NAME} OR NOT TARGET arr)
-   add_subdirectory(arr)
-endif()
-
-if(${CMAKE_PROJECT_NAME} STREQUAL ${PROJECT_NAME} OR NOT TARGET weiss)
-   add_subdirectory(weiss)
-endif()
+foreach(subdir tlbx arr weiss)
+    if(${CMAKE_PROJECT_NAME} STREQUAL ${PROJECT_NAME} OR NOT TARGET ${subdir})
+        add_subdirectory(${subdir})
+    endif()
+endforeach()
 
 # testing
 option(${PROJECT_NAME}_BUILD_TESTING "Build the testing tree" ON)
@@ -89,7 +83,7 @@ if (${PROJECT_NAME}_BUILD_TESTING)
         set(BUILD_GMOCK OFF CACHE BOOL "" FORCE)
         set(CMAKE_SUPPRESS_REGENERATION ON CACHE BOOL "" FORCE)
         add_subdirectory(googletest)
-
+        
         # Organize gtest_main inside gtest folder
         if(TARGET gtest_main)
             set_target_properties(gtest_main PROPERTIES FOLDER "gtest")
