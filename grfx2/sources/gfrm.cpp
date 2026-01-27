@@ -41,6 +41,7 @@ double const gfrm::right() const{return (m_bottomLeftP+m_diagV).x();}
 gpnt const &gfrm::bottomLeft() const{return m_bottomLeftP;}
 gvtr const &gfrm::diag() const{return m_diagV;}
 double const gfrm::width() const{return m_diagV.x();}
+double const gfrm::height() const{return m_diagV.y();}
 
 bool gfrm::operator==(const gfrm  &r) const
 {
