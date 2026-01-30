@@ -15,7 +15,7 @@ private:
 	vtr3 _extentV;
 	
 public:
-	glne3(const pnt3 &startP=pnt3::Po,const vtr3 &extentV=vtr3::Vo):_startP(startP),_extentV(extentV){}
+	glne3(const pnt3 &startP=pnt3::Po,const vtr3 &extentV=vtr3::zero):_startP(startP),_extentV(extentV){}
 	glne3(const pnt3 &startP,const pnt3 &stopP):glne3(startP,stopP-startP){}
 
 	pnt3& P(){return _startP;}

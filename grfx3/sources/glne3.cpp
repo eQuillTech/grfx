@@ -10,7 +10,7 @@
 #include "glne3.hpp"
 
 
-const glne3 glne3::zeroL(pnt3::Po,vtr3::Vo);
+const glne3 glne3::zeroL(pnt3::Po,vtr3::zero);
 
 glne3 glne3::operator+=(const vtr3 &V)
 {
