@@ -1631,7 +1631,7 @@ static void GetNormals
 {
 	for(auto &pt:pts)
 	{
-		vtr3 nV=vtr3::Vz;
+		vtr3 nV=vtr3::Z;
 		long iX=pt.first;
 		long iY=pt.second;
 		double F0(0.),F1(0.),F2(0.);

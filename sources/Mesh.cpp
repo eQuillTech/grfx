@@ -37,10 +37,10 @@ std::size_t findIndexOrPushVertex(WFTIndexVector &wftIndexVector,const WFTIndex 
 //
 Mesh::Mesh()
 {
-	_vertex.emplace_back(pnt3(-1.,-1.,0),vtr3::Vz,pnt2(0.,1.));
-	_vertex.emplace_back(pnt3(1.,-1.,0),vtr3::Vz,pnt2(1.,1.));
-	_vertex.emplace_back(pnt3(1.,1.,0),vtr3::Vz,pnt2(1.,0.));
-	_vertex.emplace_back(pnt3(-1.,1.,0),vtr3::Vz,pnt2(0.,0.));
+	_vertex.emplace_back(pnt3(-1.,-1.,0),vtr3::Z,pnt2(0.,1.));
+	_vertex.emplace_back(pnt3(1.,-1.,0),vtr3::Z,pnt2(1.,1.));
+	_vertex.emplace_back(pnt3(1.,1.,0),vtr3::Z,pnt2(1.,0.));
+	_vertex.emplace_back(pnt3(-1.,1.,0),vtr3::Z,pnt2(0.,0.));
 
 	_currentSubmesh=new SubMesh();
 	_submesh["empty"]=_currentSubmesh;

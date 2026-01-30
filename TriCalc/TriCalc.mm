@@ -64,12 +64,12 @@
 	//getRange(data_img,imageSize.width,imageSize.height,zMin,zMax);
 
 	MeshRange range=topoTri->_range;
-	atr3 T(trf3::To,-range.min(2)*vtr3::Vz);
+	atr3 T(trf3::To,-range.min(2)*vtr3::Z);
 	arr::dbl2 D=arr::dbl2::ident(3,3);
 	D(0,0)=2./range.extent(0);D(1,1)=2./range.extent(1);D(2,2)=1./range.extent(2);
 	T*=atr3(D,-vtr3(1.,1.,0.));
 	//D(0,0)=1.;D(1,1)=1.;D(2,2)=1.;
-	//T*=atr3(D,vtr3::Vo);
+	//T*=atr3(D,vtr3::zero);
 	*topoTri*=T;
 	
 	std::cout<<"vertices: "<<topoTri->_vertex.size()<<"\n";
