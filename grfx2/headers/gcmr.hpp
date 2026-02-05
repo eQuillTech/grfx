@@ -19,7 +19,7 @@ protected:
 	double m_plateZ;//plate z
 	
 public:
-	gcmr(const gfrm  &F,const gpnt &aperP=pnt2::Po,double aperZ=-100.,double plateZ=0.);
+	gcmr(const gfrm  &F,const gpnt &aperP=pnt2::origin,double aperZ=-100.,double plateZ=0.);
 
 	gpnt &aperture();
 	const gpnt &aperture() const;

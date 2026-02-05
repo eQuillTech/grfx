@@ -286,7 +286,7 @@ gfrm gfrm::proj(const gcmr &cmr,const double z) const
 	if(z==cmr.m_aperZ)
 		return 0.*unitF;
 	double mag=(z-cmr.m_aperZ)/(cmr.m_plateZ-cmr.m_aperZ);
-	gvtr dV=cmr.m_aperP-pnt2::Po;
+	gvtr dV=cmr.m_aperP-pnt2::origin;
 	return mag*(*this-dV)+dV;
 }
 
