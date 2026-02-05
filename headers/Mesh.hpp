@@ -109,7 +109,7 @@ struct SubMesh
 {
 public:
  	TriIndexVector _tris;	
-	atr3 _T=atr3::Ato;
+	atr3 _T;
 	
 	std::size_t numTriang() const{return _tris.size();}
 	
