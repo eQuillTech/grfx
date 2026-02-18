@@ -23,7 +23,7 @@ void glyr::doRender(CGContextRef context,const CGRect &Rframe,const gfrm  &frame
 	double wp=double(m_N_frames(0))*w;//full height of Object in game coords
 		
 	//location of (0,0) Object in world coords
-	gpnt pp=topLeft()+(-(double(m_iFrame.i()))*w)*vtr2::Vx+((double(m_iFrame.j()))*h)*vtr2::Vy;
+	gpnt pp=topLeft()+(-(double(m_iFrame.i()))*w)*vtr2::X+((double(m_iFrame.j()))*h)*vtr2::Y;
 	
 	//full dimensions of object in world coords
 	gfrm extF(pp.y(),pp.x(),pp.y()-hp,pp.x()+wp);

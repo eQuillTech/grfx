@@ -7,7 +7,7 @@
 #include "gpnt.hpp"
 #include "gply.hpp"
 
-glne zeroL(pnt2::Po,vtr2::Vo);
+glne zeroL(pnt2::origin,vtr2::zero);
 
 glne::glne(const gpnt p,const gvtr v):_pStart(p),_v(v){}
 glne::glne(const gpnt &pStart,const gpnt &pStop):glne(pStart,pStop-pStart){}
@@ -23,7 +23,7 @@ gpnt glne::start() const{return P();}
 gpnt glne::stop() const{return P()+V();}
 
 glne glne::operator+() const{return *this;}
-glne glne::operator-() const{return glne(pnt2::Po+(pnt2::Po-_pStart),-_v);}
+glne glne::operator-() const{return glne(pnt2::origin+(pnt2::origin-_pStart),-_v);}
 	
 glne glne::operator+=(const gvtr &v)
 {
@@ -59,7 +59,7 @@ glne glne::operator-(const gvtr &v) const
 
 glne operator*(double x,const glne &l)
 {
-	gpnt p=pnt2::Po+x*(l.P()-pnt2::Po);
+	gpnt p=pnt2::origin+x*(l.P()-pnt2::origin);
 	gvtr v=x*l.V();
 	return glne(p,v);
 }
@@ -165,7 +165,7 @@ gpnt glne::intersection(const glne &l)
 	double p2=pC.x()*pD.y()-pC.y()-pD.x();
 
 	double d=m1*n2-m2*n1;
-	if(d==0.)return pnt2::Po;
+	if(d==0.)return pnt2::origin;
 	
 	double x=(n2*p1-n1*p2)/d;
 	double y=(m2*p1-m1*p2)/d;

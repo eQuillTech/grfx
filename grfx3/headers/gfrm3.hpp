@@ -25,9 +25,9 @@ public:
 	double top() const{return ((*this)*idx3::I111).y();}
 	double back() const{return ((*this)*idx3::I111).z();}
 	
-	double width() const{return B().a()*vtr3::Vx;}
-	double height() const{return B().b()*vtr3::Vy;}
-	double depth() const{return B().c()*vtr3::Vz;}
+	double width() const{return B().a()*vtr3::X;}
+	double height() const{return B().b()*vtr3::Y;}
+	double depth() const{return B().c()*vtr3::Z;}
 
 	pnt3& origin(){return p();}
 	const pnt3& origin() const{return p();}

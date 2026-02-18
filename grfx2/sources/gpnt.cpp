@@ -157,17 +157,17 @@ std::ostream& operator<<(std::ostream &os,const CGPoint &P)
 gpnt gpnt::proj(const gcmr &cmr,const double z) const
 {
 	if(z==cmr.m_aperZ)
-		return pnt2::Po;
+		return pnt2::origin;
 	double mag=(cmr.m_plateZ-cmr.m_aperZ)/(z-cmr.m_aperZ);
-	return pnt2::Po+mag*(*this-cmr.m_aperP)+(cmr.m_aperP-pnt2::Po);
+	return pnt2::origin+mag*(*this-cmr.m_aperP)+(cmr.m_aperP-pnt2::origin);
 }
 
 //friend
 gpnt gpnt::invproj(const gcmr &cmr,const double z) const
 {
 	if(z==cmr.m_aperZ)
-		return pnt2::Po;
+		return pnt2::origin;
 	double mag=(cmr.m_plateZ-cmr.m_aperZ)/(z-cmr.m_aperZ);
-	return pnt2::Po+mag*(*this-cmr.m_aperP)+(cmr.m_aperP-pnt2::Po);
+	return pnt2::origin+mag*(*this-cmr.m_aperP)+(cmr.m_aperP-pnt2::origin);
 }
 

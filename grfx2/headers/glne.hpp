@@ -16,7 +16,7 @@ private:
 	gvtr _v;
 	
 public:
-	glne(const gpnt p=pnt2::Po,const gvtr v=vtr2::Vo);
+	glne(const gpnt p=pnt2::origin,const gvtr v=vtr2::zero);
 	glne(const gpnt &pStart,const gpnt &pStop);
 	glne(double x0,double y0,double x1,double y1);
 

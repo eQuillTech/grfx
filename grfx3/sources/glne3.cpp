@@ -10,7 +10,7 @@
 #include "glne3.hpp"
 
 
-const glne3 glne3::zeroL(pnt3::Po,vtr3::Vo);
+const glne3 glne3::zeroL(pnt3::origin,vtr3::zero);
 
 glne3 glne3::operator+=(const vtr3 &V)
 {
@@ -47,7 +47,7 @@ glne3 glne3::operator-(const vtr3 &V) const
 
 glne3 operator*(double x,const glne3 &L)
 {
-	pnt3 P=pnt3::Po+x*(L.P()-pnt3::Po);
+	pnt3 P=pnt3::origin+x*(L.P()-pnt3::origin);
 	vtr3 V=x*L.V();
 	return glne3(P,V);
 }
@@ -133,12 +133,12 @@ pnt3 glne3::intersection(const glne3 &L)
 	double p2=pC.x()*pD.y()-pC.y()-pD.x();
 
 	double d=m1*n2-m2*n1;
-	if(d==0.)return pnt2::Po;
+	if(d==0.)return pnt2::origin;
 	
 	double x=(n2*p1-n1*p2)/d;
 	double y=(m2*p1-m1*p2)/d;
 */
-	return pnt3::Po;
+	return pnt3::origin;
 }
 
 //

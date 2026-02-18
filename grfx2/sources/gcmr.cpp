@@ -10,4 +10,4 @@ gcmr::gcmr(const gfrm &F,const gpnt &aperP,double aperZ,double plateZ):
 gpnt &gcmr::aperture(){return m_aperP;}
 const gpnt &gcmr::aperture() const{return m_aperP;}
 
-gfrm gcmr::plate() const{return R()+(m_aperP-pnt2::Po);}
+gfrm gcmr::plate() const{return R()+(m_aperP-pnt2::origin);}
