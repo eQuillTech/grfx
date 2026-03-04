@@ -10,42 +10,26 @@
 
 const gfrm unitF(1,-1,-1,1);
 
-gfrm::gfrm(const gpnt& bl,const gvtr& d)
-	:m_bottomLeftP(bl),m_diagV(d){}
-
-gfrm::gfrm(const double t,const double l,const double b,const double r)
-	:m_bottomLeftP(l,b),m_diagV(r-l,t-b){}
-
-gfrm::gfrm(const gpnt& tl,const gpnt& br)
-	:m_bottomLeftP(tl.x(),br.y()),m_diagV(br.x()-tl.x(),tl.y()-br.y()){}
-
-gfrm::gfrm(const CGRect& R)
+gfrm::gfrm(const pnt2 coordP,const vtr2 diagV,const idx2 coordI)
 {
-	m_bottomLeftP=gpnt(R.origin.x,R.origin.y);
-	m_diagV=gvtr(R.size.width,R.size.height);
+	auto B=bas2({diagV.x(),0.},{0.,diagV.y()});
+	auto coordV=B*coordI;
+	auto P0=coordP-coordV;
+	A()={B,P0};
 }
 
-double gfrm::top(){return (m_bottomLeftP+m_diagV).y();}
-double gfrm::left(){return m_bottomLeftP.x();}
-double &gfrm::bottom(){return m_bottomLeftP.y();}
-double &gfrm::right(){return (m_bottomLeftP+m_diagV).x();}
-double &gfrm::width(){return m_diagV.x();}
-double &gfrm::height(){return m_diagV.y();}
-gpnt &gfrm::bottomLeft(){return m_bottomLeftP;}
-gvtr &gfrm::diag(){return m_diagV;}
+gfrm::gfrm(const double t,const double l,const double b,const double r)
+	:gfrm(pnt2(l,b),vtr2(r-l,t-b),idx2::I00){}
 
-double const gfrm::top() const{return (m_bottomLeftP+m_diagV).y();}
-double const gfrm::left() const{return m_bottomLeftP.x();}
-double const gfrm::bottom() const{return m_bottomLeftP.y();}
-double const gfrm::right() const{return (m_bottomLeftP+m_diagV).x();}
-gpnt const &gfrm::bottomLeft() const{return m_bottomLeftP;}
-gvtr const &gfrm::diag() const{return m_diagV;}
-double const gfrm::width() const{return m_diagV.x();}
-double const gfrm::height() const{return m_diagV.y();}
+gfrm::gfrm(const gpnt& tl,const gpnt& br)
+	:gfrm(tl,vtr2(br.x()-tl.x(),tl.y()-br.y()),idx2::I01){}
+	
+gfrm::gfrm(const CGRect& R)
+	:gfrm(pnt2(R.origin.x,R.origin.y),gvtr(R.size.width,R.size.height)){}
 
-bool gfrm::operator==(const gfrm  &r) const
+bool gfrm::operator==(const gfrm &r) const
 {
-	return (m_bottomLeftP==r.bottomLeft())&&(m_diagV==r.diag());
+	return (B()==r.B())&&(p()==r.p());
 }
 
 gfrm gfrm::operator+=(const gvtr &v)
@@ -70,7 +54,7 @@ gfrm gfrm::operator/=(const double x)
 
 gfrm gfrm::operator+(const gvtr &v) const
 {
-	return gfrm (m_bottomLeftP+v,m_diagV);
+	return gfrm(origin()+v,diag(),idx2::I00);
 }
 
 gfrm gfrm::operator-(const gvtr &v) const
@@ -91,9 +75,9 @@ bool gfrm::isIn(const gpnt &p) const
 	return (rx>=0.)&&(rx<=1.)&&(ry>=0.)&&(ry<=1.);
 }
 
-bool gfrm::isIn(const gfrm  &f) const
+bool gfrm::isIn(const gfrm &f) const
 {
-	return isIn(f.bottomLeft())&&isIn(f.topRight());
+	return isIn(f.corner00())&&isIn(f.corner11());
 }
 
 bool gfrm::overlaps(const gfrm  &f) const
@@ -114,13 +98,12 @@ bool gfrm::overlaps(const gfrm  &f) const
 //scale about center
 gfrm gfrm::scale(const double x) const
 {
-
-	gvtr scaled_diagV=x*m_diagV;
-	gpnt pBottomLeft=center()-scaled_diagV/2.;
-	return gfrm (pBottomLeft,scaled_diagV);
+	gvtr scaled_diagV=x*diag();
+	gpnt p00=center()-scaled_diagV/2.;
+	return gfrm(p00,scaled_diagV,idx2::I00);
 }
 
-void gfrm::move(gvtr &v,const gfrm  &fBound) const
+void gfrm::move(gvtr &v,const gfrm &fBound) const
 {
 	double fac=1.;
 	if(v.y()!=0.)
@@ -141,12 +124,11 @@ void gfrm::move(gvtr &v,const gfrm  &fBound) const
 	v*=fac;
 }
 
-gfrm gfrm::map(const gfrm  &fNew,const gfrm  &fOld) const
+gfrm gfrm::map(const gfrm &fNew,const gfrm &fOld) const
 {
-	gfrm  rp=*this;
-	rp.m_bottomLeftP=m_bottomLeftP.map(fNew,fOld);
-	rp.m_diagV=topRight().map(fNew,fOld)-rp.m_bottomLeftP;
-	return rp;
+	gpnt p00=corner00().map(fNew,fOld);
+	gpnt p11=corner11().map(fNew,fOld);
+	return gfrm(p00,p11-p00,idx2::I00);
 }
 	
 // CGRect origin is bottom-left, somehow.
@@ -215,10 +197,9 @@ double gfrm::map(const double d,const CGRect &Rframe) const
 	return d*(Rframe.size.height+Rframe.size.width)/totalSize();
 }
 
-//
 gfrm gfrm::alter() const
 {
-	return gfrm (bottomRight(),-diag());
+	return gfrm(corner10(),-diag());
 }
 
 //
@@ -268,7 +249,7 @@ gfrm operator*(const double x,const gfrm &f)
 
 std::ostream& operator<<(std::ostream &os,const gfrm &f)
 {
-	os<<"["<<f.topLeft()<<","<<f.bottomRight()<<"]";
+	os<<"["<<f.corner01()<<","<<f.corner10()<<"]";
 	return os;
 }
 
@@ -290,17 +271,6 @@ gfrm gfrm::proj(const gcmr &cmr,const double z) const
 	return mag*(*this-dV)+dV;
 }
 
-gpnt gfrm::center() const{return m_bottomLeftP+m_diagV/2.;}
-
-gpnt gfrm::topRight() const{return gpnt(right(),top());}
-gpnt gfrm::topLeft() const{return gpnt(left(),top());}
-gpnt gfrm::bottomRight() const{return gpnt(right(),bottom());}
-gpnt gfrm::centerLeft() const{return gpnt(left(),centerY());}
-gpnt gfrm::centerRight() const{return gpnt(right(),centerY());}
-gpnt gfrm::topCenter() const{return gpnt(centerX(),top());}
-gpnt gfrm::bottomCenter() const{return gpnt(centerX(),bottom());}
-double gfrm::centerX() const{return center().x();}
-double gfrm::centerY() const{return center().y();}
 double gfrm::totalSize() const{return width()+height();}
 double gfrm::meanSize() const{return mth::pwr(width()*height(),0.5);}
 double gfrm::halfMeanSize() const{return 0.5*meanSize();}

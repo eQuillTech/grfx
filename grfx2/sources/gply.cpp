@@ -24,10 +24,10 @@ bool triangleIsCCW(gpnt pA,gpnt pB,gpnt pC)
 gply::gply(const gfrm & f)
 {
 	clear();
-	append(f.bottomRight());
-	append(f.topRight());
-	append(f.topLeft());
-	append(f.bottomLeft());
+	append(f.corner10());
+	append(f.corner11());
+	append(f.corner01());
+	append(f.corner00());
 }
 
 gply gply::operator+=(const gvtr &v)

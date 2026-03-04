@@ -16,7 +16,7 @@
 
 const gfrm3 gfrm3::unitF(pnt3(-0.5,-0.5,-0.5),vtr3(1.,1.,1.));
 
-gfrm3::gfrm3(const pnt3& coordP,const vtr3& diagV,const idx3& coordI)
+gfrm3::gfrm3(const pnt3 coordP,const vtr3 diagV,const idx3 coordI)
 {
 	auto B=bas3({diagV.x(),0.,0.},{0.,diagV.y(),0.},{0.,0.,diagV.z()});
 	auto coordV=B*coordI;
@@ -26,10 +26,10 @@ gfrm3::gfrm3(const pnt3& coordP,const vtr3& diagV,const idx3& coordI)
 
 bool gfrm3::operator==(const gfrm3 &F) const
 {
-	return true;//(P()==F.P())&&(B()==F.B());
+	return (B()==F.B())
+		&&(p()==F.p());
 }
 
-//
 gfrm3 gfrm3::operator+=(const vtr3 &V)
 {
 	return *this=*this+V;
@@ -43,9 +43,8 @@ gfrm3 gfrm3::operator-=(const vtr3 &V)
 gfrm3 gfrm3::operator*=(double x)
 {
 	return *this=x*(*this);
-	}
-	
-//
+}
+
 gfrm3 gfrm3::operator/=(const double x)
 {
 	return *this=(*this)/x;

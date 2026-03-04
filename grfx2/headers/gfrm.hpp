@@ -7,44 +7,40 @@
 
 #include "mth.hpp"
 
+#include "idx2.hpp"
+#include "ags2.hpp"
+
 #include "gfgr.hpp"
 #include "gvtr.hpp"
 #include "gpnt.hpp"
 
 class gcmr;
 
-class gfrm:public gfgr
+class gfrm:private ags2,public gfgr
 {
 private:
-	gpnt m_bottomLeftP;
-	gvtr m_diagV;
+	gfrm(const ags2& A):ags2(A){}
 
 public:
-	//gfrm (){}
-	gfrm(const gpnt& tl,const gvtr& d);
-	gfrm(const double t=0.,const double l=0.,const double b=0.,const double r=0.);
+	gfrm();
+	gfrm(const pnt2 coordP,const vtr2 diagV,const idx2 coordI=idx2::Imid);
+	gfrm(const double t,const double l,const double b,const double r);
 	gfrm(const gpnt& tl,const gpnt& br);
 	gfrm(const CGRect& R);
 
-	double top();
-	double left();
-	double &bottom();
-	double &right();
-	double &width();
-	double &height();
-	gpnt &bottomLeft();
-	gvtr &diag();
+	double left() const{return ((*this)*idx2::I00).x();}
+	double bottom() const{return ((*this)*idx2::I00).y();}
 
-	double const top() const;
-	double const left() const;
-	double const bottom() const;
-	double const right() const;
-	gpnt const &bottomLeft() const;
-	gvtr const &diag() const;
-	double const width() const;
-	double const height() const;
+	double right() const{return ((*this)*idx2::I11).x();}
+	double top() const{return ((*this)*idx2::I11).y();}
 	
-	bool operator==(const gfrm  &f) const;
+	double width() const{return B().a()*vtr2::X;}
+	double height() const{return B().b()*vtr2::Y;}
+	
+	gpnt origin() const{return p();}
+	gvtr diag() const{return B()*idx2::I11;}
+
+	bool operator==(const gfrm &f) const;
 	
 	gfrm operator+(const gvtr &v) const;
 	gfrm operator-(const gvtr &v) const;
@@ -54,37 +50,34 @@ public:
 	gfrm operator-=(const gvtr &v);
 	gfrm operator*=(const double x);
 	gfrm operator/=(const double x);
-	//gfrm  set(const gfrm  &r);
 	
-	gfrm map(const gfrm  &fNew,const gfrm  &fOld) const;
-	CGRect map(const CGRect &Rframe,const gfrm  &frameF) const;
+	gfrm map(const gfrm &fNew,const gfrm &fOld) const;
+	CGRect map(const CGRect &Rframe,const gfrm &frameF) const;
 	gpnt map(const CGPoint &P,const CGRect &Rframe) const;
 	gfrm map(const CGRect &Rframe,const CGRect &R) const;
 	double map(const double d,const CGRect &Rframe) const;
-	bool isIn(const gfrm  &f) const;
-	bool overlaps(const gfrm  &f) const;
+	bool isIn(const gfrm &f) const;
+	bool overlaps(const gfrm &f) const;
 	friend gfrm  operator*(const double x,const gfrm  &f);
 	void move(gvtr &v,const gfrm  &fBound) const;
-	gfrm  alter() const;
-	//fl_err read(tfl &T);
-//	fl_err write(tfl &T);
+	gfrm alter() const;
 	bool isIn(const gpnt &p) const;
 	
-	gpnt center() const;
+	gpnt coord(const double xc,const double yc) const{return (*this)*idx2(xc,yc);}
+	gpnt center() const{return coord(0.5,0.5);}
+	gpnt corner00() const{return coord(0.,0.);}
+	gpnt corner10() const{return coord(1.,0.);}
+	gpnt corner01() const{return coord(0.,1.);}
+	gpnt corner11() const{return coord(1.,1.);}
+	gpnt edgeCenter0Y() const{return coord(0.,0.5);}
+	gpnt edgeCenter1Y() const{return coord(1.,0.5);}
+	gpnt edgeCenterX0() const{return coord(0.5,0.);}
+	gpnt edgeCenterX1() const{return coord(0.5,1.);}
 
-	gpnt topRight() const;
-	gpnt topLeft() const;
-	gpnt bottomRight() const;
-	gpnt centerLeft() const;
-	gpnt centerRight() const;
-	gpnt topCenter() const;
-	gpnt bottomCenter() const;
-	double centerX() const;
-	double centerY() const;
 	double totalSize() const;
 	double meanSize() const;
 	double halfMeanSize() const;
-	gfrm  scale(const double f) const;
+	gfrm scale(const double f) const;
 
 	double awidth() const;
 	double aheight() const;

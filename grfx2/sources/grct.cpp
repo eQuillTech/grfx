@@ -6,12 +6,10 @@
 #include "gpnt.hpp"
 #include "grct.hpp"
 
-const grct unitR(1,-1,-1,1);
-
 grct::grct():gfrm (){}
 grct::grct(const double t,const double l,const double b,const double r):gfrm (t,l,b,r){}
 grct::grct(const gpnt tl,const gpnt br):gfrm (tl,br){}
-grct::grct(const gfrm & f):gfrm (f){}
+grct::grct(const gfrm& f):gfrm(f){}
 grct::grct(CGRect R):gfrm (R){}
 
 //static

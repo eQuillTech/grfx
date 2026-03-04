@@ -24,7 +24,6 @@ public:
 	static void fill(CGContextRef context,const CGRect &Rdest);
 	static void stroke(CGContextRef context,const CGRect &Rdest);
 
-	//
 	void doFill(CGContextRef context,const CGRect &Rdest) const override;
 	void doStroke(CGContextRef context,const CGRect &Rdest) const override;
 };
@@ -33,5 +32,5 @@ std::ostream& operator<<(std::ostream &os,const CGRect &R);
 
 typedef arr::arr1<grct> grct_arr1;
 
-extern const grct unitR;
+
 #endif

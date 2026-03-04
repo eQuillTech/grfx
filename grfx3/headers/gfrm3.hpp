@@ -15,7 +15,7 @@ private:
 	
 public:
 	gfrm3(){}
-	gfrm3(const pnt3& coordP,const vtr3& diagV,const idx3& coordI=idx3::Imid);
+	gfrm3(const pnt3 coordP,const vtr3 diagV,const idx3 coordI=idx3::Imid);
 
 	double left() const{return ((*this)*idx3::I000).x();}
 	double bottom() const{return ((*this)*idx3::I000).y();}
@@ -29,9 +29,7 @@ public:
 	double height() const{return B().b()*vtr3::Y;}
 	double depth() const{return B().c()*vtr3::Z;}
 
-	pnt3& origin(){return p();}
-	const pnt3& origin() const{return p();}
-
+	pnt3 origin() const{return p();}
 	vtr3 diag() const{return B()*idx3::I111;}
 	
 	bool operator==(const gfrm3 &f) const;
@@ -44,7 +42,6 @@ public:
 	gfrm3 operator-=(const vtr3 &V);
 	gfrm3 operator*=(const double x);
 	gfrm3 operator/=(const double x);
-	//gfrm  set(const gfrm  &r);
 	
 	gfrm3 map(const gfrm3 &newF,const gfrm3 &oldF) const;
 	bool isIn(const gfrm3 &F) const;
@@ -79,8 +76,8 @@ public:
 	void move(vtr3 &V,const gfrm3 &boundF) const;
 
 	double awidth() const{return fabs(width());}
-	double adepth() const{return fabs(depth());}
 	double aheight() const{return fabs(height());}
+	double adepth() const{return fabs(depth());}
 
 	gfrm3 &R(){return *this;}
 	const gfrm3 &R() const{return *this;}

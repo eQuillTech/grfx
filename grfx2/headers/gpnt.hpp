@@ -18,8 +18,8 @@ public:
 	gpnt(const arr::dbl1 &A);
 	gpnt(const pnt2 &P);
 
-	bool clip(const gfrm  &fClip,const gpnt &pOther,gpnt &pDest) const;
-	gpnt map(const gfrm  &fNew,const gfrm  &fOld) const;
+	bool clip(const gfrm &fClip,const gpnt &pOther,gpnt &pDest) const;
+	gpnt map(const gfrm &fNew,const gfrm  &fOld) const;
 	CGPoint map(const CGRect &Rframe,const gfrm &frameF) const;
 	CGPoint mapFrac(const CGRect &Rframe,const gfrm &frameF) const;
 	
