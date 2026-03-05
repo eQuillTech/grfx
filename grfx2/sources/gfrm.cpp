@@ -75,11 +75,6 @@ bool gfrm::isIn(const gpnt &p) const
 	return (rx>=0.)&&(rx<=1.)&&(ry>=0.)&&(ry<=1.);
 }
 
-bool gfrm::isIn(const gfrm &f) const
-{
-	return isIn(f.corner00())&&isIn(f.corner11());
-}
-
 bool gfrm::overlaps(const gfrm  &f) const
 {
 	double resX=mth::sgn(f.left()-left())

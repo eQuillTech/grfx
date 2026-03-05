@@ -56,12 +56,16 @@ public:
 	gpnt map(const CGPoint &P,const CGRect &Rframe) const;
 	gfrm map(const CGRect &Rframe,const CGRect &R) const;
 	double map(const double d,const CGRect &Rframe) const;
-	bool isIn(const gfrm &f) const;
+	//bool isIn(const gfrm &f) const;
 	bool overlaps(const gfrm &f) const;
-	friend gfrm  operator*(const double x,const gfrm  &f);
+	friend gfrm operator*(const double x,const gfrm  &f);
 	void move(gvtr &v,const gfrm  &fBound) const;
 	gfrm alter() const;
 	bool isIn(const gpnt &p) const;
+
+	using ags2::isIn;
+	using ags2::A;
+	using ags2::operator*;
 	
 	gpnt coord(const double xc,const double yc) const{return (*this)*idx2(xc,yc);}
 	gpnt center() const{return coord(0.5,0.5);}
