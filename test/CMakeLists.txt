@@ -37,7 +37,17 @@ endif()
 
 include(GoogleTest)
 
-gtest_discover_tests(
-        ${PROJECT_NAME}_tests
-        TEST_PREFIX ${PROJECT_NAME}:
-)
+# Note: gtest_discover_tests() runs the test binary at build time, which fails for iOS targets
+# since iOS binaries can't run on macOS. Use gtest_add_tests() instead for iOS builds.
+if(CMAKE_SYSTEM_NAME STREQUAL "iOS")
+    # For iOS: Add tests without running the binary (parses source files)
+    gtest_add_tests(TARGET ${PROJECT_NAME}_tests
+                    TEST_PREFIX ${PROJECT_NAME}:
+    )
+else()
+    # For macOS/other platforms: Discover tests by running the binary
+    gtest_discover_tests(
+            ${PROJECT_NAME}_tests
+            TEST_PREFIX ${PROJECT_NAME}:
+    )
+endif()
